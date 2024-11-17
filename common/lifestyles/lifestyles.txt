@@ -1,0 +1,14 @@
+﻿jutsu_lifestyle = {
+	icon = jutsu_lifestyle
+	
+	is_shown = {
+		scope:actor = {
+			AND = {
+				has_trait = shinobi_dynasty
+			}
+		}		
+	}
+	
+	xp_per_level = 5000
+	base_xp_gain = 25
+}

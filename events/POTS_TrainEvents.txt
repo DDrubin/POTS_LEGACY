@@ -1,0 +1,471 @@
+namespace = POTS_eye_training
+
+POTS_eye_training.100 = {
+	hidden = yes
+	immediate = {
+		check_for_eye_training = yes
+	}
+	
+}
+
+POTS_eye_training.1 = {
+	theme = martial
+	title = POTS_eye_training.1.t
+	desc = POTS_eye_training.1.desc
+
+	#Option A: level 1 training.
+	option = {
+		name = POTS_eye_training.1.a
+
+		trigger_event = POTS_eye_training.100
+			
+		add_character_modifier = {
+			modifier = training_eyes_level_1
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.2
+ 
+	}
+
+	#Option B: level 2 training.
+	option = {
+		name = POTS_eye_training.1.b
+
+		trigger_event = POTS_eye_training.100
+		
+		add_character_modifier = {
+			modifier = training_eyes_level_2
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.3
+
+	}
+
+	#Option C: level 3 training.
+	option = {
+		name = POTS_eye_training.1.c
+
+		trigger_event = POTS_eye_training.100
+
+		add_character_modifier = {
+			modifier = training_eyes_level_3
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.4
+
+	}
+
+	#Option D: level 4 training.
+	option = {
+		name = POTS_eye_training.1.d
+
+		trigger_event = POTS_eye_training.100
+		
+
+		add_character_modifier = {
+			modifier = training_eyes_level_4
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.5
+
+	}
+
+	#Option E: level 5 training.
+	option = {
+		name = POTS_eye_training.1.e
+
+		trigger_event = POTS_eye_training.100
+		
+		add_character_modifier = {
+			modifier = training_eyes_level_5
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.6
+ 
+	}
+
+	#Option F: level 6 training.
+	option = {
+		name = POTS_eye_training.1.f
+
+		trigger_event = POTS_eye_training.100
+
+		add_character_modifier = {
+			modifier = training_eyes_level_6
+			years = 600
+        }
+
+		trigger_event = POTS_eye_training.7
+
+	}
+
+	#Option H: level 7 training.
+	option = {
+		name = POTS_eye_training.1.g
+
+		trigger_event = POTS_eye_training.100
+		
+		add_character_modifier = {
+			modifier = training_eyes_level_7
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.8
+
+	}
+
+	#Option G: level 8 training.
+	option = {
+		name = POTS_eye_training.1.h
+
+		trigger_event = POTS_eye_training.100
+		
+		add_character_modifier = {
+			modifier = training_eyes_level_8
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.9
+	}
+
+	#Option I: level 9 training.
+	option = {
+		name = POTS_eye_training.1.j
+		trigger_event = POTS_eye_training.100
+		
+		add_character_modifier = {
+			modifier = training_eyes_level_9
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.10
+	}
+
+	#Option J: level 10 training.
+	option = {
+		name = POTS_eye_training.1.l
+		trigger_event = POTS_eye_training.100
+
+		add_character_modifier = {
+			modifier = training_eyes_level_10
+			years = 600
+        }
+	
+        trigger_event = POTS_eye_training.11
+
+	}
+
+	#Option L: reset.
+	option = {
+		name = POTS_eye_training.1.m
+		trigger_event = POTS_eye_training.100
+
+	}
+	
+}
+
+POTS_eye_training.101 = {
+	theme = martial
+	title = POTS_eye_training.1.t
+	desc = POTS_eye_training.1.desc
+
+	#Option A: level 1 training.
+	option = {
+		name = POTS_eye_training.1.a
+
+		trigger_event = POTS_eye_training.100
+			
+		add_character_modifier = {
+			modifier = training_eyes_level_1
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.2
+	}
+
+	#Option B: level 2 training.
+	option = {
+		name = POTS_eye_training.1.b
+
+		trigger_event = POTS_eye_training.100
+		
+		add_character_modifier = {
+			modifier = training_eyes_level_2
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.3
+	}
+
+	#Option C: level 3 training.
+	option = {
+		name = POTS_eye_training.1.c
+
+		trigger_event = POTS_eye_training.100
+
+		add_character_modifier = {
+			modifier = training_eyes_level_3
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.4
+	}
+
+	#Option D: level 4 training.
+	option = {
+		name = POTS_eye_training.1.d
+
+		trigger_event = POTS_eye_training.100
+		
+
+		add_character_modifier = {
+			modifier = training_eyes_level_4
+			years = 600
+        }
+
+        trigger_event = POTS_eye_training.5
+	}
+
+	
+}
+
+POTS_eye_training.2 = {
+
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_character_modifier = training_eyes_level_1 }
+				
+				training_logic_effect = {
+					MIN_VALUE = 1
+					MAX_VALUE = 2
+				}
+
+				trigger_event = {
+					id = POTS_eye_training.2
+					days = { min_eye_train_days max_eye_train_days }
+					delayed = yes
+				}
+		}
+	}
+}
+
+POTS_eye_training.3 = {
+
+	hidden = yes
+	
+	
+	immediate = {
+		if = {
+				limit = { has_character_modifier = training_eyes_level_2 }
+
+				training_logic_effect = {
+						MIN_VALUE = 2
+						MAX_VALUE = 3
+					}
+
+			trigger_event = {
+				id = POTS_eye_training.3
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}
+
+POTS_eye_training.4 = {
+
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = { has_character_modifier = training_eyes_level_3 }
+
+			training_logic_effect = {
+					MIN_VALUE = 3
+					MAX_VALUE = 4
+				}
+			trigger_event = {
+				id = POTS_eye_training.4
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}
+
+POTS_eye_training.5 = {
+
+	hidden = yes
+	immediate = {
+		if = {
+				limit = { has_character_modifier = training_eyes_level_4 }
+
+				training_logic_effect = {
+						MIN_VALUE = 4
+						MAX_VALUE = 5
+					}
+				trigger_event = {
+					id = POTS_eye_training.5
+					days = { min_eye_train_days max_eye_train_days }
+					delayed = yes
+				}
+		}
+	}
+}
+
+POTS_eye_training.6 = {
+
+	hidden = yes
+	immediate = {
+		if = {
+				limit = { has_character_modifier = training_eyes_level_5 }
+
+				training_logic_effect = {
+						MIN_VALUE = 5
+						MAX_VALUE = 6
+					}
+
+				dissabilities_gain_probability = {
+					CHANCE_OF_DISABILLITY = 1
+				}
+
+			trigger_event = {
+				id = POTS_eye_training.6
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}
+
+POTS_eye_training.7 = {
+
+	hidden = yes
+	immediate = {
+		if = {
+				limit = { has_character_modifier = training_eyes_level_6 }
+
+				training_logic_effect = {
+						MIN_VALUE = 8
+						MAX_VALUE = 10
+					}
+
+				dissabilities_gain_probability = {
+					CHANCE_OF_DISABILLITY = 3
+				}
+
+			trigger_event = {
+				id = POTS_eye_training.7
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}
+
+POTS_eye_training.8 = {
+
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { has_character_modifier = training_eyes_level_7 }
+
+			training_logic_effect = {
+					MIN_VALUE = 10
+					MAX_VALUE = 12
+				}
+
+			dissabilities_gain_probability = {
+				CHANCE_OF_DISABILLITY = 4
+			}
+
+			trigger_event = {
+				id = POTS_eye_training.8
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}
+
+POTS_eye_training.9 = {
+
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { has_character_modifier = training_eyes_level_8 }
+
+			training_logic_effect = {
+					MIN_VALUE = 12
+					MAX_VALUE = 15
+				}
+
+			dissabilities_gain_probability = {
+				CHANCE_OF_DISABILLITY = 5
+			}
+
+			trigger_event = {
+				id = POTS_eye_training.9
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}
+
+POTS_eye_training.10 = {
+
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { has_character_modifier = training_eyes_level_9 }
+
+			training_logic_effect = {
+					MIN_VALUE = 15
+					MAX_VALUE = 20
+				}
+
+			dissabilities_gain_probability = {
+				CHANCE_OF_DISABILLITY = 12
+			}
+
+			trigger_event = {
+				id = POTS_eye_training.10
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}
+
+POTS_eye_training.11 = {
+
+	hidden = yes
+	immediate = {
+		if = {
+			limit = { has_character_modifier = training_eyes_level_10 }
+
+			training_logic_effect = {
+					MIN_VALUE = 20
+					MAX_VALUE = 30
+				}
+
+			dissabilities_gain_probability = {
+				CHANCE_OF_DISABILLITY = 20
+			}
+
+			trigger_event = {
+				id = POTS_eye_training.11
+				days = { min_eye_train_days max_eye_train_days }
+				delayed = yes
+			}
+		}
+	}
+}

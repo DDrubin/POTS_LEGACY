@@ -1,0 +1,113 @@
+﻿is_uchiha = {
+	has_trait = uchihagene
+}
+
+is_hyuga = {
+	has_trait = hyugagene
+   	has_trait = byakugan
+}
+
+is_forbidden = {
+	has_trait = forbiddengene
+}
+
+is_uzumaki = {
+   has_trait = uzumakigene
+}
+
+is_senju = {
+   has_trait = senjugene
+}
+
+has_mangekyosharingan = {
+   OR = {
+      has_trait = mangekyosharingan_1
+      has_trait = mangekyosharingan_2
+      has_trait = mangekyosharingan_3
+      has_trait = mangekyosharingan_4
+   }
+}
+
+is_jinchuriki = {
+   OR = {
+      has_trait = one_tail
+      has_trait = two_tail
+      has_trait = three_tail
+      has_trait = four_tail
+      has_trait = five_tail
+      has_trait = six_tail
+      has_trait = seven_tail
+      has_trait = eight_tail
+      has_trait = nine_tail
+      has_trait = ten_tail
+   }
+}
+
+has_eternal = {
+   OR = {
+      has_trait = eternalsharingan
+   }
+}
+
+has_simple_sharingan = {
+   OR = {
+      has_trait = onetomoe
+      has_trait = twotomoe
+      has_trait = threetomoe
+   }
+}
+
+has_simple_release = {
+   OR = {
+      has_trait = firerelease
+      has_trait = waterrelease
+      has_trait = earthrelease
+      has_trait = windrelease
+      has_trait = lightningrelease
+   }
+}
+
+has_sub_release = {
+   OR = {
+      has_trait = icerelease
+      has_trait = woodrelease
+      has_trait = lavarelease
+      has_trait = stormrelease
+      has_trait = boilrelease
+      has_trait = dustrelease
+      has_trait = explosionrelease
+      has_trait = scorchrelease
+      has_trait = magnetrelease
+      has_trait = yinrelease
+      has_trait = yangrelease
+      has_trait = yin_yangrelease
+   }
+}
+
+is_shinobi = {
+   OR = {
+      has_trait = shinobi_dynasty
+   }
+}
+
+has_simple_byakugan = {
+   OR = {
+      has_trait = byakugan
+
+   }
+}
+
+is_training_eyes = {
+   OR = {
+      has_character_modifier = training_eyes_level_1 
+      has_character_modifier = training_eyes_level_2
+      has_character_modifier = training_eyes_level_3
+      has_character_modifier = training_eyes_level_4
+      has_character_modifier = training_eyes_level_5
+      has_character_modifier = training_eyes_level_6
+      has_character_modifier = training_eyes_level_7
+      has_character_modifier = training_eyes_level_8
+      has_character_modifier = training_eyes_level_9
+      has_character_modifier = training_eyes_level_10
+   }
+}

@@ -1,0 +1,86 @@
+##################################################
+
+
+#simple loop example:
+
+loop_example_setup = {
+
+	# Initialize loop variable with a value of 4
+	set_local_variable  = {
+		name = example_loop_value
+		value = $example_value$
+	}
+
+	set_local_variable  = {
+		name = example_loop_value_test
+		value = $test_val_var$
+	}
+
+	# Call the loop initiation process
+	loop_example_initiate = {
+		example_value_of_event = pots_house_decision.001
+	}
+}
+
+loop_example_initiate = {
+	if = {
+		# Ensure loop continues if value is not 0
+		limit = { NOT = {local_var:example_loop_value = 0 } }
+
+		if = {
+			# Proceed if value is greater than 0
+			limit = { local_var:example_loop_value > 0 }
+
+			# Decrease the value by 1 each loop
+			change_local_variable  = {
+			   	name = example_loop_value
+			   	add = -1
+			}
+
+			if = {
+				# Re-call the loop if the value is still greater than 0
+				limit = { local_var:example_loop_value > 0 }
+				loop_example_fire = yes	
+			}
+		}
+
+		if = {
+				limit = { 
+					local_var:example_loop_value = -10 
+					local_var:example_loop_value_test = -2	
+				}
+
+				trigger_event = $example_value_of_event$
+			}
+
+		if = {
+			# Check if value reaches 0
+			limit = { local_var:example_loop_value = 0 }
+
+			# Set the value to -50 to indicate completion
+			set_local_variable  = {
+				name = example_loop_value
+				value = -50
+			}
+
+			# Trigger a custom event if value is -50
+			if = {
+				limit = { local_var:example_loop_value = -50 }
+				trigger_event = pots_house_decision.001
+			}
+
+			# Stabilize the variable (no further change)
+			change_local_variable  = {
+				name = example_loop_value
+				add = 0
+			}	
+		}
+	}	
+}
+
+# Re-initiates the loop
+loop_example_fire = {
+	loop_example_initiate = yes 	
+}
+
+##################################################

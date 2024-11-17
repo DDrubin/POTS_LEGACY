@@ -1,0 +1,430 @@
+﻿namespace = RinneganEvents
+
+#Obtain Rinnegan Questline
+RinneganEvents.001 = {
+    type = character_event
+    title = RinneganEvents.001.t
+    desc = RinneganEvents.001.d
+    theme = healthcare
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    option = {
+        name = RinneganEvents.001.a
+        trigger = {
+			has_mangekyosharingan = no
+			has_trait = eternalsharingan
+			NOT = { has_trait = rinnegan }
+			has_trait = senjugene
+			has_trait = uchihagene
+			has_trait = shinobi_dynasty
+			is_adult = yes
+        }
+        hidden_effect = {
+            	trigger_event = {
+                	id = RinneganEvents.002
+                	years = 2
+            	}
+	}
+    }
+	option = {
+		name = RinneganEvents.001.b
+		trigger = {
+			learning >= 40
+			has_mangekyosharingan = no
+			has_trait = eternalsharingan
+			NOT = { has_trait = rinnegan }
+			has_trait = uchihagene
+			has_trait = shinobi_dynasty
+			is_adult = yes	
+		}
+		remove_short_term_gold = 150
+		random_list = {
+			70 = { remove_trait = near_death }
+			30 = { 
+				add_character_modifier = {
+                			modifier = successful_modifier
+                			months = 6
+            			}
+				trigger_event = {
+                			id = RinneganEvents.002
+                			years = 1
+            			}
+			}
+		}
+		add_character_modifier = {
+			modifier = trained_recently
+			years = 1
+		}
+	}
+	option = {
+		name = RinneganEvents.001.c
+		trigger = {
+			has_mangekyosharingan = no
+			NOT = { has_trait = rinnegan }
+			has_trait = forbiddengene
+			health <= 1.5
+			has_trait = shinobi_dynasty
+			is_adult = yes
+		}
+		hidden_effect = {
+            		trigger_event = {
+                		id = RinneganEvents.002
+                		years = 5
+            		}
+        	}
+		add_character_modifier = {
+			modifier = trained_recently
+			years = 1
+		}
+	}
+    option = {
+		name = RinneganEvents.001.e
+		remove_trait = near_death
+		add_character_modifier = {
+			modifier = trained_recently
+			years = 4
+		}
+    }
+}
+
+RinneganEvents.002 = {
+    type = character_event
+    title = RinneganEvents.002.t
+    desc = RinneganEvents.002.d
+    theme = martial
+    
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+    option = {
+        name = RinneganEvents.002.a
+	
+	remove_trait = near_death
+        add_trait = rinnegan
+	add_character_modifier = {
+		modifier = trained_recently
+		years = 1
+        }
+    }
+}
+
+RinneganEvents.003 = {
+    type = character_event
+    title = RinneganEvents.003.t
+    desc = RinneganEvents.003.h
+    theme = martial
+    
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+    left_portrait = {
+        character = scope:recipient
+        animation = worry
+    }
+
+    option = {
+        name = RinneganEvents.003.a
+        trigger = {
+            has_trait = rinnegan
+	    	scope:recipient = {
+				has_trait = one_tail
+	    	}
+            	NOT = { has_variable = onetail }
+        }
+        add_trait = one_tail
+            scope:recipient = {
+                remove_trait = one_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                add_character_flag = {
+                    flag = onetail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.b
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+			has_trait = two_tail
+	    }
+            NOT = { has_variable = twotail }
+        }
+        add_trait = two_tail
+            scope:recipient = {
+                remove_trait = two_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = onetail
+                add_character_flag = {
+                    flag = twotail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.c
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+		has_trait = three_tail
+	    }
+            NOT = { has_variable = threetail }
+        }
+        add_trait = three_tail
+            scope:recipient = {
+                remove_trait = two_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = twotail
+                add_character_flag = {
+                    flag = threetail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.d
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+		has_trait = four_tail
+	    }
+            NOT = { has_variable = fourtail }
+        }
+        add_trait = four_tail
+            scope:recipient = {
+                remove_trait = three_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = threetail
+                add_character_flag = {
+                    flag = fourtail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.e
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+		has_trait = five_tail
+	    }
+            NOT = { has_variable = fivetail }
+        }
+        add_trait = five_tail
+            scope:recipient = {
+                remove_trait = four_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = fourtail
+                add_character_flag = {
+                    flag = fivetail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.f
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+		has_trait = six_tail
+	    }
+            NOT = { has_variable = sixtail }
+        }
+        add_trait = six_tail
+            scope:recipient = {
+                remove_trait = five_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = fivetail
+                add_character_flag = {
+                    flag = sixtail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.g
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+		has_trait = seven_tail
+	    }
+            NOT = { has_variable = seventail }
+        }
+        add_trait = seven_tail
+            scope:recipient = {
+                remove_trait = six_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = sixtail
+                add_character_flag = {
+                    flag = seventail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.h
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+		has_trait = eight_tail
+	    }
+            NOT = { has_variable = eighttail }
+        }
+        add_trait = eight_tail
+            scope:recipient = {
+                remove_trait = eight_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = seventail
+                add_character_flag = {
+                    flag = eighttail
+                    years = 4
+                }
+            }
+    }
+    option = {
+        name = RinneganEvents.003.i
+        trigger = {
+            has_trait = rinnegan
+	    scope:recipient = {
+		has_trait = nine_tail
+	    }
+            NOT = { has_variable = ninetail }
+        }
+        add_trait = nine_tail
+            scope:recipient = {
+                remove_trait = nine_tail
+                death = {
+                    killer = scope:actor
+                    death_reason = tailedbeast_absorbed
+                }
+            }
+            scope:actor = {
+                add_character_modifier = {
+                    modifier = summoned_gedo_mazo_modifier
+                    months = 2
+                }
+                remove_character_flag = eighttail
+                add_character_flag = {
+                    flag = ninetail
+                    years = 4
+                }
+            }
+    }
+}
+
+RinneganEvents.004 = {
+    type = character_event
+    title = RinneganEvents.004.t
+    desc = RinneganEvents.004.d
+    theme = martial
+    
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+    option = {
+        name = RinneganEvents.004.a
+        trigger = {
+			AND = {
+				has_trait = one_tail
+				has_trait = two_tail
+				has_trait = three_tail
+				has_trait = four_tail
+				has_trait = five_tail
+				has_trait = six_tail
+				has_trait = seven_tail
+				has_trait = eight_tail
+				has_trait = nine_tail
+			}
+			NOT = { has_trait = ten_tail }
+        }
+		remove_trait = one_tail
+		remove_trait = two_tail
+		remove_trait = three_tail
+      	remove_trait = four_tail
+        remove_trait = five_tail
+		remove_trait = six_tail
+        remove_trait = seven_tail
+		remove_trait = eight_tail
+		remove_trait = nine_tail
+		add_trait = ten_tail
+    }
+}

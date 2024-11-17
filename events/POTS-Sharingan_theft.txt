@@ -1,0 +1,409 @@
+﻿namespace = sharingan_theft
+
+sharingan_theft.001 = {
+    type = character_event
+    title = sharingan_theft.001.t
+    desc = sharingan_theft.001.desc
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+    left_portrait = {
+        character = scope:recipient
+        animation = worry
+    }
+
+    option = {
+        name = sharingan_theft.001.a
+        trigger = {
+            scope:actor = {
+                has_mangekyosharingan = no
+            }
+            scope:recipient = {
+                has_trait = mangekyosharingan_1
+            }
+        }
+        hidden_effect = {
+            scope:actor = {
+                add_trait = mangekyosharingan_1
+            }
+            scope:recipient = {
+                remove_trait = mangekyosharingan_1
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+    option = {
+        name = sharingan_theft.001.b
+        trigger = {
+            scope:actor = {
+                has_mangekyosharingan = no
+            }
+            scope:recipient = {
+                has_trait = mangekyosharingan_2
+            }
+        }
+        hidden_effect = {
+            scope:actor = {
+                add_trait = mangekyosharingan_2
+            }
+            scope:recipient = {
+                remove_trait = mangekyosharingan_2
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+    option = {
+        name = sharingan_theft.001.c
+        trigger = {
+            scope:actor = {
+                has_mangekyosharingan = no
+            }
+            scope:recipient = {
+                has_trait = mangekyosharingan_3
+            }
+        }
+        hidden_effect = {
+            scope:actor = {
+                add_trait = mangekyosharingan_3
+            }
+            scope:recipient = {
+                remove_trait = mangekyosharingan_3
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+    option = {
+    	name = sharingan_theft.001.d
+    	trigger = {
+        	scope:actor = {
+            		has_mangekyosharingan = no
+        	}
+        	scope:recipient = {
+            		has_trait = mangekyosharingan_4
+        	}
+    	}
+        hidden_effect = {
+            scope:actor = {
+                add_trait = mangekyosharingan_4
+            }
+            scope:recipient = {
+                remove_trait = mangekyosharingan_4
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+}
+
+#Foreign Sharingan Theft
+
+sharingan_theft.002 = {
+    type = character_event
+    title = sharingan_theft.002.t
+    desc = sharingan_theft.002.d
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+    left_portrait = {
+        character = scope:recipient
+        animation = worry
+    }
+	trigger = {
+		scope:actor = {
+			has_trait = medical_nin
+        	}
+	}
+    option = {
+        name = sharingan_theft.002.a
+        trigger = {
+            scope:recipient = {
+                has_trait = onetomoe
+            }
+        }
+        hidden_effect = {
+            scope:actor = {
+                add_character_flag = {
+					flag = onetomoe
+					years = 600
+				}
+            }
+            scope:recipient = {
+                remove_trait = onetomoe
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+    option = {
+        name = sharingan_theft.002.b
+        trigger = {
+            scope:recipient = {
+                has_trait = twotomoe
+            }
+        }
+        hidden_effect = {
+            scope:actor = {
+                add_character_flag = {
+					flag = twotomoe
+					years = 600
+				}
+            }
+            scope:recipient = {
+                remove_trait = twotomoe
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+    option = {
+        name = sharingan_theft.002.c
+        trigger = {
+            scope:recipient = {
+                has_trait = threetomoe
+            }
+        }
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_sharingan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = threetomoe
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+	option = {
+        name = sharingan_theft.002.e
+        trigger = {
+            scope:recipient = {
+				OR = {
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+				}
+            }
+        }
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_mangekyo_sharingan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = mangekyosharingan_1
+                remove_trait = mangekyosharingan_2
+                remove_trait = mangekyosharingan_3
+                remove_trait = mangekyosharingan_4
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+    option = {
+    name = sharingan_theft.002.f
+    trigger = {
+        scope:recipient = {
+            has_trait = eternalsharingan
+        }
+    }
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_eternal_sharingan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = eternalsharingan
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+    }
+	option = {
+    name = sharingan_theft.002.g
+		trigger = {
+			scope:recipient = {
+				has_trait = rinnegan
+			}
+		}
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_rinnegan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = rinnegan
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+	}
+	option = {
+    name = sharingan_theft.002.h
+		trigger = {
+			scope:recipient = {
+				has_trait = rinnesharingan
+			}
+		}
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_rinnesharingan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = rinnesharingan
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+	}
+	option = {
+    name = sharingan_theft.002.i
+		trigger = {
+			scope:recipient = {
+				has_trait = byakugan
+			}
+		}
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_byakugan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = byakugan
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+	}
+	option = {
+    name = sharingan_theft.002.j
+		trigger = {
+			scope:recipient = {
+				has_trait = tenseigan
+			}
+		}
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_tenseigan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = tenseigan
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+	}
+	option = {
+    name = sharingan_theft.002.k
+		trigger = {
+			scope:recipient = {
+				has_trait = jogan
+			}
+		}
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_jogan_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = jogan
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+	}
+	option = {
+    name = sharingan_theft.002.l
+		trigger = {
+			scope:recipient = {
+				has_trait = forbiddeneyes
+			}
+		}
+        hidden_effect = {
+            scope:actor = {
+                create_artifact_forbiddeneyes_effect = {
+					OWNER = root
+					MAKER = root
+				}
+            }
+            scope:recipient = {
+                remove_trait = forbiddeneyes
+                add_trait = blind
+                add_character_modifier = {
+                    modifier = stolensharingan_modifier
+                    months = 6
+                }
+            }
+        }
+	}
+}

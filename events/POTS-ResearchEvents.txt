@@ -1,0 +1,750 @@
+﻿namespace = lab_research
+
+
+lab_research.001 = {
+	type = character_event
+	title = lab_research.001.t
+	desc = lab_research.001.desc
+	theme = secret
+
+	left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+
+	option = {
+		name = lab_research.001.a
+		trigger = {
+			NOT = { has_character_flag = build_lab_1 }
+		}
+		add_character_flag = {
+			flag = build_lab_1
+			years = 300
+		}
+		add_prestige = 500
+	}
+	option = {
+		name = lab_research.001.b
+		trigger = {
+			NOT = { has_character_flag = build_lab_2 }
+			has_character_flag = build_lab_1
+		}
+		add_character_flag = {
+			flag = build_lab_2
+			years = 300
+		}
+		add_prestige = 500
+	}
+	option = {
+		name = lab_research.001.c
+		trigger = {
+			NOT = { has_character_flag = build_lab_3 }
+			has_character_flag = build_lab_2
+			has_character_flag = build_lab_1
+		}
+		add_character_flag = {
+			flag = build_lab_3
+			years = 300
+		}
+		add_prestige = 500
+	}
+	option = {
+		name = lab_research.001.d
+		trigger = {
+			NOT = { has_character_flag = build_lab_final }
+			has_character_flag = build_lab_3
+			has_character_flag = build_lab_2
+			has_character_flag = build_lab_1
+		}
+		add_character_flag = {
+			flag = build_lab_final
+			years = 300
+		}
+		add_prestige = 500
+	}
+}
+
+lab_research.002 = {
+	type = character_event
+	title = lab_research.002.t
+	desc = lab_research.002.d
+	theme = secret
+
+	left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+
+	option = {
+		name = lab_research.002.a
+		trigger = {
+			NOT = { has_trait = medical_nin }
+			has_character_flag = build_lab_final
+		}
+		random_list = {
+			55 = { 			
+				add_character_modifier = {
+					modifier = trained_recently
+					months = 12
+        			}
+			}
+			45 = { add_trait = medical_nin }
+		}
+		remove_short_term_gold = 100
+	}
+	option = {
+		name = lab_research.002.b
+		trigger = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				is_adult = yes
+			}
+		}
+				
+	}
+}
+
+lab_research.003 = {
+	type = character_event
+	title = lab_research.003.t
+	desc = lab_research.003.desc
+	theme = secret
+
+	left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+
+	option = {
+		name = lab_research.003.a
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 20
+					any_character_artifact = {
+						has_variable = sharingan2
+					}
+			}
+			scope:recipient = {
+				is_uchiha = yes
+				has_mangekyosharingan = no
+				has_eternal = no
+			}
+		}
+		random_list = {
+			20 = { add_trait = mangekyosharingan_1 
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			20 = { add_trait = mangekyosharingan_2 
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			20 = { add_trait = mangekyosharingan_3 
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			20 = { add_trait = mangekyosharingan_4 
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			20 = { add_stress = 50 }
+		}
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = sharingan2 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.j
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 20
+					any_character_artifact = {
+						has_variable = sharingan2
+					}
+			}
+			scope:recipient = {
+				NOT = { has_trait = uchihagene }
+				has_mangekyosharingan = no
+				has_eternal = no
+			}
+		}
+		random_list = {
+			15 = { add_trait = mangekyosharingan_1 
+				add_character_modifier = {
+                			modifier = non_uchiha_modifier
+					years = 30
+            			}
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			15 = { add_trait = mangekyosharingan_2 
+				add_character_modifier = {
+                			modifier = non_uchiha_modifier
+					years = 30
+            			}
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			15 = { add_trait = mangekyosharingan_3 
+				add_character_modifier = {
+                			modifier = non_uchiha_modifier
+					years = 30
+            			}
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			15 = { add_trait = mangekyosharingan_4 
+				add_character_modifier = {
+                			modifier = non_uchiha_modifier
+					years = 30
+            			}
+				remove_trait = onetomoe
+				remove_trait = twotomoe
+				remove_trait = threetomoe
+				remove_trait = blind
+			}
+			40 = { add_stress = 50 }
+		}
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = sharingan2 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.k
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 20
+					any_character_artifact = {
+						has_variable = sharingan1
+					}
+			}
+			scope:recipient = {
+				is_uchiha = no
+				has_simple_sharingan = no
+				has_mangekyosharingan = no
+				has_eternal = no
+			}
+		}
+		add_trait = threetomoe
+		remove_trait = blind
+		add_character_modifier = {
+                	modifier = non_uchiha_modifier
+			years = 15
+            	}
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = sharingan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.x
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 20
+					any_character_artifact = {
+						has_variable = sharingan1
+					}
+			}
+			scope:recipient = {
+				is_uchiha = yes
+				has_trait = blind
+				has_simple_sharingan = no
+				has_mangekyosharingan = no
+				has_eternal = no
+			}
+		}
+		add_trait = threetomoe
+		remove_trait = blind
+		add_character_modifier = {
+                	modifier = non_uchiha_modifier
+			years = 15
+            	}
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = sharingan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.b
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 40
+					any_character_artifact = {
+						has_variable = rinnegan1
+					}
+			}
+			scope:recipient = {
+				OR = {
+					has_trait = uzumakigene
+					has_trait = senjugene
+					has_trait = uchihagene
+				}
+				NOT = {
+					has_trait = rinnegan
+				}
+			}
+		}
+		add_trait = rinnegan
+		remove_trait = blind
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = rinnegan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.l
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 40
+					any_character_artifact = {
+						has_variable = rinnegan1
+					}
+			}
+			scope:recipient = {
+					NOT = { has_trait = uzumakigene }
+					NOT = { has_trait = senjugene }
+					NOT = { has_trait = uchihagene }
+				NOT = {
+					has_trait = rinnegan
+				}
+			}
+		}
+		add_trait = rinnegan
+		remove_trait = blind
+		add_character_modifier = {
+                	modifier = non_uchiha_rinne_modifier
+			years = 60
+            	}
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = rinnegan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+
+	option = {
+		name = lab_research.003.c
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 50
+					any_character_artifact = {
+						has_variable = rinnesharingan1
+					}
+			}
+			scope:recipient = {
+				OR = {
+					has_trait = uzumakigene
+					has_trait = senjugene
+					has_trait = uchihagene
+				}
+				NOT = {
+					has_trait = rinnesharingan
+				}
+			}
+		}
+		add_trait = rinnesharingan
+		remove_trait = blind
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = rinnesharingan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.d
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 50
+					any_character_artifact = {
+						has_variable = rinnesharingan1
+					}
+			}
+			scope:recipient = {
+					NOT = { has_trait = uzumakigene }
+					NOT = { has_trait = senjugene }
+					NOT = { has_trait = uchihagene }
+				NOT = {
+					has_trait = rinnesharingan
+				}
+			}
+		}
+		add_trait = rinnesharingan
+		add_character_modifier = {
+                	modifier = non_uchiha_rinne_modifier
+			years = 100
+            	}
+		remove_trait = blind
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = rinnesharingan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.e
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 20
+					any_character_artifact = {
+						has_variable = byakugan1
+					}
+			}
+			scope:recipient = {
+				NOT = {
+					has_trait = byakugan
+				}
+			}
+		}
+		add_trait = byakugan
+		remove_trait = blind
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = byakugan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.f
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 40
+					any_character_artifact = {
+						has_variable = tenseigan1
+					}
+			}
+			scope:recipient = {
+				NOT = {
+					has_trait = tenseigan
+				}
+			}
+		}
+		add_trait = tenseigan
+		remove_trait = blind
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = tenseigan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.g
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 30
+					any_character_artifact = {
+						has_variable = jogan1
+					}
+			}
+			scope:recipient = {
+				NOT = {
+					has_trait = jogan
+				}
+			}
+		}
+		add_trait = jogan
+		remove_trait = blind
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = jogan1 }
+				destroy_artifact = this
+			}
+		}
+	}
+	option = {
+		name = lab_research.003.h
+		trigger = {
+			scope:actor = {
+					has_trait = medical_nin
+					learning >= 30
+					any_character_artifact = {
+						has_variable = forbiddeneyes1
+					}
+			}
+			scope:recipient = {
+				NOT = {
+					has_trait = forbiddeneyes
+				}
+			}
+		}
+		add_trait = forbiddeneyes
+		remove_trait = blind
+		scope:actor = {
+			every_character_artifact = {
+				limit = { has_variable = forbiddeneyes1 }
+				destroy_artifact = this
+			}
+		}
+	}
+}
+
+lab_research.004 = {
+	type = character_event
+	title = lab_research.004.t
+	desc = lab_research.004.d
+	theme = secret
+
+	left_portrait = {
+		character = scope:recipient
+		animation = idle
+	}
+	option = {
+		name = lab_research.004.a
+		trigger = {
+			has_simple_release = no
+		}
+		random_list = {
+			20 = { add_trait = firerelease }
+			20 = { add_trait = waterrelease }
+			20 = { add_trait = earthrelease }
+			20 = { add_trait = windrelease }
+			20 = { add_trait = lightningrelease }
+		}
+	}
+}
+
+lab_research.005 = {
+	type = character_event
+	title = lab_research.005.t
+	desc = lab_research.005.d
+	theme = secret
+	left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+	right_portrait = {
+		character = scope:recipient
+		animation = idle
+	}
+	option = {
+		name = lab_research.005.a
+		trigger = {
+			has_sub_release = no
+		}
+		random_list = {
+			8 = { add_trait = icerelease }
+      		8 = { add_trait = woodrelease }
+      		8 = { add_trait = lavarelease }
+      		8 = { add_trait = stormrelease }
+      		8 = { add_trait = boilrelease }
+      		8 = { add_trait = dustrelease }
+      		8 = { add_trait = explosionrelease }
+      		8 = { add_trait = scorchrelease }
+      		8 = { add_trait = magnetrelease }
+      		8 = { add_trait = yinrelease }
+      		8 = { add_trait = yangrelease }
+      		8 = { add_trait = yin_yangrelease }
+			2 = { add_stress = 20 }
+			2 = { add_stress = 40 }
+		}
+	}
+}
+
+
+# Awaken Tenseigan
+lab_research.006 = {
+	type = character_event
+	title = lab_research.006.t
+	desc = lab_research.006.desc
+	theme = secret
+
+	left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+
+	option = {
+		name = lab_research.006.a
+		trigger = {
+			is_hyuga = yes
+			NOT = { has_character_modifier = byakugan_collect1 }
+		}
+		add_character_modifier = byakugan_collect1
+	}
+	option = {
+		name = lab_research.006.b
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect1
+			NOT = { has_character_modifier = byakugan_collect2 }
+		}
+		add_character_modifier = byakugan_collect2
+		remove_character_modifier = byakugan_collect1
+	}
+	option = {
+		name = lab_research.006.c
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect2
+			NOT = { has_character_modifier = byakugan_collect3 }
+		}
+		add_character_modifier = byakugan_collect3
+		remove_character_modifier = byakugan_collect2
+	}
+	option = {
+		name = lab_research.006.d
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect3
+			NOT = { has_character_modifier = byakugan_collect4 }
+		}
+		add_character_modifier = byakugan_collect4
+		remove_character_modifier = byakugan_collect3
+	}
+	option = {
+		name = lab_research.006.e
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect4
+			NOT = { has_character_modifier = byakugan_collect5 }
+		}
+		add_character_modifier = byakugan_collect5
+		remove_character_modifier = byakugan_collect4
+	}
+	option = {
+		name = lab_research.006.f
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect5
+			NOT = { has_character_modifier = byakugan_collect6 }
+		}
+		add_character_modifier = byakugan_collect6
+		remove_character_modifier = byakugan_collect5
+	}
+	option = {
+		name = lab_research.006.g
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect6
+			NOT = { has_character_modifier = byakugan_collect7 }
+		}
+		add_character_modifier = byakugan_collect7
+		remove_character_modifier = byakugan_collect6
+	}
+	option = {
+		name = lab_research.006.h
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect7
+			NOT = { has_character_modifier = byakugan_collect8 }
+		}
+		add_character_modifier = byakugan_collect8
+		remove_character_modifier = byakugan_collect7
+	}
+	option = {
+		name = lab_research.006.i
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect8
+			NOT = { has_character_modifier = byakugan_collect9 }
+		}
+		add_character_modifier = byakugan_collect9
+		remove_character_modifier = byakugan_collect8
+	}
+	option = {
+		name = lab_research.006.j
+		trigger = {
+			is_hyuga = yes
+			has_character_modifier = byakugan_collect9
+			NOT = { has_character_modifier = byakugan_collect10 }
+		}
+		add_character_modifier = byakugan_collect10
+		remove_character_modifier = byakugan_collect9
+	}
+}
+
+lab_research.007 = {
+	type = character_event
+	title = lab_research.007.t
+	desc = lab_research.007.desc
+	theme = secret
+
+	left_portrait = {
+		character = scope:actor
+		animation = idle
+	}
+
+	option = {
+		name = lab_research.007.a
+		trigger = {
+			has_character_modifier = byakugan_collect10
+			has_character_flag = build_lab_final
+			is_hyuga = yes
+			NOT = { has_character_modifier = build_tenseigan_modifier }
+		}
+		add_character_modifier = build_tenseigan_modifier
+		remove_short_term_gold = 600
+	}
+	option = {
+		name = lab_research.007.b
+		trigger = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+			}
+		}
+				
+	}
+	option = {
+		name = lab_research.007.c
+		trigger = {
+			has_character_flag = build_lab_final
+			is_hyuga = yes
+			has_character_modifier = build_tenseigan_modifier
+		}
+		random_list = {
+			70 = {
+				add_character_modifier = {
+                			modifier = failed_tenseigan_modifier
+                			months = 36
+            			}
+			}
+			30 = { 	
+				remove_trait = byakugan
+				add_trait = tenseigan 
+				remove_character_modifier = build_tenseigan_modifier
+			}
+		}
+		remove_short_term_gold = 100
+	}
+}

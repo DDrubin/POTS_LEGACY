@@ -1,0 +1,192 @@
+﻿test_arm_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	
+	unique = yes
+}
+test_scroll_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	
+	unique = yes
+}
+test_eye_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	
+	unique = yes
+}
+sun_moon_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	
+	unique = yes
+}
+bashosen_fan_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	
+	unique = yes
+}
+kokinjo_rope_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	
+	unique = yes
+}
+shichi_sword_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	
+	unique = yes
+}
+sealing_pot_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 1
+	}
+	unique = no
+}
+sealing_pot_filled_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = shinobi_dynasty
+		OR = {
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 10
+	}
+	unique = no
+}
+
+zanpakuto_template = {
+	can_equip = {
+		always = yes
+	}
+	
+	can_benefit = {
+		has_trait = substitute_shinigami
+	}
+	
+	fallback = {
+		court_grandeur_baseline_add = 6
+	}
+	unique = yes
+}

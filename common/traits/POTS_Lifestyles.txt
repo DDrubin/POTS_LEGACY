@@ -1,0 +1,1716 @@
+onetomoe = {
+	icon = "onetomoe.dds"
+
+	same_opinion = 5
+	general_opinion = -4
+	prowess = 1 
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 20
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = onetomoe }
+						has_trait_xp = {
+							trait = onetomoe
+							track = onetomoe_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = onetomoe }
+					}
+				}
+				desc = trait_onetomoe
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = onetomoe
+					OR = {
+						has_trait_xp = {
+							trait = onetomoe
+							track = onetomoe_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_onetomoe_level_3
+			}
+			desc = trait_onetomoe_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_onetomoe_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = onetomoe }
+						has_trait_xp = {
+							trait = onetomoe
+							track = onetomoe_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_onetomoe_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = onetomoe
+					OR = {
+						has_trait_xp = {
+							trait = onetomoe
+							track = onetomoe_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_onetomoe_desc_level_3
+			}
+			desc = trait_onetomoe_desc_level_2
+		}
+	}
+
+	tracks = {
+		onetomoe_track = {
+			trait_second_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}
+			trait_third_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}		
+		}	
+	}	
+}
+
+twotomoe = {
+	icon = "twotomoe.dds"
+
+	same_opinion = 5
+	general_opinion = -2
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 30
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = twotomoe }
+						has_trait_xp = {
+							trait = twotomoe
+							track = twotomoe_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = twotomoe }
+					}
+				}
+				desc = trait_twotomoe
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = twotomoe
+					OR = {
+						has_trait_xp = {
+							trait = twotomoe
+							track = twotomoe_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_twotomoe_level_3
+			}
+			desc = trait_twotomoe_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_twotomoe_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = twotomoe }
+						has_trait_xp = {
+							trait = twotomoe
+							track = twotomoe_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_twotomoe_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = twotomoe
+					OR = {
+						has_trait_xp = {
+							trait = twotomoe
+							track = twotomoe_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_twotomoe_desc_level_3
+			}
+			desc = trait_twotomoe_desc_level_2
+		}
+	}
+
+	tracks = {
+		twotomoe_track = {
+			trait_second_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}
+			trait_third_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}		
+		}	
+	}	
+}
+
+threetomoe = {
+	icon = "threetomoe.dds"
+
+	same_opinion = 5
+	general_opinion = -2
+	martial = 1
+	intrigue = 1
+	prowess = 1 
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 40
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = threetomoe }
+						has_trait_xp = {
+							trait = threetomoe
+							track = threetomoe_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = threetomoe }
+					}
+				}
+				desc = trait_threetomoe
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = threetomoe
+					OR = {
+						has_trait_xp = {
+							trait = threetomoe
+							track = threetomoe_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_threetomoe_level_3
+			}
+			desc = trait_threetomoe_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_threetomoe_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = threetomoe }
+						has_trait_xp = {
+							trait = threetomoe
+							track = threetomoe_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_threetomoe_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = threetomoe
+					OR = {
+						has_trait_xp = {
+							trait = threetomoe
+							track = threetomoe_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_threetomoe_desc_level_3
+			}
+			desc = trait_threetomoe_desc_level_2
+		}
+	}
+
+	tracks = {
+		threetomoe_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 1
+			}
+			trait_third_level = {
+				owned_personal_scheme_success_chance_add = 15
+				monthly_prestige = 0.2
+			}		
+		}	
+	}	
+}
+
+mangekyosharingan_1 = {
+	icon = "mangekyosharingan_1.dds"
+
+	same_opinion = 5
+	general_opinion = -5
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+	monthly_prestige = 0.2
+	dread_baseline_add = 10
+	
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 100
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = mangekyosharingan_1 }
+						has_trait_xp = {
+							trait = mangekyosharingan_1
+							track = mangekyosharingan_1_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = mangekyosharingan_1 }
+					}
+				}
+				desc = trait_mangekyosharingan_1
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_1
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_1
+							track = mangekyosharingan_1_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_1_level_3
+			}
+			desc = trait_mangekyosharingan_1_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyosharingan_1_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = mangekyosharingan_1 }
+						has_trait_xp = {
+							trait = mangekyosharingan_1
+							track = mangekyosharingan_1_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_1_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_1
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_1
+							track = mangekyosharingan_1_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_1_desc_level_3
+			}
+			desc = trait_mangekyosharingan_1_desc_level_2
+		}
+	}
+
+	tracks = {
+		mangekyosharingan_1_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}
+			trait_third_level = {
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 20
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}		
+		}	
+	}	
+}
+
+mangekyosharingan_2 = {
+	icon = "mangekyosharingan_2.dds"
+
+	same_opinion = 5
+	general_opinion = -5
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+	monthly_prestige = 0.2
+	dread_baseline_add = 10
+	
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 100
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = mangekyosharingan_2 }
+						has_trait_xp = {
+							trait = mangekyosharingan_2
+							track = mangekyosharingan_2_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = mangekyosharingan_2 }
+					}
+				}
+				desc = trait_mangekyosharingan_2
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_2
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_2
+							track = mangekyosharingan_2_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_2_level_3
+			}
+			desc = trait_mangekyosharingan_2_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyosharingan_2_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = mangekyosharingan_2 }
+						has_trait_xp = {
+							trait = mangekyosharingan_2
+							track = mangekyosharingan_2_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_2_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_2
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_2
+							track = mangekyosharingan_2_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_2_desc_level_3
+			}
+			desc = trait_mangekyosharingan_2_desc_level_2
+		}
+	}
+
+	tracks = {
+		mangekyosharingan_2_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}
+			trait_third_level = {
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 20
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}		
+		}	
+	}	
+}
+
+mangekyosharingan_3 = {
+	icon = "mangekyosharingan_3.dds"
+
+	same_opinion = 5
+	general_opinion = -5
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+	monthly_prestige = 0.2
+	dread_baseline_add = 10
+	
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 100
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = mangekyosharingan_3 }
+						has_trait_xp = {
+							trait = mangekyosharingan_3
+							track = mangekyosharingan_3_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = mangekyosharingan_3 }
+					}
+				}
+				desc = trait_mangekyosharingan_3
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_3
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_3
+							track = mangekyosharingan_3_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_3_level_3
+			}
+			desc = trait_mangekyosharingan_3_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyosharingan_3_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = mangekyosharingan_3 }
+						has_trait_xp = {
+							trait = mangekyosharingan_3
+							track = mangekyosharingan_3_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_3_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_3
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_3
+							track = mangekyosharingan_3_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_3_desc_level_3
+			}
+			desc = trait_mangekyosharingan_3_desc_level_2
+		}
+	}
+
+	tracks = {
+		mangekyosharingan_3_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}
+			trait_third_level = {
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 20
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}		
+		}	
+	}	
+}
+
+mangekyosharingan_4 = {
+	icon = "mangekyosharingan_4.dds"
+
+	same_opinion = 5
+	general_opinion = -5
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+	monthly_prestige = 0.2
+	dread_baseline_add = 10
+	
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 100
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = mangekyosharingan_4 }
+						has_trait_xp = {
+							trait = mangekyosharingan_4
+							track = mangekyosharingan_4_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = mangekyosharingan_4 }
+					}
+				}
+				desc = trait_mangekyosharingan_4
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_4
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_4
+							track = mangekyosharingan_4_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_4_level_3
+			}
+			desc = trait_mangekyosharingan_4_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyosharingan_4
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = mangekyosharingan_4 }
+						has_trait_xp = {
+							trait = mangekyosharingan_4
+							track = mangekyosharingan_4_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_4_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = mangekyosharingan_4
+					OR = {
+						has_trait_xp = {
+							trait = mangekyosharingan_4
+							track = mangekyosharingan_4_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_mangekyosharingan_4_desc_level_3
+			}
+			desc = trait_mangekyosharingan_4_desc_level_2
+		}
+	}
+
+	tracks = {
+		mangekyosharingan_4_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}
+			trait_third_level = {
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 20
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}		
+		}	
+	}	
+}
+
+eternalsharingan = {
+	icon = "eternalsharingan.dds"
+
+	same_opinion = 5
+	general_opinion = -5
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+	monthly_prestige = 0.1
+	monthly_dynasty_prestige = 0.3
+	dread_baseline_add = 10
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 200
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = eternalsharingan }
+						has_trait_xp = {
+							trait = eternalsharingan
+							track = eternalsharingan_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = eternalsharingan }
+					}
+				}
+				desc = trait_eternalsharingan
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = eternalsharingan
+					OR = {
+						has_trait_xp = {
+							trait = eternalsharingan
+							track = eternalsharingan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_eternalsharingan_level_3
+			}
+			desc = trait_eternalsharingan_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_eternalsharingan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = eternalsharingan }
+						has_trait_xp = {
+							trait = eternalsharingan
+							track = eternalsharingan_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_eternalsharingan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = eternalsharingan
+					OR = {
+						has_trait_xp = {
+							trait = eternalsharingan
+							track = eternalsharingan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_eternalsharingan_desc_level_3
+			}
+			desc = trait_eternalsharingan_desc_level_3
+		}
+	}
+
+	tracks = {
+		eternalsharingan_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 5
+				enemy_hostile_scheme_success_chance_add = -5
+				owned_personal_scheme_success_chance_add = 5
+			}
+			trait_third_level = {
+				prowess = 3
+				monthly_prestige = 0.2
+				dread_baseline_add = 5
+				enemy_hostile_scheme_success_chance_add = -5
+				owned_personal_scheme_success_chance_add = 5
+			}		
+		}	
+	}	
+}
+
+rinnegan = {
+	icon = "rinnegan.dds"
+
+	same_opinion = 5
+	general_opinion = -5
+
+	martial = 2
+	intrigue = 2
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 300
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = rinnegan }
+						has_trait_xp = {
+							trait = rinnegan
+							track = firts_second_path_track
+							value < 50
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = third_fourth_path_track
+							value < 50
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = fifth_sixth_path_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = rinnegan }
+					}
+				}
+				desc = trait_rinnegan
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = rinnegan
+					OR = {
+						has_trait_xp = {
+							trait = rinnegan
+							track = firts_second_path_track
+							value = 100
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = third_fourth_path_track
+							value = 100
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = fifth_sixth_path_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_rinnegan_level_3
+			}
+			desc = trait_rinnegan_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_rinnegan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = rinnegan }
+						has_trait_xp = {
+							trait = rinnegan
+							track = firts_second_path_track
+							value < 50
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = third_fourth_path_track
+							value < 50
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = fifth_sixth_path_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_rinnegan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = rinnegan
+					OR = {
+						has_trait_xp = {
+							trait = rinnegan
+							track = firts_second_path_track
+							value = 100
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = third_fourth_path_track
+							value = 100
+						}
+						has_trait_xp = {
+							trait = rinnegan
+							track = fifth_sixth_path_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_rinnegan_desc_level_3
+			}
+			desc = trait_rinnegan_desc_level_2
+		}
+	}
+
+	tracks = {
+		firts_second_path_track = {
+			trait_second_level = {
+				general_opinion = -5
+				martial = 2
+				intrigue = 2
+				prowess = 5
+				monthly_prestige = 0.4
+				monthly_dynasty_prestige = 0.1
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 5
+			}
+			trait_third_level = {
+				general_opinion = -5
+				martial = 2
+				intrigue = 2
+				prowess = 5
+				monthly_prestige = 0.4
+				monthly_dynasty_prestige = 0.1
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 5
+			}	
+		}	
+
+		third_fourth_path_track = {
+			trait_second_level = {
+				general_opinion = -5
+				martial = 2
+				intrigue = 2
+				prowess = 5
+				monthly_prestige = 0.4
+				monthly_dynasty_prestige = 0.1
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 5
+			}
+			trait_third_level = {
+				general_opinion = -5
+				martial = 2
+				intrigue = 2
+				prowess = 5
+				monthly_prestige = 0.4
+				monthly_dynasty_prestige = 0.1
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+			}	
+		}
+
+		fifth_sixth_path_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 5
+				monthly_prestige = 0.4
+				monthly_dynasty_prestige = 0.1
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+			}
+			trait_third_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 5
+				monthly_prestige = 0.4
+				dread_baseline_add = 10
+			}	
+		}
+	}	
+}
+
+rinnesharingan = {
+	icon = "rinnesharingan.dds"
+
+	same_opinion = 5
+
+	martial = 6
+	intrigue = 6
+	prowess = 5
+	
+	monthly_prestige = 1
+	dread_baseline_add = 20
+	enemy_hostile_scheme_success_chance_add = -10
+	owned_personal_scheme_success_chance_add = 10
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 400
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = rinnesharingan }
+						has_trait_xp = {
+							trait = rinnesharingan
+							track = eternalsharingan_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = rinnesharingan }
+					}
+				}
+				desc = trait_rinnesharingan
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = rinnesharingan
+					OR = {
+						has_trait_xp = {
+							trait = rinnesharingan
+							track = eternalsharingan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_rinnesharingan_level_3
+			}
+			desc = trait_rinnesharingan_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_rinnesharingan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = rinnesharingan }
+						has_trait_xp = {
+							trait = rinnesharingan
+							track = eternalsharingan_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_rinnesharingan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = rinnesharingan
+					OR = {
+						has_trait_xp = {
+							trait = rinnesharingan
+							track = eternalsharingan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_rinnesharingan_desc_level_3
+			}
+			desc = trait_rinnesharingan_desc_level_2
+		}
+	}
+
+	tracks = {
+		rinnesharingan_track = {
+			trait_second_level = {
+				martial = 6
+				intrigue = 6
+				prowess = 15
+
+				monthly_prestige = 1
+				monthly_dynasty_prestige = 0.5
+				dread_baseline_add = 30
+				enemy_hostile_scheme_success_chance_add = -25
+				owned_personal_scheme_success_chance_add = 20
+			}
+			trait_third_level = {
+				martial = 6
+				intrigue = 6
+				prowess = 15
+
+				monthly_prestige = 1
+				monthly_dynasty_prestige = 0.5
+				dread_baseline_add = 30
+				enemy_hostile_scheme_success_chance_add = -25
+				owned_personal_scheme_success_chance_add = 20
+			}		
+		}	
+	}	
+}
+
+byakugan = {
+	icon = "byakugan.dds"
+
+	same_opinion = 5
+
+	monthly_prestige = 0.5
+	enemy_hostile_scheme_success_chance_add = -10
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 300
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = byakugan }
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = byakugan }
+					}
+				}
+				desc = trait_byakugan
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = byakugan
+					OR = {
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_byakugan_level_3
+			}
+			desc = trait_byakugan_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_byakugan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = byakugan }
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_byakugan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = byakugan
+					OR = {
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_byakugan_desc_level_3
+			}
+			desc = trait_byakugan_desc_level_2
+		}
+	}
+
+	tracks = {
+		byakugan_track = {
+			trait_second_level = {
+				martial = 1
+				diplomacy = 1
+				intrigue = 5
+				prowess = 2
+				monthly_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 10
+			}
+			trait_third_level = {
+				martial = 1
+				diplomacy = 1
+				intrigue = 5
+				prowess = 2
+				monthly_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 10
+			}		
+		}	
+	}	
+}
+
+tenseigan = {
+	icon = "tenseigan.dds"
+
+	same_opinion = 5
+
+	prowess = 10
+	general_opinion = -5
+	monthly_prestige = 2.5
+	monthly_dynasty_prestige = 0.5
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 400
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = tenseigan }
+						has_trait_xp = {
+							trait = tenseigan
+							track = tenseigan_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = tenseigan }
+					}
+				}
+				desc = trait_tenseigan
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = tenseigan
+					OR = {
+						has_trait_xp = {
+							trait = tenseigan
+							track = tenseigan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_tenseigan_level_3
+			}
+			desc = trait_tenseigan_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_tenseigan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = tenseigan }
+						has_trait_xp = {
+							trait = tenseigan
+							track = tenseigan_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_tenseigan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = tenseigan
+					OR = {
+						has_trait_xp = {
+							trait = tenseigan
+							track = tenseigan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_tenseigan_desc_level_3
+			}
+			desc = trait_tenseigan_desc_level_2
+		}
+	}
+
+	tracks = {
+		tenseigan_track = {
+			trait_second_level = {
+				martial = 5
+				diplomacy = 2
+				intrigue = 10
+				prowess = 10
+				general_opinion = -5
+				monthly_prestige = 1
+				monthly_dynasty_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -20
+				owned_personal_scheme_success_chance_add = 20
+			}
+			trait_third_level = {
+				martial = 5
+				diplomacy = 2
+				intrigue = 10
+				prowess = 10
+				general_opinion = -5
+				monthly_prestige = 1
+				monthly_dynasty_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -20
+				owned_personal_scheme_success_chance_add = 20
+			}		
+		}	
+	}	
+}
+
+jogan = {
+	icon = "jogan.dds"
+
+	same_opinion = 5
+
+	martial = 2
+	diplomacy = 2
+	intrigue = 2
+	prowess = 10
+
+	monthly_dynasty_prestige = 0.5
+	enemy_hostile_scheme_success_chance_add = -10
+	owned_personal_scheme_success_chance_add = 10
+
+	genetic = yes
+
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 200
+
+	good = yes
+	physical = yes
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = jogan }
+						has_trait_xp = {
+							trait = jogan
+							track = forbiddeneyes_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = jogan }
+					}
+				}
+				desc = trait_jogan
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = jogan
+					OR = {
+						has_trait_xp = {
+							trait = jogan
+							track = forbiddeneyes_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_jogan_level_3
+			}
+			desc = trait_jogan_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_jogan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = jogan }
+						has_trait_xp = {
+							trait = jogan
+							track = forbiddeneyes_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_jogan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = jogan
+					OR = {
+						has_trait_xp = {
+							trait = jogan
+							track = forbiddeneyes_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_jogan_desc_level_3
+			}
+			desc = trait_jogan_desc_level_2
+		}
+	}
+
+	tracks = {
+		forbiddeneyes_track = {
+			trait_second_level = {
+				martial = 5
+				diplomacy = 3
+				intrigue = 7
+				prowess = 10
+
+				monthly_prestige = 1
+				enemy_hostile_scheme_success_chance_add = -20
+				owned_personal_scheme_success_chance_add = 10
+			}
+			trait_third_level = {
+				martial = 5
+				diplomacy = 3
+				intrigue = 7
+				prowess = 10
+
+				monthly_prestige = 1
+				enemy_hostile_scheme_success_chance_add = -20
+				owned_personal_scheme_success_chance_add = 10
+			}		
+		}	
+	}	
+}
+
+forbiddeneyes = {
+	icon = "forbiddeneyes.dds"
+
+	same_opinion = 5
+
+	diplomacy = 1
+	intrigue = 2
+	prowess = 10
+
+	monthly_prestige = 0.5
+
+	genetic = yes
+
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 200
+
+	good = yes
+	physical = yes
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = forbiddeneyes }
+						has_trait_xp = {
+							trait = forbiddeneyes
+							track = forbiddeneyes_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = forbiddeneyes }
+					}
+				}
+				desc = trait_forbiddeneyes
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = forbiddeneyes
+					OR = {
+						has_trait_xp = {
+							trait = forbiddeneyes
+							track = forbiddeneyes_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_forbiddeneyes_level_3
+			}
+			desc = trait_forbiddeneyes_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_forbiddeneyes_character_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = forbiddeneyes }
+						has_trait_xp = {
+							trait = forbiddeneyes
+							track = forbiddeneyes_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_forbiddeneyes_character_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = forbiddeneyes
+					OR = {
+						has_trait_xp = {
+							trait = forbiddeneyes
+							track = forbiddeneyes_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_forbiddeneyes_character_desc_level_3
+			}
+			desc = trait_forbiddeneyes_character_desc_level_2
+		}
+	}
+
+	tracks = {
+		forbiddeneyes_track = {
+			trait_second_level = {
+				martial = 4
+				diplomacy = 2
+				intrigue = 4
+				prowess = 5
+				
+				monthly_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -15
+			}
+			trait_third_level = {
+				martial = 4
+				diplomacy = 2
+				intrigue = 4
+				prowess = 5
+				
+				monthly_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -15
+			}		
+		}	
+	}	
+}

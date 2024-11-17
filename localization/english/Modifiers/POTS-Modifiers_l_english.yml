@@ -1,0 +1,127 @@
+﻿#POTS Modifiers
+
+l_english:
+
+#Byakugan Modifiers
+ modifier_byakugan_self:0 "Hakkeshō Kaiten"
+ modifier_byakugan_self_desc:0 "The user with Byakugan emit chakra from all of their body's tenketsu and then spin rapidly, repelling the attack (and anything else in the vicinity) away and creating a protective shield for as long as they continue to spin."
+ modifier_byakugan_target:0 "Hakke Hyaku Nijūhasshō"
+ modifier_byakugan_target_desc:0 "This Byakugan technique is used to close off the flow of chakra through one hundred and twenty-eight chakra points of an opponent's Chakra Pathway System. This eliminates their ability to use chakra for quite some time and makes it difficult for them to move."
+
+ modifier_tenseigan_self:0 "Tenseigan Chakura Mōdo"
+ modifier_tenseigan_self_desc:0 "The Tenseigan Chakra Mode is a heightened transformation unique to those who possess the Tenseigan."
+ modifier_tenseigan_target1:0 "Kinbō Tensei Baku"
+ modifier_tenseigan_target1_desc:0 "The user with Tenseigan focuses his chakra into one hand and creates a green orb that passes through the target's body, absorbing their chakra and leaving them unconscious."
+ modifier_tenseigan_target2:0 "Kinrin Tensei Baku"
+ modifier_tenseigan_target2_desc:0 "This character was hit with a colossal golden sword of pure chakra created by a character with Tenseigan that focused a tremendous amount of chakra into his Truth-Seeking Balls"
+
+ byakugan_collect1:0 "The character is in Stage 1 of Byakugan collecting"
+ byakugan_collect2:0 "The character is in Stage 2 of Byakugan collecting"
+ byakugan_collect3:0 "The character is in Stage 3 of Byakugan collecting"
+ byakugan_collect4:0 "The character is in Stage 4 of Byakugan collecting"
+ byakugan_collect5:0 "The character is in Stage 5 of Byakugan collecting"
+ byakugan_collect6:0 "The character is in Stage 6 of Byakugan collecting"
+ byakugan_collect7:0 "The character is in Stage 7 of Byakugan collecting"
+ byakugan_collect8:0 "The character is in Stage 8 of Byakugan collecting"
+ byakugan_collect9:0 "The character is in Stage 9 of Byakugan collecting"
+ byakugan_collect10:0 "The character have finish collecting the necessary amount of Byakugans to begin the ritual to awaken Tenseigan"
+ failed_tenseigan_modifier:0 "This character have temporarily failed at Awakening the Tenseigan"
+ build_tenseigan_modifier:0 "This character had build the artifact needed for the Ritual of Tenseigan Awakening"
+
+
+#Mangekyo Modifiers
+ amaterasu_modifier:0 "Amaterasu Dojutsu"
+ amaterasu_modifier_desc:0 "This Character has been hit with the effects of Amaterasu"
+ used_amaterasu_modifier:0 "This Character is suffering from drawbacks of utilizing a Mangekyo Sharingan Ability" 
+ used_tsukuyomi_modifier:0 "Tsukuyomi Mangekyo Genjutsu"
+ used_tsukuyomi_modifier_desc:0 "This Character has been hit with Tsukuyomi and have trouble perceiving time and space"
+ under_tsukuyomi_modifier:0 "This Character is suffering from drawbacks of utilizing Tsukuyomi Dojutsu"
+ modifier_susanoo:0 "Susanoo: Yūbu no Aragami"
+ modifier_susanoo_desc:0 "This character has activate The Almighty Susanoo"
+ modifier_kamui_self:0 "Right Eye Kamui Dojutsu"
+ modifier_kamui_self_desc:0 "This Character has utilised the Kamui and has targeted themselves"
+ modifier_kamui_target:0 "Left Eye Kamui Dojutsu"
+ modifier_kamui_target_desc:0 "This Character has battle against a Kamui user"
+ modifier_bigsusanoo:0 "Perfect Susanoo: Yūbu no Aragami"
+ modifier_bigsusanoo_desc:0 "This character has activate the Final Form of Susanoo"
+ modifier_genjutsu_target:0 "Sharingin Genjutsu"
+ modifier_genjutsu_target_desc:0 "A Genjutsu was used on this character and therefore their intel was leaked"
+ modifier_finalgenjutsu_target:0 "Mangekyo Sharingan Genjutsu"
+ modifier_finalgenjutsu_target_desc:0 "This character is under mind-control by a Genjutsu performed through Mangekyo Sharingan"
+ modifier_rasenamaterasu_target:0 "Rasengan: Shakuton-Kōrin Shippū Shikkoku no Ya Zeroshiki"
+ modifier_rasenamaterasu_target_desc:0 "This character is trapped inside a Black Flames Vortex created by a Rasengan in combination with Amaterasu"
+ 
+#Rinnegan Modifiers
+ chibakutensei_modifier:0 "Chibaku Tensei"
+ chibakutensei_modifier_desc:0 "Users create a Black Hole that generates powerful attractive force, pulling everything in the vicinity to it until a large satellite is created"
+ tengaishinsei_modifier:0 "Tengai Shinsei"
+ tengaishinsei_modifier_desc:0 "The user weaves three hand seals simultaneously between themselves and their Susanoo to draw massive meteorites from the upper atmosphere down towards a specific location on the ground"
+ narakapath_modifier:0 "Naraka Path: Jigokudō"
+ narakapath_modifier_desc:0 "This character had Integrogate and Absorp an enemies using Jigokudō"
+ failed_seal_modifier:0 "Failed Seal"
+ summoned_gedo_mazo_modifier:0 "Summoned The Gedo Mazo"
+ successful_modifier:0 "This character has successfully perform an experiment on Awakening The Rinnegan"
+ 
+#Training Modifiers
+ trained_recently:0 "Currently training"
+ trained_sharingan:0 "Training to evolve Sharingan"
+ non_uchiha_modifier:0 "This Character had implanted Sharingan without being related to the Uchiha Clan"
+ non_uchiha_rinne_modifier:0 "This Character had implanted Rinnegan without being related to the Otsuki Clan"
+ studied:0 "Has studied recently"
+ searched_recently:0 "Has searched for the beasts"
+
+
+ health1_mod:0 "Near death"
+ health2_mod:0 "Near death"
+ health4_mod:0 "Near death"
+ health6_mod:0 "Near death"
+ health8_mod:0 "Near death"
+ health9_mod:0 "Near death"
+ health10_mod:0 "Near death"
+ health20_mod:0 "Near death"
+ health30_mod:0 "Near death"
+ health40_mod:0 "Near death"
+ health50_mod:0 "Near death"
+ sharingan_artifact_modifier:0 "To see all"
+ arm_artifact_modifier:0 "Arm of many eyes"
+ forbidden_scroll_artifact_modifier:0 "Forbidden Scroll"
+ 
+#Seal training:
+
+trained_seal_novice:0 "Beginner Seal Training"
+trained_seal_basic:0 "Basic Seal Training"
+trained_seal_specialist:0 "Specialist Seal Training"
+trained_seal_master:0 "Master Seal Training"
+trained_seal_lives:0 "Seal Training Lives"
+
+training_eyes_level_1:0 "Eyes Training Level 1"
+training_eyes_level_2:0 "Eyes Training Level 2"
+training_eyes_level_3:0 "Eyes Training Level 3"
+training_eyes_level_4:0 "Eyes Training Level 4"
+training_eyes_level_5:0 "Eyes Training Level 5"
+training_eyes_level_6:0 "Eyes Training Level 6"
+training_eyes_level_7:0 "Eyes Training Level 7"
+training_eyes_level_8:0 "Eyes Training Level 8"
+training_eyes_level_9:0 "Eyes Training Level 9"
+training_eyes_level_10:0 "Eyes Training Level 10"
+ 
+#Keikei Genkai Modifiers
+ modifier_woodforest_target:0 "Mokuton Hijutsu: Jukai Kōtan"
+ modifier_woodforest_target_desc:0 "This character is stuck in the forest created by Mokuton Hijutsu: Jukai Kōtan"
+ modifier_woodstyle_self:0 "Mokuton: Mokuryū no Jutsu"
+ modifier_woodstyle_self_desc:0 "This character has summon a wood dragon by performing Mokuton: Mokuryū no Jutsu"
+
+
+#Elemental Release Modifiers
+ modifier_heal_self:0 "Nikutai Kassei no Jutsu"
+ modifier_heal_self_desc:0 "This character was healed by Nikutai Kassei no Jutsu"
+ modifier_firestyle_target:0 "Katon: Gōryūka no Jutsu"
+ modifier_firestyle_target_desc:0 "This character is hit by a Fire Dragon created from Katon: Gōryūka no Jutsu"
+ modifier_lightningstyle_self:0 "Raiton Chakura Mōdo"
+ modifier_lightningstyle_self_desc:0 "Utilizing Raiton Chakura Mōdo to stimulates the user's nervous system, enhancing their speed and their reaction time"
+ modifier_earthstyle_target:0 "Doton Kekkai: Dorō Dōmu"
+ modifier_earthstyle_target_desc:0 "This character is trapped inside the self healing Earth Dome created by Doton Kekkai: Dorō Dōmu"
+ modifier_windstyle_target:0 "Fūton: Tatsu no Ōshigoto"
+ modifier_windstyle_target_desc:0 "This character is trapped inside a Wind Tornado created by Fūton: Tatsu no Ōshigoto"
+ modifier_waterstyle_self:0 "Kirigakure no Jutsu"
+ modifier_waterstyle_self_desc:0 "This character had used Kirigakure no Jutsu to created Mist for them to hide in"

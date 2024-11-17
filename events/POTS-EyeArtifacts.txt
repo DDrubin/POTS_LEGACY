@@ -1,0 +1,149 @@
+﻿namespace = artifact_eye
+
+artifact_eye.001 = {
+    type = character_event
+    title = artifact_eye.001.t
+    desc = artifact_eye.001.d
+
+    theme = court
+
+    left_portrait = {
+        character = root
+        animation = worry
+    }
+
+    option = {
+        name = artifact_eye.001.a
+        trigger = {
+            root = {
+                has_trait = threetomoe
+            }
+        }
+        create_artifact_sharingan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+        add_trait = blind
+        remove_trait = threetomoe
+    }
+    option = {
+        name = artifact_eye.001.b
+        trigger = {
+            root = {
+                OR = {
+                    has_trait = mangekyosharingan_1
+                    has_trait = mangekyosharingan_2
+                    has_trait = mangekyosharingan_3
+                    has_trait = mangekyosharingan_4
+                }
+            }
+        }
+        create_artifact_mangekyo_sharingan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+        add_trait = blind
+        remove_trait = mangekyosharingan_1
+        remove_trait = mangekyosharingan_2
+        remove_trait = mangekyosharingan_3
+        remove_trait = mangekyosharingan_4
+    }
+	option = {
+        name = artifact_eye.001.c
+        trigger = {
+            root = {
+                has_trait = eternalsharingan
+            }
+        }
+        add_trait = blind
+        remove_trait = eternalsharingan
+        create_artifact_eternal_sharingan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+    }
+	option = {
+        name = artifact_eye.001.e
+        trigger = {
+            root = {
+                has_trait = rinnegan
+            }
+        }
+        add_trait = blind
+        remove_trait = rinnegan
+        create_artifact_rinnegan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+    }
+	option = {
+        name = artifact_eye.001.f
+        trigger = {
+            root = {
+                has_trait = rinnesharingan
+            }
+        }
+        add_trait = blind
+        remove_trait = rinnesharingan
+        create_artifact_rinnesharingan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+    }
+	option = {
+        name = artifact_eye.001.g
+        trigger = {
+            root = {
+                has_trait = byakugan
+            }
+        }
+        add_trait = blind
+        remove_trait = byakugan
+        create_artifact_byakugan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+    }
+	option = {
+        name = artifact_eye.001.h
+        trigger = {
+            root = {
+                has_trait = tenseigan
+            }
+        }
+        add_trait = blind
+        remove_trait = tenseigan
+        create_artifact_tenseigan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+    }
+	option = {
+        name = artifact_eye.001.i
+        trigger = {
+            root = {
+                has_trait = jogan
+            }
+        }
+        add_trait = blind
+        remove_trait = jogan
+        create_artifact_jogan_effect = {
+            OWNER = root
+            MAKER = root
+        }
+    }
+	option = {
+        name = artifact_eye.001.j
+        trigger = {
+            root = {
+                has_trait = forbiddeneyes
+            }
+        }
+        add_trait = blind
+        remove_trait = forbiddeneyes
+        create_artifact_forbiddeneyes_effect = {
+            OWNER = root
+            MAKER = root
+        }
+    }
+}

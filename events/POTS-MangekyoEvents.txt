@@ -1,0 +1,365 @@
+﻿namespace = MangekyoEvents
+
+MangekyoEvents.001 = {
+    type = character_event
+    title = MangekyoEvents.001.t
+    desc = MangekyoEvents.001.d
+
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = anger
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = MangekyoEvents.001.o
+		hidden_effect = {
+			scope:actor = {
+				add_character_modifier = {
+                    modifier = used_amaterasu_modifier
+                    months = 4
+                }
+			}
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = amaterasu_modifier
+                    months = 8
+                }
+			}
+		}
+	}
+}
+
+MangekyoEvents.002 = {
+    type = character_event
+	title = MangekyoEvents.002.t
+	desc = MangekyoEvents.002.d
+	theme = crown
+
+	right_portrait = {
+		character = root
+		animation = anger
+	}
+	option = {
+		name = MangekyoEvents.002.o
+		trigger = {
+			age >= 16
+		}
+		scope:actor = {
+			hidden_effect = {
+				add_hook = {
+					type = fabrication_hook
+					target = scope:recipient
+				}
+			}
+	    }
+    }
+}
+
+MangekyoEvents.003 = {
+    type = character_event
+    title = MangekyoEvents.003.t
+    desc = MangekyoEvents.003.d
+
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = MangekyoEvents.003.o
+		hidden_effect = {
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = used_tsukuyomi_modifier
+                    months = 12
+                }
+			}
+			scope:actor = {
+				add_character_modifier = {
+                    modifier = under_tsukuyomi_modifier
+                    months = 10
+                }
+			}
+		}
+	}
+}
+
+MangekyoEvents.004 = {
+    title = MangekyoEvents.004.t
+	desc = MangekyoEvents.004.d
+	theme = martial
+	left_portrait = {
+		character = scope:actor
+		animation = rage
+	}
+	right_portrait = {
+		character = scope:recipient
+		animation = worry
+	}
+	
+	option = {
+		name = MangekyoEvents.004.o
+		trigger = {
+			root = {
+				has_trait = shinobi_dynasty
+				has_trait = uchihagene
+				has_trait = threetomoe
+				NOT = {
+					scope:actor.prowess < scope:recipient.prowess
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = blind
+				}
+			}
+		}
+		random_list = {
+			25 = {
+				add_trait = mangekyosharingan_1
+
+			}
+			25 = {
+				add_trait = mangekyosharingan_2
+
+			}
+			25 = {
+				add_trait = mangekyosharingan_3
+
+			}
+			25 = {
+				add_trait = mangekyosharingan_4
+
+			}
+		}
+		add_character_modifier = {
+			modifier = train_recently
+			months = 6
+		}
+		add_stress = 100
+			scope:recipient = {
+				death = {
+					killer = scope:actor
+					death_reason = killed_for_power
+				}
+			}
+		root = {
+			trigger_event = {
+				id = MangekyoEvents.005
+				years = 16
+			}
+		}
+	}
+	option = {
+		name = MangekyoEvents.004.a
+		trigger = {
+			scope:actor = {
+				has_trait = uchihagene
+				has_trait = threetomoe
+				NOT = {
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+				}
+			}
+		}
+	}
+}
+
+MangekyoEvents.005 = {
+    title = MangekyoEvents.005.t
+	desc = MangekyoEvents.005.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = MangekyoEvents.005.a
+		trigger = {
+			has_trait = uchihagene
+			has_trait = shinobi_dynasty
+			OR = {
+				has_trait = mangekyosharingan_1
+				has_trait = mangekyosharingan_2
+				has_trait = mangekyosharingan_3
+				has_trait = mangekyosharingan_4
+			}
+			NOT = { has_trait = eternalsharingan
+					
+				}
+			NOT = { has_trait = blind }
+				NOT = { has_trait = rinnegan }
+				NOT = { has_trait = rinnesharingan }
+		}
+		remove_trait = onetomoe
+		remove_trait = twotomoe
+		remove_trait = threetomoe
+		remove_trait = mangekyosharingan_1
+		remove_trait = mangekyosharingan_2
+		remove_trait = mangekyosharingan_3
+		remove_trait = mangekyosharingan_4
+		remove_trait = byakugan
+		remove_trait = tenseigan
+		remove_trait = jogan
+		remove_trait = forbiddeneyes
+		add_trait = blind
+	}
+}
+
+MangekyoEvents.006 = {
+    title = MangekyoEvents.004.t
+	desc = MangekyoEvents.004.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	right_portrait = {
+		character = scope:dear
+		animation = worry
+	}
+	trigger = {
+		root = {
+			has_trait = shinobi_dynasty
+			has_trait = uchihagene
+			has_trait = threetomoe
+			NOT = {
+				has_trait = mangekyosharingan_1
+				has_trait = mangekyosharingan_2
+				has_trait = mangekyosharingan_3
+				has_trait = mangekyosharingan_4
+				has_trait = eternalsharingan
+				has_trait = blind
+			}
+			age >= 7
+		}			
+	}
+	immediate = {
+		every_close_family_member = {
+			save_temporary_scope_as = check_dear
+		}
+		if = {
+			limit = { exists = scope:check_dear }
+			scope:check_dear = {
+				add_to_temporary_list = dearest
+			}
+		}
+		every_courtier = {
+			limit = { has_relation_lover = root }
+			save_temporary_scope_as = check_dear
+		}
+		if = {
+			limit = { exists = scope:check_dear }
+			scope:check_dear = {
+				add_to_temporary_list = dearest
+			}
+		}
+		every_spouse = {
+			save_temporary_scope_as = check_dear
+		}
+		if = {
+			limit = { exists = scope:check_dear }
+			scope:check_dear = {
+				add_to_temporary_list = dearest
+			}
+		}
+		every_concubine = {
+			limit = { has_relation_lover = root }
+			save_temporary_scope_as = check_dear
+		}
+		if = {
+			limit = { exists = scope:check_dear }
+			scope:check_dear = {
+				add_to_temporary_list = dearest
+			}
+		}
+		every_courtier = {
+			limit = { has_relation_soulmate = root }
+			save_temporary_scope_as = check_dear
+		}
+		if = {
+			limit = { exists = scope:check_dear }
+			scope:check_dear = {
+				add_to_temporary_list = dearest
+			}
+		}
+		every_courtier = {
+			limit = { has_relation_best_friend = root }
+			save_temporary_scope_as = check_dear
+		}
+		if = {
+			limit = { exists = scope:check_dear }
+			scope:check_dear = {
+				add_to_temporary_list = dearest
+			}
+		}
+		
+		random_in_list = {
+			list = dearest
+			save_scope_as = dear
+			death = {
+				killer = root
+				death_reason = killed_for_power
+			}
+		}
+	}
+	option = {
+		name = MangekyoEvents.004.o
+		trigger = {
+			root = {
+				exists = scope:dear
+				has_trait = shinobi_dynasty
+				has_trait = uchihagene
+				has_trait = threetomoe
+				NOT = {
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = blind
+				}
+				age >= 7
+			}			
+		}
+		root = {
+			random_list = {
+				25 = {
+					add_trait = mangekyosharingan_1
+
+				}
+				25 = {
+					add_trait = mangekyosharingan_2
+
+				}
+				25 = {
+					add_trait = mangekyosharingan_3
+
+				}
+				25 = {
+					add_trait = mangekyosharingan_4
+
+				}
+			}
+			trigger_event = {
+				id = MangekyoEvents.005
+				years = 16
+			}
+		}
+	}
+}

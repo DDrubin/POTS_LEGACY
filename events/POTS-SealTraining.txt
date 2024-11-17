@@ -1,0 +1,210 @@
+namespace = seal_training
+
+seal_training.1 = {
+	title = seal_training.1.t
+	desc = seal_training.1.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.1.a
+		add_character_modifier = {
+			modifier = trained_seal_novice
+			months = 12
+		}
+		hidden_effect = {	
+			trigger_event = {
+				id = seal_training.11
+				months = 12
+			}
+		}
+	}
+}
+
+seal_training.11 = {
+	title = seal_training.11.t
+	desc = seal_training.11.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.11.a
+		add_trait = seal_novice
+		add_character_modifier = {
+			modifier = trained_seal_novice
+			days = 5
+		}
+	}
+}
+
+seal_training.2 = {
+	title = seal_training.2.t
+	desc = seal_training.2.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.1.a
+		add_character_modifier = {
+			modifier = trained_seal_basic
+			months = 12
+		}
+		hidden_effect = {	
+			trigger_event = {
+				id = seal_training.21
+				months = 12
+			}
+		}
+	}
+}
+
+seal_training.21 = {
+	title = seal_training.21.t
+	desc = seal_training.21.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.21.a
+		remove_trait = seal_novice
+		add_trait = seal_basic
+		add_character_modifier = {
+			modifier = trained_seal_basic
+			days = 5
+		}
+	}
+}
+
+seal_training.3 = {
+	title = seal_training.3.t
+	desc = seal_training.3.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.3.a
+		add_character_modifier = {
+			modifier = trained_seal_specialist
+			months = 12
+		}
+		hidden_effect = {	
+			trigger_event = {
+				id = seal_training.31
+				months = 12
+			}
+		}
+	}
+}
+
+seal_training.31 = {
+	title = seal_training.31.t
+	desc = seal_training.31.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.31.a
+		remove_trait = seal_basic
+		add_trait = seal_specialist
+		add_character_modifier = {
+			modifier = trained_seal_specialist
+			days = 5
+		}
+	}
+}
+
+seal_training.4 = {
+	title = seal_training.4.t
+	desc = seal_training.4.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.4.a
+		add_character_modifier = {
+			modifier = trained_seal_master
+			months = 12
+		}
+		hidden_effect = {	
+			trigger_event = {
+				id = seal_training.41
+				months = 12
+			}
+		}
+	}
+}
+
+seal_training.41 = {
+	title = seal_training.41.t
+	desc = seal_training.41.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.41.a
+		remove_trait = seal_specialist
+		add_trait = seal_master
+		add_character_modifier = {
+			modifier = trained_seal_master
+			days = 5
+		}
+	}
+}
+
+seal_training.5 = {
+	title = seal_training.5.t
+	desc = seal_training.5.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.5.a
+		add_character_modifier = {
+			modifier = trained_seal_lives
+			months = 12
+		}
+		hidden_effect = {	
+			trigger_event = {
+				id = seal_training.51
+				months = 12
+			}
+		}
+	}
+}
+
+seal_training.51 = {
+	title = seal_training.51.t
+	desc = seal_training.51.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = seal_training.51.a
+		remove_trait = seal_master
+		add_trait = seal_lives
+		add_character_modifier = {
+			modifier = trained_seal_lives
+			days = 5
+		}
+	}
+}

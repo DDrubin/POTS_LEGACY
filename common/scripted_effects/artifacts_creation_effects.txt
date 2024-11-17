@@ -1,0 +1,130 @@
+add_sharingan01_artifact_modifier_effect = {
+	add_artifact_modifier = sharingan_artifact_modifier
+}
+add_sharingan02_artifact_modifier_effect = {
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+}
+add_sharingan03_artifact_modifier_effect = {
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+}
+add_sharingan04_artifact_modifier_effect = {
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+}
+add_sharingan05_artifact_modifier_effect = {
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+	add_artifact_modifier = sharingan_artifact_modifier
+}
+add_byakugan01_artifact_modifier_effect = {
+	add_artifact_modifier = byakugan_artifact_modifier
+}
+add_byakugan02_artifact_modifier_effect = {
+	add_artifact_modifier = byakugan_artifact_modifier
+	add_artifact_modifier = byakugan_artifact_modifier
+}
+add_byakugan03_artifact_modifier_effect = {
+	add_artifact_modifier = byakugan_artifact_modifier
+	add_artifact_modifier = byakugan_artifact_modifier
+	add_artifact_modifier = byakugan_artifact_modifier
+}
+add_forbiddeneyes_artifact_modifier_effect = {
+	add_artifact_modifier = forbiddeneyes_artifact_modifier
+}
+add_arm_artifact_modifier_effect = {
+	add_artifact_modifier = arm_artifact_modifier
+}
+add_arm02_artifact_modifier_effect = {
+	add_artifact_modifier = arm_artifact_modifier
+	add_artifact_modifier = arm_artifact_modifier
+}
+add_arm03_artifact_modifier_effect = {
+	add_artifact_modifier = arm_artifact_modifier
+	add_artifact_modifier = arm_artifact_modifier
+	add_artifact_modifier = arm_artifact_modifier
+}
+add_forbidden_scroll_artifact_modifier_effect = {
+	add_artifact_modifier = forbidden_scroll_artifact_modifier
+}
+add_sun_moon_artifact_modifier_effect = {
+	add_artifact_modifier = sun_moon_artifact_modifier
+}
+add_bashosen_fan_artifact_modifier_effect = {
+	add_artifact_modifier = bashosen_fan_artifact_modifier
+}
+add_kokinjo_rope_artifact_modifier_effect = {
+	add_artifact_modifier = kokinjo_rope_artifact_modifier
+}
+add_shichi_sword_artifact_modifier_effect = {
+	add_artifact_modifier = shichi_sword_artifact_modifier
+}
+add_bijuu1_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu2_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu3_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu4_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu5_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu6_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu7_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu8_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}
+add_bijuu9_artifact_modifier_effect = {
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+	add_artifact_modifier = bijuu_artifact_modifier
+}

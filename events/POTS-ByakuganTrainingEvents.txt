@@ -1,0 +1,68 @@
+namespace = byakugan_level
+
+byakugan_level.1 = {
+	title = byakugan_level.1.t
+	desc = byakugan_level.1.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = byakugan_level.1.a
+		trigger = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = hyugagene
+				
+				NOT = {
+					has_trait = blind
+					has_trait = byakugan
+					has_trait = tenseigan
+					has_trait = jogan
+				}
+			}
+		}
+		add_character_modifier = {
+			modifier = trained_sharingan
+			months = 12
+		}
+		hidden_effect = {	
+			trigger_event = {
+				id = byakugan_level.11
+				months = 12
+			}
+		}
+	}
+}
+
+byakugan_level.11 = {
+	title = byakugan_level.1.t
+	desc = byakugan_level.11.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = byakugan_level.11.a
+		trigger = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = hyugagene
+				
+				NOT = {
+					has_trait = blind
+					has_trait = byakugan
+					has_trait = tenseigan
+					has_trait = jogan
+				}
+			}
+		}
+		add_trait = byakugan
+		add_character_modifier = {
+			modifier = trained_sharingan
+			days = 5
+		}
+	}
+}

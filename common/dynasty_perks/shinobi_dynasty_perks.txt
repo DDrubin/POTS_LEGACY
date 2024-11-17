@@ -1,0 +1,73 @@
+shinobi_legacy_1 = {
+	legacy = shinobi_legacy_track
+	character_modifier = {
+		scheme_discovery_chance_mult = 0.2
+		monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+		monthly_lifestyle_xp_gain_mult = 0.05
+	}
+	traits = {
+		shrewd = 100
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+shinobi_legacy_2 = {
+	legacy = shinobi_legacy_track
+	character_modifier = {
+		advantage = 5
+		monthly_martial_lifestyle_xp_gain_mult = 0.1
+		monthly_lifestyle_xp_gain_mult = 0.05
+	}
+	traits = {
+		strong = 100
+	}
+}
+
+shinobi_legacy_3 = {
+	legacy = shinobi_legacy_track
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.05
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		monthly_lifestyle_xp_gain_mult = 0.05
+	}
+	traits = {
+		scholar = 100
+	}
+
+	traits = {
+		ninjarank_genin = 50
+	}
+}
+
+shinobi_legacy_4 = {
+	legacy = shinobi_legacy_track
+	character_modifier = {
+		stewardship = 1
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.1
+		monthly_lifestyle_xp_gain_mult = 0.05
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+shinobi_legacy_5 = {
+	legacy = shinobi_legacy_track
+	character_modifier = {
+		monthly_diplomacy_lifestyle_xp_gain_mult = 0.1
+		monthly_lifestyle_xp_gain_mult = 0.1
+	}
+	traits = {
+		ninjarank_chunin = 35
+	}
+}

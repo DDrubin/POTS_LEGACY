@@ -1,0 +1,81 @@
+﻿modifier_flag_check = {
+root = {
+	if = {
+		limit = { has_character_flag = health50 }
+			add_character_modifier = {
+				modifier = health50_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health40 }
+			add_character_modifier = {
+				modifier = health40_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health30 }
+			add_character_modifier = {
+				modifier = health30_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health20 }
+			add_character_modifier = {
+				modifier = health20_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health10 }
+			add_character_modifier = {
+				modifier = health10_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health9 }
+			add_character_modifier = {
+				modifier = health9_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health8 }
+			add_character_modifier = {
+				modifier = health8_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health6 }
+			add_character_modifier = {
+				modifier = health6_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health4 }
+			add_character_modifier = {
+				modifier = health4_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health2 }
+			add_character_modifier = {
+				modifier = health2_mod
+			}
+		}
+	}
+	if = {
+		limit = { has_character_flag = health1 }
+			add_character_modifier = {
+				modifier = health1_mod
+			}
+		}
+	}
+}
+}

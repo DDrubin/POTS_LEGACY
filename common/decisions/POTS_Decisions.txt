@@ -1,0 +1,256 @@
+﻿#POTS Decisions
+
+decision_elemental_release = {
+	ai_check_interval = 2
+	
+	desc = decision_elemental_release_desc
+	selection_tooltip = decision_elemental_release_tooltip
+	is_shown = {
+		age >= 3
+		age <= 25
+		OR = {
+			NOT = {
+					has_trait = firerelease
+					has_trait = waterrelease
+					has_trait = windrelease
+					has_trait = earthrelease
+					has_trait = lightningrelease
+					has_trait = woodrelease
+					has_trait = icerelease
+					has_trait = scorchrelease
+					has_trait = boilrelease
+					has_trait = stormrelease
+					has_trait = explosionrelease
+					has_trait = magnetrelease
+					has_trait = lavarelease
+					has_trait = dustrelease
+					has_trait = shinobi_dynasty
+				}
+		}
+	}
+	
+	effect = { 
+        trigger_event = ElementalRelease.1 
+			add_character_flag = {
+				flag = elemental_flag
+				years = 600
+			}
+        }
+
+	ai_will_do = {
+		base = 1000
+	}
+}
+
+#BloodLine decision
+
+decision_pots_house = {
+	
+	desc = decision_pots_house_desc
+	selection_tooltip = decision_pots_house_tooltip
+	
+	is_shown = {
+		age <= 25
+		prowess >= 25
+		martial >= 13
+		is_senju = no
+		is_hyuga = no
+		is_uzumaki = no
+		is_uchiha = no
+		is_forbidden = no
+		is_ai = no
+		NOT = { has_character_flag = house_flag }
+	}
+
+	effect = { 
+		trigger_event = {
+			id = pots_house_decision.001 
+			days = 0
+		}
+		add_character_flag = {
+			flag = house_flag
+			years = 600
+		}
+        }
+	cost = {
+		gold = 300
+	}
+}
+
+
+
+decision_pots_houseai = {
+	ai_check_interval = 4
+	
+	desc = decision_pots_house_desc
+	selection_tooltip = decision_pots_house_tooltip
+	
+	is_shown = {
+		age <= 25
+		prowess >= 25
+		martial >= 13
+		is_senju = no
+		is_hyuga = no
+		is_uzumaki = no
+		is_uchiha = no
+		is_forbidden = no
+		is_ai = yes
+		NOT = { has_character_flag = house_flag }
+	}
+
+	effect = { 
+		trigger_event = {
+			id = pots_house_decision.001 
+			days = 0
+		}
+		add_character_flag = {
+			flag = house_flag
+			years = 600
+		}
+        }
+	cost = {
+		prestige = 50
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 60
+	}
+}
+
+#Research & Development
+
+decision_lab = {
+	ai_check_interval = 15
+	
+	desc = decision_lab_desc
+	selection_tooltip = decision_lab_tooltip
+	is_shown = {
+		age >= 18
+		NOT = { has_character_flag = curently_building }
+		NOT = { has_character_flag = build_lab_final }
+	}
+	effect = {
+        	trigger_event = lab_research.001
+		add_character_flag = {
+			flag = curently_building
+			years = 2
+		}
+	}
+	cost = {
+		gold = 220
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 50
+	}
+}
+#Elemental Beasts Decisions
+
+decision_elemental_beasts = {
+	ai_check_interval = 50
+	
+	desc = decision_elemental_beasts_desc
+	selection_tooltip = decision_elemental_beasts_tooltip
+	is_shown = {
+		OR = {
+			has_trait = one_tail
+			has_trait = five_tail
+			has_trait = four_tail
+		}
+		NOT = { has_trait = magnetrelease }
+		NOT = { has_trait = boilrelease }
+		NOT = { has_trait = lavarelease }
+	}
+	effect = {
+		trigger_event = ElementalReleaseBeast.001
+	}
+	cost = {
+		prestige = 1000
+	}
+}
+
+decision_create_seals = {
+	ai_check_interval = 30
+	
+	desc = decision_create_seals_desc
+    selection_tooltip = decision_create_seals_tooltip
+	is_shown = {
+		AND = {
+			NOT = { has_character_flag = studied }
+			age >= 18
+			has_trait = shinobi_dynasty
+			has_trait = seal_master
+			has_trait = scholar
+			learning >= 20
+			OR = {
+				has_character_flag = has_lab_2
+				has_character_flag = has_lab_3
+			}
+		}
+	}
+	effect = {
+		trigger_event = researchlab.0010
+	}
+	cost = {
+		gold = 500
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_ninja_level = {
+	ai_check_interval = 30
+	
+	desc = decision_ninja_level_desc
+    selection_tooltip = decision_ninja_level_tooltip
+	is_shown = {
+		AND = {
+			has_trait = shinobi_dynasty
+			is_ruler = yes
+			NOT = { highest_held_title_tier <= tier_duchy }
+			NOT = { has_character_flag = mass_training }
+		}
+	}
+	effect = {
+		trigger_event = ninja_level.6
+	}
+	cost = {
+		gold = 500
+	}
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+test_single_combat = {
+	
+	desc = decision_pots_house_desc
+	selection_tooltip = decision_pots_house_tooltip
+	
+	is_shown = {
+		age < 1
+		prowess > 100
+	}
+
+	effect = { 
+			#trigger_event = pots_house_decision.001
+			loop_example_setup = {
+				example_value = -10
+				test_val_var = -2
+			}
+       }
+}
+
+
+

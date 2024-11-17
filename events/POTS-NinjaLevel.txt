@@ -1,0 +1,164 @@
+﻿namespace = ninja_level
+
+
+ninja_level.1 = {
+	title = ninja_level.1.t
+	desc = ninja_level.11.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = ninja_level.11.a			
+        add_trait = ninja_rank_1
+	}
+}
+
+
+ninja_level.2 = {
+	title = ninja_level.2.t
+	desc = ninja_level.22.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = ninja_level.22.a			
+        add_trait = ninja_rank_2
+		remove_trait = ninja_rank_1
+	}
+}
+
+
+ninja_level.3 = {
+	title = ninja_level.3.t
+	desc = ninja_level.33.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = ninja_level.33.a			
+        add_trait = ninja_rank_3
+		remove_trait = ninja_rank_2
+	}
+}
+
+
+ninja_level.4 = {
+	title = ninja_level.4.t
+	desc = ninja_level.44.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = ninja_level.44.a			
+        add_trait = ninja_rank_4
+		remove_trait = ninja_rank_3
+	}
+}
+
+ninja_level.5 = {
+	title = ninja_level.4.t
+	desc = ninja_level.44.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = ninja_level.44.a			
+        add_trait = ninja_rank_5
+		remove_trait = ninja_rank_4
+	}
+}
+
+ninja_level.6 = {
+	title = ninja_level.7.t
+	desc = ninja_level.7.d
+	theme = martial
+	immediate = {		
+        
+		
+        if = {
+			limit = {
+				has_trait = ninja_rank_1
+				has_trait = ninja_rank_2
+			}
+			remove_trait = ninja_rank_1
+		}
+		if = {
+			limit = {
+				has_trait = ninja_rank_1
+				has_trait = ninja_rank_3
+			}
+			remove_trait = ninja_rank_1
+		}
+		if = {
+			limit = {
+				has_trait = ninja_rank_1
+				has_trait = ninja_rank_4
+			}
+			remove_trait = ninja_rank_1
+		}
+		if = {
+			limit = {
+				has_trait = ninja_rank_1
+				has_trait = ninja_rank_5
+			}
+			remove_trait = ninja_rank_1
+		}
+
+		if = {
+			limit = {
+				has_trait = ninja_rank_2
+				has_trait = ninja_rank_3
+			}
+			remove_trait = ninja_rank_2
+		}
+		if = {
+			limit = {
+				has_trait = ninja_rank_2
+				has_trait = ninja_rank_4
+			}
+			remove_trait = ninja_rank_2
+		}
+		if = {
+			limit = {
+				has_trait = ninja_rank_2
+				has_trait = ninja_rank_5
+			}
+			remove_trait = ninja_rank_2
+		}
+
+		if = {
+			limit = {
+				has_trait = ninja_rank_3
+				has_trait = ninja_rank_4
+			}
+			remove_trait = ninja_rank_3
+		}
+
+		if = {
+			limit = {
+				has_trait = ninja_rank_3
+				has_trait = ninja_rank_5
+			}
+			remove_trait = ninja_rank_3
+		}
+
+		if = {
+			limit = {
+				has_trait = ninja_rank_4
+				has_trait = ninja_rank_5
+			}
+			remove_trait = ninja_rank_4
+		}
+
+	}
+}

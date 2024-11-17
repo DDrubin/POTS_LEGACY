@@ -1,0 +1,343 @@
+dissabilities_gain_probability = {
+
+	random = {
+		chance = $CHANCE_OF_DISABILLITY$
+
+		if = {
+			limit = { 
+					NOT = { 
+						AND = {
+							has_trait = maimed 
+							has_trait = one_eyed
+							has_trait = one_legged
+							has_trait = disfigured
+							has_trait = infirm
+							has_trait = incapable
+							has_trait = scarred
+							has_trait = blind
+							has_trait = near_death
+						}
+					}
+
+					has_trait = wounded_3
+				
+			}
+
+			remove_trait = wounded_3
+
+			random_list = {
+					10 = {
+						trigger = { NOT = { has_trait = maimed } }
+					   	add_trait = maimed
+					}
+					
+				  	10 = {
+				  		trigger = { NOT = { has_trait = one_eyed } }
+				    	add_trait = one_eyed
+				  	}
+
+				  	10 = {
+				  		trigger = { NOT = { has_trait = one_legged } }
+						add_trait = one_legged
+					}
+
+					10 = {
+						trigger = { NOT = { has_trait = disfigured } }
+				    	add_trait = disfigured
+				  	}
+
+				  	10 = {
+				  		trigger = { NOT = { has_trait = infirm } }
+				    	add_trait = infirm
+				  	}
+
+				  	10 = {
+				  		trigger = { NOT = { has_trait = incapable } }
+						add_trait = incapable
+					}
+
+					10 = {
+						trigger = { NOT = { has_trait = scarred } }
+				    	add_trait = scarred
+				  	}
+
+				  	10 = {
+				  		trigger = { NOT = { has_trait = blind } }
+				    	add_trait = blind
+				  	}
+
+				  	10 = {
+				  		trigger = { NOT = { has_trait = near_death } }
+						add_trait = near_death
+					}
+
+					10 = {
+						
+					}
+			}
+			
+		}
+		
+		else_if = {
+			limit = { 
+				NOT = { 
+					OR = {
+						has_trait = wounded_1 
+						has_trait = wounded_3
+					}
+				}
+
+				has_trait = wounded_2
+			}
+			remove_trait = wounded_2
+			add_trait = wounded_3
+		}
+
+		else_if = {
+			limit = { 
+				NOT = { 
+					OR = {
+						has_trait = wounded_2 
+						has_trait = wounded_3
+					}
+				}
+
+				has_trait = wounded_1
+			}
+			remove_trait = wounded_1
+			add_trait = wounded_2
+		}
+
+		else_if = {
+			limit = { 
+				NOT = { 
+					OR = {
+						has_trait = wounded_1
+						has_trait = wounded_2 
+						has_trait = wounded_3
+					}
+				}
+			}
+			add_trait = wounded_1
+		}
+
+		
+		
+	}
+}
+
+check_for_eye_training = {
+	
+	if = {
+			limit = { 
+					OR = {
+						has_character_modifier = training_eyes_level_1
+						has_character_modifier = training_eyes_level_2 
+						has_character_modifier = training_eyes_level_3
+						has_character_modifier = training_eyes_level_4
+						has_character_modifier = training_eyes_level_5 
+						has_character_modifier = training_eyes_level_6
+						has_character_modifier = training_eyes_level_7
+						has_character_modifier = training_eyes_level_8 
+						has_character_modifier = training_eyes_level_9
+						has_character_modifier = training_eyes_level_10
+					}
+			}
+
+			add_character_modifier = training_eyes_level_1
+			add_character_modifier = training_eyes_level_2
+			add_character_modifier = training_eyes_level_3
+			add_character_modifier = training_eyes_level_4
+			add_character_modifier = training_eyes_level_5
+			add_character_modifier = training_eyes_level_6
+			add_character_modifier = training_eyes_level_7
+			add_character_modifier = training_eyes_level_8
+			add_character_modifier = training_eyes_level_9
+			add_character_modifier = training_eyes_level_10
+			add_character_modifier = is_training_eyes
+
+			remove_character_modifier = training_eyes_level_1
+			remove_character_modifier = training_eyes_level_2
+			remove_character_modifier = training_eyes_level_3
+			remove_character_modifier = training_eyes_level_4
+			remove_character_modifier = training_eyes_level_5
+			remove_character_modifier = training_eyes_level_6
+			remove_character_modifier = training_eyes_level_7
+			remove_character_modifier = training_eyes_level_8
+			remove_character_modifier = training_eyes_level_9
+			remove_character_modifier = training_eyes_level_10
+			remove_character_modifier = is_training_eyes
+		}
+
+}
+
+training_logic_effect = {
+
+			if = {
+				limit = { has_trait = onetomoe }
+				random = {
+					chance = 10
+					onetomoe_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = twotomoe }
+				random = {
+					chance = 10
+					twotomoe_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = threetomoe }
+				random = {
+					chance = 10
+					threetomoe_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = mangekyosharingan_1 }
+				random = {
+					chance = 10
+					mangekyosharingan_1_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = mangekyosharingan_2 }
+				random = {
+					chance = 10
+					mangekyosharingan_2_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = mangekyosharingan_3 }
+				random = {
+					chance = 10
+					mangekyosharingan_3_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = mangekyosharingan_4 }
+				random = {
+					chance = 10
+					mangekyosharingan_4_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = eternalsharingan }
+				random = {
+					chance = 10
+					eternalsharingan_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = rinnegan }
+				random = {
+					chance = 10
+					rinnegan_firts_second_path_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+				random = {
+					chance = 10
+					rinnegan_third_fourth_path_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+				random = {
+					chance = 10
+					rinnegan_fifth_sixth_path_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = rinnesharingan }
+				random = {
+					chance = 10
+					rinnesharingan_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = byakugan }
+				random = {
+					chance = 10
+					byakugan_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = tenseigan }
+				random = {
+					chance = 10
+					tenseigan_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = forbiddeneyes }
+				random = {
+					chance = 10
+					forbiddeneyes_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = jogan }
+				random = {
+					chance = 10
+					jogan_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+}

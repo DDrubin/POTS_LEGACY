@@ -1,0 +1,577 @@
+terumi_legacy_1 = { 
+    legacy = terumi_legacy_track 
+    character_modifier = { 
+         
+        stress_gain_mult = -0.10 
+        diplomacy = 1 
+    } 
+} 
+
+terumi_legacy_2 = { 
+    legacy = terumi_legacy_track 
+    character_modifier = { 
+        prowess = 2 
+        monthly_lifestyle_xp_gain_mult = 0.05 
+        vassal_opinion = 5 
+    } 
+} 
+
+terumi_legacy_3 = { 
+    legacy = terumi_legacy_track 
+    character_modifier = { 
+        martial = 3 
+        levy_size = 0.05 
+    } 
+
+    traits = {
+        ninjarank_genin = 100
+    }
+} 
+
+terumi_legacy_4 = { 
+    legacy = terumi_legacy_track 
+    character_modifier = { 
+        stewardship = 4 
+        monthly_prestige_gain_mult = 0.10 
+        monthly_county_control_growth_add = 0.10
+        maa_damage_mult = 0.2
+        advantage = 8 
+    } 
+} 
+
+terumi_legacy_5 = { 
+    legacy = terumi_legacy_track 
+    character_modifier = { 
+        prowess = 8
+        learning = 5 
+        diplomatic_range_mult = 0.15 
+        monthly_piety_gain_mult = 0.10 
+    } 
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+
+hozuki_legacy_1 = {
+    legacy = hozuki_legacy_track
+    character_modifier = {
+        martial = 1
+        general_opinion = -10
+        stress_loss_mult = 0.1
+    }
+}
+
+
+hozuki_legacy_2 = {
+    legacy = hozuki_legacy_track
+    character_modifier = {
+        monthly_prestige_gain_mult = -0.2
+        prowess = 15
+        siege_phase_time = -0.5
+    }
+}
+
+
+hozuki_legacy_3 = {
+    legacy = hozuki_legacy_track
+    character_modifier = {
+        intrigue = 3
+        owned_scheme_secrecy_add = 10
+        enemy_hostile_scheme_success_chance_add = -20
+        travel_danger = -5
+    }
+
+    traits = {
+        ninjarank_genin = 100
+    }
+}
+
+
+hozuki_legacy_4 = {
+    legacy = hozuki_legacy_track
+    character_modifier = {
+        intrigue = 4
+        vassal_opinion = 15
+        martial = 3
+    }
+}
+
+
+hozuki_legacy_5 = {
+    legacy = hozuki_legacy_track
+    character_modifier = {
+        advantage = 10
+        army_toughness_mult = 0.2
+        army_damage_mult = 0.2
+        max_combat_roll = 5
+        movement_speed = 0.10
+    }
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+
+yamanaka_legacy_1 = {
+    legacy = yamanaka_legacy_track
+    character_modifier = {
+        learning = 1
+        prowess = 3
+        advantage = 2
+    }
+}
+
+
+yamanaka_legacy_2 = {
+    legacy = yamanaka_legacy_track
+    character_modifier = {
+        intrigue = 8
+        stress_gain_mult = -0.10
+        martial = 3
+        army_toughness_mult = 0.10
+        counter_efficiency = 0.05
+    }
+}
+
+
+yamanaka_legacy_3 = {
+    legacy = yamanaka_legacy_track
+    character_modifier = {
+        diplomacy = 3
+        monthly_piety_gain_mult = -0.2
+        scheme_discovery_chance_mult = 0.2
+        owned_scheme_secrecy_add = 10
+    }
+
+    traits = {
+        ninjarank_genin = 100
+    }
+}
+
+
+yamanaka_legacy_4 = {
+    legacy = yamanaka_legacy_track
+    character_modifier = {
+        owned_hostile_scheme_success_chance_max_add = 30
+        owned_personal_scheme_success_chance_add = 20
+        enemy_hostile_scheme_success_chance_add = -20
+        enemy_personal_scheme_success_chance_add = -20
+        
+    }
+}
+
+
+yamanaka_legacy_5 = {
+    legacy = yamanaka_legacy_track
+    character_modifier = {
+        general_opinion = -15
+        vassal_opinion = 15
+        siege_phase_time = -0.15
+    }
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+
+ryudoin_legacy_1 = {
+    legacy = ryudoin_legacy_track
+    character_modifier = {
+        diplomacy = 5
+        prowess = 5 
+    }
+}
+
+
+ryudoin_legacy_2 = {
+    legacy = ryudoin_legacy_track
+    character_modifier = {
+        monthly_piety_gain_mult = -0.05
+        monthly_dynasty_prestige = 0.1
+        army_maintenance_mult = 0.15
+        
+    }
+}
+
+
+ryudoin_legacy_3 = {
+    legacy = ryudoin_legacy_track
+    character_modifier = {
+        build_speed = -0.10
+        development_growth = 0.10
+        owned_hostile_scheme_success_chance_add = 15
+        enemy_hostile_scheme_success_chance_add = -15
+    }
+
+    traits = {
+        ninjarank_genin = 100
+    }
+}
+
+
+ryudoin_legacy_4 = {
+    legacy = ryudoin_legacy_track
+    character_modifier = {
+        learning = 5
+        advantage = 3
+        monthly_martial_lifestyle_xp_gain_mult = 0.20
+    }
+}
+
+
+ryudoin_legacy_5 = {
+    legacy = ryudoin_legacy_track
+    character_modifier = {
+        levy_size = 0.10
+        knight_effectiveness_mult = 0.10
+        stress_gain_mult = -0.20
+    }
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+
+guren_legacy_1 = {
+    legacy = Guren_legacy_track
+    character_modifier = {
+        stewardship = 2
+        monthly_dread = 0.1  
+    }
+}
+
+
+guren_legacy_2 = {
+    legacy = Guren_legacy_track
+    character_modifier = {
+        monthly_piety = 0.10
+        travel_danger  = -5
+        advantage = 5
+        general_opinion = 5
+    }
+}
+
+
+guren_legacy_3 = {
+    legacy = Guren_legacy_track
+    character_modifier = {
+        prowess = 4
+        fort_level = 2
+        hostile_raid_time = 1
+        development_growth_factor  = 0.1
+        tax_mult = 0.1
+    }
+
+    traits = {
+        ninjarank_genin = 100
+    }
+}
+
+
+guren_legacy_4 = {
+    legacy = Guren_legacy_track
+    character_modifier = {
+        prowess = 4
+        levy_maintenance = -0.1
+        supply_limit_mult = 0.10
+    }
+}
+
+
+guren_legacy_5 = {
+    legacy = Guren_legacy_track
+    character_modifier = {
+        monthly_prestige_gain_mult = 0.2
+        enemy_hostile_scheme_success_chance_add = -15
+        army_siege_value_mult = 0.50
+        army_toughness_mult = 0.3
+        maa_damage_mult = 0.20
+        general_opinion = 5
+    }
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+
+kurotsuchi_legacy_1 = {
+    legacy = kurotsuchi_legacy_track
+    character_modifier = {
+        prowess = 5
+        martial = 2
+        travel_danger = -5
+    }
+    trait = novice_earth_bender
+}
+
+
+kurotsuchi_legacy_2 = {
+    legacy = kurotsuchi_legacy_track
+    character_modifier = {
+        development_growth_factor  = 0.1
+        maa_damage_mult = 0.30
+        maa_toughness_mult = 0.20
+    }
+    trait = proficient_earth_bender
+}
+
+
+kurotsuchi_legacy_3 = {
+    legacy = kurotsuchi_legacy_track
+    character_modifier = {
+        additional_fort_level = 1
+        build_speed = -0.15
+        build_gold_cost = -0.30
+        
+    }
+    traits = {
+        ninjarank_genin = 100
+    }
+}
+
+
+kurotsuchi_legacy_4 = {
+    legacy = kurotsuchi_legacy_track
+    character_modifier = {
+        siege_phase_time = -2
+        siege_weapon_siege_value_mult = 0.50
+        advantage = 7
+    }
+    trait = expert_earth_bender
+}
+
+
+kurotsuchi_legacy_5 = {
+    legacy = kurotsuchi_legacy_track
+    character_modifier = {
+        monthly_dynasty_prestige = 0.20
+        vassal_opinion = 5
+    }
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+kaguja_legacy_1 = { 
+    legacy = kaguja_legacy_track 
+    character_modifier = { 
+        diplomacy = -2 
+        advantage = 7 
+    } 
+} 
+
+kaguja_legacy_2 = { 
+    legacy = kaguja_legacy_track 
+    character_modifier = { 
+        movement_speed = 0.05 
+        attraction_opinion = -10 
+        monthly_prestige_gain_mult = 0.20
+    } 
+} 
+
+kaguja_legacy_3 = { 
+    legacy = kaguja_legacy_track 
+    character_modifier = { 
+        prowess = 5
+        martial = -1
+        knight_effectiveness_per_dread = 0.15 
+        stress_gain_mult = 0.15
+        general_opinion = -5
+    } 
+
+    traits = {
+        ninjarank_genin = 100
+    }
+} 
+
+kaguja_legacy_4 = { 
+    legacy = kaguja_legacy_track 
+    character_modifier = { 
+        prowess = 5
+        martial = -1
+        enemy_hard_casualty_modifier = 0.10 
+        general_opinion = -5
+        maa_screen_mult = -0.5
+    } 
+} 
+
+kaguja_legacy_5 = { 
+    legacy = kaguja_legacy_track 
+    character_modifier = {
+        maa_damage_mult = 0.5
+        prowess = 5 
+        martial = -1
+        general_opinion = -10
+        
+    } 
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+
+aburame_legacy_1 = { 
+    legacy = aburame_legacy_track 
+    character_modifier = {
+        scheme_discovery_chance_mult = 0.2
+        development_growth = 0.10 
+        advantage = 2
+    } 
+} 
+
+aburame_legacy_2 = { 
+    legacy = aburame_legacy_track 
+    character_modifier = { 
+        levy_size = 0.2
+        army_siege_value_mult = 1
+        inbreeding_chance = -1
+    } 
+} 
+
+aburame_legacy_3 = { 
+    legacy = aburame_legacy_track 
+    character_modifier = { 
+        monthly_lifestyle_xp_gain_mult = 0.10 
+        monthly_piety_gain_mult = -0.2
+        monthly_prestige_gain_mult = -0.2
+    } 
+
+    traits = {
+        ninjarank_genin = 100
+    }
+} 
+
+aburame_legacy_4 = { 
+    legacy = aburame_legacy_track 
+    character_modifier = { 
+        general_opinion = -20
+        siege_phase_time = -0.5
+        owned_hostile_scheme_success_chance_max_add = 50
+    } 
+} 
+
+aburame_legacy_5 = { 
+    legacy = aburame_legacy_track 
+    character_modifier = { 
+        intrigue = 5
+        prowess = 5
+        owned_personal_scheme_success_chance_add = 50
+        enemy_hostile_scheme_success_chance_add = -40
+        enemy_personal_scheme_success_chance_add = -40
+    } 
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+}
+
+hyuga_legacy_1 = { 
+    legacy = hyuga_legacy_track 
+    character_modifier = {
+        prowess = 3 
+        stress_gain_mult = -0.10 
+    } 
+} 
+
+hyuga_legacy_2 = { 
+    legacy = hyuga_legacy_track 
+    character_modifier = { 
+        diplomacy = 2
+        levy_size = 0.15 
+        knight_effectiveness_mult = 0.10 
+        development_growth = 0.1 
+    } 
+} 
+
+hyuga_legacy_3 = { 
+    legacy = hyuga_legacy_track 
+    character_modifier = { 
+        intrigue = 2
+        vassal_opinion = 20 
+        dread_gain_mult = 0.10 
+        army_maintenance_mult = -0.10 
+    } 
+
+    traits = {
+        ninjarank_genin = 100
+    }
+} 
+
+hyuga_legacy_4 = { 
+    legacy = hyuga_legacy_track 
+    character_modifier = { 
+        martial = 2
+        monthly_learning_lifestyle_xp_gain_mult = 0.15 
+        monthly_piety = 0.5 
+        monthly_learning_martial_xp_gain_mult = 0.10 
+    } 
+} 
+
+hyuga_legacy_5 = { 
+    legacy = hyuga_legacy_track 
+    character_modifier = { 
+        monthly_prestige_gain_mult = 0.10 
+        monthly_dynasty_prestige = 0.15 
+        build_speed = -0.10 
+    } 
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+} 
+
+uchiha_legacy_1 = { 
+    legacy = uchiha_legacy_track 
+    character_modifier = {
+        prowess = 4 
+        stress_loss_mult = 0.05 
+        monthly_prestige_gain_mult = 0.10 
+    } 
+} 
+
+uchiha_legacy_2 = { 
+    legacy = uchiha_legacy_track 
+    character_modifier = { 
+        martial = 3 
+        siege_phase_time = -0.10 
+        knight_effectiveness_mult  = 0.10 
+    } 
+} 
+
+uchiha_legacy_3 = { 
+    legacy = uchiha_legacy_track 
+    character_modifier = {
+        intrigue = 3 
+        max_hostile_schemes_add = 1 
+        owned_hostile_scheme_success_chance_add = 10
+    } 
+
+    traits = {
+        ninjarank_genin = 100
+    }
+} 
+
+uchiha_legacy_4 = { 
+    legacy = uchiha_legacy_track 
+    character_modifier = { 
+        general_opinion = -8
+        learning = 3
+        monthly_county_control_growth_add = 0.20 
+        army_maintenance_mult = -0.10 
+        vassal_levy_contribution_mult = 0.10 
+    } 
+} 
+
+uchiha_legacy_5 = { 
+    legacy = uchiha_legacy_track 
+    character_modifier = { 
+        monthly_prestige_gain_mult = 0.20 
+        vassal_opinion = 15 
+        monthly_piety_gain_mult = 0.2 
+    } 
+
+    traits = {
+        ninjarank_chunin = 100
+    }
+} 
+
