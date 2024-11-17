@@ -1,0 +1,290 @@
+﻿namespace = search_the_beasts
+
+search_the_beasts.1 = {
+	title = search_the_beasts.11.t
+	desc = search_the_beasts.1.d
+	theme = martial
+	left_portrait = {
+		character = scope:actor
+		animation = worry
+	}
+	option = {
+		name = search_the_beasts.1.a
+		trigger = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				is_adult = yes
+			}
+		}
+				
+	}
+	option = {
+		name = search_the_beasts.1.b
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+			}
+		}
+			remove_short_term_gold = 400
+		scope:actor = {
+			trigger_event = {
+				id = search_the_beasts.11
+			}
+			add_character_flag = {
+				flag = used_search_self
+				months = 48
+			}
+		}		
+	}
+}
+
+search_the_beasts.11 = {
+	title = search_the_beasts.11.t
+	desc = search_the_beasts.11.d
+	theme = martial
+	left_portrait = {
+		character = scope:actor
+		animation = worry
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = one_tail }
+			}
+		}
+		create_character = {
+			name = random_person_1
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = one_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_1
+		}
+	}
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = two_tail }
+				AND = {
+					has_trait = one_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_2
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = two_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_2
+		}
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = three_tail }
+				AND = {
+					has_trait = one_tail
+					has_trait = two_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_3
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = three_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_3
+		}
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = four_tail }
+				AND = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_4
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = four_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_4
+		}
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = five_tail }
+				AND = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_5
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = five_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_5
+		}
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = six_tail }
+				AND = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_6
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = six_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_6
+		}
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = seven_tail }
+				AND = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_7
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = seven_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_7
+		}
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = eight_tail }
+				AND = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_8
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = eight_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_8
+		}
+	}
+
+	option = {
+		name = search_the_beasts.11.a
+		trigger = {
+			scope:actor = {
+				is_adult = yes
+				NOT = { has_trait = nine_tail }
+				AND = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+				}
+			}
+		}
+		create_character = {
+			name = random_person_9
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			random_traits = yes
+			trait = nine_tail
+			template = pots_template_male_genes
+			save_scope_as = tailed_beast_9
+		}
+	}
+}
+

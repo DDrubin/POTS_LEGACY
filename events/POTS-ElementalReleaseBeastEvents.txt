@@ -1,0 +1,36 @@
+﻿namespace = ElementalReleaseBeast
+
+ElementalReleaseBeast.001 = {
+    type = character_event
+    title = ElementalReleaseBeast.001.t
+    desc = ElementalReleaseBeast.001.d
+
+    theme = martial
+
+    left_portrait = {
+        character = root
+        animation = worry
+    }
+
+    option = {
+        name = ElementalReleaseBeast.001.a
+            trigger = {
+                	has_trait = one_tail
+            }
+	    add_trait = magnetrelease
+        }
+    option = {
+		name = ElementalReleaseBeast.001.b
+            trigger = {
+                	has_trait = five_tail
+            }
+            add_trait = boilrelease
+    }
+    option = {
+        name = ElementalReleaseBeast.001.c
+            trigger = {
+                has_trait = four_tail
+            }
+            add_trait = lavarelease 
+    }
+}

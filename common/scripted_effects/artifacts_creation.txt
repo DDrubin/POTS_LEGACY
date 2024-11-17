@@ -1,0 +1,780 @@
+﻿create_artifact_arm_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_arm_name
+			creator = scope:maker
+			description = create_artifact_arm_description
+			visuals = regalia
+			type = regalia
+			template = test_arm_template
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		add_arm_artifact_modifier_effect = yes
+		if = {
+			limit = {
+				root = {
+						has_character_flag = mango
+				}
+			}
+			root = {
+				remove_character_flag = mango
+			}
+			add_arm02_artifact_modifier_effect = yes
+		}
+		if = {
+			limit = {
+				root = {
+					has_character_flag = eternal
+				}
+			}
+			root = {
+				remove_character_flag = eternal
+			}
+			add_arm03_artifact_modifier_effect = yes
+		}
+	}
+}	
+
+
+create_artifact_sharingan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_sharingan_name
+			creator = scope:maker
+			description = create_artifact_sharingan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_6_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_sharingan01_artifact_modifier_effect = yes
+			set_variable = {
+				name = sharingan1
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_mangekyo_sharingan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_mangekyo_sharingan_name
+			creator = scope:maker
+			description = create_artifact_sharingan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_7_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_sharingan02_artifact_modifier_effect = yes
+			set_variable = {
+				name = sharingan2
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_eternal_sharingan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_eternal_sharingan_name
+			creator = scope:maker
+			description = create_artifact_sharingan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_sharingan03_artifact_modifier_effect = yes
+			set_variable = {
+				name = sharingan3
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_pedestal_forbidden_scroll_effect = {
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_pedestal_forbidden_scroll_name
+			description = create_artifact_pedestal_forbidden_scroll_description
+			visuals = scroll
+			template = test_scroll_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			history = {
+				type = created_before_history
+			}
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		add_forbidden_scroll_artifact_modifier_effect = yes
+	}
+}
+
+create_artifact_sun_moon_staff_effect = {
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_sun_moon_staff_name		
+			description = create_artifact_sun_moon_staff_description
+			visuals = sun_moon_staff
+			template = sun_moon_template
+			type = spear
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			history = {
+				type = created
+				date = 895.1.1
+				creator = character:999003
+				recipient = character:999003
+				location = province:9930
+			}
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		add_sun_moon_artifact_modifier_effect = yes
+	}
+}
+
+create_artifact_bashosen_fan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bashosen_fan_name
+			creator = character:999003
+			description =create_artifact_bashosen_fan_description
+			visuals = bashosen_fan
+			template = bashosen_fan_template
+			type = regalia
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			history = {
+				type = created
+				date = 895.1.1
+				creator = character:999003
+				recipient = character:999003
+				location = province:9930
+			}
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bashosen_fan_artifact_modifier_effect = yes
+	}
+}
+create_artifact_kokinjo_rope_effect = {
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_kokinjo_rope_name
+			creator = character:999003
+			description =create_artifact_kokinjo_rope_description
+			visuals = kokinjo_rope
+			template = kokinjo_rope_template
+			type = regalia
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			history = {
+				type = created
+				date = 895.1.1
+				creator = character:999003
+				recipient = character:999003
+				location = province:9930
+			}
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		add_kokinjo_rope_artifact_modifier_effect = yes
+	}
+}
+create_artifact_shichi_sword_effect = {
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_shichi_sword_name
+			creator = character:999003
+			description = create_artifact_shichi_sword_description
+			visuals = shichi_sword
+			template = shichi_sword_template
+			type = sword
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			history = {
+				type = created
+				date = 895.1.1
+				creator = character:999003
+				recipient = character:999003
+				location = province:9930
+			}
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		add_shichi_sword_artifact_modifier_effect = yes
+	}
+}
+create_artifact_sealing_pot_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_sealing_pot_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_description
+			visuals = sealing_pot
+			template = sealing_pot_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_5_modifier
+			durability = 150
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		set_variable = {
+			name = sealing
+			value = 0
+		}
+	}
+}
+create_artifact_rinnegan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_rinnegan_name
+			creator = scope:maker
+			description = create_artifact_rinnegan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_sharingan04_artifact_modifier_effect = yes
+			set_variable = {
+				name = rinnegan1
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_rinnesharingan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_rinnesharingan_name
+			creator = scope:maker
+			description = create_artifact_rinnesharingan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_sharingan05_artifact_modifier_effect = yes
+			set_variable = {
+				name = rinnesharingan1
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_byakugan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_byakugan_name
+			creator = scope:maker
+			description = create_artifact_byakugan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_6_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_byakugan01_artifact_modifier_effect = yes
+			set_variable = {
+				name = byakugan1
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_tenseigan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_tenseigan_name
+			creator = scope:maker
+			description = create_artifact_tenseigan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_7_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_byakugan02_artifact_modifier_effect = yes
+			set_variable = {
+				name = tenseigan1
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_jogan_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_jogan_name
+			creator = scope:maker
+			description = create_artifact_jogan_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_byakugan03_artifact_modifier_effect = yes
+			set_variable = {
+				name = jogan1
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_forbiddeneyes_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+
+	scope:owner = {
+		create_artifact = {
+			name = create_artifact_forbiddeneyes_name
+			creator = scope:maker
+			description = create_artifact_forbiddeneyes_description
+			visuals = human_skull1
+			template = test_eye_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_7_modifier
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = no
+		}
+	}
+	scope:newly_created_artifact = {
+		hidden_effect = {
+			add_scaled_artifact_modifier_grandeur_big_effect = yes
+			add_scaled_artifact_modifier_majesty_effect = yes
+			add_forbiddeneyes_artifact_modifier_effect = yes
+			set_variable = {
+				name = forbiddeneyes1
+				value = 0
+			}
+		}
+	}
+}
+create_artifact_bijuu1_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu1_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu1_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu1
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu2_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu2_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu2_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu2
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu3_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu3_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu3_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu3
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu4_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu4_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu4_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu4
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu5_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu5_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu5_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu5
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu6_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu6_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu6_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu6
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu7_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu7_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu7_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu7
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu8_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu8_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu8_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu8
+			value = 0
+		}
+	}
+}
+create_artifact_bijuu9_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	$MAKER$ = { save_scope_as = maker }
+
+	set_artifact_rarity_illustrious = yes
+	scope:owner = {
+		create_artifact = {	
+			name = create_artifact_bijuu9_name
+			creator = scope:maker
+			description = create_artifact_sealing_pot_filled_description
+			visuals = sealing_pot
+			template = sealing_pot_filled_template
+			type = pedestal
+			modifier = artifact_monthly_prestige_8_modifier
+			durability = 40
+			save_scope_as = newly_created_artifact
+			wealth = scope:wealth
+			quality = scope:quality
+			decaying = yes
+		}
+	}
+	scope:newly_created_artifact = {
+		add_bijuu9_artifact_modifier_effect = yes
+		set_variable = {
+			name = bijuu9
+			value = 0
+		}
+	}
+}

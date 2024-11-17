@@ -1,0 +1,608 @@
+﻿#POTS-Modifier
+
+modifier_heal_self = {
+    icon = health_positive
+    desc = modifier_heal_self_desc
+    health = 1.8
+    fertility = 0.25
+    character_travel_speed = 10
+}
+
+modifier_woodforest_target = {
+    icon = magic_negative
+    desc = modifier_woodforest_target_desc
+    intrigue = -4
+    advantage = -8
+    hard_casualty_modifier = 0.2
+    army_damage_mult = -0.15
+    movement_speed = -0.2
+}
+
+modifier_woodstyle_self = {
+    icon = magic_positive
+    desc = modifier_woodstyle_self_desc
+    advantage = 8
+    martial = 5
+    prowess = 10
+    movement_speed = 0.2
+    enemy_hard_casualty_modifier = 0.1
+    enemy_terrain_advantage = -0.15
+    character_travel_speed = 25
+}
+
+modifier_firestyle_target = {
+    icon = health_negative
+    desc = modifier_firestyle_target_desc
+    health = -1
+    prowess = -5
+    army_screen_mult = -0.2
+}
+
+modifier_lightningstyle_self = {
+    icon = health_positive
+    desc = modifier_lightningstyle_self_desc
+    hard_casualty_modifier = 0.15
+	enemy_hard_casualty_modifier = 0.15
+	pursue_efficiency = 0.3
+    max_combat_roll = 8
+    min_combat_roll = 2
+    prowess = 8
+    character_travel_speed_mult = 0.2
+}
+
+modifier_earthstyle_target = {
+    icon = magic_negative
+    desc = modifier_earthstyle_target_desc
+    advantage = -6
+    hard_casualty_modifier = 0.3
+    movement_speed = -0.95
+}
+
+modifier_windstyle_target = {
+    icon = magic_negative
+    desc = modifier_windstyle_target_desc
+    mountains_advantage = -10
+    enemy_terrain_advantage = 0.15
+    max_combat_roll = -5
+    pursue_efficiency = -0.5
+    movement_speed = -0.3
+}
+
+modifier_waterstyle_self = {
+    icon = magic_positive
+    desc = modifier_waterstyle_self_desc
+    retreat_losses = -0.2
+    no_water_crossing_penalty = yes
+    no_disembark_penalty = yes
+    coastal_advantage = 6
+    wetlands_advantage = 4
+    hostile_scheme_success_chance_add = 10
+}
+
+#Mangekyo Dojutsu Modifiers
+
+modifier_rasenamaterasu_target = {
+    icon = magic_negative
+    desc = modifier_rasenamaterasu_target_desc
+    health = -1.2
+    prowess = -10
+    advantage = -5
+    army_damage_mult = -0.15
+    movement_speed = -0.45
+}
+
+modifier_genjutsu_target = {
+    icon = social_negative
+    desc = modifier_genjutsu_target_desc
+    intrigue = -4
+    stress_gain_mult = 0.45
+    enemy_hostile_scheme_success_chance_add = 15
+}
+
+modifier_finalgenjutsu_target = {
+    icon = social_negative
+    desc = modifier_finalgenjutsu_target_desc
+    intrigue = -10
+    diplomacy = -5
+    general_opinion = -20
+    stress_gain_mult = 0.8
+    enemy_hostile_scheme_success_chance_add = 30
+}
+
+amaterasu_modifier = {
+    icon = health_negative
+    desc = amaterasu_modifier_desc
+    health = -2.2
+    martial = -2
+    prowess = -10
+    advantage = -4
+    army_damage_mult = -0.1
+    movement_speed = -0.1
+}
+
+used_amaterasu_modifier = {
+    icon = health_negative
+    health = -0.4
+    prowess = -5
+}
+
+used_tsukuyomi_modifier = {
+    icon = health_negative
+    desc = used_tsukuyomi_modifier_desc
+    health = -1.5
+    martial = -4
+    intrigue = -6
+    advantage = -10
+    prowess = -10
+    army_damage_mult = -0.15
+    stress_gain_mult = 1.2
+}
+
+under_tsukuyomi_modifier = {
+    icon = health_negative
+    health = -1.2
+    intrigue = -1
+    martial = -2
+    prowess = -5
+}
+
+modifier_susanoo = {
+	icon = magic_positive
+        desc = modifier_susanoo_desc
+	martial = 4
+	advantage = 10
+	prowess = 15
+	levy_reinforcment_rate = 0.60
+	movement_speed = -0.3
+	enemy_hard_casualty_modifier = 0.1
+	enemy_terrain_advantage = -0.15
+	health = -1.5
+}
+
+modifier_bigsusanoo = {
+	icon = magic_positive
+	desc = modifier_bigsusanoo_desc
+	martial = 6
+	advantage = 15
+	prowess = 22
+	levy_reinforcment_rate = 0.8
+	movement_speed = -0.15
+        enemy_hard_casualty_modifier = 0.2
+	enemy_terrain_advantage = -0.25
+	army_damage_mult = 0.1
+	health = -1
+}
+
+modifier_kamui_self = {
+	icon = magic_positive
+	desc = modifier_kamui_self_desc
+	intrigue = 5
+	advantage = 5
+	army_damage_mult = 0.1
+	retreat_losses = -0.5
+	movement_speed = 0.35
+        character_travel_speed = 60
+	health = -0.6
+}
+
+modifier_kamui_target = {
+	icon = magic_negative
+	desc = modifier_kamui_target_desc
+	intrigue = -6
+	advantage = -12
+	army_damage_mult = -0.15
+	movement_speed = -0.6
+}
+
+
+#Byakugan Dojutsu Modifiers
+
+modifier_byakugan_self = {
+    icon = magic_positive
+    desc = modifier_byakugan_self_desc
+    defender_advantage = 10
+    controlled_province_advantage = 4
+    hard_casualty_modifier = 0.15
+    army_toughness_mult = 0.2
+    movement_speed = -0.65
+}
+
+modifier_byakugan_target = {
+    icon = magic_negative
+    desc = modifier_byakugan_target_desc
+    health = -0.5
+    martial = -4
+    prowess = -10
+    army_pursuit_mult = -0.15
+    movement_speed = -0.25
+}
+
+modifier_tenseigan_self = {
+    icon = magic_positive
+    desc = modifier_tenseigan_self_desc
+	martial = 6
+	advantage = 18
+	prowess = 25
+	levy_reinforcment_rate = 0.5
+	movement_speed = 0.25
+}
+
+modifier_tenseigan_target1 = {
+    icon = health_negative
+    desc = modifier_tenseigan_target1_desc
+    health = -2
+    martial = -8
+    intrigue = -12
+    prowess = -30
+}
+
+modifier_tenseigan_target2 = {
+	icon = magic_negative
+	desc = modifier_tenseigan_target2_desc
+	advantage = -15
+	enemy_terrain_advantage = 0.25
+	levy_reinforcment_rate = -0.8
+    hard_casualty_modifier = 0.25
+    army_damage_mult = -0.2
+    siege_phase_time = 1
+    movement_speed = -0.3
+}
+
+byakugan_collect1 = {
+	icon = social_negative
+	dynasty_house_opinion = -5
+}
+byakugan_collect2 = {
+	icon = social_negative
+	dynasty_house_opinion = -10
+}
+byakugan_collect3 = {
+	icon = social_negative
+	dynasty_house_opinion = -15
+}
+byakugan_collect4 = {
+	icon = social_negative
+	dynasty_house_opinion = -20
+}
+byakugan_collect5 = {
+	icon = social_negative
+	dynasty_house_opinion = -20
+	dynasty_opinion = -5
+}
+byakugan_collect6 = {
+	icon = social_negative
+	dynasty_house_opinion = -20
+	dynasty_opinion = -10
+}
+byakugan_collect7 = {
+	icon = social_negative
+	dynasty_house_opinion = -20
+	dynasty_opinion = -15
+}
+byakugan_collect8 = {
+	icon = social_negative
+	dynasty_house_opinion = -20
+	dynasty_opinion = -20
+}
+byakugan_collect9 = {
+	icon = social_negative
+	dynasty_house_opinion = -20
+	dynasty_opinion = -20
+	general_opinion = -5
+}
+byakugan_collect10 = {
+	icon = social_negative
+	dynasty_house_opinion = -20
+	dynasty_opinion = -20
+	general_opinion = -10
+}
+failed_tenseigan_modifier = {
+    icon  = stress_negative
+    stress_gain_mult = 0.25
+}
+build_tenseigan_modifier = {
+    icon  = stewardship_positive
+    health = 1.6
+    fertility = -0.15
+    prowess = 14
+}
+
+
+#Training Modifiers
+trained_recently = {
+    icon = health_negative
+    health = -0.25
+	stress_gain_mult = 0.2
+}
+trained_sharingan = {
+    icon = health_negative
+    health = -0.25
+	stress_gain_mult = 1.6
+}
+non_uchiha_modifier = {
+    icon = health_negative
+    health = -1.2
+	stress_gain_mult = 0.2
+}
+non_uchiha_rinne_modifier = {
+    icon = health_negative
+    health = -1.8
+	stress_gain_mult = 0.3
+}
+
+#Rinnegan Dojutsu Modifiers
+
+successful_modifier = {
+    icon  = stress_positive
+    stress_gain_mult = -0.25
+}
+
+chibakutensei_modifier = {
+    icon  = magic_positive
+	desc = chibakutensei_modifier_desc
+    	siege_phase_time = -0.65
+	army_damage_mult = 0.25
+	hard_casualty_modifier = -0.25
+	pursue_efficiency = 0.3
+	
+}
+
+tengaishinsei_modifier = {
+    icon = magic_positive
+	desc = tengaishinsei_modifier_desc
+    siege_phase_time = -1.5
+    army_siege_value_mult = 0.4
+}
+
+narakapath_modifier = {
+    icon = health_positive
+	desc = narakapath_modifier_desc
+    	health = 6
+	prowess = 10
+	stress_gain_mult = -0.1
+	hostile_scheme_success_chance_add = 15
+}
+
+failed_seal_modifier = {
+    icon = martial_negative
+    martial = -4
+}
+
+summoned_gedo_mazo_modifier = {
+    icon = intrigue_negative
+    intrigue = -8
+	enemy_hostile_scheme_success_chance_add = 15
+}
+
+stolensharingan_modifier = {
+    icon = health_negative
+    health = -2
+}
+
+studied = {
+	icon = learning_negative
+	stress_gain_mult = 1.5
+}
+
+searched_recently = {
+	icon = learning_negative
+	stress_gain_mult = 1.6
+}
+
+health50_mod = {
+	icon = health_negative
+	health = -50
+}
+health40_mod = {
+	icon = health_negative
+	health = -40
+}
+health30_mod = {
+	icon = health_negative
+	health = -30
+}
+health20_mod = {
+	icon = health_negative
+	health = -20
+}
+health10_mod = {
+	icon = health_negative
+	health = -10
+}
+health9_mod = {
+	icon = health_negative
+	health = -9.5
+}
+health8_mod = {
+	icon = health_negative
+	health = -8
+}
+health6_mod = {
+	icon = health_negative
+	health = -6
+}
+health4_mod = {
+	icon = health_negative
+	health = -4
+}
+health2_mod = {
+	icon = health_negative
+	health = -2
+}
+health1_mod = {
+	icon = health_negative
+	health = -1
+}
+
+#artifacts
+sharingan_artifact_modifier = {
+	icon = magic_positive
+	intrigue = 2
+	dread_gain_mult = 0.5
+	monthly_dread = 0.5
+	stacking = yes
+}
+arm_artifact_modifier = {
+	icon = magic_positive
+	health = 0.2
+	prowess = 3
+	martial = 3
+	intrigue = 3
+	dread_gain_mult = 2
+	monthly_dread = 0.8
+	stacking = yes
+}
+forbidden_scroll_artifact_modifier = {
+	icon = magic_positive
+	intrigue = 2
+	learning = 5
+	prowess = 5
+	stewardship = 5
+}
+sun_moon_artifact_modifier = {
+	icon = magic_positive
+	martial = 2
+	prowess = 5
+	monthly_piety = 1
+}
+bashosen_fan_artifact_modifier = {
+	icon = magic_positive
+	martial = 3
+	intrigue = 2
+	prowess = 5
+	monthly_dread = 0.5
+	monthly_piety = 0.2
+}
+kokinjo_rope_artifact_modifier = {
+	icon = magic_positive
+	intrigue = 5
+	monthly_piety = 0.5
+	abduct_scheme_power_add = 20
+	abduct_scheme_resistence_add = 20
+	scheme_discovery_chance_mult = 0.1
+}
+shichi_sword_artifact_modifier = {
+	icon = magic_positive
+	martial = 2
+	prowess = 2
+	intrigue = 2
+	scheme_discovery_chance_mult = 0.5
+}
+byakugan_artifact_modifier = {
+	icon = magic_positive
+	intrigue = 3
+	dread_gain_mult = 0.6
+	monthly_dread = 0.5
+	stacking = yes
+}
+forbiddeneyes_artifact_modifier = {
+	icon = magic_positive
+	intrigue = 4
+	dread_gain_mult = 1
+	monthly_dread = 0.6
+	stacking = yes
+}
+bijuu_artifact_modifier = {
+	icon = magic_positive
+	dread_gain_mult = 1
+	monthly_dread = 0.5
+	monthly_prestige_gain_mult = 0.1 
+	monthly_prestige = 2
+	stacking = yes
+}
+
+trained_seal_novice = {
+	icon = health_negative
+	stress_gain_mult = 0.2
+}
+trained_seal_basic = {
+	icon = health_negative
+	health = -0.2
+	stress_gain_mult = 0.5
+}
+trained_seal_specialist = {
+	icon = health_negative
+	health = -0.5
+	stress_gain_mult = 0.8
+}
+trained_seal_master = {
+	icon = health_negative
+	health = -0.8
+	stress_gain_mult = 1.20
+}
+trained_seal_lives = {
+	icon = health_negative
+	health = -1.5
+	stress_gain_mult = 2
+}
+
+training_eyes_level_1 = {
+	icon = health_negative
+}
+
+training_eyes_level_2 = {
+	icon = health_negative
+	stress_gain_mult = 0.5
+}
+
+training_eyes_level_3 = {
+	icon = health_negative
+	stress_gain_mult = 1
+}
+
+training_eyes_level_4 = {
+	icon = health_negative
+	stress_gain_mult = 1.25
+}
+
+training_eyes_level_5 = {
+	icon = health_negative
+	stress_gain_mult = 2
+	dissabilities_gain_probability = {
+		CHANCE_OF_DISABILLITY = 5
+	}
+}
+
+training_eyes_level_6 = {
+	icon = health_negative
+	stress_gain_mult = 2.5
+	dissabilities_gain_probability = {
+		CHANCE_OF_DISABILLITY = 10
+	}
+}
+
+training_eyes_level_7 = {
+	icon = health_negative
+	stress_gain_mult = 4
+	dissabilities_gain_probability = {
+		CHANCE_OF_DISABILLITY = 15
+	}
+}
+
+training_eyes_level_8 = {
+	icon = health_negative
+	stress_gain_mult = 5.5
+	dissabilities_gain_probability = {
+		CHANCE_OF_DISABILLITY = 20
+	}
+}
+
+training_eyes_level_9 = {
+	icon = health_negative
+	stress_gain_mult = 7.75
+	dissabilities_gain_probability = {
+		CHANCE_OF_DISABILLITY = 25
+	}
+}
+
+training_eyes_level_10 = {
+	icon = health_negative
+	stress_gain_mult = 10
+	dissabilities_gain_probability = {
+		CHANCE_OF_DISABILLITY = 30
+	}
+}
+
+is_training_eyes = {
+	icon = health_negative
+}

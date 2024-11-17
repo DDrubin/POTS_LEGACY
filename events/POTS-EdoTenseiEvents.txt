@@ -1,0 +1,189 @@
+﻿namespace = edo_tensei
+
+edo_tensei.0001 = {
+    type = character_event
+    title = edo_tensei.0001.t
+    desc = edo_tensei.0001.d
+    theme = martial
+
+    left_portrait = {
+        character = scope:actor
+        animation = idle
+    }
+
+	option = { # adult
+		name = edo_tensei.0001.a
+
+		save_scope_value_as = {
+			name = pots_age
+			value = 18
+		}
+        hidden_effect = {
+            trigger_event = edo_tensei.0002
+        }
+	}
+	option = { # baby
+		name = edo_tensei.0001.b
+
+		save_scope_value_as = {
+			name = pots_age
+			value = 0
+		}
+        hidden_effect = {
+            trigger_event = edo_tensei.0002
+        }
+	}
+}
+
+edo_tensei.0002 = {
+	type = character_event
+	title = edo_tensei.0002.t
+	desc = edo_tensei.0002.d
+	theme = dungeon
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_rational
+	}
+
+	option = { #female
+		name = edo_tensei.0002.a
+
+		hidden_effect = {
+            trigger_event = edo_tensei.0003
+        }
+	}
+
+	option = { #male
+		name = edo_tensei.0002.b
+
+		hidden_effect = {
+            trigger_event = edo_tensei.0004
+        }
+	}
+}
+
+edo_tensei.0003 = {
+	type = character_event
+	title = edo_tensei.0003.t
+	desc = edo_tensei.0003.d
+	theme = dungeon
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_rational
+	}
+
+	option = { #female
+		name = edo_tensei.0003.a
+		
+		trigger = { age >= 20 }
+
+		create_character = {
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = female
+			#trait = substitue_shinigami
+			template = pots_template_female_genes
+			save_scope_as = edo_tensei_zombie_female
+		}
+
+		scope:edo_tensei_zombie_female = {
+			add_character_flag = edo_zombie_resurected_female
+			copy_traits = scope:recipient
+		}
+
+        hidden_effect = {
+            trigger_event = edo_tensei.0005
+        }
+	}
+}
+
+edo_tensei.0004 = {
+	type = character_event
+	title = edo_tensei.0004.t
+	desc = edo_tensei.0004.d
+	theme = dungeon
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_rational
+	}
+
+	option = { #male
+		name = edo_tensei.0004.a
+		
+		trigger = { age >= 20 }
+
+		create_character = {
+			employer = scope:actor
+            age = scope:pots_age
+			dynasty = none
+            gender = male
+			template = pots_template_male_genes
+            #trait = substitue_shinigami
+			save_scope_as = edo_tensei_zombie_male
+		}
+
+		scope:edo_tensei_zombie_male = {
+			add_character_flag = edo_zombie_resurected_male
+			copy_traits = scope:recipient
+		}
+        hidden_effect = {
+            trigger_event = edo_tensei.0006
+        }
+	}
+}
+
+edo_tensei.0005 = {
+	type = character_event
+	title = edo_tensei.0005.t
+	desc = edo_tensei.0005.d
+	theme = dungeon
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_rational
+	}
+    right_portrait = {
+        character = scope:edo_tensei_zombie_female
+        animation = idle
+    }
+
+	option = { #male
+		name = edo_tensei.0005.a		
+		trigger = { age >= 20 }
+            scope:edo_tensei_zombie_female = {
+                add_gold = 500
+				add_trait = substitute_shinigami
+            }
+        }
+}
+
+edo_tensei.0006 = {
+	type = character_event
+	title = edo_tensei.0006.t
+	desc = edo_tensei.0006.d
+	theme = dungeon
+
+	left_portrait = {
+		character = scope:actor
+		animation = personality_rational
+	}
+    right_portrait = {
+        character = scope:edo_tensei_zombie_male
+        animation = idle
+    }
+
+	option = { #male
+		name = edo_tensei.0006.a
+		trigger = {
+			age >= 20 
+			}
+            scope:edo_tensei_zombie_male = {
+                add_gold = 500
+				add_trait = substitute_shinigami
+            }
+        }
+}

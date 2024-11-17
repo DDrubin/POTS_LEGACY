@@ -1,0 +1,190 @@
+﻿#Rinnegan Event Localization
+l_english:
+
+#Bijuu & sealing
+ search_the_beasts.1.d:0 "The nine tailed beasts, also known as the Bijuu, are incredibly powerful. Their power is so great that it can not manifest itself on this world alone. To facilitate this, they let themselves be sealed into human vessels. While it is impossible to control one of these beasts without being their respective vessel, I can still try to find out who and where these demons reside. Perhaps I am even able to bind one of the vessels to me. However, actively searching for them will draw attention, if not by others then at the very least by the demons themselves. A potentially risky endeavour. Not only that, but the chances of actually finding one of them are absolutely not looking in my favor."
+ search_the_beasts.1.a:0 "No. This is far too risky."
+ search_the_beasts.1.b:0 "I will try to find one of them."
+
+ search_the_beasts.11.t:0 "Search for the beasts"
+ search_the_beasts.11.d:0 "I will start searching for the tailed beasts, in the hopes of finding one of their whereabouts. For good or ill, knowing their location will be critical in terms of short- and longterm planning."
+ search_the_beasts.11.a:0 "Tradtionally, the beasts are sealed away into children."
+ 
+ SealingEvents.001.t:0 "Extract the Bijuu."
+ SealingEvents.001.d:0 "Jinchurikis are humans that were outfitted with a seal containing one of the nine bijuu. The tailed beasts are demons made out of pure Chakra, thus, immortal and always reforming should one be able to destroy their physical bodies. The bearer of such a seal and demon gains an enormous boost in overall fighting-power and becomes unbelievably hard to kill, automatically making them key-players in many situations even without their express desire. While it is impossible to control those demons diretly and influencing their containers is no guarantee for compliance, it is possible to extract the beasts from their hosts and sealing them into a different vessel. In case of inanimate objects, these measures are only temporary but fulfill their role in containing a bijuu until a new host has been decided on."
+ SealingEvents.001.a:0 "Extract the Ichibi"
+ SealingEvents.001.b:0 "Extract the Niibi"
+ SealingEvents.001.c:0 "Extract the Sanbi"
+ SealingEvents.001.e:0 "Extract the Yonbi"
+ SealingEvents.001.f:0 "Extract the Gobi"
+ SealingEvents.001.g:0 "Extract the Rokubi"
+ SealingEvents.001.h:0 "Extract the Nanabi"
+ SealingEvents.001.i:0 "Extract the Hachibi"
+ SealingEvents.001.j:0 "Extract the Kyuubi"
+ 
+ SealingEvents.002.t:0 "Transfer the Bijuu."
+ SealingEvents.002.d:0 "Possessing an object holding one of the tailed beasts, it is of the utmost importance to find a suitable host to transfer the demon into. Non-living objects detoriate fast when they are objected to these amounts of malevolent Chakra. The container breaking may not have any adverse affects besides the Bijuu inside having to reform again, but the amount of resources already invested into this project is too big to just let this opportunity slip away."
+ SealingEvents.002.a:0 "Transfer the Ichibi"
+ SealingEvents.002.b:0 "Transfer the Niibi"
+ SealingEvents.002.c:0 "Transfer the Sanbi"
+ SealingEvents.002.e:0 "Transfer the Yonbi"
+ SealingEvents.002.f:0 "Transfer the Gobi"
+ SealingEvents.002.g:0 "Transfer the Rokubi"
+ SealingEvents.002.h:0 "Transfer the Nanabi"
+ SealingEvents.002.i:0 "Transfer the Hachibi"
+ SealingEvents.002.j:0 "Transfer the Kyuubi"
+
+
+ #Eye Artifacts Preservation Events
+ artifact_eye.001.t:0 "Preserving your Eyes"
+ artifact_eye.001.d:0 "I will preserve and store my eyes for alternative uses. Many thing scan be done with Chakra and perhaps there are even eyes, which are better than mine."
+ artifact_eye.001.a:0 "Preserve and store mature Sharingan."
+ artifact_eye.001.b:0 "Preserve and store Mangekyo-Sharingan."
+ artifact_eye.001.c:0 "Preserve and store eternal Sharingan."
+ artifact_eye.001.e:0 "Preserve and store Rinnegan"
+ artifact_eye.001.f:0 "Preserve and store Rinnesharingan"
+ artifact_eye.001.g:0 "Preserve and store Byakugan"
+ artifact_eye.001.h:0 "Preserve and store Tenseigan"
+ artifact_eye.001.i:0 "Preserve and store Jogan"
+ artifact_eye.001.j:0 "Preserve and store forbidden eyes"
+ 
+### Steal Sharingan
+ sharingan_theft.001.t:0 "Acquisition of Mangekyo Sharingan"
+ sharingan_theft.001.desc:0 "I may not possess these divine eyes, but I will make this power mine no matter the cost! After all, why should they be the ones to bear these powers if I have the same bloodline as well. These blessed eyes will be put to good use. This, I guarantee."
+ sharingan_theft.001.a:0 "Obtain the Mangekyo Sharingan"
+ sharingan_theft.001.b:0 "Obtain the Mangekyo Sharingan"
+ sharingan_theft.001.c:0 "Obtain the Mangekyo Sharingan"
+ sharingan_theft.001.d:0 "Obtain the Mangekyo Sharingan"
+
+
+### Eye Artifacts
+ create_artifact_sharingan_name:0 "Sharingan"
+ create_artifact_mangekyo_sharingan_name:0 "Mangekyo Sharingan"
+ create_artifact_eternal_sharingan_name:0 "Eternal Sharingan"
+ create_artifact_rinnegan_name:0 "Rinnegan"
+ create_artifact_rinnesharingan_name:0 "Rinnesharingan"
+ create_artifact_byakugan_name:0 "Byakugan"
+ create_artifact_tenseigan_name:0 "Tenseigan"
+ create_artifact_jogan_name:0 "Jogan"
+ create_artifact_forbiddeneyes_name:0 "Forbidden Eyes"
+ create_artifact_sharingan_description:0 "A preserved pair of eyes of the Uchiha bloodline."
+ create_artifact_rinnegan_description:0 "A preserved pair of eyes of the same type as the one once held by the sage of the six paths."
+ create_artifact_rinnesharingan_description:0 "A preserved pair of eyes of the same type as the one once held by the mother of the sage of the six paths."
+ create_artifact_byakugan_description:0 "A preserved pair of eyes of the Hyuga Bloodline"
+ create_artifact_tenseigan_description:0 "A preserved pair of eyes of the Hyuga Bloodline but far more advanced than the normal Byakugan."
+ create_artifact_jogan_description:0 "A preserved pair of eyes of unknown origin or make. The Jogan."
+ create_artifact_forbiddeneyes_description:0 "A preserved pair of eyes of the unthinkable union of an Uchiha and a Hyuga. The Forbidden Eyes"
+
+
+ #Bijuu Artifats
+ create_artifact_bijuu1_name:0 "Container of the Ichibi"
+ create_artifact_bijuu2_name:0 "Container of the Niibi"
+ create_artifact_bijuu3_name:0 "Container of the Sanbi"
+ create_artifact_bijuu4_name:0 "Container of the Yonbi"
+ create_artifact_bijuu5_name:0 "Container of the Gobi"
+ create_artifact_bijuu6_name:0 "Container of the Rokubi"
+ create_artifact_bijuu7_name:0 "Container of the Nanabi"
+ create_artifact_bijuu8_name:0 "Container of the Hachibi"
+ create_artifact_bijuu9_name:0 "Container of the Kyuubi"
+ create_artifact_sealing_pot_filled_description:0 "A sealing container holding one of the nine Bijuu. The tailed beasts are powerful beyond belief, a simple container may be able to hold them for a short amount of time, but is not suitable as a long-term solution."
+
+
+ #Other Artifacts
+ create_artifact_pedestal_forbidden_scroll_name:0 "The forbidden Scroll"
+ create_artifact_pedestal_forbidden_scroll_description:0 "A scroll containing the knowledge of all past Kage and high-ranking Shinobi of the hidden village, which was deemed too dangerous for unrestricted access. The scroll itself is paassed down from one Kage to another, the rulers of the hidden villages."
+ create_artifact_arm_name:0 "The arm of many eyes"
+ create_artifact_arm_description:0 "An arm artificially grown from cells of the Senju bloodline. Implanted into the arm are multiple sets of eyes, each of them a Sharingan of the Uchiha clan."
+ create_artifact_sun_moon_staff_name:0 "Shakujō of the six paths"
+ create_artifact_sun_moon_staff_description:0 "The Staff used by the sage of the six paths himeslf in an age long past. The staff is of incredible durability and can erase all forms of Jutsu that come in contact with it."
+ create_artifact_bashosen_fan_name:0 "Bashōsen of the six paths"
+ create_artifact_bashosen_fan_description:0 "One of the treasured tools left behind by the sage of six paths. It is able to produce substantial amounts of a desired element should the user ever swing it. Like all treasured tools it requires immense amounts of Chakra."
+ create_artifact_kokinjo_rope_name:0 "Kōkinjō of the six paths"
+ create_artifact_kokinjo_rope_description:0 "One of the treasured tools left behind by the sage of six paths. Upon it's wielders command it is able to automatically ensnare people and discover their secrets. Like all treasured tools it requires immense amounts of Chakra."
+ create_artifact_shichi_sword_name:0 "Shichiseiken of the six paths"
+ create_artifact_shichi_sword_description:0 "One of the treasured tools left behind by the sage of six paths. The wielder of the sword is able to discover all plots against him. Like all treasured tools it requires immense amounts of Chakra. Maybe someone who is able to use this artifact correctly will discover it to be even more powerful."
+ create_artifact_sealing_pot_name:0 "Urn of Sealing"
+ create_artifact_sealing_pot_description:0 "An urn made to hold one of the Bijuu for a certain amount of time. While the urn itself is a masterwork of Fuinjutsu, should it ever be used as a vessel woe betide the one who dares let this time run out."
+
+
+#Edo Tensei Events
+  edo_tensei.0001.t:0 "Edo Tensei part 1 Age"
+  edo_tensei.0001.d:0 "In a dark, secluded cave, an ancient ritual is performed. The air crackles with energy as the resurrected emerge, their ages varied. Some are reborn as adults, ready to battle. Others, mere infants, hold untapped potential."
+  edo_tensei.0001.a:0 "Adult"
+  edo_tensei.0001.b:0 "Baby"
+
+  edo_tensei.0002.t:0 "Edo Tensei part 2 Gender"
+  edo_tensei.0002.d:0 "The ritual does not discriminate by gender. Both males and females are brought back to life, each bearing unique abilities and a thirst for purpose. Warriors of old, regardless of gender, ready to fulfill their destiny."
+  edo_tensei.0002.a:0 "Female"
+  edo_tensei.0002.b:0 "Male"
+
+  edo_tensei.0003.t:0 "Edo Tensei part 3 Female"
+  edo_tensei.0003.d:0 "Among the resurrected, a female warrior stands tall. Her eyes burn with determination, her skills honed through lifetimes. She is a force to be reckoned with, embodying grace and power."
+  edo_tensei.0003.a:0 "Female"
+
+  edo_tensei.0004.t:0 "Edo Tensei part 3 Male"
+  edo_tensei.0004.d:0 "A male warrior steps forward from the shadows, his presence commanding respect. His past battles have shaped him into a formidable fighter, driven by an unyielding will to conquer."
+  edo_tensei.0004.a:0 "Male"
+
+  edo_tensei.0005.t:0 "Edo Tensei part 4 Female Gold"
+  edo_tensei.0005.d:0 "Shimmering in golden light, a resurrected female radiates an aura of divinity. Her power is unparalleled, her resolve unbreakable. She is the epitome of strength and leadership."
+  edo_tensei.0005.a:0 "Female"
+
+  edo_tensei.0006.t:0 "Edo Tensei part 4 Male Gold"
+  edo_tensei.0006.d:0 "Bathed in golden light, a male warrior exudes an air of invincibility. His prowess in battle is legendary, his strategies unmatched. He is the ultimate warrior, destined to lead his kin to victory."
+  edo_tensei.0006.a:0 "Male"
+ 
+
+### Research Related Events
+ lab_research.001.t:0 "Begin Construction of your Laborator"
+ lab_research.001.desc:0 "Begin Construction on your new laboratory"
+ lab_research.001.d:0 "Begin Construction on your new laboratory"
+ lab_research.001.a:0 "Build Lab Stage 1"
+ lab_research.001.b:0 "Build Lab Stage 2"
+ lab_research.001.c:0 "Build Lab Stage 3"
+ 
+ lab_research.002.t:0 "Become a medical Ninja"
+ lab_research.002.d:0 "With a fully stocked research lab i can now further improve my knowledge of medical practices and improve me ability to heal people"
+ lab_research.002.a:0 "Become a Medical Ninja"
+ lab_research.002.b:0 "Maybe i am not ready yet"
+ 
+ lab_research.003.t:0 "Implant Dojutsu"
+ lab_research.003.desc:0 "With a fully stocked lab and my knowledge of medical practices i cna now implant into a family member one of the 3 great dojutsu"
+ lab_research.003.a:0 "Implant Mangekyo Sharingan"
+ lab_research.003.b:0 "Implant Rinnegan"
+ lab_research.003.c:0 "Implant Rinne Sharingan"
+ lab_research.003.e:0 "Implant Byakugan"
+ lab_research.003.f:0 "Implant Tenseigan"
+ lab_research.003.g:0 "Implant Jogan"
+ lab_research.003.h:0 "Implant Forbidden Eyes"
+ lab_research.003.j:0 "Implant Mangekyo Sharingan"
+ lab_research.003.k:0 "Implant Three Tomoes Sharingan"
+ lab_research.003.x:0 "Implant Three Tomoes Sharingan"
+ lab_research.003.l:0 "Implant Rinnegan"
+ lab_research.003.d:0 "Implant Rinne Sharingan"
+
+ lab_research.004.t:0 "Implant Simple Chakra Natures"
+ lab_research.004.d:0 "With my studies completed i can now implant in a family member any one of the basic chakra natures"
+ lab_research.004.a:0 "Implant Simple Chakra Natures"
+
+ lab_research.005.t:0 "Implant Sub Chakra Natures"
+ lab_research.005.d:0 "With my studies completed i can now implant in a family member any one of the many sub elemental chakra natures"
+ lab_research.005.a:0 "Implant Sub Chakra Natures"
+
+ lab_research.006.t:0 "The Ritual for Awakening Tenseigan"
+ lab_research.006.desc:0 "Throughout the millennias there had been a legends that stated the Tenseigan can be acquired when a pure-blooded descendant of Hamura Ōtsutsuki wield an artifacts made from the collection of hundreds of pure-blooded Byakugans: the usage of this artifacts cause the chakra inside the artifact to transforms the weilder's Byakugan into Tenseigan."
+ lab_research.006.a:0 "The character is in Stage 1 of Byakugan collecting"
+ lab_research.006.b:0 "The character is in Stage 2 of Byakugan collecting"
+ lab_research.006.c:0 "The character is in Stage 3 of Byakugan collecting"
+ lab_research.006.d:0 "The character is in Stage 4 of Byakugan collecting"
+ lab_research.006.e:0 "The character is in Stage 5 of Byakugan collecting"
+ lab_research.006.f:0 "The character is in Stage 6 of Byakugan collecting"
+ lab_research.006.g:0 "The character is in Stage 7 of Byakugan collecting"
+ lab_research.006.h:0 "The character is in Stage 8 of Byakugan collecting"
+ lab_research.006.i:0 "The character is in Stage 9 of Byakugan collecting"
+ lab_research.006.j:0 "The character have finish collecting the necessary amount of Byakugans to begin the ritual to awaken the Tenseigan"
+
+ lab_research.007.t:0 "The Awakening"
+ lab_research.007.desc:0 "Throughout the millennias there had been a legends that stated the Tenseigan can be acquired when a pure-blooded descendant of Hamura Ōtsutsuki wield an artifacts made from the collection of hundreds of pure-blooded Byakugans: the usage of this artifacts cause the chakra inside the artifact to transforms the weilder's Byakugan into Tenseigan."
+ lab_research.007.a:0 "Begin building the Artifact"
+ lab_research.007.b:0 "Maybe i am not ready yet"
+ lab_research.007.c:0 "Begin the Awakening!!"

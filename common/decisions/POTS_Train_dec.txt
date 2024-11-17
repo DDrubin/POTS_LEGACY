@@ -1,0 +1,73 @@
+train_of_eyes = {
+
+	ai_check_interval = 1
+	ai_potential = {
+	        always = yes
+		}
+
+		ai_will_do = {
+			base = 0
+			
+		    	modifier = {
+		    		
+				    NOT = { 
+				    	OR = {
+				    		has_character_modifier = training_eyes_level_1
+				    		has_character_modifier = training_eyes_level_2
+				    		has_character_modifier = training_eyes_level_3
+				    		has_character_modifier = training_eyes_level_4
+				    		has_character_modifier = training_eyes_level_5
+				    		has_character_modifier = training_eyes_level_6
+				    		has_character_modifier = training_eyes_level_7
+				    		has_character_modifier = training_eyes_level_8
+				    		has_character_modifier = training_eyes_level_9
+				    		has_character_modifier = training_eyes_level_10
+				    	}
+				    }
+				    	
+		    		add = 1000
+		    	}
+		    	
+		    
+		}
+
+	desc = train_of_eyes_desc
+	selection_tooltip = train_of_eyes_tooltip
+
+	is_shown = {
+		age >= 3
+
+		OR = {
+					has_trait = onetomoe
+					has_trait = twotomoe
+					has_trait = threetomoe
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+					has_trait = rinnegan
+					has_trait = rinnesharingan
+					has_trait = byakugan
+					has_trait = tenseigan
+					has_trait = forbiddeneyes
+					has_trait = jogan		
+		}
+
+		OR = {		
+			has_trait = shinobi_dynasty
+			has_trait = otsotsuki_dynasty
+		}
+	}
+	
+	effect = { 
+		if = {
+			limit = { is_ai = no }
+	        trigger_event = POTS_eye_training.1 
+		}
+
+		else = {
+			trigger_event = POTS_eye_training.101 
+		}
+    }	
+}

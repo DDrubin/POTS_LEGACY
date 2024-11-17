@@ -1,0 +1,343 @@
+﻿l_english:
+
+ # Shinobi
+
+
+shinobi_legacy_track_name:1 "Shinobi"
+shinobi_legacy_track_desc:0 "Mastery of intellect and skill define the path of a true Shinobi, making our clan unparalleled."
+shinobi_legacy_1_name:0 "Ninja Adaptability"
+shinobi_legacy_2_name:1 "Strength of Arms"
+shinobi_legacy_3_name:0 "Strategic Prowess"
+shinobi_legacy_4_name:0 "Elite Training"
+shinobi_legacy_5_name:1 "Bloodline Prodigies"
+
+# Senju
+
+
+senju_legacy_track_name:1 "Senju"
+senju_legacy_track_desc:0 "The Senju Clan embodies versatility and unparalleled power."
+senju_legacy_1_name:0 "Forest Adaptation"
+senju_legacy_2_name:1 "Senju Strength"
+senju_legacy_3_name:0 "Ancient Wisdom"
+senju_legacy_4_name:0 "Clan Elite"
+senju_legacy_5_name:1 "Inherited Mastery"
+
+# Uchiha
+
+
+uchiha_legacy_track_name:1 "Uchiha"
+uchiha_legacy_track_desc:0 "The Uchiha Clan thrives on innate power and unrivaled abilities."
+uchiha_legacy_1_name:0 "Keen Insight"
+uchiha_legacy_2_name:1 "Uchiha Strength"
+uchiha_legacy_3_name:0 "Ancient Knowledge"
+uchiha_legacy_4_name:0 "Elite Combat"
+uchiha_legacy_5_name:1 "Dojutsu Mastery"
+
+# Uzumaki
+
+
+uzumaki_legacy_track_name:1 "Uzumaki"
+uzumaki_legacy_track_desc:0 "The Uzumaki Clan values unparalleled resilience and sealing expertise."
+uzumaki_legacy_1_name:0 "Sealing Adaptation"
+uzumaki_legacy_2_name:1 "Spiral Strength"
+uzumaki_legacy_3_name:0 "Ancient Knowledge"
+uzumaki_legacy_4_name:0 "Unyielding Will"
+uzumaki_legacy_5_name:1 "Seal Mastery"
+
+# Terumi
+
+
+terumi_legacy_track_name:1 "Terumi"
+terumi_legacy_track_desc:0 "The Terumi Clan thrives on flexibility and strategic prowess."
+terumi_legacy_1_name:0 "Mist Adaptation"
+terumi_legacy_2_name:1 "Terumi Strength"
+terumi_legacy_3_name:0 "Strategic Mind"
+terumi_legacy_4_name:0 "Elite Combatant"
+terumi_legacy_5_name:1 "Bloodline Power"
+
+
+ryudoin_legacy_track_name:1 "Ryudoin"
+ryudoin_legacy_track_desc:0 "Wisdom and strength make the Ryudoin formidable."
+
+ryudoin_legacy_1_name:0 "Dragon Adaptability"
+ryudoin_legacy_1_desc:0 "Enhances adaptability and resilience akin to a dragon."
+ryudoin_legacy_2_name:1 "Ryudoin Strength"
+ryudoin_legacy_2_desc:0 "Grants exceptional strength that flows through the Ryudoin bloodline."
+ryudoin_legacy_3_name:0 "Mystic Knowledge"
+ryudoin_legacy_3_desc:0 "Provides profound knowledge of ancient and mystical arts."
+ryudoin_legacy_4_name:0 "Elite Warrior"
+ryudoin_legacy_4_desc:0 "Trains individuals to become elite warriors with unparalleled combat skills."
+ryudoin_legacy_5_name:1 "Bloodline Prodigy"
+ryudoin_legacy_5_desc:0 "Bestows the prodigy status, elevating all capabilities to their peak."
+
+
+hozuki_legacy_track_name:1 "Hozuki"
+hozuki_legacy_track_desc:0 "Fluidity and intellect define Hozuki nara."
+
+hozuki_legacy_1_name:0 "Water Adaptability"
+hozuki_legacy_1_desc:0 "Improves adaptability and resilience through water techniques."
+hozuki_legacy_2_name:1 "Hozuki Strength"
+hozuki_legacy_2_desc:0 "Endows the strength and flexibility of the Hozuki clan."
+hozuki_legacy_3_name:0 "Liquid Expertise"
+hozuki_legacy_3_desc:0 "Mastery over liquid manipulation and transformation techniques."
+hozuki_legacy_4_name:0 "Elite Fighter"
+hozuki_legacy_4_desc:0 "Develops exceptional combat skills, making one an elite fighter."
+hozuki_legacy_5_name:1 "Ancestral Genius"
+hozuki_legacy_5_desc:0 "Unlocks the ancestral genius of the Hozuki clan, maximizing potential."
+
+
+yamanaka_legacy_track_name:1 "Yamanaka"
+yamanaka_legacy_track_desc:0 "Mind and knowledge are Yamanaka's strength."
+
+yamanaka_legacy_1_name:0 "Mental Adaptability"
+yamanaka_legacy_1_desc:0 "Enhances mental resilience and adaptability."
+yamanaka_legacy_2_name:1 "Psychic Strength"
+yamanaka_legacy_2_desc:0 "Grants exceptional psychic strength and abilities."
+yamanaka_legacy_3_name:0 "Mind Arts"
+yamanaka_legacy_3_desc:0 "Mastery over the various mind arts techniques."
+yamanaka_legacy_4_name:0 "Top Mentalist"
+yamanaka_legacy_4_desc:0 "Trains individuals to become top mentalists with unparalleled mental prowess."
+yamanaka_legacy_5_name:1 "Mental Prodigy"
+yamanaka_legacy_5_desc:0 "Bestows the prodigy status, elevating mental capabilities to their peak."
+
+
+guren_legacy_track_name:1 "Guren"
+guren_legacy_track_desc:0 "Crystal and intellect empower Guren nara."
+
+guren_legacy_1_name:0 "Crystal Adaptability"
+guren_legacy_1_desc:0 "Improves adaptability and resilience through crystal techniques."
+guren_legacy_2_name:1 "Guren Strength"
+guren_legacy_2_desc:0 "Endows the strength and flexibility of the Guren clan."
+guren_legacy_3_name:0 "Crystal Mastery"
+guren_legacy_3_desc:0 "Mastery over crystal manipulation and transformation techniques."
+guren_legacy_4_name:0 "Elite Crystallizer"
+guren_legacy_4_desc:0 "Develops exceptional skills in using crystal techniques."
+guren_legacy_5_name:1 "Crystal Prodigy"
+guren_legacy_5_desc:0 "Unlocks the prodigy status, maximizing crystal-related potential."
+Kurotsuchi
+
+kurotsuchi_legacy_track_name:1 "Kurotsuchi"
+
+kurotsuchi_legacy_track_desc:0 "Mastery of earth and strategic brilliance define Kurotsuchi."
+
+    kurotsuchi_legacy_1_name:0 "Earth Adaptability"
+    kurotsuchi_legacy_2_name:1 "Rock Solid Strength"
+    kurotsuchi_legacy_3_name:0 "Strategic Thinker"
+    kurotsuchi_legacy_4_name:0 "Top Geologist"
+    kurotsuchi_legacy_5_name:1 "Bloodline Talent"
+
+#Aburame
+
+aburame_legacy_track_name:1 "Aburame"
+
+aburame_legacy_track_desc:0 "Aburame harnesses insects for unique and powerful abilities."
+
+    aburame_legacy_1_name:0 "Insect Adaptability"
+    aburame_legacy_2_name:1 "Hive Strength"
+    aburame_legacy_3_name:0 "Entomological Knowledge"
+    aburame_legacy_4_name:0 "Elite Entomologist"
+    aburame_legacy_5_name:1 "Insect Prodigy"
+
+#Kaguya
+
+kaguya_legacy_track_name:1 "Kaguya"
+
+kaguya_legacy_track_desc:0 "Bone manipulation and combat prowess mark the Kaguya clan."
+
+    kaguya_legacy_1_name:0 "Bone Adaptability"
+    kaguya_legacy_2_name:1 "Skeletal Strength"
+    kaguya_legacy_3_name:0 "Combat Genius"
+    kaguya_legacy_4_name:0 "Elite Warrior"
+    kaguya_legacy_5_name:1 "Lineage Mastery"
+
+#Spirit Magic
+
+spirit_magic_legacy_track_name:1 "Spirit Magic"
+
+spirit_magic_legacy_track_desc:0 "Mastery of shadow manipulation and strategic intellect."
+
+    spirit_magic_legacy_1_name:0 "Shadow Adaptability"
+    spirit_magic_legacy_2_name:1 "Strategic Strength"
+    spirit_magic_legacy_3_name:0 "Tactical Thinker"
+    spirit_magic_legacy_4_name:0 "Elite Strategist"
+    spirit_magic_legacy_5_name:1 "Lineage Genius"
+
+#Yuki
+
+yuki_legacy_track_name:1 "Yuki"
+
+yuki_legacy_track_desc:0 "Mastery of ice manipulation and intellectual prowess define Yuki."
+
+    yuki_legacy_1_name:0 "Ice Adaptability"
+    yuki_legacy_2_name:1 "Frozen Strength"
+    yuki_legacy_3_name:0 "Cryogenic Knowledge"
+    yuki_legacy_4_name:0 "Elite Cryomancer"
+    yuki_legacy_5_name:1 "Ice Prodigy"
+
+#Nara
+
+nara_legacy_track_name:1 "Nara"
+
+nara_legacy_track_desc:0 "Mastery of shadow manipulation and intellectual prowess define the Nara clan."
+
+    nara_legacy_1_name:0 "Shadow Adaptability"
+    nara_legacy_2_name:1 "Strategic Strength"
+    nara_legacy_3_name:0 "Tactical Thinker"
+    nara_legacy_4_name:0 "Elite Strategist"
+    nara_legacy_5_name:1 "Lineage Genius"
+
+#Akimichi
+
+akimichi_legacy_track_name:1 "Akimichi"
+
+akimichi_legacy_track_desc:0 "Strength and growth define the Akimichi clan."
+
+    akimichi_legacy_1_name:0 "Caloric Conversion"
+    akimichi_legacy_2_name:1 "Body Expansion"
+    akimichi_legacy_3_name:0 "Nutritional Knowledge"
+    akimichi_legacy_4_name:0 "Elite Expansionist"
+    akimichi_legacy_5_name:1 "Lineage Strength"
+
+ #inuzuka
+ inuzuka_legacy_track_name:1 "Inuzuka"
+ inuzuka_legacy_track_desc:0 "Bond with canines and ferocity mark Inuzuka."
+ inuzuka_legacy_1_name:0 "Beast Adaptability"
+ inuzuka_legacy_2_name:1 "Feral Strength"
+ inuzuka_legacy_3_name:0 "Pack Tactics"
+ inuzuka_legacy_4_name:0 "Top Hunter"
+ inuzuka_legacy_5_name:1 "Beast Prodigy"
+
+ #kurama
+ kurama_legacy_track_name:1 "Kurama"
+ kurama_legacy_track_desc:0 "Genjutsu mastery and intellect define Kurama."
+ kurama_legacy_1_name:0 "Illusion Adaptability"
+ kurama_legacy_2_name:1 "Genjutsu Strength"
+ kurama_legacy_3_name:0 "Mind Control"
+ kurama_legacy_4_name:0 "Elite Illusionist"
+ kurama_legacy_5_name:1 "Genjutsu Prodigy"
+
+ #tsuchigumo
+ tsuchigumo_legacy_track_name:1 "Tsuchigumo"
+ tsuchigumo_legacy_track_desc:0 "Mastery of traps and techniques define Tsuchigumo."
+ tsuchigumo_legacy_1_name:0 "Trap Adaptability"
+ tsuchigumo_legacy_2_name:1 "Spider Strength"
+ tsuchigumo_legacy_3_name:0 "Web Mastery"
+ tsuchigumo_legacy_4_name:0 "Elite Trapper"
+ tsuchigumo_legacy_5_name:1 "Lineage Genius"
+
+ # Kazekage
+kazekage_legacy_track_name:1 "Kazekage"
+kazekage_legacy_track_desc:0 "Mastery of sand and strategy is our strength."
+
+kazekage_legacy_1_name:0 "Desert Adaptability"
+kazekage_legacy_2_name:1 "Sand Strength"
+kazekage_legacy_3_name:0 "Tactical Genius"
+kazekage_legacy_4_name:0 "Top Strategist"
+kazekage_legacy_5_name:1 "Bloodline Prodigy"
+
+# Kamizuru
+kamizuru_legacy_track_name:1 "Kamizuru"
+kamizuru_legacy_track_desc:0 "Commanding insects and intellect defines us."
+
+kamizuru_legacy_1_name:0 "Insect Adaptability"
+kamizuru_legacy_2_name:1 "Hive Strength"
+kamizuru_legacy_3_name:0 "Entomological Expertise"
+kamizuru_legacy_4_name:0 "Top Beekeeper"
+kamizuru_legacy_5_name:1 "Insect Prodigy"
+
+# Fuma
+fuma_legacy_track_name:1 "Fuma"
+fuma_legacy_track_desc:0 "Versatility and intellect are our hallmarks."
+
+fuma_legacy_1_name:0 "Ninja Adaptability"
+fuma_legacy_2_name:1 "Weapon Strength"
+fuma_legacy_3_name:0 "Strategic Mind"
+fuma_legacy_4_name:0 "Top Fighter"
+fuma_legacy_5_name:1 "Bloodline Genius"
+
+# Hoshigaki
+hoshigaki_legacy_track_name:1 "Hoshigaki"
+hoshigaki_legacy_track_desc:0 "Mastery of water and combat prowess is our pride."
+
+hoshigaki_legacy_1_name:0 "Water Adaptability"
+hoshigaki_legacy_2_name:1 "Shark Strength"
+hoshigaki_legacy_3_name:0 "Aqua Mastery"
+hoshigaki_legacy_4_name:0 "Top Combatant"
+hoshigaki_legacy_5_name:1 "Lineage Mastery"
+
+
+  #yurushi
+ yurushi_legacy_track_name:1 "Yurushi"
+ yurushi_legacy_track_desc:0 "Yurushi clan excels in adaptability and intellect."
+ yurushi_legacy_1_name:0 "Flexibility"
+ yurushi_legacy_2_name:1 "Combat Prowess"
+ yurushi_legacy_3_name:0 "Scholarly Pursuits"
+ yurushi_legacy_4_name:0 "Top Scholars"
+ yurushi_legacy_5_name:1 "Bloodline Geniuses"
+
+  #hirameki
+ hirameki_legacy_track_name:1 "Hirameki"
+ hirameki_legacy_track_desc:0 "Hirameki clan values quick thinking and strength."
+ hirameki_legacy_1_name:0 "Swift Adaptability"
+ hirameki_legacy_2_name:1 "Battle Mastery"
+ hirameki_legacy_3_name:0 "Mental Agility"
+ hirameki_legacy_4_name:0 "Elite Warriors"
+ hirameki_legacy_5_name:1 "Inborn Talent"
+
+  #hatake
+ hatake_legacy_track_name:1 "Hatake"
+ hatake_legacy_track_desc:0 "Hatake clan thrives on skill and knowledge."
+ hatake_legacy_1_name:0 "Tactical Adaptability"
+ hatake_legacy_2_name:1 "Hatake Strength"
+ hatake_legacy_3_name:0 "Combat Intelligence"
+ hatake_legacy_4_name:0 "Top Fighters"
+ hatake_legacy_5_name:1 "Inherited Skill"
+
+  #yu
+ yu_legacy_track_name:1 "Yu"
+ yu_legacy_track_desc:0 "Yu clan excels through intellect and might."
+ yu_legacy_1_name:0 "Versatile Adaptability"
+ yu_legacy_2_name:1 "Martial Strength"
+ yu_legacy_3_name:0 "Intellectual Pursuits"
+ yu_legacy_4_name:0 "Elite Scholars"
+ yu_legacy_5_name:1 "Genius Bloodline"
+
+# Daimon
+daimon_legacy_track_name:1 "Daimon"
+daimon_legacy_track_desc:0 "Daimon clan thrives on intellect and power."
+
+daimon_legacy_1_name:0 "Daimon Adaptability"
+daimon_legacy_2_name:1 "Daimon Strength"
+daimon_legacy_3_name:0 "Insightful Mind"
+daimon_legacy_4_name:0 "Top Achievers"
+daimon_legacy_5_name:1 "Bloodline Prodigy"
+
+# Ichinose
+ichinose_legacy_track_name:1 "Ichinose"
+ichinose_legacy_track_desc:0 "Ichinose clan emphasizes intellect and skill."
+
+ichinose_legacy_1_name:0 "Ichinose Adaptability"
+ichinose_legacy_2_name:1 "Ichinose Strength"
+ichinose_legacy_3_name:0 "Scholarly Mind"
+ichinose_legacy_4_name:0 "Elite Members"
+ichinose_legacy_5_name:1 "Bloodline Talent"
+
+# Reiji
+reiji_legacy_track_name:1 "Reiji"
+reiji_legacy_track_desc:0 "Reiji clan excels through intellect and might."
+
+reiji_legacy_1_name:0 "Reiji Adaptability"
+reiji_legacy_2_name:1 "Reiji Strength"
+reiji_legacy_3_name:0 "Studious Nature"
+reiji_legacy_4_name:0 "Top Performers"
+reiji_legacy_5_name:1 "Bloodline Genius"
+
+# Watari
+watari_legacy_track_name:1 "Watari"
+watari_legacy_track_desc:0 "Watari clan prides itself on intellect and combat prowess."
+
+watari_legacy_1_name:0 "Watari Adaptability"
+watari_legacy_2_name:1 "Watari Strength"
+watari_legacy_3_name:0 "Inquisitive Mind"
+watari_legacy_4_name:0 "Best in Class"
+watari_legacy_5_name:1 "Inherited Brilliance"

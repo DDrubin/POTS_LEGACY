@@ -1,0 +1,695 @@
+﻿hyuga = {
+
+	birth = 5
+	category = health
+	random_creation = 5
+	genetic = yes
+	
+	prowess = 6
+	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
+	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
+
+
+	general_opinion = 5
+	same_opinion = 15
+	
+	ruler_designer_cost = 40
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = "Hyuga"
+			}
+			desc = "Hyuga"
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_hyuga_desc
+			}
+			desc = trait_hyuga_desc
+		}
+	}
+
+	level = 2
+	
+	ai_energy = 20
+	
+	genetic = yes
+	#physical = yes
+	good = yes
+}
+
+uchiha = {
+
+	birth = 5
+	random_creation = 5
+	category = health
+	good = yes
+	
+	prowess = 6
+	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
+	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
+
+	genetic = yes
+
+	general_opinion = 5
+	same_opinion = 15
+	
+	ruler_designer_cost = 10
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_uchiha_desc
+			}
+			desc = trait_uchiha_desc
+		}
+	}
+
+	level = 2
+	
+	ai_energy = 20
+	
+	genetic = yes
+	#physical = yes
+	good = yes
+}
+
+aburame = {
+	category = health
+	birth = 15
+	random_creation = 5
+	
+	prowess = 6
+	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
+	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
+
+	genetic = yes
+
+	general_opinion = 5
+	same_opinion = 15
+	
+	ruler_designer_cost = 40
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = "Akimichi"
+			}
+			desc = "Akimichi"
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_hyuga_desc
+			}
+			desc = trait_hyuga_desc
+		}
+	}
+
+	level = 2
+	
+	ai_energy = 20
+	
+	genetic = yes
+	#physical = yes
+	good = yes
+}
+
+akimichi = {
+
+	birth = 15
+	random_creation = 5
+	
+	prowess = 6
+	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
+	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
+
+	genetic = yes
+
+	general_opinion = 5
+	same_opinion = 15
+	
+	ruler_designer_cost = 40
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = "Akimichi"
+			}
+			desc = "Akimichi"
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = "Noble blood runs through your viens."
+			}
+			desc = "Noble blood runs through your viens."
+		}
+	}
+
+	level = 2
+	
+	ai_energy = 20
+	
+	genetic = yes
+	#physical = yes
+	good = yes
+}
+
+ninja_rank_1 = {
+
+	name = "Genin"
+	category = commander
+
+
+
+	diplomacy  = 2
+	stewardship = 2
+	martial = 3
+	prowess = 3
+
+	potential = {
+		has_trait = chakra_control
+	}
+
+	# Change everything past this point
+	movement_speed = 0.05
+	knight_limit = 1
+
+	prestige = 0.5
+	general_opinion = 2
+
+	shown_in_ruler_design = no
+	
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = "Genin are the lowest rank of ninja. As a Genin, you'll do your part to make the realm function."
+			}
+			desc = "Genin are the lowest rank of ninja. As a Genin, you'll do your part to make the realm function."
+		}
+	}
+}
+
+ninja_rank_2 = {
+
+	name = "Chunin"
+
+	potential = {
+		has_trait = chakra_control
+	}
+
+
+	diplomacy  = 4
+	stewardship = 4
+	martial = 6
+	prowess = 6
+
+	# Change everything past this point
+	movement_speed = 0.1
+	knight_limit = 3
+
+	prestige = 1
+	general_opinion = 5
+
+	shown_in_ruler_design = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = "As a Chunin, or Middle Ninja, you have the leadership skills and tactical prowess to take on heftier missions."
+			}
+			desc = "As a Chunin, or Middle Ninja, you have the leadership skills and tactical prowess to take on heftier missions."
+		}
+	}
+}
+
+ninja_rank_3 = {
+
+	name = "Jonin"
+
+	potential = {
+		has_trait = chakra_control
+	}
+
+
+
+	diplomacy  = 8
+	stewardship = 8
+	martial = 12
+	prowess = 12
+
+
+	# Change everything past this point
+	movement_speed = 0.15
+	knight_limit = 6
+
+	prestige = 3
+	general_opinion = 10
+
+	shown_in_ruler_design = no
+
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = "You are a Jonin, or High Ninja. You are a highly experienced and highly skilled shinobi who can carry out dangerous missions solo."
+			}
+			desc = "You are a Jonin, or High Ninja. You are a highly experienced and highly skilled shinobi who can carry out dangerous missions solo."
+		}
+	}
+}
+
+ninja_rank_4 = {
+
+	name = "Jonin Commander"
+
+	potential = {
+		has_trait = chakra_control
+	}
+
+
+	diplomacy  = 16
+	stewardship = 16
+	martial = 24
+	prowess = 24
+
+
+	ruler_designer_cost = 200
+
+	# Change everything past this point
+	movement_speed = 0.2
+	knight_limit = 10
+
+	prestige = 4
+	general_opinion = 15
+
+	shown_in_ruler_design = no
+
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = "Jonin Commanders are the highest-ranking normal shinobi. They are exceptional in everything that they do, and are capable of leading other Jonin."
+			}
+			desc = "Jonin Commanders are the highest-ranking normal shinobi. They are exceptional in everything that they do, and are capable of leading other Jonin."
+		}
+	}
+}
+
+ninja_rank_5 = {
+
+	name = "Kage"
+
+	random_creation = 1
+
+	potential = {
+		has_trait = chakra_control
+	}
+
+
+	diplomacy  = 30
+	stewardship = 30
+	martial = 30
+	prowess = 30
+
+	ruler_designer_cost = 350
+
+	# Change everything past this point
+	movement_speed = 0.25
+	knight_limit = 15
+
+	prestige = 5
+	general_opinion = 25
+
+
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = "Kage is a title reserved for only the strongest and most capable of shinobi. You are the ultimate protector of your realm."
+			}
+			desc = "Kage is a title reserved for only the strongest and most capable of shinobi. You are the ultimate protector of your realm."
+		}
+	}
+}
+
+sharingan_tomoe_1 = {
+	category = fame
+
+	good = yes
+
+	martial = 2
+	intrigue = 2
+	learning = 2
+	prowess = 3
+
+	monthly_prestige = 0.5
+
+	track = {
+		0 = {}
+		50 = {
+			#name = ""
+			#desc = ""
+		}
+		100 = {
+			#name = ""
+		}
+	}
+
+
+	dread = 2
+
+	personal_scheme_power_add = 2
+	hostile_scheme_power_add = 2
+	hostile_scheme_resistance_add = 2
+
+	general_opinion = 5
+	
+	ruler_designer_cost = 10
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_sharingan_tomoe_1_desc
+			}
+			desc = trait_sharingan_tomoe_1_desc
+		}
+	}
+}
+
+sharingan_tomoe_2 = {
+	good = yes
+
+	category = fame
+
+	martial = 6
+	intrigue = 7
+	learning = 7
+	prowess = 8
+
+	dread = 8
+
+	uchiha_opinion = 6
+
+	health = 0.2
+
+	track = {
+		0 = {}
+		50 = {
+			#name = ""
+			#desc = ""
+		}
+		100 = {
+			#name = ""
+		}
+	}
+
+	monthly_prestige = 1
+
+	personal_scheme_power_add = 5
+	hostile_scheme_power_add = 5
+	hostile_scheme_resistance_add = 4
+
+	general_opinion = 10
+	
+	ruler_designer_cost = 20
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_sharingan_tomoe_2_desc
+			}
+			desc = trait_sharingan_tomoe_2_desc
+		}
+	}
+	
+}
+
+sharingan_tomoe_3 = {
+	good = yes
+
+	category = fame
+
+	martial = 15
+	intrigue = 15
+	learning = 15
+	prowess = 20
+
+	dread_baseline_add = 15
+
+	uchiha_opinion = 12
+
+	health = 1
+
+	track = {
+		0 = {}
+		50 = {
+			#name = ""
+			#desc = ""
+		}
+		100 = {
+			#name = ""
+		}
+	}
+
+	general_opinion = 15
+
+	monthly_prestige = 3
+
+	personal_scheme_power_add = 15
+	hostile_scheme_power_add = 15
+	hostile_scheme_resistance_add = 10
+	
+	ruler_designer_cost = 60
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_sharingan_tomoe_3_desc
+			}
+			desc = trait_sharingan_tomoe_3_desc
+		}
+	}
+}
+
+sharingan_tomoe_4 = {
+	name = "Heavenly Eyes"
+
+	good = yes
+
+	category = fame
+
+	martial = 30
+	intrigue = 30
+	learning = 30
+	stewardship = 20
+	prowess = 40
+
+	monthly_prestige_gain_per_knight_add = 0.5
+
+	uchiha_opinion = 20
+
+	monthly_prestige = 10
+
+	dread_baseline_add = 50
+
+	health = 3
+
+	general_opinion = 20
+
+	personal_scheme_power_add = 20
+	hostile_scheme_power_add = 20
+	hostile_scheme_resistance_add = 15
+	
+	ruler_designer_cost = 500
+
+	track = {
+		50 = {
+			martial = -10
+			intrigue = -10
+			learning = -10
+			stewardship = -10
+			prowess = -10
+		}
+		100 = {
+			martial = -20
+			intrigue = -20
+			learning = -20
+			stewardship = -20
+			prowess = -40
+
+			monthly_prestige = -10
+			dread_baseline_add = -50
+			health = -3
+			general_opinion = -20
+			hostile_scheme_power_add = -15
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_sharingan_tomoe_4_desc
+			}
+			desc = trait_sharingan_tomoe_4_desc
+		}
+	}
+}
+
+byakugan = {
+
+	category = fame
+
+	martial = 6
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 6
+
+	dread = 6
+
+	hyuga_opinion = 6
+
+	health = 0.2
+
+	monthly_prestige = 0.5
+
+	personal_scheme_power_add = 5
+	hostile_scheme_power_add = 5
+	hostile_scheme_resistance_add = 5
+
+	track = {
+		10 = {
+			martial = 2
+			diplomacy = 2
+			stewardship = 2
+			intrigue = 2
+			learning = 2
+			prowess = 2
+		
+			dread = 2
+		
+			hyuga_opinion = 6
+
+			monthly_prestige = 0.25
+		
+			health = 0.2
+
+			personal_scheme_power_add = 5
+			hostile_scheme_power_add = 5
+			hostile_scheme_resistance_add = 10
+
+			trait = gentle_fist
+			flag = byakugan_wielder_novice
+		}
+		50 = {
+			martial = 8
+			diplomacy = 8
+			stewardship = 8
+			intrigue = 8
+			learning = 8
+			prowess = 8
+		
+			dread = 10
+		
+			hyuga_opinion = 16
+
+			monthly_prestige = 1
+		
+			health = 0.5
+
+			personal_scheme_power_add = 10
+			hostile_scheme_power_add = 10
+			hostile_scheme_resistance_add = 30
+
+			flag = byakugan_wielder_intermediate
+			trait = eight_trigrams_64
+		}
+		100 = {
+			martial = 16
+			diplomacy = 16
+			stewardship = 16
+			intrigue = 16
+			learning = 16
+			prowess = 16
+		
+			dread = 10
+		
+			hyuga_opinion = 16
+
+			monthly_prestige = 1
+		
+			health = 0.5
+
+			personal_scheme_power_add = 20
+			hostile_scheme_power_add = 20
+			hostile_scheme_resistance_add = 90
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_byakugan_desc
+			}
+			desc = trait_byakugan_desc
+		}
+	}
+	
+}

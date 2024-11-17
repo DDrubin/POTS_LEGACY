@@ -1,0 +1,61 @@
+﻿human_skull1 = {
+	default_type = pedestal
+	icon = "artifact_small_box.dds"
+	pedestal = "tall_pillow"
+	asset = ep1_trophy_human_01_entity
+	asset = ep1_trophy_human_02_entity
+}
+
+nik_cube = {
+	default_type = pedestal
+	icon = "artifact_small_box.dds"
+	pedestal = "tall_pillow"
+	asset = nik_cube_entity
+}
+
+sun_moon_staff = {
+	default_type = pedestal
+	icon = "artifact_spear.dds"
+	pedestal = "short_pillow"
+	asset = sun_moon_staff_entity
+}
+bashosen_fan = {
+	default_type = pedestal
+	icon = "artifact_crown.dds"
+	pedestal = "tall_pillow"
+	asset = sun_moon_staff_entity
+}
+kokinjo_rope = {
+	default_type = pedestal
+	icon = "artifact_crown.dds"
+	pedestal = "tall_pillow"
+	asset = sun_moon_staff_entity
+}
+shichi_sword = {
+	default_type = pedestal
+	icon = "artifact_sword.dds"
+	pedestal = "tall_pillow"
+	asset = sun_moon_staff_entity
+}
+sealing_pot = {
+	default_type = pedestal
+	icon = "artifact_urn.dds"
+	pedestal = "short_pillow"
+	asset = ep1_western_urn_fancy_01_a_entity
+}
+
+rinnegan_eyes = {
+	default_type = pedestal
+	icon = "artifact_small_box.dds"
+	pedestal = "tall_pillow"
+	asset = ep1_trophy_human_01_entity
+	asset = ep1_trophy_human_02_entity
+}
+
+mangekyo_eyes = {
+	default_type = pedestal
+	icon = "artifact_small_box.dds"
+	pedestal = "tall_pillow"
+	asset = ep1_trophy_human_01_entity
+	asset = ep1_trophy_human_02_entity
+}

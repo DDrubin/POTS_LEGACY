@@ -1,0 +1,2993 @@
+﻿#POTS Character Interactions
+
+#Elemental Style Interactions
+
+	perform_waterstyle_self_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Buff
+		desc = perform_waterstyle_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				has_trait = waterrelease
+				NOT = { has_character_flag = used_waterstyle_self }
+			}
+			scope:recipient = scope:actor
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_waterstyle_self
+					months = 1
+				}
+				add_character_flag = {
+					flag = used_waterstyle_self
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_windstyle_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Jutsu
+		desc = perform_windstyle_target_interaction_desc
+    		ai_maybe = yes
+		is_shown = {
+			scope:actor = {
+				has_trait = windrelease
+				NOT = { has_character_flag = used_windstyle_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_windstyle_target
+					days = 20
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_windstyle_target
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_earthstyle_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Jutsu
+		desc = perform_earthstyle_target_interaction_desc
+    		ai_maybe = yes
+		is_shown = {
+			scope:actor = {
+				has_trait = earthrelease
+				NOT = { has_character_flag = used_earthstyle_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_earthstyle_target
+					days = 6
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_earthstyle_target
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_lightningstyle_self_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Buff
+		desc = perform_lightningstyle_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				has_trait = lightningrelease
+				NOT = { has_character_flag = used_lightningstyle_self }
+			}
+			scope:recipient = scope:actor
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_lightningstyle_self
+					months = 1
+				}
+				add_character_flag = {
+					flag = used_lightningstyle_self
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_firestyle_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Jutsu
+		desc = perform_firestyle_target_interaction_desc
+    		ai_maybe = yes
+		is_shown = {
+			scope:actor = {
+				has_trait = firerelease
+				NOT = { has_character_flag = used_firestyle_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				random_list = {
+					75 = {
+						add_character_modifier = {
+							modifier = modifier_firestyle_target
+							days = 45
+						}
+					}
+					25 = { add_trait = wounded_1 }
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_firestyle_target
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_rasenamaterasu_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_rasenamaterasu_target_interaction_desc
+    		ai_maybe = yes
+		is_shown = {
+			scope:actor = {
+            			OR = {
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+	    			}
+				NOT = { has_character_flag = used_rasenamaterasu_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+            			OR = {
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+	    			}
+				has_trait = windrelease
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_rasenamaterasu_target
+					months = 1
+				}
+				add_trait = wounded_1
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_rasenamaterasu_target
+					months = 16
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_heal_self_interaction = {
+		category = interaction_category_friendly
+		common_interaction = no
+		icon = debug_good
+		desc = perform_heal_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				has_trait = medical_nin
+				NOT = { has_character_flag = used_heal_self }
+			}
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				has_trait = medical_nin
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_heal_self
+					months = 8
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_heal_self
+					months = 18
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+        		ai_recipients = family
+        		ai_recipients = dynasty
+        		ai_recipients = children
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+
+#Kekkei Genkai Interactions
+
+	perform_woodforest_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Jutsu
+		desc = perform_woodforest_target_interaction_desc
+    		ai_maybe = yes
+		is_shown = {
+			scope:actor = {
+				has_trait = woodrelease
+				NOT = { has_character_flag = used_woodforest_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				has_trait = woodrelease
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_woodforest_target
+					months = 1
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_woodforest_target
+					months = 3
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_woodstyle_self_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Buff
+		desc = perform_woodstyle_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				has_trait = woodrelease
+				NOT = { has_character_flag = used_woodstyle_self }
+			}
+			scope:recipient = scope:actor
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				has_trait = woodrelease
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_woodstyle_self
+					months = 1
+				}
+				add_character_flag = {
+					flag = used_woodstyle_self
+					months = 4
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+
+
+#Mangekyo Sharingan Interactions
+	perform_genjutsu_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_genjutsu_target_interaction_desc
+    		ai_maybe = yes
+		is_shown = {
+			scope:actor = {
+				OR = {
+					has_trait = threetomoe
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+	    			}
+				NOT = { has_character_flag = used_genjutsu_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_genjutsu_target
+					months = 3
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_genjutsu_target
+					months = 10
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_finalgenjutsu_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_finalgenjutsu_target_interaction_desc
+    		ai_maybe = yes
+		is_shown = {
+			scope:actor = {
+				has_trait = eternalsharingan
+				NOT = { has_character_flag = used_finalgenjutsu_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_finalgenjutsu_target
+					years = 3
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_finalgenjutsu_target
+					years = 8
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_susanoo_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_susanoo_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				OR = {
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_4
+				}
+				NOT = { has_character_flag = used_susanoo }
+			}
+			scope:recipient = scope:actor
+		}
+
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_susanoo
+					months = 1
+				}
+				add_character_flag = {
+					flag = used_susanoo
+					months = 3
+				}
+			}
+		}
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_bigsusanoo_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_susanoo_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+            			OR = {
+				has_trait = mangekyosharingan_3
+				has_trait = eternalsharingan
+	    			}
+				NOT = { has_character_flag = used_susanoo }
+			}
+			scope:recipient = scope:actor
+		}
+
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_bigsusanoo
+					months = 3
+				}
+				add_character_flag = {
+					flag = used_susanoo
+					months = 4
+				}
+			}
+		}
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_kamui_self_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_kamui_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				has_trait = mangekyosharingan_1
+				NOT = { has_character_flag = used_kamui_self }
+			}
+			scope:recipient = scope:actor
+		}
+		
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_kamui_self
+					days = 20
+				}
+				add_character_flag = {
+					flag = used_kamui_self
+					months = 2
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 3
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_kamui_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_kamui_target_interaction_desc
+    		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				has_trait = mangekyosharingan_1
+				NOT = { has_character_flag = used_kamui_target }	
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_kamui_target
+					days = 20
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_kamui_target
+					months = 2
+				}
+				add_character_modifier = {
+					modifier = used_amaterasu_modifier
+					months = 2
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+perform_amaterasu_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    icon = icon_Dojutsu
+    desc = perform_amaterasu_interaction_desc
+    is_shown = {
+        scope:actor = {
+            OR = {
+			has_trait = mangekyosharingan_3
+			has_trait = mangekyosharingan_4
+			has_trait = eternalsharingan
+	    }
+
+            NOT = { has_character_flag = performed_amaterasu }
+        }
+        scope:recipient = {
+            NOT = { has_character_modifier = amaterasu_modifier }
+        }
+        NOT = { scope:actor = scope:recipient }
+    }
+
+    on_send = {
+        scope:actor = {
+            trigger_event = {
+                id = MangekyoEvents.001
+                days = 1
+            }
+            add_character_flag = {
+                flag = performed_amaterasu
+                months = 8
+            }
+        }
+    }
+}
+
+perform_kotoamatsukami_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    icon = icon_Dojutsu
+    desc = perform_kotoamatsukami_interaction_desc
+    is_shown = {
+        scope:actor = {
+            has_trait = mangekyosharingan_2
+            NOT = { has_character_flag = recently_performed_kotoamatsukami }
+        }
+	NOT = { scope:actor = scope:recipient }
+    }
+
+    on_send = {
+        scope:actor = {
+			trigger_event = MangekyoEvents.002
+			add_character_flag = {
+				flag = recently_performed_kotoamatsukami
+				years = 14
+			}
+        }
+    }
+}
+
+perform_tsukuyomi_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    icon = icon_Dojutsu
+    desc = perform_tsukuyomi_interaction_desc
+    is_shown = {
+        scope:actor = {
+            has_trait = mangekyosharingan_4
+            NOT = { has_character_flag = used_tsukuyomi }
+        }
+        NOT = { scope:actor = scope:recipient }
+    }
+    on_send = {
+        scope:actor = {
+            trigger_event = MangekyoEvents.003
+            add_character_flag = {
+                flag = used_tsukuyomi
+                months = 18
+            }
+        }
+    }
+}
+
+#POTS Regular Interactions
+
+obtain_mangekyo_sharingan_interaction = {
+    category = interaction_category_hostile
+    common_interaction = yes
+    desc = obtain_mangekyo_sharingan_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+            OR = {
+				has_relation_best_friend = scope:recipient 
+				has_relation_lover = scope:recipient
+				has_relation_soulmate = scope:recipient
+				is_close_family_of = scope:recipient
+				scope:recipient = {
+					is_spouse_of = scope:actor
+				}
+			}
+			has_trait = shinobi_dynasty
+			has_trait = uchihagene
+            		has_trait = threetomoe
+			NOR = {
+				has_trait = mangekyosharingan_1
+				has_trait = mangekyosharingan_2
+				has_trait = mangekyosharingan_3
+				has_trait = mangekyosharingan_4
+			}
+			is_adult = yes
+			stress_level >= 1
+			has_character_flag = build_lab_final
+        }
+        scope:recipient = {
+            
+            OR = {
+            	scope:actor.prowess > scope:recipient.prowess
+				has_relation_best_friend = scope:actor
+				has_relation_lover = scope:actor
+				has_relation_soulmate = scope:actor
+				is_close_family_of = scope:actor
+				scope:recipient = {
+					is_spouse_of = scope:actor
+				}
+			}
+        }
+        NOT = { scope:actor = scope:recipient
+        		scope:actor.prowess < scope:recipient.prowess }
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = MangekyoEvents.004
+        }
+    }
+    ai_targets = {
+        ai_recipients = family
+        ai_recipients = dynasty
+        ai_recipients = children
+    }
+    ai_frequency = 60
+    ai_will_do = {
+        base = 100
+    }
+    auto_accept = yes
+}
+
+train_sharingan_level_one_interaction = {
+	category = interaction_category_friendly
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_sharingan_level_one_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				NOT = { has_trait = onetomoe}
+				has_trait = shinobi_dynasty
+				has_trait = uchihagene
+				has_simple_sharingan = no 
+				prowess >= 5
+				age >= 6
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = uchihagene
+				
+				NOT = {
+					has_trait = blind
+					has_trait = onetomoe
+					has_trait = twotomoe
+					has_trait = threetomoe
+					has_trait = rinnegan
+					has_trait = rinnesharingan
+					has_character_modifier = trained_sharingan
+				
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+				}
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = sharingan_level.1
+		}
+	}
+}
+
+train_sharingan_level_two_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_sharingan_level_two_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				NOT = { has_trait = twotomoe}
+				has_trait = shinobi_dynasty
+				has_trait = onetomoe
+				has_trait = uchihagene
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = onetomoe
+				has_trait = uchihagene
+				prowess >= 15
+				
+				NOT = {
+					has_character_modifier = trained_sharingan
+					has_trait = twotomoe
+					has_trait = threetomoe
+					has_trait = rinnegan
+					has_trait = rinnesharingan
+					
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+				}
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = sharingan_level.2
+		}
+	}
+}
+
+train_sharingan_level_three_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_sharingan_level_three_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				NOT = { has_trait = threetomoe}
+				has_trait = shinobi_dynasty
+				has_trait = twotomoe
+				has_trait = uchihagene
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = twotomoe
+				has_trait = uchihagene
+				OR = {
+					martial >= 20
+					prowess >= 25
+				}
+			
+				NOT = {
+					has_character_modifier = trained_sharingan
+					has_trait = threetomoe
+					has_trait = rinnegan
+					has_trait = rinnesharingan
+				
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+				}
+			}
+		}
+    }
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = sharingan_level.3
+		}
+	}
+}
+
+obtain_eternal_light_interaction = {
+	category = interaction_category_friendly
+	common_interaction = yes
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = obtain_eternal_light_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+            		is_close_or_extended_family_of = scope:recipient
+           		AND = {
+				has_mangekyosharingan = yes
+				has_trait = uchihagene
+				has_trait = shinobi_dynasty
+			}
+			NOT = { has_trait = eternalsharingan }
+		}
+        	scope:recipient = {
+            		is_close_or_extended_family_of = scope:actor
+            		AND = {
+				has_mangekyosharingan = yes
+				has_trait = uchihagene
+			}
+        	}
+		NOT = { scope:recipient = scope:actor }
+	}
+    is_valid = {
+		scope:actor = {
+           		AND = {
+				learning >= 25
+				has_trait = medical_nin
+				has_mangekyosharingan = yes
+				has_trait = uchihagene
+				has_trait = shinobi_dynasty
+            			is_adult = yes
+			}
+		}
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = sharingan_level.4
+		}
+	}
+    ai_targets = {
+        ai_recipients = family
+        ai_recipients = dynasty
+    }
+    ai_frequency = 6
+    ai_will_do = {
+        base = 100
+    }
+    auto_accept = yes
+}
+
+
+#Rinnegan Specific interaction
+
+	perform_rinneawaken_self_interaction = {
+		category = interaction_category_friendly
+		common_interaction = no
+		icon = icon_Dojutsu
+		interface_priority = 90
+		desc = perform_rinneawaken_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				is_uchiha = yes
+				has_trait = eternalsharingan
+				has_trait = shinobi_dynasty
+				has_character_flag = build_lab_final
+				NOT = { has_trait = blind }
+				NOT = { has_trait = near_death }
+				NOT = { has_trait = rinnegan }
+				NOT = { has_trait = rinnesharingan }
+				NOT = { has_character_flag = used_rinneawaken_self }
+				NOT = { has_character_flag = successful_self }
+
+			}
+			scope:recipient = scope:actor
+		}
+    		is_valid = {
+			scope:actor = {
+				learning >= 35
+			}
+		}
+		
+		on_accept = {
+			scope:actor = {
+				random_list = {
+					15 = {
+						add_character_modifier = {
+                					modifier = successful_modifier
+                					months = 12
+            					}
+						add_character_flag = {
+							flag = successful_self
+							years = 9
+						}
+            					trigger_event = {
+                					id = RinneganEvents.002
+                					years = 8
+            					}
+					}
+					85 = { add_trait = near_death }
+				}
+				add_character_flag = {
+					flag = used_rinneawaken_self
+					months = 60
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_rinneawaken2_self_interaction = {
+		category = interaction_category_friendly
+		common_interaction = no
+		icon = icon_Dojutsu
+		interface_priority = 90
+		desc = perform_rinneawaken2_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				learning >= 18
+				is_uchiha = yes
+				has_trait = eternalsharingan
+				has_trait = shinobi_dynasty
+				has_character_flag = build_lab_final
+				has_trait = near_death
+				NOT = { has_trait = rinnegan }
+				NOT = { has_trait = rinnesharingan }
+				NOT = { has_character_flag = used_rinneawaken_self }
+			}
+			scope:recipient = scope:actor
+		}
+		
+		on_accept = {
+			scope:actor = {
+				trigger_event = RinneganEvents.001
+				add_character_flag = {
+					flag = used_rinneawaken_self
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+chibaku_tensei_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    icon = icon_BigJutsu
+    desc = chibaku_tensei_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+			has_trait = shinobi_dynasty
+            		NOT = { has_character_modifier = chibakutensei_modifier }
+			OR = {
+				has_trait = rinnegan
+				has_trait = rinnesharingan
+			}
+        }
+	scope:recipient = scope:actor
+    }
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 5
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+            add_character_modifier = {
+                modifier = chibakutensei_modifier
+                months = 1
+            }
+        }
+    }
+}
+
+tengai_shinsei_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    icon = icon_BigJutsu
+    desc = tengai_shinsei_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+			has_trait = shinobi_dynasty
+            		NOT = { has_character_modifier = tengaishinsei_modifier }
+			OR = {
+				has_trait = rinnegan
+				has_trait = rinnesharingan
+			}
+        }
+	scope:recipient = scope:actor
+    }
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 4
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+            add_character_modifier = {
+                modifier = tengaishinsei_modifier
+                months = 4
+            }
+        }
+    }
+}
+
+narakapath_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    icon = icon_Dojutsu
+    desc = narakapath_interaction_desc
+    is_shown = {
+        scope:actor = {
+			has_trait = shinobi_dynasty
+            		NOT = { has_character_flag = used_narakapath_self }
+			OR = {
+				has_trait = rinnegan
+				has_trait = rinnesharingan
+			}
+        }
+        NOT = { scope:actor = scope:recipient }
+    }
+    on_accept = {
+        scope:actor = {
+            add_character_modifier = {
+                modifier = narakapath_modifier
+                months = 18
+            }
+	    add_character_flag = {
+		flag = used_narakapath_self
+		years = 15
+	    }
+        }
+        scope:recipient = {
+            hidden_effect = {
+                death = {
+                    killer = scope:actor
+                    death_reason = absorbed_for_health
+                }
+            }
+        }
+    }
+}
+
+summon_gedo_mazo_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    icon = icon_Dojutsu
+    desc = summon_gedo_mazo_interaction_desc
+    
+    is_shown = {
+        scope:actor = {
+            has_trait = rinnegan
+	    has_trait = shinobi_dynasty
+            NOT = { has_character_modifier = summoned_gedo_mazo_modifier }
+        }
+        scope:recipient = {
+            is_jinchuriki = yes
+            is_alive = yes
+        }
+	NOT = { scope:recipient = scope:actor }
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = RinneganEvents.003
+                days = 1
+            }
+        }
+    }
+}
+
+steal_sharingan_interaction = {
+    category = interaction_category_hostile
+    common_interaction = yes
+	icon = icon_Steal
+	interface_priority = 90
+    desc = steal_sharingan_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+            	has_mangekyosharingan = no
+	    	NOT = { has_trait = eternalsharingan }
+		is_uchiha = yes
+        }
+        scope:recipient = {
+		has_mangekyosharingan = yes	
+        }
+        NOT = { scope:actor = scope:recipient }
+   }
+    
+    is_valid = {
+	scope:recipient = {
+			is_imprisoned_by = scope:actor
+			has_mangekyosharingan = yes
+	}
+        scope:actor = {
+                learning >= 26
+		is_uchiha = yes
+		OR = {
+			martial >= 26
+			prowess >= 35
+		}
+        }
+    }
+    ai_targets = {
+        ai_recipients = war_enemies
+        ai_recipients = prisoners
+		ai_recipients = courtiers
+    }
+    ai_frequency = 24
+    ai_will_do = {
+        base = 20
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = sharingan_theft.001
+                days = 5
+            }
+	    remove_trait = onetomoe
+	    remove_trait = twotomoe
+	    remove_trait = threetomoe
+	    remove_trait = blind
+        }
+    }
+    auto_accept = yes
+}
+
+create_ten_tails_interaction = {
+    category = interaction_category_friendly
+    common_interaction = no
+    interface_priority = 90
+    desc = create_ten_tails_interaction_desc
+    is_shown = {
+        scope:actor = {
+            has_trait = one_tail
+            has_trait = two_tail
+            has_trait = three_tail
+            has_trait = four_tail
+            has_trait = five_tail
+            has_trait = six_tail
+            has_trait = seven_tail
+            has_trait = eight_tail
+            has_trait = nine_tail
+			has_trait = shinobi_dynasty
+			has_trait = rinnegan
+            is_adult = yes
+        }
+    }
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 1
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = RinneganEvents.004
+                days = 1
+            }
+        }
+    }
+}
+
+awaken_rinnesharingan_interaction = {
+    category = interaction_category_friendly
+    common_interaction = no
+	icon = icon_Dojutsu
+	interface_priority = 90
+    desc = awaken_rinnesharingan_interaction_desc
+    is_shown = {
+        scope:actor = {
+            has_trait = rinnegan
+			has_trait = ten_tail
+			has_trait = shinobi_dynasty
+            NOT = { has_trait = rinnesharingan }
+            has_trait = uchihagene
+            is_adult = yes
+        }
+    }
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+		remove_trait = rinnegan
+		add_trait = rinnesharingan
+        }
+    }
+}
+
+search_the_beasts_interaction = {
+	category = interaction_category_hostile
+    common_interaction = no
+	interface_priority = 90
+	desc = search_the_beasts_interaction_desc
+	is_shown = {
+		scope:actor = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = rinnegan
+				is_adult = yes
+				NOT = { has_trait = ten_tail }
+				NOT = { has_character_flag = used_search_self }
+			}
+		}
+		scope:actor = scope:recipient
+	}
+	ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 120
+    ai_will_do = {
+        base = 1
+    }
+	on_accept = {
+		scope:actor = {
+			trigger_event = {
+				id = search_the_beasts.1
+				days = 1
+			}
+		}
+	}
+}
+
+
+#Byakgan Interactions
+
+	perform_byakugan_self_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_byakugan_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+				OR = {
+					is_hyuga = yes
+					has_trait = tenseigan
+				}
+				NOT = { has_character_flag = used_byakugan_self }
+			}
+			scope:recipient = scope:actor
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				OR = {
+					is_hyuga = yes
+					has_trait = tenseigan
+				}
+				OR = {
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_byakugan_self
+					months = 1
+				}
+				add_character_flag = {
+					flag = used_byakugan_self
+					months = 6
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 12
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_byakugan_target_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_byakugan_target_interaction_desc
+		is_shown = {
+			scope:actor = {
+				OR = {
+					is_hyuga = yes
+					has_trait = tenseigan
+				}
+				NOT = { has_character_flag = used_byakugan_target }
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				OR = {
+					is_hyuga = yes
+					has_trait = tenseigan
+				}
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_byakugan_target
+					days = 45
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_byakugan_target
+					months = 6
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_tenseigan_self_interaction = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_tenseigan_self_interaction_desc
+		ai_maybe = yes
+
+		is_shown = {
+			scope:actor = {
+					has_trait = tenseigan
+				NOT = { has_character_flag = used_tenseigan_self }
+			}
+			scope:recipient = scope:actor
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				has_trait = tenseigan
+				OR = {
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:actor = {
+				add_character_modifier = {
+					modifier = modifier_tenseigan_self
+					months = 3
+				}
+				add_character_flag = {
+					flag = used_tenseigan_self
+					months = 9
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = self
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 100
+    		}
+		auto_accept = yes
+	}
+
+	perform_tenseigan_target1_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_Dojutsu
+		desc = perform_tenseigan_target1_interaction_desc
+		is_shown = {
+			scope:actor = {
+					has_trait = tenseigan
+				NOT = { has_character_flag = used_tenseigan_target1 }
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				has_trait = tenseigan
+				OR = {
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_tenseigan_target1
+					months = 4
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_tenseigan_target1
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+	perform_tenseigan_target2_interaction  = {
+		category = interaction_category_hostile
+		common_interaction = no
+		icon = icon_BigJutsu
+		desc = perform_tenseigan_target2_interaction_desc
+		is_shown = {
+			scope:actor = {
+					has_trait = tenseigan
+				NOT = { has_character_flag = used_tenseigan_target2 }
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+    		is_valid = {
+			scope:actor = {
+				has_trait = shinobi_dynasty
+				has_trait = tenseigan
+				OR = {
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+			}
+		}
+		
+		on_accept = {
+			scope:recipient = {
+				add_character_modifier = {
+					modifier = modifier_tenseigan_target2
+					days = 60
+				}
+			}
+			scope:actor = {
+				add_character_flag = {
+					flag = used_tenseigan_target2
+					months = 12
+				}
+			}
+		}
+
+    		ai_targets = {
+			ai_recipients = primary_war_enemies
+			ai_recipients = war_enemies
+    		}
+    		ai_frequency = 18
+    		ai_will_do = {
+        		base = 80
+    		}
+    		auto_accept = yes
+	}
+
+collect_byakugan_interaction = {
+    category = interaction_category_hostile
+    common_interaction = yes
+	icon = icon_Steal
+	interface_priority = 90
+    desc = collect_byakugan_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+		has_trait = shinobi_dynasty
+		is_hyuga = yes
+		has_character_flag = build_lab_final
+		NOT = { has_character_modifier = byakugan_collect10 }
+        }
+        scope:recipient = {
+		is_hyuga = yes
+		has_simple_byakugan = yes
+        }
+	NOT = { scope:recipient = scope:actor }
+    }
+    	
+    is_valid = {
+	scope:recipient = {
+		is_imprisoned_by = scope:actor
+	}
+        scope:actor = {
+        	learning >= 25
+		prowess >= 20
+		is_hyuga = yes
+		has_trait = medical_nin
+		OR = { 
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+        }
+    }
+    ai_targets = {
+        ai_recipients = war_enemies
+        ai_recipients = prisoners
+    }
+    ai_frequency = 6
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = lab_research.006
+                days = 5
+            }
+        }
+	scope:recipient = {
+		add_trait = blind
+		remove_trait = byakugan
+	}
+    }
+    auto_accept = yes
+}
+
+awaken_tenseigan_interaction = {
+    category = interaction_category_friendly
+    common_interaction = no
+	icon = icon_Dojutsu
+	interface_priority = 90
+    desc = awaken_tenseigan_interaction_desc
+    is_shown = {
+        scope:actor = {
+            is_hyuga = yes
+	    has_trait = shinobi_dynasty
+            NOT = { has_trait = tenseigan }
+            NOT = { has_character_modifier = failed_tenseigan_modifier }
+	    has_character_modifier = byakugan_collect10
+            is_adult = yes
+        }
+	scope:recipient = scope:actor
+    }
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = lab_research.007
+                days = 5
+            }
+        }
+    }
+}
+
+
+#Ninjaranks
+
+train_ninja_level_one_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	interface_priority = 80
+	icon = icon_Train
+	desc = train_ninja_level_one_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = shinobi_dynasty
+            		NOT = { has_character_modifier = trained_recently }
+	    		NOT = { has_trait = ninjarank_genin }
+            		NOT = { has_trait = ninjarank_chunin }
+           		NOT = { has_trait = ninjarank_jonin }
+            		NOT = { has_trait = ninjarank_kage }
+			age >= 4
+		}
+		scope:recipient = scope:actor
+	}
+	is_valid = {
+		scope:actor = {
+			martial >= 14
+			intrigue >= 14
+			learning >= 10
+			prowess >= 12
+			OR = {
+				diplomacy >= 12
+				learning >= 15
+			}
+			has_trait = shinobi_dynasty
+			NOT = { has_trait = ninjarank_genin }
+            		NOT = { has_trait = ninjarank_chunin }
+           		NOT = { has_trait = ninjarank_jonin }
+            		NOT = { has_trait = ninjarank_kage }
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+	on_accept = {
+		scope:actor = {
+			trigger_event = ninja_level.1
+		}
+	}
+}
+
+train_ninja_level_two_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	interface_priority = 80
+	icon = icon_Train
+	desc = train_ninja_level_two_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = ninjarank_genin
+           		has_trait = shinobi_dynasty
+           		NOT = { has_character_modifier = trained_recently }
+			NOT = { has_trait = ninjarank_chunin }
+            		NOT = { has_trait = ninjarank_jonin }
+            		NOT = { has_trait = ninjarank_kage }
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			martial >= 18
+			intrigue >= 16
+			learning >= 12
+			prowess >= 16
+			OR = {
+				martial >= 22
+				intrigue >= 20
+				prowess >= 20
+			}
+			has_trait = ninjarank_genin
+            has_trait = shinobi_dynasty
+			NOT = { has_trait = ninjarank_chunin }
+            NOT = { has_trait = ninjarank_jonin }
+            NOT = { has_trait = ninjarank_kage }
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 3
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = ninja_level.2
+		}
+	}
+}
+
+train_ninja_level_three_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	interface_priority = 80
+	icon = icon_Train
+	desc = train_ninja_level_three_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = ninjarank_chunin
+            		has_trait = shinobi_dynasty
+			NOT = { has_character_modifier = trained_recently }
+			NOT = { has_trait = ninjarank_jonin }
+            		NOT = { has_trait = ninjarank_kage }
+            		NOT = { has_trait = ninjarank_genin }
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			diplomacy >= 14
+			martial >= 24
+			intrigue >= 19
+			learning >= 16
+			prowess >= 25
+			OR = {
+				martial >= 32
+				intrigue >= 30
+				learning >= 30
+				prowess >= 32
+			}
+			has_trait = ninjarank_chunin
+			NOT = { has_trait = ninjarank_jonin }
+            NOT = { has_trait = ninjarank_kage }
+            NOT = { has_trait = ninjarank_genin }
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 3
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = ninja_level.3
+		}
+	}
+}
+
+train_ninja_level_four_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	interface_priority = 80
+	icon = icon_Train
+	desc = train_ninja_level_four_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = ninjarank_jonin
+            		has_trait = shinobi_dynasty
+			NOT = { has_character_modifier = trained_recently }
+			NOT = { has_trait = ninjarank_chunin }
+            		NOT = { has_trait = ninjarank_kage }
+            		NOT = { has_trait = ninjarank_genin }
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			diplomacy >= 20
+			martial >= 30
+			intrigue >= 25
+			learning >= 25
+			prowess >= 32
+			OR = {
+				diplomacy >= 30
+				martial >= 40
+				intrigue >= 35
+				learning >= 35
+				prowess >= 40
+			}
+			has_trait = ninjarank_jonin
+            has_trait = shinobi_dynasty
+			NOT = { has_trait = ninjarank_chunin }
+            NOT = { has_trait = ninjarank_kage }
+            NOT = { has_trait = ninjarank_genin }
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 4
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = ninja_level.4
+		}
+	}
+}
+
+#Steal foreign Sharingan
+
+steal_interaction = {
+    category = interaction_category_hostile
+    common_interaction = yes
+	icon = icon_Steal
+	interface_priority = 90
+    desc = steal_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+		has_trait = shinobi_dynasty
+		has_character_flag = build_lab_final
+        }
+        scope:recipient = {
+				OR = {
+					has_trait = onetomoe
+					has_trait = twotomoe
+					has_trait = threetomoe
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+					has_trait = rinnegan
+					has_trait = rinnesharingan
+					has_trait = forbiddeneyes
+					has_trait = jogan
+					has_trait = byakugan
+					has_trait = tenseigan
+				}
+        }
+	NOT = { scope:recipient = scope:actor }
+    }
+    	
+    is_valid = {
+	scope:recipient = {
+		is_imprisoned_by = scope:actor
+	}
+        scope:actor = {
+        	learning >= 38
+		prowess >= 26
+		has_trait = medical_nin
+		OR = { 
+			has_trait = ninjarank_chunin
+			has_trait = ninjarank_jonin
+			has_trait = ninjarank_kage
+		}
+        }
+    }
+    ai_targets = {
+        ai_recipients = war_enemies
+        ai_recipients = prisoners
+    }
+    ai_frequency = 6
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = sharingan_theft.002
+                days = 5
+            }
+        }
+    }
+    auto_accept = yes
+}
+
+preserve_eyes_interaction = {
+    category = interaction_category_hostile
+    common_interaction = yes
+    desc = preserve_eyes_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+            AND = {
+                	OR = {
+					has_trait = onetomoe
+					has_trait = twotomoe
+					has_trait = threetomoe
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+					has_trait = eternalsharingan
+					has_trait = rinnegan
+					has_trait = rinnesharingan
+					has_trait = forbiddeneyes
+					has_trait = jogan
+					has_trait = byakugan
+					has_trait = tenseigan
+				}
+				scope:actor = scope:recipient
+            }
+            NOT = {
+                has_trait = blind
+            }
+	    age >= 45
+        }
+    }
+    on_accept = {
+        scope:actor = {
+            hidden_effect = {
+                trigger_event = {
+                    id = artifact_eye.001
+                    days = 1
+                }
+            }
+            
+        }
+    }
+	ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 600
+    ai_will_do = {
+        base = 1
+    }
+    auto_accept = yes
+}
+
+extract_bijuu_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    desc = extract_bijuu_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+			any_character_artifact = {
+				has_variable = sealing
+			}
+            has_trait = seal_master
+			has_trait = shinobi_dynasty
+        }
+        scope:recipient = {
+			OR = {
+				has_trait = one_tail
+				has_trait = two_tail
+				has_trait = three_tail
+				has_trait = four_tail
+				has_trait = five_tail
+				has_trait = six_tail
+				has_trait = seven_tail
+				has_trait = eight_tail
+				has_trait = nine_tail
+			}
+            is_alive = yes
+			is_imprisoned_by = scope:actor
+        }
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = SealingEvents.001
+                days = 1
+            }
+        }
+    }
+	ai_targets = {
+        ai_recipients = hooked_characters
+        ai_recipients = neighboring_rulers
+        ai_recipients = peer_vassals
+        ai_recipients = guests
+        ai_recipients = dynasty
+        ai_recipients = courtiers
+        ai_recipients = prisoners
+        ai_recipients = sub_realm_characters
+        ai_recipients = realm_characters
+        ai_recipients = vassals
+        ai_recipients = liege
+		ai_recipients = primary_war_enemies
+		ai_recipients = war_enemies
+    }
+	auto_accept = yes
+}
+seal_bijuu_interaction = {
+    category = interaction_category_hostile
+    common_interaction = no
+    desc = seal_bijuu_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+			any_character_artifact = {
+				OR = {
+					has_variable = bijuu1
+					has_variable = bijuu2
+					has_variable = bijuu3
+					has_variable = bijuu4
+					has_variable = bijuu5
+					has_variable = bijuu6
+					has_variable = bijuu7
+					has_variable = bijuu8
+					has_variable = bijuu9
+				}
+			}
+            has_trait = seal_master
+			has_trait = shinobi_dynasty
+        }
+        scope:recipient = {
+			NOT = {
+				has_trait = one_tail
+				has_trait = two_tail
+				has_trait = three_tail
+				has_trait = four_tail
+				has_trait = five_tail
+				has_trait = six_tail
+				has_trait = seven_tail
+				has_trait = eight_tail
+				has_trait = nine_tail
+			}
+			age <= 3
+            is_alive = yes
+			is_in_the_same_court_as_or_guest = scope:actor
+        }
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = SealingEvents.002
+                days = 1
+            }
+        }
+    }
+	ai_targets = {
+        ai_recipients = self
+        ai_recipients = family
+        ai_recipients = dynasty
+        ai_recipients = children
+    }
+	auto_accept = yes
+}
+
+
+
+# Training
+teach_interaction = {
+    category = interaction_category_friendly
+    common_interaction = yes
+    desc = teach_interaction_desc
+    ai_maybe = yes
+    is_shown = {
+        scope:actor = {
+			has_trait = shinobi_dynasty
+        }
+        scope:recipient = {
+			NOT = { has_trait = shinobi_dynasty }
+			is_adult = no
+			OR = {
+				is_in_the_same_court_as_or_guest = scope:actor
+				scope:recipient = scope:actor
+			}
+        }
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+    on_accept = {
+        scope:actor = {
+            trigger_event = {
+                id = ElementalRelease.11
+                days = 5
+            }
+        }
+    }
+	
+    auto_accept = yes
+}
+
+ninja_academy_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	icon = icon_Train
+	desc = ninja_academy_interaction_desc
+	ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = shinobi_dynasty
+			has_trait = ninjarank_kage
+			NOT = { has_character_modifier = trained_recently }
+		}
+		scope:recipient = {
+			has_trait = shinobi_dynasty
+			NOT = { has_trait = ninjarank_kage }
+			NOT = { has_character_modifier = trained_recently }
+			age >= 4
+		}
+	}
+	ai_targets = {
+		ai_recipients = family
+		ai_recipients = dynasty
+		ai_recipients = children
+		ai_recipients = vassals
+		ai_recipients = courtiers
+	}
+	ai_frequency = 30
+	ai_will_do = {
+		base = 100
+	}
+	on_accept = {
+		scope:actor = {
+			trigger_event = {
+				id = ninja_level.5
+				days = 5
+			}
+		}
+	}
+	auto_accept = yes
+}
+
+ninja_skillz_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	icon = icon_Train
+	desc = ninja_skillz_interaction_desc
+	ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_trait = shinobi_dynasty
+			NOT = { has_character_modifier = trained_recently }
+		}
+	}
+	ai_targets = {
+		ai_recipients = self
+	}
+	ai_frequency = 6
+	ai_will_do = {
+		base = 100
+	}
+	on_accept = {
+		scope:actor = {
+			trigger_event = {
+				id = ninja_skillz.1
+				days = 5
+			}
+			add_character_modifier = {
+				modifier = trained_recently
+				months = 38
+        		}
+		}
+	}
+	auto_accept = yes
+}
+
+perform_edo_tensei_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	desc = perform_edo_tensei_interaction_desc
+	ai_maybe = no
+	is_shown = {
+		scope:actor = {
+			AND = {
+				age >= 18
+				is_ai = no
+				#has_character_flag = build_lab_final
+				has_trait = medical_nin
+			}
+			NOT = { scope:recipient = scope:actor }
+		}
+	}
+	on_accept = {
+		scope:actor = {
+			trigger_event = edo_tensei.0001
+		}
+	}
+	auto_accept = yes
+}
+
+medical_nin_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	icon = icon_Train
+	desc = medical_nin_interaction_desc
+	ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_character_flag = build_lab_3
+			NOT = {
+				has_trait = medical_nin
+			}
+		}
+	}
+    	is_valid = {
+		scope:actor = {
+			learning >= 20
+			NOT = { has_character_modifier = trained_recently }
+		}
+	}
+	on_accept = {
+		scope:actor = {
+			trigger_event = lab_research.002
+		}
+	}
+	ai_targets = {
+		ai_recipients = self
+	}
+	ai_frequency = 2
+	ai_will_do = {
+		base = 100
+	}
+	auto_accept = yes
+}
+
+implant_eyes_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	desc = implant_eye_interaction_desc
+	ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				has_trait = medical_nin
+				learning >= 20
+			any_character_artifact = {
+				OR = {
+					has_variable = sharingan1
+					has_variable = sharingan2
+					has_variable = sharingan3
+					has_variable = rinnegan1
+					has_variable = rinnesharingan1
+					has_variable = byakugan1
+					has_variable = tenseigan1
+					has_variable = jogan1
+					has_variable = forbiddeneyes1
+				}
+			}
+		}
+		scope:recipient = {
+				has_trait = shinobi_dynasty	 
+		}
+	}
+    	is_valid = {
+		scope:recipient = {
+				has_trait = shinobi_dynasty
+				health >= 3
+				NOR = {
+					AND = { has_simple_sharingan = yes
+						has_trait = rinnegan
+					}
+					AND = { has_simple_sharingan = yes
+						has_trait = rinnesharingan
+					}
+					AND = { has_simple_sharingan = yes
+						has_trait = byakugan
+					}
+					AND = { has_simple_sharingan = yes
+						has_trait = tenseigan
+					}
+					AND = { has_simple_sharingan = yes
+						has_trait = forbiddeneyes
+					}
+					AND = { has_mangekyosharingan = yes
+						has_trait = rinnesharingan
+					}
+					AND = { has_mangekyosharingan = yes
+						has_trait = rinnegan
+					}
+					AND = { has_mangekyosharingan = yes
+						has_trait = byakugan
+					}
+					AND = { has_mangekyosharingan = yes
+						has_trait = tenseigan
+					}
+					AND = { has_mangekyosharingan = yes
+						has_trait = forbiddeneyes
+					}
+					AND = { has_trait = byakugan
+						has_trait = rinnegan
+					}
+					AND = { has_trait = byakugan
+						has_trait = rinnesharingan
+					}
+					AND = { has_trait = byakugan
+						has_trait = forbiddeneyes
+					}
+					AND = { has_trait = tenseigan
+						has_trait = rinnegan
+					}
+					AND = { has_trait = tenseigan
+						has_trait = rinnesharingan
+					}
+					AND = { has_trait = tenseigan
+						has_trait = forbiddeneyes
+					}
+					AND = { has_trait = eternalsharingan
+						has_trait = rinnegan
+					}
+					AND = { has_trait = eternalsharingan
+						has_trait = rinnesharingan
+					}
+					AND = { has_trait = eternalsharingan
+						has_trait = byakugan
+					}
+					AND = { has_trait = eternalsharingan
+						has_trait = tenseigan
+					}
+					AND = { has_trait = eternalsharingan
+						has_trait = forbiddeneyes
+					}
+				}
+		}
+    	}
+	on_accept = {
+		scope:recipient = {
+			trigger_event = lab_research.003
+		}
+	}
+	ai_targets = {
+		ai_recipients = family
+		ai_recipients = dynasty
+		ai_recipients = children
+	}
+	ai_frequency = 300
+	ai_will_do = {
+		base = 100
+	}
+	auto_accept = yes
+}
+
+implant_chakra_nature_simple_interaction = {
+	category = interaction_category_friendly
+	desc = implant_chakra_nature_simple_interaction_desc
+	common_interaction = no
+	ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_character_flag = build_lab_2
+			has_simple_release = yes
+			NOT = { has_character_flag = recently_tried1 }
+		}
+		scope:recipient = {
+			has_simple_release = no
+		}
+	}
+	on_accept = {
+		scope:recipient = {
+			random_list = {
+				20 = { add_trait = firerelease }
+				20 = { add_trait = waterrelease }
+				20 = { add_trait = earthrelease }
+				20 = { add_trait = windrelease }
+				20 = { add_trait = lightningrelease }
+			}
+		}
+		scope:actor = {
+			add_character_flag = {
+				flag = recently_tried1
+				years = 2
+			}
+		}
+	}
+	ai_targets = {
+		ai_recipients = family
+		ai_recipients = dynasty
+		ai_recipients = children
+	}
+	ai_frequency = 30
+	ai_will_do = {
+		base = 100
+	}
+	auto_accept = yes
+}
+
+implant_chakra_nature_sub_interaction = {
+	category = interaction_category_friendly
+	common_interaction = no
+	desc = implant_chakra_nature_sub_interaction_desc
+	ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+			has_character_flag = build_lab_final
+			has_sub_release = yes
+			NOT = { has_character_flag = recently_tried }
+		}
+		scope:recipient = {
+			has_sub_release = no
+		}
+	}
+	on_accept = {
+		scope:recipient = {
+			random_list = {
+				8 = { add_trait = icerelease }
+      				8 = { add_trait = woodrelease }
+      				8 = { add_trait = lavarelease }
+      				8 = { add_trait = stormrelease }
+      				8 = { add_trait = boilrelease }
+      				8 = { add_trait = dustrelease }
+      				8 = { add_trait = explosionrelease }
+      				8 = { add_trait = scorchrelease }
+      				8 = { add_trait = magnetrelease }
+      				8 = { add_trait = yinrelease }
+      				8 = { add_trait = yangrelease }
+      				8 = { add_trait = yin_yangrelease }
+					2 = { add_stress = 20 }
+					2 = { add_stress = 40 }
+			}
+		}
+		scope:actor = {
+			add_character_flag = {
+				flag = recently_tried
+				years = 12
+			}
+		}
+	}
+	ai_targets = {
+		ai_recipients = family
+		ai_recipients = dynasty
+		ai_recipients = children
+	}
+	ai_frequency = 30
+	ai_will_do = {
+		base = 100
+	}
+	auto_accept = yes
+}
+
+train_byakugan_interaction = {
+	category = interaction_category_friendly
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_byakugan_interaction_desc
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				has_trait = shinobi_dynasty
+				has_trait = hyugagene
+				has_simple_byakugan = no 
+
+				age >= 16
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = hyugagene
+				
+				NOT = {
+					has_character_modifier = trained_sharingan
+					has_trait = blind
+					has_trait = byakugan
+					has_trait = tenseigan
+					has_trait = jogan
+				}
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = byakugan_level.1
+		}
+	}
+}
+train_seal_interaction_novice = {
+	category = interaction_category_friendly
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_seal_interaction
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+				NOT = { has_trait = near_death 
+					has_character_modifier = trained_seal_novice
+					has_trait = near_death
+					has_trait = seal_novice
+					has_trait = seal_basic
+					has_trait = seal_specialist
+					has_trait = seal_master
+					has_trait = seal_lives}
+		
+				age >= 16
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+
+				NOT = {
+					has_character_modifier = trained_seal_novice
+					has_trait = near_death
+					has_trait = seal_novice
+					has_trait = seal_basic
+					has_trait = seal_specialist
+					has_trait = seal_master
+					has_trait = seal_lives
+				}
+
+				learning >= 10
+				prowess >= 10
+				
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = seal_training.1
+		}
+	}
+}
+
+train_seal_interaction_basic = {
+	category = interaction_category_friendly
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_seal_interaction
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+				has_trait = seal_novice
+				NOT = { has_trait = near_death
+					has_character_modifier = trained_seal_basic
+					has_trait = seal_basic
+					has_trait = seal_specialist
+					has_trait = seal_master
+					has_trait = seal_lives}
+				age >= 16
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+
+				NOT = {
+					has_trait = near_death
+					has_character_modifier = trained_seal_basic
+					has_trait = seal_basic
+					has_trait = seal_specialist
+					has_trait = seal_master
+					has_trait = seal_lives
+				}
+
+				learning >= 20
+				prowess >= 15
+
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = seal_training.2
+		}
+	}
+}
+
+train_seal_interaction_specialist = {
+	category = interaction_category_friendly
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_seal_interaction
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+				has_trait = seal_basic
+				NOT = { has_trait = near_death
+					
+					has_character_modifier = trained_seal_specialist
+					has_trait = seal_specialist
+					has_trait = seal_master
+					has_trait = seal_lives }
+				age >= 16
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+
+				NOT = {
+					has_trait = near_death
+					
+					has_character_modifier = trained_seal_specialist
+					has_trait = seal_specialist
+					has_trait = seal_master
+					has_trait = seal_lives
+				}
+
+				learning >= 30
+				prowess >= 20
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = seal_training.3
+		}
+	}
+}
+
+train_seal_interaction_master = {
+	category = interaction_category_friendly
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_seal_interaction
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+				has_trait = seal_specialist
+				NOT = { has_trait = near_death
+					
+					has_character_modifier = trained_seal_master
+					has_trait = seal_master
+					has_trait = seal_lives}
+				age >= 16
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+
+				NOT = {
+					has_trait = near_death
+					
+					has_character_modifier = trained_seal_master
+					has_trait = seal_master
+					has_trait = seal_lives
+				}
+
+				learning >= 40
+				prowess >= 30
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = seal_training.4
+		}
+	}
+}
+
+train_seal_interaction_lives = {
+	category = interaction_category_friendly
+	icon = icon_Dojutsu
+	interface_priority = 90
+	desc = train_seal_interaction
+    ai_maybe = yes
+	is_shown = {
+		scope:actor = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+				has_trait = seal_master
+				NOT = { has_trait = near_death
+					
+					has_character_modifier = trained_seal_lives
+					has_trait = seal_lives}
+				age >= 16
+		}
+		scope:recipient = scope:actor
+	}
+    is_valid = {
+		scope:actor = {
+			AND = {
+				is_shinobi = yes
+				has_character_flag = build_lab_final
+
+				NOT = {
+					has_trait = near_death
+					
+					has_character_modifier = trained_seal_lives
+					has_trait = seal_lives
+				}
+
+				learning >= 60
+				prowess >= 40
+			}
+		}
+	}
+    ai_targets = {
+        ai_recipients = self
+    }
+    ai_frequency = 2
+    ai_will_do = {
+        base = 100
+    }
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = seal_training.5
+		}
+	}
+}
+

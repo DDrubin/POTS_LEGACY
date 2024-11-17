@@ -1,0 +1,35 @@
+﻿#Rinnegan Event Localization
+l_english:
+ #Rinnegan Event 1
+ RinneganEvents.001.t:0 "There is still so much to achieve."
+ RinneganEvents.001.d:0 "Even though I have devoted my life to the path of a Shinobi, fully knowing that I would never be able to rest, that I would never be able to take my eyes off the competition, even if I stood above every single other person, I am now more tired than ever before. I have reached far beyond what even the most accomplished of Shinobi have ever achieved and yet, the fact that there is no end in sight, is more demoralizing than any setback I have ever experienced in my life. Not only is there no end in sight from the amount of thing I have achieved by myself, but the work of my ancestors fails to add anything substantial to bring me forward to a point of ultimate finality. A point where I can lean back and say that, while there is still more to achieve, it does not need to be done by myself, that it is a matter of my own motivation, instead of being of utmost priority to stay ahead in this competition. Yet, even though there seems to be no finish-line in sight, the end seems to draw ever closer to myself. "
+ RinneganEvents.001.a:0 "There is still so much that need to be done for the Awakening"
+ RinneganEvents.001.b:0 "There is still so much that need to be done for the Awakening"
+ RinneganEvents.001.c:0 "There is still so much that need to be done for the Awakening"
+ RinneganEvents.001.e:0 "I have failed this time but my wound has healed and ready for the next experiment"
+
+ #Rinnegan Event 2
+ RinneganEvents.002.t:0 "The Eyes of God"
+ RinneganEvents.002.d:0 "After what was undoubtedly the most ardous time of my life, I have awakened the Rinnegan. The eyes once held by the Sage of the six paths himself. Looking back at it, the reason for my bad health was probably the  enormous strain, which the process of awakening placed on this body. But all that is in the past. Now, there is anew goal in sight. It may be still incredibly far away, but whereas before the journey of a Shinobi was endless and restless until death finally claimed him, I now know that there is indeed an end."
+ RinneganEvents.002.a:0 "Obtain The Rinnegan"
+
+ #Rinnegan Event 3
+ RinneganEvents.003.t:0 "Seal jinchuriki"
+ RinneganEvents.003.h:0 "Rip out the beast inside and seal it away for later use"
+ RinneganEvents.003.a:0 "Seal the One Tails"
+ RinneganEvents.003.b:0 "Seal the Two Tails"
+ RinneganEvents.003.c:0 "Seal the Three Tails"
+ RinneganEvents.003.d:0 "Seal the Four Tails"
+ RinneganEvents.003.e:0 "Seal the Five Tails"
+ RinneganEvents.003.f:0 "Seal the Six Tails"
+ RinneganEvents.003.g:0 "Seal the Seven Tails"
+ RinneganEvents.003.h:0 "Seal the Eight Tails"
+ RinneganEvents.003.i:0 "Seal the Nine Tails"
+ #Rinnegan Event 4
+ RinneganEvents.004.t:0 "Create the Ten-Tailed-Beast"
+ RinneganEvents.004.d:0"After all this time, I have gathered the nine tailed beasts, the shards of the world tree. Now, this same tree, this god, will be born again!"
+ RinneganEvents.004.a:0"Be born anew and make me into a god!"
+ #Rinnegan Events 5
+ RinneganEvents.005.t:0 "The Rinnesharingan"
+ RinneganEvents.005.d:0 "As a vessel of the ten-tailed beast and the owner of the Rinnegan I will be able to advance my own eyesight one final time"
+ RinneganEvents.005.a:0 "Awaken the eye of the moon!"

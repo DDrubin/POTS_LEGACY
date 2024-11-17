@@ -1,0 +1,632 @@
+﻿namespace = pots_house_decision
+
+pots_house_decision.001 = {
+    title = pots_house_decision.001.t
+    desc = pots_house_decision.001.d
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = rage
+    }
+
+    option = {
+        name = pots_house_decision.001.a
+        is_shown = {
+            always = yes # Option is always visible
+        }
+        
+        trigger = {
+        NOT = { has_global_variable = uchiha_bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = uchiha_bloodline 
+                value = 1 
+            }
+            set_house = house:house_Uchiha
+            add_trait = uchihagene
+			
+        }
+    }
+    option = {
+        name = pots_house_decision.001.b
+        trigger = {
+        NOT = { has_global_variable = Hygua_bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Hygua_bloodline 
+                value = 1 
+            }
+            set_house = house:house_Hygua
+            add_trait = hyugagene
+			
+        }
+    }
+    option = {
+        name = pots_house_decision.001.c
+        trigger = {
+            NOT = { has_global_variable = Senju_bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Senju_bloodline 
+                value = 1 
+            }
+            set_house = house:house_Senju
+            add_trait = senjugene
+			
+        }
+    }
+    option = {
+        name = pots_house_decision.001.e
+        trigger = {
+            NOT = { has_global_variable = Uzumaki_bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Uzumaki_bloodline 
+                value = 1 
+            }
+            set_house = house:house_Uzumaki
+            add_trait = uzumakigene
+			
+        }
+    }
+	option = {
+        name = pots_house_decision.001.f
+        trigger = {
+            NOT = { has_global_variable = Kaguja_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Kaguja_Bloodline 
+                value = 1 
+            }
+            add_trait = Kaguja_Bloodline
+			
+        }
+    }
+    option = {
+        name = pots_house_decision.001.g
+        trigger = {
+            NOT = { has_global_variable = Spirit_Magic }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Spirit_Magic 
+                value = 1 
+            }
+            add_trait = Spirit_Magic
+			
+        }
+    }
+    option = {
+        name = pots_house_decision.001.h
+        trigger = {
+            NOT = { has_global_variable = Aburame_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Aburame_Bloodline 
+                value = 1 
+            }
+            add_trait = Aburame_Bloodline
+			
+        }
+    }
+    option = {
+        name = pots_house_decision.001.i
+        trigger = {
+            NOT = { has_global_variable = Yuki_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Yuki_Bloodline 
+                value = 1 
+            }
+            add_trait = Yuki_Bloodline
+			
+        }
+    }
+
+    option = {
+        name = pots_house_decision.001.o
+        trigger = {
+            NOT = { has_global_variable = Kurotsuchi_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Kurotsuchi_Bloodline 
+                value = 1 
+            }
+            add_trait = Kurotsuchi_Bloodline
+            
+        }
+    }
+
+    option = {
+        name = pots_house_decision.001.u
+        trigger = {
+            age <= 25
+        }
+
+        trigger_event = {
+            id = pots_house_decision.002 
+            days = 0
+        }
+    }
+}
+
+pots_house_decision.002 = {
+    title = pots_house_decision.002.t
+    desc = pots_house_decision.002.d
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = rage
+    }
+
+    option = {
+        name = pots_house_decision.002.a
+        is_shown = {
+            always = yes # Option is always visible
+        }
+        
+        trigger = {
+        NOT = { has_global_variable = Nara_Bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Nara_Bloodline 
+                value = 1 
+            }
+            add_trait = Nara_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.002.b
+        trigger = {
+        NOT = { has_global_variable = Guren_Bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Guren_Bloodline 
+                value = 1 
+            }
+            add_trait = Guren_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.002.c
+         trigger = {
+            NOT = { has_global_variable = Terumi_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Terumi_Bloodline 
+                value = 1 
+            }
+            add_trait = Terumi_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.002.e
+        trigger = {
+            NOT = { has_global_variable = Yamanaka_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Yamanaka_Bloodline 
+                value = 1 
+            }
+            add_trait = Yamanaka_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.002.f
+        trigger = {
+            NOT = { has_global_variable = Akimichi_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Akimichi_Bloodline 
+                value = 1 
+            }
+            add_trait = Akimichi_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.002.g
+        trigger = {
+            NOT = { has_global_variable = Inuzuka_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Inuzuka_Bloodline 
+                value = 1 
+            }
+            add_trait = Inuzuka_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.002.h
+        trigger = {
+            NOT = { has_global_variable = Hozuki_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Hozuki_Bloodline 
+                value = 1 
+            }
+            add_trait = Hozuki_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.002.i
+        trigger = {
+            NOT = { has_global_variable = Kurama_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Kurama_Bloodline 
+                value = 1 
+            }
+            add_trait = Kurama_Bloodline
+            
+        }
+    }
+
+    option = {
+        name = pots_house_decision.002.o
+        trigger = {
+            NOT = { has_global_variable = Tsuchigumo_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Tsuchigumo_Bloodline 
+                value = 1 
+            }
+            add_trait = Tsuchigumo_Bloodline
+            
+        }
+    }
+
+    option = {
+        name = pots_house_decision.002.u
+        trigger = {
+            age <= 25
+        }
+
+        trigger_event = {
+            id = pots_house_decision.003 
+            days = 0
+        }
+    }
+}
+
+pots_house_decision.003 = {
+    title = pots_house_decision.003.t
+    desc = pots_house_decision.003.d
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = rage
+    }
+
+    option = {
+        name = pots_house_decision.003.a
+        is_shown = {
+            always = yes # Option is always visible
+        }
+        
+        trigger = {
+        NOT = { has_global_variable = Kazekage_Bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Kazekage_Bloodline 
+                value = 1 
+            }
+            add_trait = Kazekage_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.003.b
+        trigger = {
+        NOT = { has_global_variable = Kamizuru_Bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Kamizuru_Bloodline 
+                value = 1 
+            }
+            add_trait = Kamizuru_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.003.c
+        trigger = {
+            NOT = { has_global_variable = Fuma_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Fuma_Bloodline 
+                value = 1 
+            }
+            add_trait = Fuma_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.003.e
+        trigger = {
+            NOT = { has_global_variable = Hoshigaki_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Hoshigaki_Bloodline 
+                value = 1 
+            }
+            add_trait = Hoshigaki_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.003.f
+        trigger = {
+            NOT = { has_global_variable = Ryudoin_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Ryudoin_Bloodline 
+                value = 1 
+            }
+            add_trait = Ryudoin_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.003.g
+        trigger = {
+            NOT = { has_global_variable = Yurushi_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Yurushi_Bloodline 
+                value = 1 
+            }
+            add_trait = Yurushi_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.003.h
+        trigger = {
+            NOT = { has_global_variable = Hirameki_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Hirameki_Bloodline 
+                value = 1 
+            }
+            add_trait = Hirameki_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.003.i
+        trigger = {
+            NOT = { has_global_variable = Hatake_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Hatake_Bloodline 
+                value = 1 
+            }
+            add_trait = Hatake_Bloodline
+            
+        }
+    }
+
+    option = {
+        name = pots_house_decision.003.o
+        trigger = {
+            NOT = { has_global_variable = Yu_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Yu_Bloodline 
+                value = 1 
+            }
+            add_trait = Yu_Bloodline
+            
+        }
+    }
+
+    option = {
+        name = pots_house_decision.003.u
+        trigger = {
+            age <= 25
+        }
+
+        trigger_event = {
+            id = pots_house_decision.004 
+            days = 0
+        }
+    }
+}
+
+pots_house_decision.004 = {
+    title = pots_house_decision.004.t
+    desc = pots_house_decision.004.d
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = rage
+    }
+
+    option = {
+        name = pots_house_decision.004.a
+        is_shown = {
+            always = yes # Option is always visible
+        }
+        
+        trigger = {
+        NOT = { has_global_variable = Daimon_Bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Daimon_Bloodline 
+                value = 1 
+            }
+            add_trait = Daimon_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.004.b
+        trigger = {
+        NOT = { has_global_variable = Ichinose_Bloodline
+              }
+            
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Ichinose_Bloodline 
+                value = 1 
+            }
+            add_trait = Ichinose_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.004.c
+        trigger = {
+            NOT = { has_global_variable = Reiji_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Reiji_Bloodline 
+                value = 1 
+            }
+            add_trait = Reiji_Bloodline
+            
+        }
+    }
+    option = {
+        name = pots_house_decision.004.e
+        trigger = {
+            NOT = { has_global_variable = Watari_Bloodline }
+            age <= 25
+        }
+
+        hidden_effect = {
+            set_global_variable = { 
+                name = Watari_Bloodline 
+                value = 1 
+            }
+            add_trait = Watari_Bloodline
+            
+        }
+    }
+
+    option = {
+        name = pots_house_decision.004.u
+        trigger = {
+            age <= 25
+        }
+
+        trigger_event = {
+            id = pots_house_decision.001 
+            days = 0
+        }
+    }
+}

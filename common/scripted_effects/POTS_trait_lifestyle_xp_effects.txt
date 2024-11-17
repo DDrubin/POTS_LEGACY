@@ -1,0 +1,256 @@
+onetomoe_xp_effect = {
+	if = {
+		limit = { has_trait = onetomoe }
+		add_trait_xp = {
+			trait = onetomoe
+			track = onetomoe_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+twotomoe_xp_effect = {
+	if = {
+		limit = { has_trait = twotomoe }
+		add_trait_xp = {
+			trait = twotomoe
+			track = twotomoe_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+threetomoe_xp_effect = {
+	if = {
+		limit = { has_trait = threetomoe }
+		add_trait_xp = {
+			trait = threetomoe
+			track = threetomoe_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+mangekyosharingan_1_xp_effect = {
+	if = {
+		limit = { has_trait = mangekyosharingan_1 }
+		add_trait_xp = {
+			trait = mangekyosharingan_1
+			track = mangekyosharingan_1_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+mangekyosharingan_2_xp_effect = {
+	if = {
+		limit = { has_trait = mangekyosharingan_2 }
+		add_trait_xp = {
+			trait = mangekyosharingan_2
+			track = mangekyosharingan_2_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+mangekyosharingan_3_xp_effect = {
+	if = {
+		limit = { has_trait = mangekyosharingan_3 }
+		add_trait_xp = {
+			trait = mangekyosharingan_3
+			track = mangekyosharingan_3_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+mangekyosharingan_4_xp_effect = {
+	if = {
+		limit = { has_trait = mangekyosharingan_4 }
+		add_trait_xp = {
+			trait = mangekyosharingan_4
+			track = mangekyosharingan_4_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+eternalsharingan_xp_effect = {
+	if = {
+		limit = { has_trait = eternalsharingan }
+		add_trait_xp = {
+			trait = eternalsharingan
+			track = eternalsharingan_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+
+rinnegan_firts_second_path_xp_effect = {
+	if = {
+		limit = { has_trait = rinnegan }
+		add_trait_xp = {
+			trait = rinnegan
+			track = firts_second_path_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+rinnegan_third_fourth_path_xp_effect = {
+	if = {
+		limit = { has_trait = rinnegan }
+		add_trait_xp = {
+			trait = rinnegan
+			track = third_fourth_path_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+rinnegan_fifth_sixth_path_xp_effect = {
+	if = {
+		limit = { has_trait = rinnegan }
+		add_trait_xp = {
+			trait = rinnegan
+			track = fifth_sixth_path_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+rinnesharingan_xp_effect = {
+	if = {
+		limit = { has_trait = rinnesharingan }
+		add_trait_xp = {
+			trait = rinnesharingan
+			track = rinnesharingan_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+byakugan_xp_effect = {
+	if = {
+		limit = { has_trait = byakugan }
+		add_trait_xp = {
+			trait = byakugan
+			track = byakugan_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+tenseigan_xp_effect = {
+	if = {
+		limit = { has_trait = tenseigan }
+		add_trait_xp = {
+			trait = tenseigan
+			track = tenseigan_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+forbiddeneyes_xp_effect = {
+	if = {
+		limit = { has_trait = forbiddeneyes }
+		add_trait_xp = {
+			trait = forbiddeneyes
+			track = forbiddeneyes_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+jogan_xp_effect = {
+	if = {
+		limit = { has_trait = jogan }
+		add_trait_xp = {
+			trait = jogan
+			track = jogan_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}

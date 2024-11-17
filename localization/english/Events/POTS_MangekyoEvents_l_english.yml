@@ -1,0 +1,30 @@
+﻿#POTS Mangekyo Sharingan Events
+l_english:
+ #Amaterasu
+ MangekyoEvents.001.t:0 "Mangekyo Sharingan;Amaterasu"
+ MangekyoEvents.001.d:0 "With this mangekyo sharingan ability one can utilize the unstoppable black flames of hell, the flames of amaterasu and cause their target to be burned and scarred"
+ MangekyoEvents.001.o:0 "Amaterasu"
+ #Kotoamtsukami
+ MangekyoEvents.002.t:0 "Mangekyo Sharingan;Kotoamtsukami"
+ MangekyoEvents.002.d:0 "With this mangekyo sharingan ability one can place an unbreakable genjutsu on the recipient and force them to follow what ever the castor desires"
+ MangekyoEvents.002.o:0 "Kotoamtsukami"
+ #Tsukuyomi
+ MangekyoEvents.003.t:0 "Mangekyo Sharingan;Tsukuyomi"
+ MangekyoEvents.003.d:0 "With this mangekyo sharingan ability one can transport both themselves and the recipient to the realm of the Moon Reader dimension where the caster can torture the oponent for as long as they want"
+ MangekyoEvents.003.o:0 "Tsukuyomi"
+ #Obtain Mangekyo Sharingan
+ MangekyoEvents.004.t:0 "Obtaining The Mangekyo Sharingan"
+ MangekyoEvents.004.d:0 "While it pains me to do this, it just makes me more sure that this is the corrrect thing to do. Bearing our blood means to bear anger, to experience anguish, to be destined for suffering. If I want to see the world in a new light I will have to lose someone dear to. The least I can do is to do the deed myself."
+ MangekyoEvents.004.o:0 "Obtain The Mangekyo Sharingan"
+ MangekyoEvents.004.a:0 "On second thought..."
+ #Blindness
+ MangekyoEvents.005.t:0 "My eyes have forsaken me!"
+ MangekyoEvents.005.d:0 "At first I was sure I was just imagining things. It simply could not be true. Now, i can no longer ignore my plight. I fear that even if I were to move heaven and earth it would still be too late. My eyes, they lose their sight the more I use them. After many long years they have now been rendered useless. I who once prided myself in seeing things more clearly rhan any other, now find myself blind and in need of guidance for the most simple of tasks. If only I would not have rested on my laurels and pushed forwards. It seems I had forgotten that the saying 'those who rest will be left behind' applies to myself as well."
+ MangekyoEvents.005.a:0 "As darkness takes me..."
+ #Obtain Eternal Light (Event)
+ sharingan_level.4.t:0 "Eternal Light"
+ sharingan_level.4.d:0 "After all this time, the chance is finally at hand! To keep darkness at bay forevermore. Never will I go to sleep and close my eyes in fear of never opening them again. No matter what trials I face, I shall move onwards and overcome all which holds me back. For glory! For Victory! For eternal, everlasting light!"
+ sharingan_level.4.a:0 "Obtain Eternal Light"
+ #Obtain Eternal Light (Interaction)
+ obtain_eternal_light_interaction:0 "Obtain Eternal Light"
+ obtain_eternal_light_interaction_desc:0 "Swap eyes to keep darkness at bay"

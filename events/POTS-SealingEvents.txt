@@ -1,0 +1,611 @@
+namespace = SealingEvents
+
+SealingEvents.001 = {
+    type = character_event
+    title = SealingEvents.001.t
+    desc = SealingEvents.001.d
+    theme = martial
+    
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+    left_portrait = {
+        character = scope:recipient
+        animation = worry
+    }
+
+    option = {
+        name = SealingEvents.001.a
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = one_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = one_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu1_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.b
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = two_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = two_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu2_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.c
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = three_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = three_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu3_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.e
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = four_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = four_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu4_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.f
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = five_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = five_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu5_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.g
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = six_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = six_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu6_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.h
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = seven_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = seven_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu7_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.i
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = eight_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = eight_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu8_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+	option = {
+        name = SealingEvents.001.j
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = sealing
+				}
+			}
+	    	scope:recipient = {
+				has_trait = nine_tail
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = sealing }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			remove_trait = nine_tail
+			death = {
+				killer = scope:actor
+				death_reason = tailedbeast_absorbed
+			}
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+			create_artifact_bijuu9_effect = {
+				OWNER = root
+				MAKER = root
+			}	
+		}
+    }
+}
+
+SealingEvents.002 = {
+    type = character_event
+    title = SealingEvents.002.t
+    desc = SealingEvents.002.d
+    theme = martial
+    
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+    left_portrait = {
+        character = scope:recipient
+        animation = worry
+    }
+
+    option = {
+        name = SealingEvents.002.a
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu1
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu1 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = one_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+		}
+    }
+	option = {
+        name = SealingEvents.002.b
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu2
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu2 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = two_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+		}
+    }
+	option = {
+        name = SealingEvents.002.c
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu3
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu3 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = three_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+		}
+    }
+	option = {
+        name = SealingEvents.002.e
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu4
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu4 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = four_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact	
+		}
+    }
+	option = {
+        name = SealingEvents.002.f
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu5
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu5 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = five_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+		}
+    }
+	option = {
+        name = SealingEvents.002.g
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu6
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu6 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = six_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+		}
+    }
+	option = {
+        name = SealingEvents.002.h
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu7
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu7 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = seven_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+		}
+    }
+	option = {
+        name = SealingEvents.002.i
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu8
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu8 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = eight_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact
+		}
+    }
+	option = {
+        name = SealingEvents.002.j
+        trigger = {
+			scope:actor = {
+				any_character_artifact = {
+					has_variable = bijuu9
+				}
+			}
+	    	scope:recipient = {
+				NOT = {
+					has_trait = one_tail
+					has_trait = two_tail
+					has_trait = three_tail
+					has_trait = four_tail
+					has_trait = five_tail
+					has_trait = six_tail
+					has_trait = seven_tail
+					has_trait = eight_tail
+					has_trait = nine_tail
+				}
+	    	}
+        }
+		every_character_artifact = {
+			limit = { has_variable = bijuu9 }
+			save_scope_as = this_artifact
+		}
+		scope:recipient = {
+			add_trait = nine_tail
+		}
+		scope:actor = {
+			destroy_artifact = scope:this_artifact	
+		}
+    }
+}

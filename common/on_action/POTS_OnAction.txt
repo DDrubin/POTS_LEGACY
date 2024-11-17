@@ -1,0 +1,917 @@
+﻿#POTS Elemental Release on Action
+on_game_start = {
+	events = {
+		POTS_historical_artifacts.1
+	}
+}
+on_birth_child = {
+    on_actions = {
+        ElementalBirth
+        on_uchiha_birth
+		on_hyuga_birth
+		on_forbidden_birth
+		on_shinigami_birth
+		on_uzumaki_birth
+		on_senju_birth
+    }
+}
+
+ElementalBirth = {
+    events = {
+        ElementalRelease.1
+    }
+}
+
+on_uchiha_birth = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uchiha = yes
+					}
+					scope:mother = {
+						is_uchiha = yes
+					}
+				}
+			}
+			add_trait = uchihagene
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uchiha = yes
+					}
+					scope:mother = {
+						is_uchiha = no
+					}
+				}
+			}
+			add_trait = uchihagene
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uchiha = no
+					}
+					scope:mother = {
+						is_uchiha = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = uchihagene
+		}
+	}
+}
+
+on_forbidden_birth = {
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						scope:real_father = {
+							is_uchiha = yes
+						}
+						scope:mother = {
+							is_hyuga = yes
+						}
+					}
+					AND = {
+						scope:real_father = {
+							is_hyuga = yes
+						}
+						scope:mother = {
+							is_uchiha = yes
+						}
+					}
+				}
+				NOT = { is_hyuga = yes
+						is_uchiha = yes
+				}
+			}
+			random_list = {
+				30 = {
+					add_trait = forbiddengene
+					add_trait = forbiddeneyes
+				}
+				35 = {
+					add_trait = uchihagene
+				}
+				35 = {
+					add_trait = hyugagene
+					random_list = {
+						95 = {
+							add_trait = byakugan
+						}
+						5 = {
+							add_trait = jogan
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_forbidden = yes
+					}
+					scope:mother = {
+						is_forbidden = yes
+					}
+				}
+			}
+			add_trait = forbiddengene
+			add_trait = forbiddeneyes
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_forbidden = yes
+					}
+					scope:mother = {
+						is_forbidden = no
+					}
+				}
+			}
+			add_trait = forbiddengene
+			add_trait = forbiddeneyes
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_forbidden = no
+					}
+					scope:mother = {
+						is_forbidden = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = forbiddengene
+			add_trait = forbiddeneyes
+		}
+	}
+}
+
+on_hyuga_birth = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_hyuga = yes
+					}
+					scope:mother = {
+						is_hyuga = yes
+					}
+				}
+			}
+			add_trait = hyugagene
+			add_trait = byakugan
+			random_list = {
+				95 = {
+					add_trait = byakugan
+				}
+				5 = {
+					add_trait = jogan
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_hyuga = yes
+					}
+					scope:mother = {
+						is_hyuga = no
+					}
+				}
+			}
+			add_trait = hyugagene
+			add_trait = byakugan
+			random_list = {
+				95 = {
+					add_trait = byakugan
+				}
+				5 = {
+					add_trait = jogan
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_hyuga = no
+					}
+					scope:mother = {
+						is_hyuga = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = hyugagene
+			random_list = {
+				95 = {
+					add_trait = byakugan
+				}
+				5 = {
+					add_trait = jogan
+				}
+			}
+		}
+	}
+}
+
+on_uzumaki_birth = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uzumaki = yes
+					}
+					scope:mother = {
+						is_uzumaki = yes
+					}
+				}
+			}
+			add_trait = uzumakigene
+			random_list = {
+				95 = {
+					add_trait = seal_novice
+				}
+				5 = {
+					add_trait = seal_basic
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uzumaki = yes
+					}
+					scope:mother = {
+						is_uzumaki = no
+					}
+				}
+			}
+			add_trait = uzumakigene
+			random_list = {
+				95 = {
+					add_trait = seal_novice
+				}
+				5 = {
+					add_trait = seal_basic
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uzumaki = no
+					}
+					scope:mother = {
+						is_uzumaki = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = uzumakigene
+			random_list = {
+				95 = {
+					add_trait = seal_novice
+				}
+				5 = {
+					add_trait = seal_basic
+				}
+			}
+		}
+	}
+}
+
+on_senju_birth = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_senju = yes
+					}
+					scope:mother = {
+						is_senju = yes
+					}
+				}
+			}
+			add_trait = senjugene
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_senju = yes
+					}
+					scope:mother = {
+						is_senju = no
+					}
+				}
+			}
+			add_trait = senjugene
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_senju = no
+					}
+					scope:mother = {
+						is_senju = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = senjugene
+		}
+	}
+}
+
+#Elemental Birthdays
+on_birthday = {
+    on_actions = {
+        Elemental_Release_One
+        Elemental_Release_Two
+        Elemental_Release_Three
+        Elemental_Release_Four
+        Elemental_Release_Five
+        Elemental_Release_Six
+        Elemental_Release_Seven
+        Elemental_Release_Eight
+        Elemental_Release_Nine
+    }
+}
+
+Elemental_Release_One {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = icerelease }
+            has_trait = waterrelease
+            has_trait = windrelease
+        }
+    }
+
+    events = {
+        ElementalRelease.2
+    }
+}
+
+Elemental_Release_Two {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = woodrelease }
+            has_trait = earthrelease
+            has_trait = waterrelease
+        }
+    }
+
+    events = {
+        ElementalRelease.3
+    }
+}
+
+Elemental_Release_Three {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = lavarelease }
+            has_trait = earthrelease
+            has_trait = firerelease
+        }
+    }
+
+    events = {
+        ElementalRelease.4
+    }
+}
+
+Elemental_Release_Four {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = stormrelease }
+            has_trait = waterrelease
+            has_trait = lightningrelease
+        }
+    }
+
+    events = {
+        ElementalRelease.5
+    }
+}
+
+Elemental_Release_Five {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = boilrelease }
+            has_trait = firerelease
+            has_trait = waterrelease
+        }
+    }
+
+    events = {
+        ElementalRelease.6
+    }
+}
+
+Elemental_Release_Six {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = dustrelease }
+            has_trait = earthrelease
+            has_trait = windrelease
+            has_trait = firerelease
+        }
+    }
+
+    events = {
+        ElementalRelease.7
+    }
+}
+
+Elemental_Release_Seven {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = explosionrelease }
+            has_trait = earthrelease
+            has_trait = lightningrelease
+        }
+    }
+
+    events = {
+        ElementalRelease.8
+    }
+}
+
+Elemental_Release_Eight {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = scorchrelease }
+            has_trait = firerelease
+            has_trait = windrelease
+        }
+    }
+
+    events = {
+        ElementalRelease.9
+    }
+}
+
+Elemental_Release_Nine {
+    trigger = {
+        AND = {
+            age > 1
+            NOT = { has_trait = magnetrelease }
+            has_trait = earthrelease
+            has_trait = windrelease
+        }
+    }
+
+    events = {
+        ElementalRelease.10
+    }
+}
+
+#POTS Mangekyo Stress
+
+on_stress_level_1 = {
+	on_actions = {
+		eye_stress1
+		eye_stress2
+		eye_stress3
+	}
+}
+on_stress_level_2 = {
+	on_actions = {
+		mango_stress
+	}
+}
+on_stress_level_3 = {
+	on_actions = {
+		ringy_stress
+	}
+}
+
+eye_stress1 = {
+	events = {
+		sharingan_level.11
+	}
+}
+eye_stress2 = {
+	events = {
+		sharingan_level.22
+	}
+}
+eye_stress3 = {
+	events = {
+		sharingan_level.33
+	}
+}
+
+on_imprison = {
+	on_actions = {
+		eye_stress1
+		eye_stress2
+		eye_stress3
+	}
+}
+
+random_yearly_everyone_pulse = {
+	on_actions = {
+		eye_stress1w
+		eye_stress2w
+		eye_stress3w
+	}
+}
+
+eye_stress1w = {
+	trigger = {
+		is_uchiha = yes
+		OR = {
+			health < 2
+			has_trait = cancer
+			has_trait = wounded_2
+			has_trait = wounded_3
+			has_infected_or_gangrenous_wound_trigger = yes
+		}
+	}
+	events = {
+		sharingan_level.11
+	}
+}
+eye_stress2w = {
+	trigger = {
+		is_uchiha = yes
+		OR = {
+			health < 2
+			has_trait = cancer
+			has_trait = wounded_2
+			has_trait = wounded_3
+			has_infected_or_gangrenous_wound_trigger = yes
+		}
+	}
+	events = {
+		sharingan_level.22
+	}
+}
+eye_stress3w = {
+	trigger = {
+		is_uchiha = yes
+		OR = {
+			health < 2
+			has_trait = cancer
+			has_trait = wounded_2
+			has_trait = wounded_3
+			has_infected_or_gangrenous_wound_trigger = yes
+		}
+	}
+	events = {
+		sharingan_level.33
+	}
+}
+
+quarterly_playable_pulse = {
+	on_actions = {
+		mango_stressw
+	}
+}
+
+mango_stressw = {
+	trigger = {
+        	AND = {
+			health <= 1.3
+			has_trait = threetomoe
+			has_trait = uchihagene
+			age >= 12
+			has_trait = shinobi_dynasty
+
+			NOT = { has_character_modifier = trained_sharingan }
+			has_mangekyosharingan = no
+			NOT = { has_trait = eternalsharingan }
+		}
+	}
+	events = {
+		MangekyoEvents.006
+	}
+}
+
+on_birthday = {
+	on_actions = {
+		check_blind
+		check_rank1
+		check_rank2
+		check_rank3
+		check_rank4
+		check_double_rank
+	}
+}
+check_double_rank = {
+	trigger = {
+		OR = {
+			AND = {
+				has_trait = ninjarank_genin
+				has_trait = ninjarank_chunin
+			}
+			AND = {
+				has_trait = ninjarank_genin
+				has_trait = ninjarank_jonin
+			}
+			AND = {
+				has_trait = ninjarank_genin
+				has_trait = ninjarank_kage
+			}
+			AND = {
+				has_trait = ninjarank_chunin
+				has_trait = ninjarank_jonin
+			}
+			AND = {
+				has_trait = ninjarank_chunin
+				has_trait = ninjarank_kage
+			}
+			AND = {
+				has_trait = ninjarank_jonin
+				has_trait = ninjarank_kage
+			}			
+		}
+	}
+	events = {
+		ninja_level.7
+	}
+}
+check_rank1 = {
+	trigger = {
+		OR = {
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_perk = jutsu_2_perk
+				has_perk = jutsu_10_perk
+			}
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_perk = jutsu_16_perk
+				has_perk = jutsu_10_perk
+			}
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_perk = jutsu_16_perk
+				has_perk = jutsu_2_perk
+			}
+		}
+	}
+	events = {
+		ninja_level.11
+	}
+}
+
+check_rank2 = {
+	trigger = {
+		OR = {
+			AND = {
+				NOT = {
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_genin
+				has_perk = jutsu_3_perk
+				has_perk = jutsu_11_perk
+			}
+			AND = {
+				NOT = {						
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_genin
+				has_perk = jutsu_17_perk
+				has_perk = jutsu_11_perk
+			}
+			AND = {
+				NOT = {
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_genin
+				has_perk = jutsu_17_perk
+				has_perk = jutsu_3_perk
+			}
+		}
+
+	}
+	events = {
+		ninja_level.22
+	}
+}
+
+check_rank3 = {
+	trigger = {
+		OR = {
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_chunin
+				has_perk = jutsu_6_perk
+				has_perk = jutsu_12_perk
+			}
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_chunin
+				has_perk = jutsu_18_perk
+				has_perk = jutsu_12_perk
+			}
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_jonin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_chunin
+				has_perk = jutsu_18_perk
+				has_perk = jutsu_6_perk
+			}
+		}
+	}
+	events = {
+		ninja_level.33
+	}
+}
+
+check_rank4 = {
+	trigger = {
+		OR = {
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_jonin
+				has_perk = jutsu_7_perk
+				has_perk = jutsu_13_perk
+			}
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_jonin
+				has_perk = jutsu_19_perk
+				has_perk = jutsu_13_perk
+			}
+			AND = {
+				NOT = {
+					has_trait = ninjarank_genin
+					has_trait = ninjarank_chunin
+					has_trait = ninjarank_kage
+				}
+				has_trait = ninjarank_jonin
+				has_perk = jutsu_17_perk
+				has_perk = jutsu_7_perk
+			}
+		}
+	}
+	events = {
+		ninja_level.44
+	}
+}
+
+check_blind = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					has_trait = blind
+					OR = {
+						has_trait = byakugan
+						has_trait = onetomoe
+						has_trait = twotomoe
+						has_trait = threetomoe
+						has_trait = mangekyosharingan_1
+						has_trait = mangekyosharingan_2
+						has_trait = mangekyosharingan_3
+						has_trait = mangekyosharingan_4
+						has_trait = eternalsharingan						
+					}
+				}
+			}
+			remove_trait = byakugan
+			remove_trait = onetomoe
+			remove_trait = twotomoe
+			remove_trait = threetomoe
+			remove_trait = mangekyosharingan_1
+			remove_trait = mangekyosharingan_2
+			remove_trait = mangekyosharingan_3
+			remove_trait = mangekyosharingan_4
+			remove_trait = eternalsharingan	
+		}
+	}
+}
+
+
+mango_stress = {
+	trigger = {
+        	AND = {
+			has_trait = threetomoe
+			has_trait = uchihagene
+			age >= 12
+			has_trait = shinobi_dynasty
+
+			NOT = { has_character_modifier = trained_sharingan }
+			has_mangekyosharingan = no
+			NOT = { has_trait = eternalsharingan }
+		}
+	}
+	events = {
+		MangekyoEvents.006
+	}
+}
+
+ringy_stress = {
+	trigger = {
+        	AND = {
+			OR = {
+				has_trait = near_death
+				has_trait = senjugene
+			}
+			has_trait = eternalsharingan
+			has_trait = shinobi_dynasty
+			is_adult = yes
+			NOT = { has_trait = rinnegan }
+			NOT = { has_trait = rinnesharingan }
+			has_mangekyosharingan = no
+		}
+	}
+		
+	events = {
+		RinneganEvents.001
+	}
+}
+
+steal_eyes_save_roll = {
+	random_events = {
+		95 = steal_eyes_outcome.9999 #Murder succeeds
+
+		5 = steal_eyes_outcome.9998
+	}
+}
+
+steal_eyes_succeeded = {
+	# Picks out the correct success event depending on setup.
+	first_valid = {
+		steal_eyes_outcome.0001
+	}
+}
+
+steal_eyes_failed = {
+	first_valid = {
+		steal_eyes_outcome.0003
+	}
+}

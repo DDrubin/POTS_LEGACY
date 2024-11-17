@@ -1,0 +1,333 @@
+﻿l_russian:
+
+shinobi_legacy_track_name:1 "Шиноби"
+shinobi_legacy_track_desc:0 "Мастерство интеллекта и навыков определяет путь настоящего Шиноби, делая наш клан непревзойденным."
+shinobi_legacy_1_name:0 "Адаптивность Ниндзя"
+shinobi_legacy_2_name:1 "Сила Оружия"
+shinobi_legacy_3_name:0 "Стратегическое Искусство"
+shinobi_legacy_4_name:0 "Элитное Обучение"
+shinobi_legacy_5_name:1 "Гении Кровной Линии"
+
+# Сенджу
+
+senju_legacy_track_name:1 "Сенджу"
+senju_legacy_track_desc:0 "Клан Сенджу воплощает универсальность и непревзойденную силу."
+senju_legacy_1_name:0 "Адаптация к Лесу"
+senju_legacy_2_name:1 "Сила Сенджу"
+senju_legacy_3_name:0 "Древняя Мудрость"
+senju_legacy_4_name:0 "Клановая Элита"
+senju_legacy_5_name:1 "Наследственное Мастерство"
+
+# Учиха
+
+uchiha_legacy_track_name:1 "Учиха"
+uchiha_legacy_track_desc:0 "Клан Учиха процветает на врожденной силе и непревзойденных способностях."
+uchiha_legacy_1_name:0 "Острый Взор"
+uchiha_legacy_2_name:1 "Сила Учиха"
+uchiha_legacy_3_name:0 "Древнее Знание"
+uchiha_legacy_4_name:0 "Элитный Бой"
+uchiha_legacy_5_name:1 "Мастерство Додзюцу"
+
+# Узумаки
+
+uzumaki_legacy_track_name:1 "Узумаки"
+uzumaki_legacy_track_desc:0 "Клан Узумаки ценит непревзойденную стойкость и мастерство запечатывания."
+uzumaki_legacy_1_name:0 "Адаптация к Запечатыванию"
+uzumaki_legacy_2_name:1 "Спиральная Сила"
+uzumaki_legacy_3_name:0 "Древние Знания"
+uzumaki_legacy_4_name:0 "Непоколебимая Воля"
+uzumaki_legacy_5_name:1 "Мастер Запечатывания"
+
+# Теруми
+
+terumi_legacy_track_name:1 "Теруми"
+terumi_legacy_track_desc:0 "Клан Теруми процветает благодаря гибкости и стратегическому мастерству."
+terumi_legacy_1_name:0 "Адаптация к Туману"
+terumi_legacy_2_name:1 "Сила Теруми"
+terumi_legacy_3_name:0 "Стратегический Ум"
+terumi_legacy_4_name:0 "Элитный Боец"
+terumi_legacy_5_name:1 "Сила Кровной Линии"
+
+# Рюдоин
+
+ryudoin_legacy_track_name:1 "Рюдоин"
+ryudoin_legacy_track_desc:0 "Мудрость и сила делают Рюдоин грозными."
+ryudoin_legacy_1_name:0 "Адаптация Дракона"
+ryudoin_legacy_1_desc:0 "Улучшает адаптивность и стойкость, подобно дракону."
+ryudoin_legacy_2_name:1 "Сила Рюдоин"
+ryudoin_legacy_2_desc:0 "Дарует исключительную силу, текущую через кровь Рюдоин."
+ryudoin_legacy_3_name:0 "Мистическое Знание"
+ryudoin_legacy_3_desc:0 "Обеспечивает глубокие знания древних и мистических искусств."
+ryudoin_legacy_4_name:0 "Элитный Воин"
+ryudoin_legacy_4_desc:0 "Обучает индивидов становиться элитными воинами с непревзойденными боевыми навыками."
+ryudoin_legacy_5_name:1 "Гений Кровной Линии"
+ryudoin_legacy_5_desc:0 "Дарует статус гения, возвышая все способности на их пик."
+
+hozuki_legacy_track_name:1 "Хозуки"
+hozuki_legacy_track_desc:0 "Гибкость и интеллект определяют клан Хозуки."
+
+hozuki_legacy_1_name:0 "Адаптивность к Воде"
+hozuki_legacy_1_desc:0 "Улучшает адаптивность и стойкость благодаря водным техникам."
+hozuki_legacy_2_name:1 "Сила Хозуки"
+hozuki_legacy_2_desc:0 "Дарует силу и гибкость клана Хозуки."
+hozuki_legacy_3_name:0 "Мастерство Жидкости"
+hozuki_legacy_3_desc:0 "Мастерство управления жидкостями и техниками трансформации."
+hozuki_legacy_4_name:0 "Элитный Боец"
+hozuki_legacy_4_desc:0 "Развивает исключительные боевые навыки, делая вас элитным бойцом."
+hozuki_legacy_5_name:1 "Гений Предков"
+hozuki_legacy_5_desc:0 "Открывает гениальность предков клана Хозуки, максимизируя потенциал."
+
+yamanaka_legacy_track_name:1 "Яманака"
+yamanaka_legacy_track_desc:0 "Ум и знания - сила клана Яманака."
+
+yamanaka_legacy_1_name:0 "Ментальная Адаптивность"
+yamanaka_legacy_1_desc:0 "Усиливает ментальную стойкость и адаптивность."
+yamanaka_legacy_2_name:1 "Психическая Сила"
+yamanaka_legacy_2_desc:0 "Дарует исключительные психические способности и силу."
+yamanaka_legacy_3_name:0 "Искусство Разума"
+yamanaka_legacy_3_desc:0 "Мастерство различных техник искусства разума."
+yamanaka_legacy_4_name:0 "Лучший Менталист"
+yamanaka_legacy_4_desc:0 "Тренирует становиться топовыми менталистами с непревзойденной ментальной силой."
+yamanaka_legacy_5_name:1 "Ментальный Вундеркинд"
+yamanaka_legacy_5_desc:0 "Дарует статус вундеркинда, поднимая ментальные способности до пика."
+
+guren_legacy_track_name:1 "Гурен"
+guren_legacy_track_desc:0 "Кристаллы и интеллект усиливают клан Гурен."
+
+guren_legacy_1_name:0 "Адаптивность к Кристаллам"
+guren_legacy_1_desc:0 "Улучшает адаптивность и стойкость благодаря кристальным техникам."
+guren_legacy_2_name:1 "Сила Гурен"
+guren_legacy_2_desc:0 "Дарует силу и гибкость клана Гурен."
+guren_legacy_3_name:0 "Мастерство Кристаллов"
+guren_legacy_3_desc:0 "Мастерство управления кристаллами и техниками трансформации."
+guren_legacy_4_name:0 "Элитный Кристаллизатор"
+guren_legacy_4_desc:0 "Развивает исключительные навыки использования кристальных техник."
+guren_legacy_5_name:1 "Кристальный Вундеркинд"
+guren_legacy_5_desc:0 "Открывает статус вундеркинда, максимизируя потенциал, связанный с кристаллами."
+
+kurotsuchi_legacy_track_name:1 "Куроцучи"
+kurotsuchi_legacy_track_desc:0 "Мастерство земли и стратегическое гениальность определяют Куроцучи."
+
+kurotsuchi_legacy_1_name:0 "Адаптивность к Земле"
+kurotsuchi_legacy_2_name:1 "Каменистая Сила"
+kurotsuchi_legacy_3_name:0 "Стратегическое Мышление"
+kurotsuchi_legacy_4_name:0 "Лучший Геолог"
+kurotsuchi_legacy_5_name:1 "Талант Кровной Линии"
+
+aburame_legacy_track_name:1 "Абураме"
+aburame_legacy_track_desc:0 "Клан Абураме управляет насекомыми для уникальных и мощных способностей."
+
+aburame_legacy_1_name:0 "Адаптивность к Насекомым"
+aburame_legacy_2_name:1 "Сила Улья"
+aburame_legacy_3_name:0 "Энтомологическое Знание"
+aburame_legacy_4_name:0 "Элитный Энтомолог"
+aburame_legacy_5_name:1 "Вундеркинд Насекомых"
+
+#Кагуя
+
+kaguya_legacy_track_name:1 "Кагуя"
+
+kaguya_legacy_track_desc:0 "Манипуляция костями и боевое мастерство отличают клан Кагуя."
+
+    kaguya_legacy_1_name:0 "Адаптация Костей"
+    kaguya_legacy_2_name:1 "Скелетная Сила"
+    kaguya_legacy_3_name:0 "Боевой Гений"
+    kaguya_legacy_4_name:0 "Элитный Воин"
+    kaguya_legacy_5_name:1 "Мастерство Наследия"
+
+#Духовная Магия
+
+spirit_magic_legacy_track_name:1 "Духовная Магия"
+
+spirit_magic_legacy_track_desc:0 "Мастерство манипуляции тенями и стратегический интеллект."
+
+    spirit_magic_legacy_1_name:0 "Адаптация к Теням"
+    spirit_magic_legacy_2_name:1 "Стратегическая Сила"
+    spirit_magic_legacy_3_name:0 "Тактическое Мышление"
+    spirit_magic_legacy_4_name:0 "Элитный Стратег"
+    spirit_magic_legacy_5_name:1 "Гений Наследия"
+
+#Юки
+
+yuki_legacy_track_name:1 "Юки"
+
+yuki_legacy_track_desc:0 "Мастерство управления льдом и интеллектуальное превосходство определяют Юки."
+
+    yuki_legacy_1_name:0 "Адаптация к Льду"
+    yuki_legacy_2_name:1 "Замороженная Сила"
+    yuki_legacy_3_name:0 "Криогенные Знания"
+    yuki_legacy_4_name:0 "Элитный Криомант"
+    yuki_legacy_5_name:1 "Ледяной Вундеркинд"
+
+#Нара
+
+nara_legacy_track_name:1 "Нара"
+
+nara_legacy_track_desc:0 "Мастерство управления тенями и интеллектуальное превосходство определяют клан Нара."
+
+    nara_legacy_1_name:0 "Адаптация к Теням"
+    nara_legacy_2_name:1 "Стратегическая Сила"
+    nara_legacy_3_name:0 "Тактическое Мышление"
+    nara_legacy_4_name:0 "Элитный Стратег"
+    nara_legacy_5_name:1 "Гений Наследия"
+
+#Акимичи
+
+akimichi_legacy_track_name:1 "Акимичи"
+
+akimichi_legacy_track_desc:0 "Сила и рост определяют клан Акимичи."
+
+    akimichi_legacy_1_name:0 "Калорическая Конверсия"
+    akimichi_legacy_2_name:1 "Расширение Тела"
+    akimichi_legacy_3_name:0 "Пищевая Наука"
+    akimichi_legacy_4_name:0 "Элитный Экспансионист"
+    akimichi_legacy_5_name:1 "Сила Наследия"
+
+#Инузука
+
+inuzuka_legacy_track_name:1 "Инузука"
+
+inuzuka_legacy_track_desc:0 "Связь с собаками и ярость отличают Инузука."
+
+    inuzuka_legacy_1_name:0 "Адаптация Зверя"
+    inuzuka_legacy_2_name:1 "Дикая Сила"
+    inuzuka_legacy_3_name:0 "Тактика Стаи"
+    inuzuka_legacy_4_name:0 "Главный Охотник"
+    inuzuka_legacy_5_name:1 "Зверь Вундеркинд"
+
+#Курама
+
+kurama_legacy_track_name:1 "Курама"
+
+kurama_legacy_track_desc:0 "Мастерство гендзюцу и интеллект определяют Курама."
+
+    kurama_legacy_1_name:0 "Адаптация Иллюзий"
+    kurama_legacy_2_name:1 "Сила Гендзюцу"
+    kurama_legacy_3_name:0 "Контроль Разума"
+    kurama_legacy_4_name:0 "Элитный Иллюзионист"
+    kurama_legacy_5_name:1 "Вундеркинд Гендзюцу"
+
+ #tsuchigumo
+ tsuchigumo_legacy_track_name:1 "Tsuchigumo"
+ tsuchigumo_legacy_track_desc:0 "Mastery of traps and techniques define Tsuchigumo."
+ tsuchigumo_legacy_1_name:0 "Trap Adaptability"
+ tsuchigumo_legacy_2_name:1 "Spider Strength"
+ tsuchigumo_legacy_3_name:0 "Web Mastery"
+ tsuchigumo_legacy_4_name:0 "Elite Trapper"
+ tsuchigumo_legacy_5_name:1 "Lineage Genius"
+
+ # Kazekage
+kazekage_legacy_track_name:1 "Kazekage"
+kazekage_legacy_track_desc:0 "Mastery of sand and strategy is our strength."
+
+kazekage_legacy_1_name:0 "Desert Adaptability"
+kazekage_legacy_2_name:1 "Sand Strength"
+kazekage_legacy_3_name:0 "Tactical Genius"
+kazekage_legacy_4_name:0 "Top Strategist"
+kazekage_legacy_5_name:1 "Bloodline Prodigy"
+
+# Камидзуру
+kamizuru_legacy_track_name:1 "Камидзуру"
+kamizuru_legacy_track_desc:0 "Управление насекомыми и интеллект определяют нас."
+
+kamizuru_legacy_1_name:0 "Адаптивность Насекомых"
+kamizuru_legacy_2_name:1 "Сила Улья"
+kamizuru_legacy_3_name:0 "Энтомологическая Экспертиза"
+kamizuru_legacy_4_name:0 "Лучший Пчеловод"
+kamizuru_legacy_5_name:1 "Вундеркинд Насекомых"
+
+# Фума
+fuma_legacy_track_name:1 "Фума"
+fuma_legacy_track_desc:0 "Универсальность и интеллект — наши отличительные черты."
+
+fuma_legacy_1_name:0 "Адаптивность Ниндзя"
+fuma_legacy_2_name:1 "Сила Оружия"
+fuma_legacy_3_name:0 "Стратегический Ум"
+fuma_legacy_4_name:0 "Лучший Боец"
+fuma_legacy_5_name:1 "Гений Кровной Линии"
+
+# Хошигаки
+hoshigaki_legacy_track_name:1 "Хошигаки"
+hoshigaki_legacy_track_desc:0 "Мастерство в управлении водой и боевые навыки — наша гордость."
+
+hoshigaki_legacy_1_name:0 "Адаптивность к Воде"
+hoshigaki_legacy_2_name:1 "Сила Акулы"
+hoshigaki_legacy_3_name:0 "Водное Мастерство"
+hoshigaki_legacy_4_name:0 "Лучший Боец"
+hoshigaki_legacy_5_name:1 "Мастерство Наследия"
+
+# Юруши
+yurushi_legacy_track_name:1 "Юруши"
+yurushi_legacy_track_desc:0 "Клан Юруши отличается адаптивностью и интеллектом."
+yurushi_legacy_1_name:0 "Гибкость"
+yurushi_legacy_2_name:1 "Боевые Навыки"
+yurushi_legacy_3_name:0 "Научные Исследования"
+yurushi_legacy_4_name:0 "Лучшие Ученые"
+yurushi_legacy_5_name:1 "Гении Кровной Линии"
+
+# Хирамеки
+hirameki_legacy_track_name:1 "Хирамеки"
+hirameki_legacy_track_desc:0 "Клан Хирамеки ценит быструю мысль и силу."
+hirameki_legacy_1_name:0 "Быстрая Адаптивность"
+hirameki_legacy_2_name:1 "Мастерство Боя"
+hirameki_legacy_3_name:0 "Ментальная Гибкость"
+hirameki_legacy_4_name:0 "Элитные Воины"
+hirameki_legacy_5_name:1 "Врожденный Талант"
+
+# Хатаке
+hatake_legacy_track_name:1 "Хатаке"
+hatake_legacy_track_desc:0 "Клан Хатаке процветает благодаря навыкам и знаниям."
+hatake_legacy_1_name:0 "Тактическая Адаптивность"
+hatake_legacy_2_name:1 "Сила Хатаке"
+hatake_legacy_3_name:0 "Боевой Интеллект"
+hatake_legacy_4_name:0 "Лучшие Бойцы"
+hatake_legacy_5_name:1 "Наследственный Навык"
+
+# Ю
+yu_legacy_track_name:1 "Ю"
+yu_legacy_track_desc:0 "Клан Ю выделяется интеллектом и мощью."
+yu_legacy_1_name:0 "Универсальная Адаптивность"
+yu_legacy_2_name:1 "Боевые Навыки"
+yu_legacy_3_name:0 "Интеллектуальные Исследования"
+yu_legacy_4_name:0 "Элитные Ученые"
+yu_legacy_5_name:1 "Гений Кровной Линии"
+
+# Даймон
+daimon_legacy_track_name:1 "Даймон"
+daimon_legacy_track_desc:0 "Клан Даймон процветает благодаря интеллекту и силе."
+
+daimon_legacy_1_name:0 "Адаптивность Даймон"
+daimon_legacy_2_name:1 "Сила Даймон"
+daimon_legacy_3_name:0 "Проницательный Ум"
+daimon_legacy_4_name:0 "Лучшие Достижения"
+daimon_legacy_5_name:1 "Вундеркинд Кровной Линии"
+
+# Ичиносэ
+ichinose_legacy_track_name:1 "Ичиносэ"
+ichinose_legacy_track_desc:0 "Клан Ичиносэ делает акцент на интеллект и навыки."
+
+ichinose_legacy_1_name:0 "Адаптивность Ичиносэ"
+ichinose_legacy_2_name:1 "Сила Ичиносэ"
+ichinose_legacy_3_name:0 "Учёный Ум"
+ichinose_legacy_4_name:0 "Элита Клана"
+ichinose_legacy_5_name:1 "Талант Кровной Линии"
+
+# Рэйдзи
+reiji_legacy_track_name:1 "Рэйдзи"
+reiji_legacy_track_desc:0 "Клан Рэйдзи выделяется благодаря интеллекту и мощи."
+
+reiji_legacy_1_name:0 "Адаптивность Рэйдзи"
+reiji_legacy_2_name:1 "Сила Рэйдзи"
+reiji_legacy_3_name:0 "Учёная Натура"
+reiji_legacy_4_name:0 "Лучшие Исполнители"
+reiji_legacy_5_name:1 "Гений Кровной Линии"
+
+# Ватари
+watari_legacy_track_name:1 "Ватари"
+watari_legacy_track_desc:0 "Клан Ватари гордится своим интеллектом и боевым мастерством."
+
+watari_legacy_1_name:0 "Адаптивность Ватари"
+watari_legacy_2_name:1 "Сила Ватари"
+watari_legacy_3_name:0 "Интересующийся Ум"
+watari_legacy_4_name:0 "Лучший В Классе"
+watari_legacy_5_name:1 "Наследственная Блестящесть"

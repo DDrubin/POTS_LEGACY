@@ -1,0 +1,340 @@
+namespace = steal_eyes_outcome
+
+steal_eyes_outcome.9999 = {
+	type = character_event
+	hidden = yes
+
+	trigger = { exists = scope:scheme }
+
+	immediate = {
+		trigger_event = {
+			on_action = steal_eyes_succeeded
+		}
+	}
+}
+
+steal_eyes_outcome.9998 = {
+	type = character_event
+	hidden = yes
+
+	trigger = { exists = scope:scheme }
+
+	immediate = {
+		trigger_event = {
+			on_action = steal_eyes_failed
+		}
+	}
+}
+
+steal_eyes_outcome.0002 = {
+	type = character_event
+    title = steal_eyes_outcome.0001.t
+    desc = steal_eyes_outcome.0002.d
+    theme = murder_scheme
+	left_portrait = {
+        character = scope:target
+    }
+	immediate = {
+		steal_eyes_outcome_roll_setup_effect = yes
+	}
+	option = {
+		name = steal_eyes_outcome.0002.a
+		steal_eyes_outcome_roll_effect = yes
+		stress_impact = {
+			gluttonous = minor_stress_impact_gain
+			craven = minor_stress_impact_loss
+			paranoid = medium_stress_impact_gain
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0002.b
+		ai_chance = {
+			base = 0
+		}
+		stress_impact = {
+			impatient = medium_stress_impact_gain
+		}
+		scope:scheme = {
+			add_scheme_progress = decline_execution_setback
+		}
+		custom_tooltip = do_not_execute_steal_eyes_tooltip
+	}
+}
+
+steal_eyes_outcome.0001 = {
+	type = character_event
+    title = steal_eyes_outcome.0001.t
+    desc = steal_eyes_outcome.0001.d
+    theme = murder_scheme
+	left_portrait = {
+        character = scope:target
+    }
+	immediate = {	
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.a
+		trigger = {
+			scope:target = {
+				has_trait = onetomoe
+			}
+		}
+		scope:target = {
+			remove_trait = onetomoe
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		add_character_flag = {
+				flag = onetomoe
+				years = 600
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.b
+		trigger = {
+			scope:target = {
+				has_trait = twotomoe
+			}
+		}
+		scope:target = {
+			remove_trait = twotomoe
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		add_character_flag = {
+			flag = twotomoe
+			years = 600
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.c
+		trigger = {
+			scope:target = {
+				has_trait = threetomoe
+			}
+		}
+		scope:target = {
+			remove_trait = threetomoe
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_sharingan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.e
+		trigger = {
+			scope:target = {
+				OR = {
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
+				}
+			}
+		}
+		scope:target = {
+			remove_trait = mangekyosharingan_1
+			remove_trait = mangekyosharingan_2
+			remove_trait = mangekyosharingan_3
+			remove_trait = mangekyosharingan_4
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_mangekyo_sharingan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.f
+		trigger = {
+			scope:target = {
+				has_trait = eternalsharingan
+			}
+		}
+		scope:target = {
+			remove_trait = eternalsharingan
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_eternal_sharingan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.g
+		trigger = {
+			scope:target = {
+				has_trait = rinnegan
+			}
+		}
+		scope:target = {
+			remove_trait = rinnegan
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_rinnegan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.h
+		trigger = {
+			scope:target = {
+				has_trait = rinnesharingan
+			}
+		}
+		scope:target = {
+			remove_trait = rinnesharingan
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_rinnesharingan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.i
+		trigger = {
+			scope:target = {
+				has_trait = byakugan
+			}
+		}
+		scope:target = {
+			remove_trait = byakugan
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_byakugan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.j
+		trigger = {
+			scope:target = {
+				has_trait = tenseigan
+			}
+		}
+		scope:target = {
+			remove_trait = tenseigan
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_tenseigan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.k
+		trigger = {
+			scope:target = {
+				has_trait = jogan
+			}
+		}
+		scope:target = {
+			remove_trait = jogan
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_jogan_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0001.l
+		trigger = {
+			scope:target = {
+				has_trait = forbiddeneyes
+			}
+		}
+		scope:target = {
+			remove_trait = forbiddeneyes
+			add_trait = blind
+			add_character_modifier = {
+				modifier = stolensharingan_modifier
+				months = 6
+			}
+		}
+		create_artifact_forbiddeneyes_effect = {
+			OWNER = root
+			MAKER = root
+		}
+	}
+}
+
+steal_eyes_outcome.0003 = {
+	type = character_event
+    title = steal_eyes_outcome.0001.t
+    desc = steal_eyes_outcome.0003.d
+    theme = murder_scheme
+	left_portrait = {
+        character = scope:target
+    }
+	immediate = {
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+	option = {
+		name = steal_eyes_outcome.0003.a
+		scope:target = {
+			add_trait = blind
+			remove_trait = onetomoe
+			remove_trait = twotomoe
+			remove_trait = threetomoe
+			remove_trait = mangekyosharingan_1
+			remove_trait = mangekyosharingan_2
+			remove_trait = mangekyosharingan_3
+			remove_trait = mangekyosharingan_4
+			remove_trait = eternalsharingan
+			remove_trait = rinnegan
+			remove_trait = rinnesharingan
+			remove_trait = byakugan
+			remove_trait = tenseigan
+			remove_trait = jogan
+			remove_trait = forbiddeneyes
+		}
+	}
+}

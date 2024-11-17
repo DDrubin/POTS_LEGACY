@@ -1,0 +1,1272 @@
+senju_legacy_1 = { 
+    legacy = senju_legacy_track 
+    character_modifier = { 
+        cultural_head_acceptance_gain_mult = 0.10 
+        cultural_head_fascination_mult = 0.10 
+        diplomacy = 6 
+    } 
+} 
+
+senju_legacy_2 = { 
+    legacy = senju_legacy_track 
+    character_modifier = { 
+        stewardship = 3
+        build_gold_cost = -0.10 
+        religious_vassal_opinion = 10 
+    } 
+} 
+
+senju_legacy_3 = { 
+    legacy = senju_legacy_track 
+    character_modifier = { 
+        plains_advantage = 5
+        hills_advantage = 5
+        forest_advantage = 5  
+        enemy_hostile_scheme_success_chance_add = -10 
+    } 
+
+    traits = {
+		ninjarank_genin = 70
+	}
+} 
+
+senju_legacy_4 = { 
+    legacy = senju_legacy_track 
+    character_modifier = { 
+        general_opinion = 10 
+        diplomacy = 2 
+        development_growth = 0.10 
+    } 
+} 
+
+senju_legacy_5 = { 
+    legacy = senju_legacy_track 
+    character_modifier = { 
+        monthly_prestige_gain_mult = 0.25 
+        monthly_prestige = 0.4
+        monthly_dynasty_prestige_mult = 0.20 
+    } 
+
+    traits = {
+        ninjarank_chunin = 50
+	}
+} 
+
+uzumaki_legacy_1 = { 
+    legacy = uzumaki_legacy_track 
+    character_modifier = { 
+        monthly_lifestyle_xp_gain_mult = 0.10 
+        monthly_martial_lifestyle_xp_gain_mult = 0.05 
+    } 
+    description = "Early stage with enhanced learning and martial training." 
+} 
+
+uzumaki_legacy_2 = { 
+    legacy = uzumaki_legacy_track 
+    character_modifier = { 
+        monthly_prestige_gain_mult = 0.05 
+    } 
+    description = "Mid-level with increased leadership and health benefits." 
+} 
+
+uzumaki_legacy_3 = { 
+    legacy = uzumaki_legacy_track 
+    character_modifier = { 
+        owned_personal_scheme_success_chance_add = 10 
+        advantage = 5 
+    } 
+
+    traits = {
+		ninjarank_genin = 70
+	}
+    description = "Advanced level with strategic and combat bonuses." 
+} 
+
+uzumaki_legacy_4 = { 
+    legacy = uzumaki_legacy_track 
+    character_modifier = { 
+        enemy_hostile_scheme_success_chance_add = -15 
+        prowess = 10 
+    } 
+    description = "Elite level with stealth and combat prowess." 
+} 
+
+uzumaki_legacy_5 = { 
+    legacy = uzumaki_legacy_track 
+    character_modifier = { 
+        dynasty_opinion = 20 
+        diplomacy = 5
+    } 
+    description = "Ultimate level with leadership and combat advantages."
+
+    traits = {
+        ninjarank_chunin = 50
+	} 
+} 
+
+spirit_magic_legacy_1 = {
+	legacy = spirit_magic_legacy_track
+	character_modifier = {
+		learning = 4
+		travel_safety_mult = 0.5
+        advantage = 4
+        general_opinion = 5
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+spirit_magic_legacy_2 = {
+	legacy = spirit_magic_legacy_track
+	character_modifier = {
+		learning = 4
+		scheme_discovery_chance_mult = 0.5
+        owned_legend_spread_mult = 0.5
+	}
+	traits = {
+		strong = 100
+	}
+}
+
+spirit_magic_legacy_3 = {
+	legacy = spirit_magic_legacy_track
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.20
+		owned_scheme_secrecy_add = 90
+        stress_gain_mult = 0.2
+        monthly_piety_gain_mult = 0.2
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+spirit_magic_legacy_4 = {
+	legacy = spirit_magic_legacy_track
+	character_modifier = {
+		intrigue = 4
+		owned_hostile_scheme_success_chance_max_add = 30
+        owned_personal_scheme_success_chance_add = 30
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+spirit_magic_legacy_5 = {
+	legacy = spirit_magic_legacy_track
+	character_modifier = {
+		intrigue = 4
+		enemy_hostile_scheme_success_chance_add = -70
+        enemy_personal_scheme_success_chance_add = -70
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+yuki_legacy_1 = {
+	legacy = yuki_legacy_track
+	character_modifier = {
+		army_toughness_mult = 0.1
+		army_siege_value_mult = 0.1
+		siege_phase_time = -0.1
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+yuki_legacy_2 = {
+	legacy = yuki_legacy_track
+	character_modifier = {
+		army_toughness_mult = 0.1
+		army_siege_value_mult = 0.1
+		siege_phase_time = -0.1
+	}
+
+}
+
+yuki_legacy_3 = {
+	legacy = yuki_legacy_track
+	character_modifier = {
+		army_siege_value_mult = 0.1
+		siege_phase_time = -0.1
+		advantage = 2
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+yuki_legacy_4 = {
+	legacy = yuki_legacy_track
+	character_modifier = {
+		advantage = 2
+		prowess = 5
+		monthly_prestige_gain_mult = 0.2
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+yuki_legacy_5 = {
+	legacy = yuki_legacy_track
+	character_modifier = {
+		martial = 4
+		monthly_piety_gain_mult = -0.2
+    	travel_safety_mult = 0.5
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+nara_legacy_1 = {
+	legacy = nara_legacy_track
+	character_modifier = {
+		max_combat_roll = 5
+		stewardship = 2 
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+nara_legacy_2 = {
+	legacy = nara_legacy_track
+	character_modifier = {
+		travel_safety_mult = 0.1
+    	stewardship = 3 
+    	advantage = 5
+	}
+
+}
+
+nara_legacy_3 = {
+	legacy = nara_legacy_track
+	character_modifier = {
+		advantage = 5
+		development_growth_factor  = 0.1
+		domain_limit = 1
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+nara_legacy_4 = {
+	legacy = nara_legacy_track
+	character_modifier = {
+		prowess = 2
+    	learning = 5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+nara_legacy_5 = {
+	legacy = nara_legacy_track
+	character_modifier = {
+		tax_mult = 0.1
+		monthly_prestige_gain_mult = 0.2
+		monthly_lifestyle_xp_gain_mult = 0.3
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+akimichi_legacy_1 = {
+	legacy = akimichi_legacy_track
+	character_modifier = {
+		martial = 3
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+akimichi_legacy_2 = {
+	legacy = akimichi_legacy_track
+	character_modifier = {
+		stress_loss_mult = 0.5
+	}
+
+}
+
+akimichi_legacy_3 = {
+	legacy = akimichi_legacy_track
+	character_modifier = {
+		 prowess = 5 
+		 general_opinion = -5
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+akimichi_legacy_4 = {
+	legacy = akimichi_legacy_track
+	character_modifier = {
+		travel_safety_mult = 0.2
+    	monthly_prestige_gain_mult = -0.1
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+akimichi_legacy_5 = {
+	legacy = akimichi_legacy_track
+	character_modifier = {
+		levy_maintenance = 0.2
+		army_toughness_mult = 0.2
+		army_damage_mult = 0.2
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+inuzuka_legacy_1 = {
+	legacy = inuzuka_legacy_track
+	character_modifier = {
+		army_damage_mult = 0.1
+		general_opinion = -2
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+inuzuka_legacy_2 = {
+	legacy = inuzuka_legacy_track
+	character_modifier = {
+		prowess = 5 
+		monthly_prestige_gain_mult = -0.1
+		general_opinion = -2
+	}
+
+}
+
+inuzuka_legacy_3 = {
+	legacy = inuzuka_legacy_track
+	character_modifier = {
+		 travel_safety_mult = 0.3
+    	stress_loss_mult = 0.5
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+inuzuka_legacy_4 = {
+	legacy = inuzuka_legacy_track
+	character_modifier = {
+		levy_maintenance = 0.2
+		levy_size = 0.2
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+inuzuka_legacy_5 = {
+	legacy = inuzuka_legacy_track
+	character_modifier = {
+		army_toughness_mult = 0.2
+		general_opinion = -6
+		scheme_discovery_chance_mult = 0.1
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+kurama_legacy_1 = {
+	legacy = kurama_legacy_track
+	character_modifier = {
+		attacker_advantage = 2
+		defender_advantage = -2
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+kurama_legacy_2 = {
+	legacy = kurama_legacy_track
+	character_modifier = {
+		siege_morale_loss  = 0.1
+		stress_gain_mult = 1
+	}
+
+}
+
+kurama_legacy_3 = {
+	legacy = kurama_legacy_track
+	character_modifier = {
+		
+		prowess = 3
+    	intrigue = 4
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+kurama_legacy_4 = {
+	legacy = kurama_legacy_track
+	character_modifier = {
+		
+    	owned_hostile_scheme_success_chance_max_add = 25
+    	owned_personal_scheme_success_chance_add = 25
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+kurama_legacy_5 = {
+	legacy = kurama_legacy_track
+	character_modifier = {
+		owned_hostile_scheme_success_chance_max_add = 25
+    	owned_personal_scheme_success_chance_add = 25
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+tsuchigumo_legacy_1 = {
+	legacy = tsuchigumo_legacy_track
+	character_modifier = {
+		advantage = 4
+	}
+
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+tsuchigumo_legacy_2 = {
+	legacy = tsuchigumo_legacy_track
+	character_modifier = {
+		advantage = 4
+	}
+
+}
+
+tsuchigumo_legacy_3 = {
+	legacy = tsuchigumo_legacy_track
+	character_modifier = {
+		prowess = 10
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+tsuchigumo_legacy_4 = {
+	legacy = tsuchigumo_legacy_track
+	character_modifier = {
+		dread_gain_mult = 0.5
+		intrigue = 4
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+tsuchigumo_legacy_5 = {
+	legacy = tsuchigumo_legacy_track
+	character_modifier = {
+		siege_morale_loss  = 0.5
+    	travel_safety_mult = 0.5
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+kazekage_legacy_1 = {
+	legacy = kazekage_legacy_track
+	character_modifier = {
+		travel_safety_mult = 0.5
+		stress_gain_mult = 1
+	}
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+kazekage_legacy_2 = {
+	legacy = kazekage_legacy_track
+	character_modifier = {
+		advantage = -5
+		siege_morale_loss  = 0.5
+	}
+
+}
+
+kazekage_legacy_3 = {
+	legacy = kazekage_legacy_track
+	character_modifier = {
+		prowess = 5
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+kazekage_legacy_4 = {
+	legacy = kazekage_legacy_track
+	character_modifier = {
+		prowess = 5
+    	martial = 4
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+kazekage_legacy_5 = {
+	legacy = kazekage_legacy_track
+	character_modifier = {
+		desert_advantage = 10
+		desert_mountains_advantage = 10
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+kamizuru_legacy_1 = {
+	legacy = kamizuru_legacy_track
+	character_modifier = {
+		scheme_discovery_chance_mult = 0.2
+		travel_safety_mult = 0.2
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+kamizuru_legacy_2 = {
+	legacy = kamizuru_legacy_track
+	character_modifier = {
+		levy_size = 0.2
+    	advantage = 2
+	}
+
+}
+
+kamizuru_legacy_3 = {
+	legacy = kamizuru_legacy_track
+	character_modifier = {
+		intrigue = 5
+    	prowess = 3  
+    	army_siege_value_mult = 0.7
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+kamizuru_legacy_4 = {
+	legacy = kamizuru_legacy_track
+	character_modifier = {
+		owned_hostile_scheme_success_chance_max_add = 30
+    	owned_personal_scheme_success_chance_add = 30
+    	siege_phase_time = -0.5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+kamizuru_legacy_5 = {
+	legacy = kamizuru_legacy_track
+	character_modifier = {
+		enemy_hostile_scheme_success_chance_add = -30
+    	enemy_personal_scheme_success_chance_add = -30
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+fuma_legacy_1 = {
+	legacy = fuma_legacy_track
+	character_modifier = {
+		prowess = 4  
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+fuma_legacy_2 = {
+	legacy = fuma_legacy_track
+	character_modifier = {
+		learning = 3
+		prowess = 4
+	}
+
+}
+
+fuma_legacy_3 = {
+	legacy = fuma_legacy_track
+	character_modifier = {
+		advantage = 3
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+fuma_legacy_4 = {
+	legacy = fuma_legacy_track
+	character_modifier = {
+		advantage = 3
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+fuma_legacy_5 = {
+	legacy = fuma_legacy_track
+	character_modifier = {
+		advantage = 4
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+hoshigaki_legacy_1 = {
+	legacy = hoshigaki_legacy_track
+	character_modifier = {
+		prowess = 1 
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+hoshigaki_legacy_2 = {
+	legacy = hoshigaki_legacy_track
+	character_modifier = {
+		advantage = 2
+	}
+
+}
+
+hoshigaki_legacy_3 = {
+	legacy = hoshigaki_legacy_track
+	character_modifier = {
+		martial = 3
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+hoshigaki_legacy_4 = {
+	legacy = hoshigaki_legacy_track
+	character_modifier = {
+		prowess = 3
+		general_opinion = -5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+hoshigaki_legacy_5 = {
+	legacy = hoshigaki_legacy_track
+	character_modifier = {
+		general_opinion = -5
+		prowess = 4
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+yurushi_legacy_1 = {
+	legacy = yurushi_legacy_track
+	character_modifier = {
+		prowess = 3
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+yurushi_legacy_2 = {
+	legacy = yurushi_legacy_track
+	character_modifier = {
+		siege_morale_loss  = 0.1
+    	intrigue = 4
+	}
+
+}
+
+yurushi_legacy_3 = {
+	legacy = yurushi_legacy_track
+	character_modifier = {
+		attacker_advantage = 2
+		defender_advantage = -2
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+yurushi_legacy_4 = {
+	legacy = yurushi_legacy_track
+	character_modifier = {
+		owned_hostile_scheme_success_chance_max_add = 25
+    	owned_personal_scheme_success_chance_add = 25
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+yurushi_legacy_5 = {
+	legacy = yurushi_legacy_track
+	character_modifier = {
+		owned_hostile_scheme_success_chance_max_add = 25
+    	owned_personal_scheme_success_chance_add = 25
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+hirameki_legacy_1 = {
+	legacy = hirameki_legacy_track
+	character_modifier = {
+		prowess = 2
+    	martial = 3
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+hirameki_legacy_2 = {
+	legacy = hirameki_legacy_track
+	character_modifier = {
+		advantage = 4
+		siege_morale_loss  = 0.1
+	}
+
+}
+
+hirameki_legacy_3 = {
+	legacy = hirameki_legacy_track
+	character_modifier = {
+		owned_scheme_secrecy_add = 10
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+hirameki_legacy_4 = {
+	legacy = hirameki_legacy_track
+	character_modifier = {
+		owned_hostile_scheme_success_chance_add = 10
+		owned_personal_scheme_success_chance_add = 10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+hirameki_legacy_5 = {
+	legacy = hirameki_legacy_track
+	character_modifier = {
+		enemy_hostile_scheme_success_chance_add = -20
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+hatake_legacy_1 = {
+	legacy = hatake_legacy_track
+	character_modifier = {
+		monthly_lifestyle_xp_gain_mult = 25
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+hatake_legacy_2 = {
+	legacy = hatake_legacy_track
+	character_modifier = {
+		monthly_lifestyle_xp_gain_mult = 25
+	}
+
+}
+
+hatake_legacy_3 = {
+	legacy = hatake_legacy_track
+	character_modifier = {
+		advantage = 2
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+hatake_legacy_4 = {
+	legacy = hatake_legacy_track
+	character_modifier = {
+		prowess = 4
+		martial = 3
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+hatake_legacy_5 = {
+	legacy = hatake_legacy_track
+	character_modifier = {
+		prowess = 4
+		learning = 3
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+yu_legacy_1 = {
+	legacy = yu_legacy_track
+	character_modifier = {
+		general_opinion = 15
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+yu_legacy_2 = {
+	legacy = yu_legacy_track
+	character_modifier = {
+		advantage = 5
+		siege_morale_loss  = 0.3
+	}
+
+}
+
+yu_legacy_3 = {
+	legacy = yu_legacy_track
+	character_modifier = {
+		prowess = 2
+    	intrigue = 3
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+yu_legacy_4 = {
+	legacy = yu_legacy_track
+	character_modifier = {
+		owned_scheme_secrecy_add = 5
+		enemy_hostile_scheme_success_chance_add = -10
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+yu_legacy_5 = {
+	legacy = yu_legacy_track
+	character_modifier = {
+		owned_hostile_scheme_success_chance_add = 5
+		owned_personal_scheme_success_chance_add = 5
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+daimon_legacy_1 = {
+	legacy = daimon_legacy_track
+	character_modifier = {
+		martial = 2
+		advantage = 2
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+daimon_legacy_2 = {
+	legacy = daimon_legacy_track
+	character_modifier = {
+		martial = 4
+	}
+
+}
+
+daimon_legacy_3 = {
+	legacy = daimon_legacy_track
+	character_modifier = {
+		prowess = 4
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+daimon_legacy_4 = {
+	legacy = daimon_legacy_track
+	character_modifier = {
+		prowess = 4
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+daimon_legacy_5 = {
+	legacy = daimon_legacy_track
+	character_modifier = {
+		prowess = 4
+	}
+	traits = {
+        ninjarank_chunin = 50
+	}
+}
+
+ichinose_legacy_1 = {
+	legacy = ichinose_legacy_track
+	character_modifier = {
+		martial = 4
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+ichinose_legacy_2 = {
+	legacy = ichinose_legacy_track
+	character_modifier = {
+		prowess = 5
+	}
+
+}
+
+ichinose_legacy_3 = {
+	legacy = ichinose_legacy_track
+	character_modifier = {
+		prowess = 5
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+ichinose_legacy_4 = {
+	legacy = ichinose_legacy_track
+	character_modifier = {
+		advantage = 5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+ichinose_legacy_5 = {
+	legacy = ichinose_legacy_track
+	character_modifier = {
+		maa_damage_mult = 0.5
+		maa_toughness_mult = 0.5
+	}
+	traits = {
+        ninjarank_chunin = 50
+    }
+}
+
+reiji_legacy_1 = {
+	legacy = reiji_legacy_track
+	character_modifier = {
+		prowess = 8
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+reiji_legacy_2 = {
+	legacy = reiji_legacy_track
+	character_modifier = {
+		 advantage = 10
+	}
+
+}
+
+reiji_legacy_3 = {
+	legacy = reiji_legacy_track
+	character_modifier = {
+		stress_gain_mult = 0.2
+		learning = 3
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+reiji_legacy_4 = {
+	legacy = reiji_legacy_track
+	character_modifier = {
+		owned_scheme_secrecy_add = 5
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+reiji_legacy_5 = {
+	legacy = reiji_legacy_track
+	character_modifier = {
+		owned_hostile_scheme_success_chance_add = 5
+		owned_personal_scheme_success_chance_add = 5
+	}
+	traits = {
+        ninjarank_chunin = 50
+    }
+}
+
+watari_legacy_1 = {
+	legacy = watari_legacy_track
+	character_modifier = {
+		martial = 2
+	}
+
+	ai_chance = {
+		value = 11
+		if = {
+			limit = {
+				can_start_new_legacy_track_trigger = no
+			}
+			multiply = 0
+		}
+	}
+}
+
+watari_legacy_2 = {
+	legacy = watari_legacy_track
+	character_modifier = {
+		 prowess = 5
+	}
+
+}
+
+watari_legacy_3 = {
+	legacy = watari_legacy_track
+	character_modifier = {
+		advantage = 8
+	}
+	traits = {
+		ninjarank_genin = 70
+	}
+}
+
+watari_legacy_4 = {
+	legacy = watari_legacy_track
+	character_modifier = {
+		maa_toughness_mult = 0.2
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = kin_legacy_2_legacy_effect
+		}
+	}
+}
+
+watari_legacy_5 = {
+	legacy = watari_legacy_track
+	character_modifier = {
+		maa_damage_mult = 0.2
+	
+	}
+	traits = {
+        ninjarank_chunin = 50
+    }
+}

@@ -1,0 +1,273 @@
+uzumaki_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = uzumakigene
+				}
+			}
+		}
+	}
+}
+
+senju_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = senjugene
+				}
+			}
+		}
+	}
+}
+
+spirit_magic_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Spirit_Magic
+				}
+			}
+		}
+	}
+}
+
+yuki_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Yuki_Bloodline
+				}
+			}
+		}
+	}
+}
+
+nara_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Nara_Bloodline
+				}
+			}
+		}
+	}
+}
+
+akimichi_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Akimichi_Bloodline
+				}
+			}
+		}
+	}
+}
+
+inuzuka_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Inuzuka_Bloodline
+				}
+			}
+		}
+	}
+}
+
+kurama_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Kurama_Bloodline
+				}
+			}
+		}
+	}
+}
+
+tsuchigumo_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Tsuchigumo_Bloodline
+				}
+			}
+		}
+	}
+}
+
+kazekage_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Kazekage_Bloodline
+				}
+			}
+		}
+	}
+}
+
+kamizuru_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Kamizuru_Bloodline
+				}
+			}
+		}
+	}
+}
+
+fuma_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Fuma_Bloodline
+				}
+			}
+		}
+	}
+}
+
+hoshigaki_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Hoshigaki_Bloodline
+				}
+			}
+		}
+	}
+}
+
+yurushi_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Yurushi_Bloodline
+				}
+			}
+		}
+	}
+}
+
+hirameki_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Hirameki_Bloodline
+				}
+			}
+		}
+	}
+}
+
+hatake_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Hatake_Bloodline
+				}
+			}
+		}
+	}
+}
+
+yu_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Yu_Bloodline
+				}
+			}
+		}
+	}
+}
+
+daimon_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Daimon_Bloodline
+				}
+			}
+		}
+	}
+}
+
+ichinose_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Ichinose_Bloodline
+				}
+			}
+		}
+	}
+}
+
+reiji_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Reiji_Bloodline
+				}
+			}
+		}
+	}
+}
+
+watari_legacy_track = {
+	is_shown = {
+		dynasty = {
+			OR = {
+				dynast = {
+					has_trait = shinobi_dynasty
+					has_trait = Watari_Bloodline
+				}
+			}
+		}
+	}
+}
+

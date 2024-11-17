@@ -1,0 +1,1575 @@
+
+
+################ FORBIDDEN EYES ################
+forbiddengene = {
+	opposites = {
+		uchihagene
+		hyugagene
+	}
+	
+	index = 2015
+	name = trait_forbiddengene
+	
+	fame = yes
+	
+	martial = 2
+	diplomacy = 2
+	intrigue = 2
+	prowess = 5
+
+	monthly_prestige = 0.6
+	
+	inbreeding_chance = -0.5
+	positive_random_genetic_chance = 0.45
+	inherit_chance = 1000
+	genetic = yes
+	
+	opposite_opinion = -50
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 50
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_forbiddengene_desc
+			}
+			desc = trait_forbiddengene_character_desc
+		}
+	}
+}
+
+fushitenseigood = {
+	index = 675
+	health_trait = yes
+	health = 500
+	ruler_designer_cost = 200
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_fushitenseigood
+			}
+			desc = trait_fushitenseigood_desc
+		}
+	}
+}
+
+fushitenseibad = {
+	index = 676
+	health_trait = yes
+	health = -500
+	ruler_designer_cost = -150
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_fushitenseibad
+			}
+			desc = trait_fushitenseibad_desc
+		}
+	}
+}
+
+
+#Tailed Beast
+one_tail = {
+	index = 678
+	physical = yes
+	health = 10
+	prowess = 10
+	monthly_dynasty_prestige = 0.4
+	monthly_prestige = 1
+	random_creation = 100
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 100
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_one_tail
+			}
+			desc = trait_one_tail_desc
+		}
+	}
+}
+
+two_tail = {
+	index = 679
+	physical = yes
+	monthly_dynasty_prestige = 0.4
+	health = 11
+	prowess = 12
+	random_creation = 100
+	monthly_prestige = 1.2
+	
+		shown_in_ruler_designer = yes
+	ruler_designer_cost = 110
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_two_tail
+			}
+			desc = trait_two_tail_desc
+		}
+	}
+}
+
+three_tail = {
+	index = 680
+	physical = yes
+	monthly_dynasty_prestige = 0.4
+	health = 12
+	prowess = 15
+	monthly_prestige = 1.4
+	random_creation = 100
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 120
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_three_tail
+			}
+			desc = trait_three_tail_desc
+		}
+	}
+}
+
+four_tail = {
+	index = 681
+	physical = yes
+	health = 13
+	monthly_dynasty_prestige = 0.4
+	prowess = 18
+	monthly_prestige = 1.6
+	random_creation = 100
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 130
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_four_tail
+			}
+			desc = trait_four_tail_desc
+		}
+	}
+}
+
+five_tail = {
+	index = 682
+	physical = yes
+	monthly_dynasty_prestige = 0.4
+	health = 14
+	prowess = 20
+	random_creation = 100
+	monthly_prestige = 1.8
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 140
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_five_tail
+			}
+			desc = trait_five_tail_desc
+		}
+	}
+}
+
+six_tail = {
+	index = 683
+	physical = yes
+	health = 15
+	monthly_dynasty_prestige = 0.4
+	prowess = 22
+	monthly_prestige = 2
+	random_creation = 100
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 150
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_six_tail
+			}
+			desc = trait_six_tail_desc
+		}
+	}
+}
+
+seven_tail = {
+	index = 684
+	physical = yes
+	martial = 2
+	health = 16
+	monthly_dynasty_prestige = 0.4
+	prowess = 25
+	monthly_prestige = 2.4
+	random_creation = 100
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 160	
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seven_tail
+			}
+			desc = trait_seven_tail_desc
+		}
+	}
+}
+
+eight_tail = {
+	index = 685
+	physical = yes
+	martial = 4
+	health = 17
+	monthly_dynasty_prestige = 0.5
+	prowess = 28
+	monthly_prestige = 2.8
+	random_creation = 100
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 170
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_eight_tail
+			}
+			desc = trait_eight_tail_desc
+		}
+	}
+}
+
+nine_tail = {
+	index = 686
+	physical = yes
+	martial = 6
+	health = 18
+	prowess = 35
+	monthly_dynasty_prestige = 0.6
+	monthly_prestige = 3
+	random_creation = 100
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 180
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_nine_tail
+			}
+			desc = trait_nine_tail_desc
+		}
+	}
+}
+
+ten_tail = {
+	index = 687
+	physical = yes
+	martial = 10
+	health = 20
+	prowess = 60
+	monthly_dynasty_prestige = 2
+	monthly_prestige = 10
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 300
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ten_tail
+			}
+			desc = trait_ten_tail_desc
+		}
+	}
+}
+
+#Elemental Release
+firerelease = {
+	index = 689
+	martial = 2
+	prowess = 4
+	ruler_designer_cost = 50
+	inherit_chance = 40
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_firerelease
+			}
+			desc = trait_firerelease_desc
+		}
+	}
+}
+
+windrelease = {
+	index = 690
+	intrigue = 2
+	prowess = 4
+	ruler_designer_cost = 50
+	inherit_chance = 40
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_windrelease
+			}
+			desc = trait_windrelease_desc
+		}
+	}
+}
+
+lightningrelease = {
+	index = 691
+	diplomacy = 2
+	ruler_designer_cost = 50
+	prowess = 4
+	inherit_chance = 40
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_lightningrelease
+			}
+			desc = trait_lightningrelease_desc
+		}
+	}
+}
+
+earthrelease = {
+	index = 692
+	stewardship = 2
+	prowess = 4
+	inherit_chance = 40
+	ruler_designer_cost = 50
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_earthrelease
+			}
+			desc = trait_earthrelease_desc
+		}
+	}
+}
+
+waterrelease = {
+	index = 693
+	learning = 2
+	prowess = 4
+	ruler_designer_cost = 50
+	inherit_chance = 40
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_waterrelease
+			}
+			desc = trait_waterrelease_desc
+		}
+	}
+}
+
+icerelease = {
+	index = 694
+	intrigue = 2
+	learning = 3
+	ruler_designer_cost = 80
+        monthly_dynasty_prestige = 0.05
+	prowess = 6
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_icerelease
+			}
+			desc = trait_icerelease_desc
+		}
+	}
+}
+
+woodrelease = {
+	index = 695
+	stewardship = 4
+	learning = 3
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.15
+	prowess = 8
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_woodrelease
+			}
+			desc = trait_woodrelease_desc
+		}
+	}
+}
+
+lavarelease = {
+	index = 696
+	stewardship = 2
+	martial = 3
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.05
+	prowess = 6
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_lavarelease
+			}
+			desc = trait_lavarelease_desc
+		}
+	}
+}
+
+stormrelease = {
+	index = 697
+	learning = 2
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.05
+	diplomacy = 3
+	prowess = 6
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_stormrelease
+			}
+			desc = trait_stormrelease_desc
+		}
+	}
+}
+
+boilrelease = {
+	index = 698
+	learning = 2
+	martial = 3
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.05
+	prowess = 6
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_boilrelease
+			}
+			desc = trait_boilrelease_desc
+		}
+	}
+}
+
+dustrelease = {
+	index = 699
+	stewardship = 3
+	intrigue = 2
+	martial = 3
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.3
+	prowess = 8
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dustrelease
+			}
+			desc = trait_dustrelease_desc
+		}
+	}
+}
+
+explosionrelease = {
+	index = 700
+	stewardship = 2
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.05
+	diplomacy = 3
+	prowess = 6
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_explosionrelease
+			}
+			desc = trait_explosionrelease_desc
+		}
+	}
+}
+
+scorchrelease = {
+	index = 701
+	intrigue = 2
+	martial = 3
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.05
+	prowess = 6
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_scorchrelease
+			}
+			desc = trait_scorchrelease_desc
+		}
+	}
+}
+
+magnetrelease = {
+	index = 702
+	stewardship = 2
+	intrigue = 3
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.05
+	prowess = 6
+	inherit_chance = 10
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_magnetrelease
+			}
+			desc = trait_magnetrelease_desc
+		}
+	}
+}
+
+bone_magic = {
+	
+	martial = 3
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.05
+	prowess = 6
+	inherit_chance = 100
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_boneMagic
+			}
+			desc = trait_boneMagic_desc
+		}
+	}
+}
+
+yinrelease = {
+	index = 703
+	learning = 2
+	prowess = 5
+	inherit_chance = 30
+	ruler_designer_cost = 50
+	monthly_dynasty_prestige = 0.04
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_yinrelease
+			}
+			desc = trait_yinrelease_desc
+		}
+	}
+}
+
+yangrelease = {
+	index = 704
+	learning = 2
+	prowess = 5
+	inherit_chance = 30
+	ruler_designer_cost = 50
+	monthly_dynasty_prestige = 0.04
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_yangrelease
+			}
+			desc = trait_yangrelease_desc
+		}
+	}
+}
+
+yin_yangrelease = {
+	index = 705
+	learning = 5
+	stewardship = 2
+	prowess = 8
+	inherit_chance = 20
+	ruler_designer_cost = 80
+	monthly_dynasty_prestige = 0.2
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_yin_yangrelease
+			}
+			desc = trait_yin_yangrelease_desc
+		}
+	}
+}
+
+#Ninja ranks
+
+ninjarank_genin = {
+	index = 708
+	diplomacy = 1
+	martial = 1
+	intrigue = 1
+	learning = 1
+	prowess = 2
+	health = 1
+	ruler_designer_cost = 10
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_genin
+			}
+			desc = trait_ninjarank_genin_desc
+		}
+	}
+}
+
+ninjarank_chunin = {
+	index = 709
+	diplomacy = 2
+	martial = 2
+	intrigue = 2
+	learning = 2
+	prowess = 2
+	health = 1.2
+	ruler_designer_cost = 15
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_chunin
+			}
+			desc = trait_ninjarank_chunin_desc
+		}
+	}
+}
+
+ninjarank_jonin = {
+	index = 710
+	diplomacy = 3
+	martial = 4
+	intrigue = 3
+	learning = 3
+	prowess = 4
+	health = 1.4
+	ruler_designer_cost = 20
+	monthly_dynasty_prestige = 0.1
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_jonin
+			}
+			desc = trait_ninjarank_jonin_desc
+		}
+	}
+}
+
+ninjarank_kage = {
+	index = 711
+	diplomacy = 4
+	martial = 5
+	stewardship = 2
+	intrigue = 5
+	learning = 4
+	prowess = 6
+	health = 1.6
+	ruler_designer_cost = 25
+	monthly_dynasty_prestige = 0.4
+	inherit_chance = 0
+	no_prowess_loss_from_age = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_kage
+			}
+			desc = trait_ninjarank_kage_desc
+		}
+	}
+}
+
+medical_nin = {
+	index = 712
+	learning = 5
+	health = 0.6
+	ruler_designer_cost = 20
+	monthly_dynasty_prestige = 0.05
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_medical_nin
+			}
+			desc = trait_medical_nin_desc
+		}
+	}
+}
+
+#Fuinjutsu
+seal_novice = {
+	index = 713
+	icon = "ninjarank_anbu.dds"
+	
+	learning = 5
+	ruler_designer_cost = 20
+	shown_in_ruler_designer = yes
+	
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_novice
+			}
+			desc = trait_seal_novice_desc
+		}
+	}
+}
+
+seal_basic = {
+	index = 714
+	icon = "ninjarank_anbu.dds"
+	
+	learning = 7
+	ruler_designer_cost = 30
+	shown_in_ruler_designer = yes
+	
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_basic
+			}
+			desc = trait_seal_basic_desc
+		}
+	}
+}
+
+seal_specialist = {
+	index = 715
+	icon = "ninjarank_anbu.dds"
+	
+	learning = 9
+	ruler_designer_cost = 40
+	shown_in_ruler_designer = yes
+	
+	monthly_dynasty_prestige = 0.1
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_specialist
+			}
+			desc = trait_seal_specialist_desc
+		}
+	}
+}
+
+seal_master = {
+	index = 716
+	icon = "ninjarank_anbu.dds"
+	
+	learning = 11
+	ruler_designer_cost = 50
+	shown_in_ruler_designer = yes
+	
+	monthly_dynasty_prestige = 0.2
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_master
+			}
+			desc = trait_seal_master_desc
+		}
+	}
+}
+
+seal_lives = {
+	index = 717
+	name = trait_seal_lives
+	icon = "ninjarank_anbu.dds"
+	
+	learning = 20
+	prowess = 20
+	monthly_dynasty_prestige = 0.4
+	years_of_fertility = 50
+	ruler_designer_cost = 100
+	shown_in_ruler_designer = yes
+
+	life_expectancy = 1000
+	
+	negate_health_penalty_add = 1
+#	negate_fertility_penalty_add = 1
+	no_prowess_loss_from_age = yes
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_lives
+			}
+			desc = trait_seal_lives_desc
+		}
+	}
+}
+
+#omnigan = {
+#	index = 717
+#	intrigue = 1
+#	ruler_designer_cost = 25
+#	monthly_dynasty_prestige = 1.1
+#	inherit_chance = 0
+#	desc = {
+#		first_valid = {
+#			triggered_desc = {
+#				trigger = {
+#					NOT = { exists = this }
+#				}
+#				desc = trait_omnigan
+#			}
+#			desc = trait_omnigan_desc
+#		}
+#	}
+#}
+
+#ketsuryugan = {
+#	index = 718
+#	intrigue = 1
+#	ruler_designer_cost = 25
+#	monthly_dynasty_prestige = 1.1
+#	inherit_chance = 0
+#	desc = {
+#		first_valid = {
+#			triggered_desc = {
+#				trigger = {
+#					NOT = { exists = this }
+#				}
+#				desc = trait_ketsuryugan
+#			}
+#			desc = trait_ketsuryugan_desc
+#		}
+#	}
+#}
+
+#curse_mark = {
+#	index = 719
+#	intrigue = 1
+#	ruler_designer_cost = 25
+#	monthly_dynasty_prestige = 1.1
+#	inherit_chance = 0
+#	desc = {
+#		first_valid = {
+#			triggered_desc = {
+#				trigger = {
+#					NOT = { exists = this }
+#				}
+#				desc = trait_curse_mark
+#			}
+#			desc = trait_curse_mark_desc
+#		}
+#	}
+#}
+
+#katsuryokugan = {
+#	index = 720
+#	intrigue = 1
+#	ruler_designer_cost = 25
+#	monthly_dynasty_prestige = 1.1
+#	inherit_chance = 0
+#	desc = {
+#		first_valid = {
+#			triggered_desc = {
+#				trigger = {
+#					NOT = { exists = this }
+#				}
+#				desc = trait_atsuryokugan
+#			}
+#			desc = trait_atsuryokugan_desc
+#		}
+#	}
+#}
+
+otsotsuki_dynasty = {
+	index = 2801
+	name = trait_odyn
+
+	icon = "bastard_founder.dds"
+
+	ruler_designer_cost = 1000
+	fame = yes
+
+	shown_in_ruler_designer = yes
+	
+	    inbreeding_chance = -10
+	    positive_random_genetic_chance = 10
+	    monthly_piety_gain_mult = 10
+	    monthly_prestige_gain_mult = 10
+	    monthly_income_mult = 10
+		monthly_dynasty_prestige_mult= 1
+		monthly_dynasty_prestige = 10
+		hostile_scheme_resistance_add = 25
+		personal_scheme_resistance_add = 25
+	    advantage = 100
+	    movement_speed = 10
+	    build_speed = -10
+	    build_gold_cost = -90
+	    cultural_head_fascination_add = 100
+	    cultural_head_fascination_mult = 100
+	    monthly_county_control_change_add = 10
+	    monthly_county_control_change_factor = 10
+	    monthly_county_control_change_add_even_if_baron = 10
+	    monthly_county_control_change_factor_even_if_baron = 10
+		monthly_lifestyle_xp_gain_mult = 1
+	    levy_reinforcement_rate = 1
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_bastard_founder
+			}
+			desc = trait_bastard_founder_desc
+		}
+	}
+}
+
+shinobi_dynasty = {
+	index = 2802
+	name = trait_shidyn
+	opposites = {
+		lieutenant_class_shinigami
+		rokangai_citizen
+		head_captain_class_shinigami
+		substitute_shinigami
+		captain_class_shinigami
+	}
+
+	icon = "bastard_founder.dds"
+	ruler_designer_cost = 50
+	fame = yes
+	inherit_chance = 100
+
+	shown_in_ruler_designer = yes
+	
+	    inbreeding_chance = -0.2
+	    positive_random_genetic_chance = 0.15
+	    fertility = 0.1
+	    movement_speed = 0.1
+		opposite_opinion = -100
+	    build_speed = -0.1
+	    build_gold_cost = -0.15
+	    cultural_head_fascination_add = 2
+	    cultural_head_fascination_mult = 0.3
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_bastard_founder
+			}
+			desc = trait_bastard_founder_desc
+		}
+	}
+}
+
+near_death = {
+	index = 2803
+	name = trait_near_death
+	
+	icon = "incapable.dds"
+	ruler_designer_cost = -200
+	
+	shown_in_ruler_designer = yes
+	
+		diplomacy = -10
+		martial = -16
+		intrigue = -10
+		learning = -14
+		prowess = -30
+		health = -1.5
+		
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_incapable
+			}
+			desc = trait_incapable_desc
+		}
+	}
+}
+
+barren = {
+	index = 2804
+	name = barren
+	
+	icon = "impotent.dds"
+	ruler_designer_cost = -200
+	
+	shown_in_ruler_designer = yes
+	
+		fertility = -1
+		
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_impotent
+			}
+			desc = trait_impotent_desc
+		}
+	}
+}
+
+#Random traits for unspecified events
+
+
+
+#perk traits
+
+Shadow_Clone_Jutsu = {
+	index = 2805
+	name = trait_Shadow_Clone_Jutsu
+	icon = "Shadow_Clone_Jutsu.dds"
+	
+	shown_in_ruler_designer = no
+	
+	direct_vassal_opinion = 10
+    vassal_levy_contribution_mult = 0.5
+	liege_opinion = 15
+	
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_rokangai_citizen
+			}
+			desc = trait_rokangai_citizen_desc
+		}
+	}
+}
+
+S_Rank_Ninjutsu = {
+	index = 2805
+	name = trait_S_Rank_Ninjutsu
+	icon = "S_Rank_Ninjutsu.dds"
+	
+	shown_in_ruler_designer = no
+	
+	martial = 3
+    learning = 5
+
+}
+
+S_Rank_Genjutsu = {
+	index = 2805
+	name = trait_S_Rank_Genjutsu
+	icon = "S_Rank_Gen1jutsu.dds"
+	
+	shown_in_ruler_designer = no
+	
+        owned_hostile_scheme_success_chance_max_add = 30
+        intrigue = 4
+        learning = 4
+	
+}
+
+S_Rank_Taijutsu = {
+	index = 2805
+	name = trait_S_Rank_Taijutsu
+	icon = "S_Rank_Tai1jutsu.dds"
+	
+	shown_in_ruler_designer = no
+	
+	martial = 2
+    prowess = 12
+	
+}
+
+#learning potential traits
+
+low_talent = {
+	name = trait_low_talent
+	icon = "S_Rank_Gen1jutsu.dds"
+	
+	shown_in_ruler_designer = yes
+	
+    monthly_lifestyle_xp_gain_mult = 0.15
+
+    birth = 0.5
+	random_creation = 0.5
+
+	allow = {
+        OR = {
+            has_trait = shinobi_dynasty  # Trait A
+            has_trait = otsotsuki_dynasty    # Trait B
+        }
+    }
+
+	opposites = {
+		dull
+		intellect_bad
+		intellect_good_2 #To prevent multiple tiers of the same congenital trait
+		intellect_good_1
+		genius_talent
+		high_talent
+		med_talent
+	}
+
+	group = jutsu_talent
+	level = 1
+
+	ai_rationality = dominant_positive_ai_value
+
+	inherit_chance = {
+
+		base_chance = 50  # 15% base chance
+
+        modifier = {
+            factor = 2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = genius_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.5  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = high_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = med_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = low_talent  # If a parent has the Intelligent trait
+            }
+        }
+    }
+
+    compatibility = {
+    	genius_talent = @pos_compat_medium
+    	high_talent = @pos_compat_medium
+		med_talent = @pos_compat_medium
+		low_talent = @pos_compat_medium
+		intellect_good_1 = @pos_compat_medium
+		intellect_good_2 = @pos_compat_medium
+		intellect_good_3 = @pos_compat_medium
+		intellect_bad_1 = @neg_compat_medium
+		intellect_bad_2 = @neg_compat_medium
+		intellect_bad_3 = @neg_compat_medium
+		dull = @neg_compat_medium
+	}
+
+	ruler_designer_cost = 50
+
+	genetic = yes
+	good = yes
+	physical = yes
+}
+
+med_talent = {
+	name = trait_med_talent
+	icon = "S_Rank_Gen1jutsu.dds"
+	
+	shown_in_ruler_designer = yes
+	
+    monthly_lifestyle_xp_gain_mult = 0.30
+
+    birth = 0.35
+	random_creation = 0.35
+
+	allow = {
+        OR = {
+            has_trait = shinobi_dynasty  # Trait A
+            has_trait = otsotsuki_dynasty    # Trait B
+        }
+    }
+
+	opposites = {
+		dull
+		intellect_bad
+		intellect_good_2 #To prevent multiple tiers of the same congenital trait
+		intellect_good_1
+		genius_talent
+		high_talent
+		low_talent
+	}
+
+	group = jutsu_talent
+	level = 2
+
+	ai_rationality = dominant_positive_ai_value
+
+	inherit_chance = {
+
+		base_chance = 35  # 15% base chance
+
+        modifier = {
+            factor = 2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = genius_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.5  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = high_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = med_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = low_talent  # If a parent has the Intelligent trait
+            }
+        }
+    }
+
+    compatibility = {
+    	genius_talent = @pos_compat_medium
+    	high_talent = @pos_compat_medium
+		med_talent = @pos_compat_medium
+		low_talent = @pos_compat_medium
+		intellect_good_1 = @pos_compat_medium
+		intellect_good_2 = @pos_compat_medium
+		intellect_good_3 = @pos_compat_medium
+		intellect_bad_1 = @neg_compat_medium
+		intellect_bad_2 = @neg_compat_medium
+		intellect_bad_3 = @neg_compat_medium
+		dull = @neg_compat_medium
+	}
+
+	ruler_designer_cost = 100
+
+	genetic = yes
+	good = yes
+	physical = yes
+}
+
+high_talent = {
+	name = trait_high_talent
+	icon = "S_Rank_Gen1jutsu.dds"
+
+	shown_in_ruler_designer = yes
+	
+    monthly_lifestyle_xp_gain_mult = 0.50
+
+    birth = 0.15
+	random_creation = 0.15
+
+	opposites = {
+		dull
+		intellect_bad
+		intellect_good_2 #To prevent multiple tiers of the same congenital trait
+		intellect_good_1
+		genius_talent
+		med_talent
+		low_talent
+	}
+
+	allow = {
+        OR = {
+            has_trait = shinobi_dynasty  # Trait A
+            has_trait = otsotsuki_dynasty    # Trait B
+        }
+    }
+
+	group = jutsu_talent
+	level = 3
+
+	ai_rationality = dominant_positive_ai_value
+
+	inherit_chance = {
+
+		base_chance = 25  # 15% base chance
+
+        modifier = {
+            factor = 2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = genius_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.5  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = high_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = med_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = low_talent  # If a parent has the Intelligent trait
+            }
+        }
+    }
+
+    compatibility = {
+    	genius_talent = @pos_compat_medium
+    	high_talent = @pos_compat_medium
+		med_talent = @pos_compat_medium
+		low_talent = @pos_compat_medium
+		intellect_good_1 = @pos_compat_medium
+		intellect_good_2 = @pos_compat_medium
+		intellect_good_3 = @pos_compat_medium
+		intellect_bad_1 = @neg_compat_medium
+		intellect_bad_2 = @neg_compat_medium
+		intellect_bad_3 = @neg_compat_medium
+		dull = @neg_compat_medium
+	}
+
+	ruler_designer_cost = 150
+
+	genetic = yes
+	good = yes
+	physical = yes
+}
+
+genius_talent = {
+	name = trait_genius_talent
+	icon = "S_Rank_Gen1jutsu.dds"
+	
+	shown_in_ruler_designer = yes
+	
+    monthly_lifestyle_xp_gain_mult = 0.75
+
+    birth = 0.05
+	random_creation = 0.05
+
+	allow = {
+        OR = {
+            has_trait = shinobi_dynasty  # Trait A
+            has_trait = otsotsuki_dynasty    # Trait B
+        }
+    }
+
+	opposites = {
+		dull
+		intellect_bad
+		intellect_good_2 #To prevent multiple tiers of the same congenital trait
+		intellect_good_1
+		high_talent
+		med_talent
+		low_talent
+	}
+
+	group = jutsu_talent
+	level = 4
+
+	ai_rationality = dominant_positive_ai_value
+
+	inherit_chance = {
+
+		base_chance = 15  # 15% base chance
+
+        modifier = {
+            factor = 2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = genius_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.5  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = high_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1.2  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = med_talent  # If a parent has the Intelligent trait
+            }
+        }
+
+        modifier = {
+            factor = 1  # 1.5x the chance (22.5%)
+            any_parent = {
+                has_trait = low_talent  # If a parent has the Intelligent trait
+            }
+        }
+    }
+
+    compatibility = {
+    	genius_talent = @pos_compat_medium
+    	high_talent = @pos_compat_medium
+		med_talent = @pos_compat_medium
+		low_talent = @pos_compat_medium
+		intellect_good_1 = @pos_compat_medium
+		intellect_good_2 = @pos_compat_medium
+		intellect_good_3 = @pos_compat_medium
+		intellect_bad_1 = @neg_compat_medium
+		intellect_bad_2 = @neg_compat_medium
+		intellect_bad_3 = @neg_compat_medium
+		dull = @neg_compat_medium
+	}
+
+	ruler_designer_cost = 200
+
+	genetic = yes
+	good = yes
+	physical = yes
+}
