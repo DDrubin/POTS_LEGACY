@@ -1,0 +1,297 @@
+namespace = hyuga_body_dev
+
+hyuga_body_dev.001 = {
+    type = character_event
+    title = hyuga_body_dev.001.t
+    desc = hyuga_body_dev.001.d
+    theme = martial
+
+    right_portrait = {
+        character = scope:actor
+        animation = rage
+    }
+
+    option = {
+        name = hyuga_body_dev.001.a
+        is_shown = {
+            always = yes # Option is always visible
+        }
+        
+        trigger = {
+            NOT = { 
+                has_variable = hyuga_body_dev_flag
+                has_trait = blind
+                has_trait = bones_and_joints
+            }
+        }
+
+        hidden_effect = {
+            trigger_event = {
+                id = hyuga_body_dev.11
+                months = 12
+            }
+            add_character_flag = {
+                flag = hyuga_body_dev_flag
+                months = 12
+            }
+            add_character_modifier = {
+                modifier = hyuga_body_dev_mod
+                months = 12
+            }
+        }
+    }
+    option = {
+        name = hyuga_body_dev.001.b
+        trigger = {
+            NOT = { 
+                has_variable = hyuga_body_dev_flag
+                has_trait = blind
+                has_trait = muscles_and_speed
+            }
+        }
+
+        hidden_effect = {
+            trigger_event = {
+                id = hyuga_body_dev.21
+                months = 12
+            }
+            add_character_flag = {
+                flag = hyuga_body_dev_flag
+                months = 12
+            }
+            add_character_modifier = {
+                modifier = hyuga_body_dev_mod
+                months = 12
+            }
+        }
+    }
+    option = {
+        name = hyuga_body_dev.001.c
+        trigger = {
+            NOT = { 
+                has_variable = hyuga_body_dev_flag
+                has_trait = blind
+                has_trait = internal_organs_and_chakras
+            }
+        }
+
+        hidden_effect = {
+            trigger_event = {
+                id = hyuga_body_dev.31
+                months = 12
+            }
+            add_character_flag = {
+                flag = hyuga_body_dev_flag
+                months = 12
+            }
+            add_character_modifier = {
+                modifier = hyuga_body_dev_mod
+                months = 12
+            }
+        }
+    }
+    option = {
+        name = hyuga_body_dev.001.e
+        trigger = {
+            NOT = { 
+                has_variable = hyuga_body_dev_flag
+                has_trait = blind
+                has_trait = reflexes_and_nervous_system
+            }
+        }
+
+        hidden_effect = {
+            trigger_event = {
+                id = hyuga_body_dev.41
+                months = 12
+            }
+            add_character_flag = {
+                flag = hyuga_body_dev_flag
+                months = 12
+            }
+            add_character_modifier = {
+                modifier = hyuga_body_dev_mod
+                months = 12
+            }
+        }
+    }
+	option = {
+        name = hyuga_body_dev.001.f
+        trigger = {
+            AND = {
+                NOT = { 
+                    has_variable = hyuga_body_dev_flag
+                    has_trait = blind
+                    has_trait = final_stage_of_physical_development
+                }
+                AND = {
+                    has_trait_xp = {
+                            trait = bones_and_joints
+                            track = bones_and_joints_track
+                            value = 100
+                    }
+                    has_trait_xp = {
+                            trait = muscles_and_speed
+                            track = muscles_and_speed_track
+                            value = 100
+                    }
+                    has_trait_xp = {
+                            trait = internal_organs_and_chakras
+                            track = internal_organs_and_chakras_track
+                            value = 100
+                    }
+                    has_trait_xp = {
+                            trait = reflexes_and_nervous_system
+                            track = reflexes_and_nervous_system_track
+                            value = 100
+                    }
+                }
+            }
+        }
+
+        hidden_effect = {
+            trigger_event = {
+                id = hyuga_body_dev.51
+                months = 12
+            }
+            add_character_flag = {
+                flag = hyuga_body_dev_flag
+                months = 12
+            }
+            add_character_modifier = {
+                modifier = hyuga_body_dev_mod
+                months = 12
+            }
+        }
+    }
+    option = {
+        name = hyuga_body_dev.001.g
+        is_shown = {
+            always = yes # Option is always visible
+        }    
+    }
+}
+
+hyuga_body_dev.11 = {
+    title = hyuga_body_dev.11.t
+    desc = hyuga_body_dev.11.d
+    theme = martial
+    left_portrait = {
+        character = root
+        animation = rage
+    }
+    option = {
+        name = hyuga_body_dev.11.a
+        trigger = {
+            NOT = {
+                has_trait = blind
+                has_trait = bones_and_joints
+            }      
+        }
+        add_trait = bones_and_joints
+    }
+}
+
+hyuga_body_dev.21 = {
+    title = hyuga_body_dev.21.t
+    desc = hyuga_body_dev.21.d
+    theme = martial
+    left_portrait = {
+        character = root
+        animation = rage
+    }
+    option = {
+        name = hyuga_body_dev.21.a
+        trigger = {
+            NOT = {
+                has_trait = blind
+                has_trait = muscles_and_speed
+            }      
+        }
+        add_trait = muscles_and_speed
+    }
+}
+
+hyuga_body_dev.31 = {
+    title = hyuga_body_dev.31.t
+    desc = hyuga_body_dev.31.d
+    theme = martial
+    left_portrait = {
+        character = root
+        animation = rage
+    }
+    option = {
+        name = hyuga_body_dev.31.a
+        trigger = {
+            NOT = {
+                has_trait = blind
+                has_trait = internal_organs_and_chakras
+            }      
+        }
+        add_trait = internal_organs_and_chakras
+    }
+}
+
+hyuga_body_dev.41 = {
+    title = hyuga_body_dev.41.t
+    desc = hyuga_body_dev.41.d
+    theme = martial
+    left_portrait = {
+        character = root
+        animation = rage
+    }
+    option = {
+        name = hyuga_body_dev.41.a
+        trigger = {
+            NOT = {
+                has_trait = blind
+                has_trait = reflexes_and_nervous_system
+            }      
+        }
+        add_trait = reflexes_and_nervous_system
+    }
+}
+
+hyuga_body_dev.51 = {
+    title = hyuga_body_dev.51.t
+    desc = hyuga_body_dev.51.d
+    theme = martial
+    left_portrait = {
+        character = root
+        animation = rage
+    }
+    option = {
+        name = hyuga_body_dev.51.a
+        trigger = {
+            AND = {
+                NOT = {
+                    has_trait = blind
+                    has_trait = final_stage_of_physical_development
+                }
+                AND = {
+                    has_trait_xp = {
+                            trait = bones_and_joints
+                            track = bones_and_joints_track
+                            value = 100
+                    }
+                    has_trait_xp = {
+                            trait = muscles_and_speed
+                            track = muscles_and_speed_track
+                            value = 100
+                    }
+                    has_trait_xp = {
+                            trait = internal_organs_and_chakras
+                            track = internal_organs_and_chakras_track
+                            value = 100
+                    }
+                    has_trait_xp = {
+                            trait = reflexes_and_nervous_system
+                            track = reflexes_and_nervous_system_track
+                            value = 100
+                    }
+                }
+            }
+        }
+        add_trait = final_stage_of_physical_development
+    }
+}

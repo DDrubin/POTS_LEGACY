@@ -1,0 +1,65 @@
+﻿l_english:
+
+senju_dev.001.t:0 "The Path of the Senju"
+senju_dev.001.d:0 "Your training as a member of the Senju Clan begins. Known for their vitality, balanced chakra, and the legendary Wood Release, the Senju embody the will to protect and endure. Which aspect of your heritage will you develop?"
+senju_dev.001.a:0 "Awaken Vitality and Regeneration"
+senju_dev.001.b:0 "Harness Wood Release"
+senju_dev.001.c:0 "Train Chakra and Elemental Balance"
+senju_dev.001.e:0 "Strengthen Physical Power"
+senju_dev.001.f:0 "Deepen Natural Connection"
+senju_dev.001.g:0 "Inherit the Legacy of Asura"
+senju_dev.001.h:0 "Decide Later"
+
+hyuga_body_dev.001.t:0 "The Path of the Hyūga"
+hyuga_body_dev.001.d:0 "Your training within the Hyūga Clan begins. Masters of the Gentle Fist and inheritors of the Byakugan, Hyūga warriors perfect their bodies until they become weapons of precision and resilience. Which part of your development will you focus on?"
+hyuga_body_dev.001.a:0 "Refine Bones and Joints"
+hyuga_body_dev.001.b:0 "Enhance Muscles and Speed"
+hyuga_body_dev.001.c:0 "Fortify Internal Organs and Chakra"
+hyuga_body_dev.001.e:0 "Sharpen Reflexes and Nervous System"
+hyuga_body_dev.001.f:0 "Reach the Final Stage of Physical Development"
+hyuga_body_dev.001.g:0 "Decide Later"
+
+hyuga_body_dev.11.t:0 "Bones and Joints Perfected"
+hyuga_body_dev.11.d:0 "Through intense discipline, your body moves with fluid grace. Your flexible joints bend and absorb force, making you harder to throw or disable, and every strike flows more naturally into the next."
+hyuga_body_dev.11.a:0 "Your movements become unshakable."
+
+hyuga_body_dev.21.t:0 "Speed and Muscle Awakened"
+hyuga_body_dev.21.d:0 "Your body surges with refined strength. Explosive speed carries you through combat, your coordination now flawless as attack and defense flow seamlessly together."
+hyuga_body_dev.21.a:0 "Your speed eclipses hesitation."
+
+hyuga_body_dev.31.t:0 "Organs and Chakra Strengthened"
+hyuga_body_dev.31.d:0 "You fortify your inner body through rigorous training. Your stamina deepens, your chakra network pulses with reinforced flow, and your Gentle Fist strikes carry unmatched precision and power."
+hyuga_body_dev.31.a:0 "Your inner strength cannot be broken."
+
+hyuga_body_dev.41.t:0 "Reflexes Beyond Instinct"
+hyuga_body_dev.41.d:0 "With Byakugan clarity and relentless training, you react before danger even arrives. Your movements anticipate attacks and your body adapts naturally to each new opponent."
+hyuga_body_dev.41.a:0 "Your eyes and body act as one."
+
+hyuga_body_dev.51.t:0 "The Pinnacle of Hyūga Training"
+hyuga_body_dev.51.d:0 "You have achieved the ultimate stage of Hyūga mastery. Your chakra circulates perfectly, your body moves without wasted motion, and every strike bypasses defense to shut down your foe completely."
+hyuga_body_dev.51.a:0 "You embody the Gentle Fist itself."
+
+senju_dev.11.t:0 "Vitality Awakened"
+senju_dev.11.d:0 "Your natural life force surges. Wounds close faster, fatigue fades more quickly, and your stamina overflows beyond ordinary limits. You embody the famed resilience of the Senju."
+senju_dev.11.a:0 "Your vitality blooms like spring."
+
+senju_dev.21.t:0 "Wood Release Mastered"
+senju_dev.21.d:0 "You channel the unique Kekkei Genkai of your bloodline. Nature itself bends to your will as wooden barriers, bindings, and constructs surge forth from your chakra."
+senju_dev.21.a:0 "Trees rise at your command."
+
+senju_dev.31.t:0 "Chakra in Balance"
+senju_dev.31.d:0 "You cultivate harmony among chakra natures, mastering balance where others struggle. Techniques come easier, transitions between elements flow naturally, and your versatility grows."
+senju_dev.31.a:0 "All elements answer your call."
+
+senju_dev.41.t:0 "Strength Forged in Blood"
+senju_dev.41.d:0 "Your body embodies the raw might of the Senju. Your strikes carry immense force, your frame shrugs off punishment, and your presence radiates overwhelming physical power."
+senju_dev.41.a:0 "Power courses through your body."
+
+senju_dev.51.t:0 "Nature’s Bond"
+senju_dev.51.d:0 "Your harmony with the natural world deepens. Surrounded by forests, rivers, or earth, your stamina and chakra replenish faster, and your connection spreads vitality to those who fight beside you."
+senju_dev.51.a:0 "Nature flows through you."
+
+senju_dev.61.t:0 "The Legacy of Asura"
+senju_dev.61.d:0 "You embody the will of Asura Ōtsutsuki himself. Your body radiates boundless chakra, your vitality is unyielding, and your spirit stands as an eternal force of protection and endurance."
+senju_dev.61.a:0 "The will of Asura lives within you."
+

@@ -1,10 +1,10 @@
-
+﻿
 
 ################ FORBIDDEN EYES ################
 forbiddengene = {
 	opposites = {
-		uchihagene
-		hyugagene
+		uchiha
+		hyuga
 	}
 	
 	index = 2015
@@ -696,104 +696,6 @@ yin_yangrelease = {
 				desc = trait_yin_yangrelease
 			}
 			desc = trait_yin_yangrelease_desc
-		}
-	}
-}
-
-#Ninja ranks
-
-ninjarank_genin = {
-	index = 708
-	diplomacy = 1
-	martial = 1
-	intrigue = 1
-	learning = 1
-	prowess = 2
-	health = 1
-	ruler_designer_cost = 10
-	inherit_chance = 0
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_ninjarank_genin
-			}
-			desc = trait_ninjarank_genin_desc
-		}
-	}
-}
-
-ninjarank_chunin = {
-	index = 709
-	diplomacy = 2
-	martial = 2
-	intrigue = 2
-	learning = 2
-	prowess = 2
-	health = 1.2
-	ruler_designer_cost = 15
-	inherit_chance = 0
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_ninjarank_chunin
-			}
-			desc = trait_ninjarank_chunin_desc
-		}
-	}
-}
-
-ninjarank_jonin = {
-	index = 710
-	diplomacy = 3
-	martial = 4
-	intrigue = 3
-	learning = 3
-	prowess = 4
-	health = 1.4
-	ruler_designer_cost = 20
-	monthly_dynasty_prestige = 0.1
-	inherit_chance = 0
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_ninjarank_jonin
-			}
-			desc = trait_ninjarank_jonin_desc
-		}
-	}
-}
-
-ninjarank_kage = {
-	index = 711
-	diplomacy = 4
-	martial = 5
-	stewardship = 2
-	intrigue = 5
-	learning = 4
-	prowess = 6
-	health = 1.6
-	ruler_designer_cost = 25
-	monthly_dynasty_prestige = 0.4
-	inherit_chance = 0
-	no_prowess_loss_from_age = yes
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_ninjarank_kage
-			}
-			desc = trait_ninjarank_kage_desc
 		}
 	}
 }
@@ -1572,4 +1474,1199 @@ genius_talent = {
 	genetic = yes
 	good = yes
 	physical = yes
+}
+
+#########Hyuga expansion#########
+
+bones_and_joints = {
+	icon = "byakugan.dds"
+	good = yes
+	physical = yes
+	health = 0.2
+	prowess = 1
+	movement_speed = 0.05
+	ruler_designer_cost = 20
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = bones_and_joints }
+						has_trait_xp = {
+							trait = bones_and_joints
+							track = bones_and_joints_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = bones_and_joints_track }
+					}
+				}
+				desc = trait_bones_and_joints
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = bones_and_joints
+					OR = {
+						has_trait_xp = {
+							trait = bones_and_joints
+							track = bones_and_joints_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_bones_and_joints_level_3
+			}
+			desc = trait_bones_and_joints_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_bones_and_joints_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = bones_and_joints }
+						has_trait_xp = {
+							trait = bones_and_joints
+							track = bones_and_joints_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_bones_and_joints_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = bones_and_joints
+					OR = {
+						has_trait_xp = {
+							trait = bones_and_joints
+							track = bones_and_joints_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_bones_and_joints_desc_level_3
+			}
+			desc = trait_bones_and_joints_desc_level_2
+		}
+	}
+
+	tracks = {
+		bones_and_joints_track = {
+			trait_second_level = {
+				health = 0.5
+				prowess = 3
+				movement_speed = 0.1
+			}
+			trait_third_level = {
+				health = 1
+				prowess = 5
+				movement_speed = 0.2
+			}		
+		}	
+	}	
+}
+
+muscles_and_speed = {
+	icon = "byakugan.dds"
+
+	health = 0.2
+	prowess = 1
+	movement_speed = 0.05
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 20
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = muscles_and_speed }
+						has_trait_xp = {
+							trait = muscles_and_speed
+							track = muscles_and_speed_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = muscles_and_speed }
+					}
+				}
+				desc = trait_muscles_and_speed
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = muscles_and_speed
+					OR = {
+						has_trait_xp = {
+							trait = muscles_and_speed
+							track = muscles_and_speed_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_muscles_and_speed_level_3
+			}
+			desc = trait_muscles_and_speed_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = muscles_and_speed_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = muscles_and_speed }
+						has_trait_xp = {
+							trait = muscles_and_speed
+							track = muscles_and_speed_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_muscles_and_speed_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = muscles_and_speed
+					OR = {
+						has_trait_xp = {
+							trait = muscles_and_speed
+							track = muscles_and_speed_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_muscles_and_speed_desc_level_3
+			}
+			desc = trait_muscles_and_speed_desc_level_2
+		}
+	}
+
+	tracks = {
+		muscles_and_speed_track = {
+			trait_second_level = {
+				health = 0.5
+				prowess = 3
+				movement_speed = 0.1
+			}
+			trait_third_level = {
+				health = 1
+				prowess = 5
+				movement_speed = 0.2
+			}		
+		}	
+	}	
+}
+
+
+internal_organs_and_chakras = {
+	icon = "byakugan.dds"
+
+	health = 0.5
+	fertility  = 0.05
+	prowess = 2
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 20
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = internal_organs_and_chakras }
+						has_trait_xp = {
+							trait = internal_organs_and_chakras
+							track = internal_organs_and_chakras_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = internal_organs_and_chakras }
+					}
+				}
+				desc = trait_internal_organs_and_chakras
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = internal_organs_and_chakras
+					OR = {
+						has_trait_xp = {
+							trait = internal_organs_and_chakras
+							track = internal_organs_and_chakras_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_internal_organs_and_chakras_level_3
+			}
+			desc = trait_internal_organs_and_chakras_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_internal_organs_and_chakras_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = internal_organs_and_chakras }
+						has_trait_xp = {
+							trait = internal_organs_and_chakras
+							track = internal_organs_and_chakras_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_internal_organs_and_chakras_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = internal_organs_and_chakras
+					OR = {
+						has_trait_xp = {
+							trait = internal_organs_and_chakras
+							track = internal_organs_and_chakras_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_internal_organs_and_chakras_desc_level_3
+			}
+			desc = trait_internal_organs_and_chakras_desc_level_2
+		}
+	}
+
+	tracks = {
+		internal_organs_and_chakras_track = {
+			trait_second_level = {
+				health = 1
+				fertility  = 0.05
+				prowess = 4
+			}
+			trait_third_level = {
+				health = 1.5
+				fertility  = 0.1
+				prowess = 6
+			}		
+		}	
+	}	
+}
+
+
+reflexes_and_nervous_system = {
+	icon = "byakugan.dds"
+
+	intrigue = 1
+    enemy_hostile_scheme_success_chance_add = -5
+    enemy_personal_scheme_success_chance_add = -5
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 20
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = reflexes_and_nervous_system }
+						has_trait_xp = {
+							trait = reflexes_and_nervous_system
+							track = reflexes_and_nervous_system_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = reflexes_and_nervous_system }
+					}
+				}
+				desc = trait_reflexes_and_nervous_system
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = reflexes_and_nervous_system
+					OR = {
+						has_trait_xp = {
+							trait = reflexes_and_nervous_system
+							track = reflexes_and_nervous_system_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_reflexes_and_nervous_system_level_3
+			}
+			desc = trait_reflexes_and_nervous_system_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_reflexes_and_nervous_system_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = reflexes_and_nervous_system }
+						has_trait_xp = {
+							trait = reflexes_and_nervous_system
+							track = reflexes_and_nervous_system_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_reflexes_and_nervous_system_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = reflexes_and_nervous_system
+					OR = {
+						has_trait_xp = {
+							trait = reflexes_and_nervous_system
+							track = reflexes_and_nervous_system_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_reflexes_and_nervous_system_desc_level_3
+			}
+			desc = trait_reflexes_and_nervous_system_desc_level_2
+		}
+	}
+
+	tracks = {
+		reflexes_and_nervous_system_track = {
+			trait_second_level = {
+				intrigue = 2
+   				enemy_hostile_scheme_success_chance_add = -10
+    			enemy_personal_scheme_success_chance_add = -5
+			}
+			trait_third_level = {
+				intrigue = 3
+    			enemy_hostile_scheme_success_chance_add = -15
+    			enemy_personal_scheme_success_chance_add = -10
+			}		
+		}	
+	}	
+}
+
+final_stage_of_physical_development = {
+	icon = "byakugan.dds"
+
+	prowess = 2
+    health = 1
+  	fertility = 0.1
+    defender_advantage  = 1
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 50
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = final_stage_of_physical_development }
+						has_trait_xp = {
+							trait = final_stage_of_physical_development
+							track = final_stage_of_physical_development_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = final_stage_of_physical_development }
+					}
+				}
+				desc = trait_final_stage_of_physical_development
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = final_stage_of_physical_development
+					OR = {
+						has_trait_xp = {
+							trait = final_stage_of_physical_development
+							track = final_stage_of_physical_development_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_final_stage_of_physical_development_level_3
+			}
+			desc = trait_final_stage_of_physical_development_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_final_stage_of_physical_development_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = final_stage_of_physical_development }
+						has_trait_xp = {
+							trait = final_stage_of_physical_development
+							track = final_stage_of_physical_development_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_final_stage_of_physical_development_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = final_stage_of_physical_development
+					OR = {
+						has_trait_xp = {
+							trait = final_stage_of_physical_development
+							track = final_stage_of_physical_development_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_final_stage_of_physical_development_desc_level_3
+			}
+			desc = trait_final_stage_of_physical_development_desc_level_2
+		}
+	}
+
+	tracks = {
+		final_stage_of_physical_development_track = {
+			trait_second_level = {
+				prowess = 4
+    			health = 1.5
+  				fertility = 0.2
+    			defender_advantage  = 3
+			}
+			trait_third_level = {
+				prowess = 6
+    			health = 2
+  				fertility = 0.3
+    			defender_advantage  = 5
+    			monthly_dynasty_prestige = 0.2
+			}		
+		}	
+	}	
+}
+
+###########SENJU DEVELOPMENT############
+vitality_and_regeneration = {
+	icon = "byakugan.dds"
+
+    health = 1
+  	fertility = 0.1
+  	life_expectancy = 1
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 50
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = vitality_and_regeneration }
+						has_trait_xp = {
+							trait = vitality_and_regeneration
+							track = vitality_and_regeneration_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = vitality_and_regeneration }
+					}
+				}
+				desc = trait_vitality_and_regeneration
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = vitality_and_regeneration
+					OR = {
+						has_trait_xp = {
+							trait = vitality_and_regeneration
+							track = vitality_and_regeneration_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_vitality_and_regeneration_level_3
+			}
+			desc = trait_vitality_and_regeneration_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_vitality_and_regeneration_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = vitality_and_regeneration }
+						has_trait_xp = {
+							trait = vitality_and_regeneration
+							track = vitality_and_regeneration_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_vitality_and_regeneration_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = vitality_and_regeneration
+					OR = {
+						has_trait_xp = {
+							trait = vitality_and_regeneration
+							track = vitality_and_regeneration_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_vitality_and_regeneration_desc_level_3
+			}
+			desc = trait_vitality_and_regeneration_desc_level_2
+		}
+	}
+
+	tracks = {
+		vitality_and_regeneration_track = {
+			trait_second_level = {
+				health = 2
+				fertility = 0.2
+				life_expectancy = 5
+			}
+			trait_third_level = {
+				health = 3
+				fertility = 0.3
+				life_expectancy = 7
+			}		
+		}	
+	}	
+}
+
+wooden_style = {
+	icon = "byakugan.dds"
+
+	enemy_hard_casualty_modifier = 0.02
+	monthly_county_control_growth_factor = 0.2
+    defender_advantage = 2
+    development_growth_factor = 0.2
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 50
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = wooden_style }
+						has_trait_xp = {
+							trait = wooden_style
+							track = wooden_style_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = wooden_style }
+					}
+				}
+				desc = trait_wooden_style
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = wooden_style
+					OR = {
+						has_trait_xp = {
+							trait = wooden_style
+							track = wooden_style_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_wooden_style_level_3
+			}
+			desc = trait_wooden_style_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_wooden_style_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = wooden_style }
+						has_trait_xp = {
+							trait = wooden_style
+							track = wooden_style_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_wooden_style_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = wooden_style
+					OR = {
+						has_trait_xp = {
+							trait = wooden_style
+							track = wooden_style_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_wooden_style_desc_level_3
+			}
+			desc = trait_wooden_style_desc_level_2
+		}
+	}
+
+	tracks = {
+		wooden_style_track = {
+			trait_second_level = {
+				enemy_hard_casualty_modifier = 0.05
+				monthly_county_control_growth_factor = 0.5
+			    defender_advantage = 4
+			    development_growth_factor = 0.5
+			}
+			trait_third_level = {
+				enemy_hard_casualty_modifier = 0.1
+				monthly_county_control_growth_factor = 0.7
+			    defender_advantage = 7
+			    development_growth_factor = 0.7
+			}		
+		}	
+	}	
+}
+
+chakra_and_elemental_balance = {
+	icon = "byakugan.dds"
+
+	learning = 1
+	monthly_piety_gain_mult = 0.1
+	prowess = 2
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 50
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = chakra_and_elemental_balance }
+						has_trait_xp = {
+							trait = chakra_and_elemental_balance
+							track = chakra_and_elemental_balance_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = chakra_and_elemental_balance }
+					}
+				}
+				desc = trait_chakra_and_elemental_balance
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = chakra_and_elemental_balance
+					OR = {
+						has_trait_xp = {
+							trait = chakra_and_elemental_balance
+							track = chakra_and_elemental_balance_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_chakra_and_elemental_balance_level_3
+			}
+			desc = trait_chakra_and_elemental_balance_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_chakra_and_elemental_balance_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = chakra_and_elemental_balance }
+						has_trait_xp = {
+							trait = chakra_and_elemental_balance
+							track = chakra_and_elemental_balance_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_chakra_and_elemental_balance_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = chakra_and_elemental_balance
+					OR = {
+						has_trait_xp = {
+							trait = chakra_and_elemental_balance
+							track = chakra_and_elemental_balance_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_chakra_and_elemental_balance_desc_level_3
+			}
+			desc = trait_chakra_and_elemental_balance_desc_level_2
+		}
+	}
+
+	tracks = {
+		chakra_and_elemental_balance_track = {
+			trait_second_level = {
+				learning = 3
+				monthly_piety_gain_mult = 0.3
+				prowess = 4
+			}
+			trait_third_level = {
+				learning = 5
+				monthly_piety_gain_mult = 0.5
+				prowess = 6
+			}		
+		}	
+	}	
+}
+
+physical_strength = {
+	icon = "byakugan.dds"
+
+	prowess = 1
+    health = 0.5
+  	advantage  = 2
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 50
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = physical_strength }
+						has_trait_xp = {
+							trait = physical_strength
+							track = physical_strength_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = physical_strength }
+					}
+				}
+				desc = trait_physical_strength
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = physical_strength
+					OR = {
+						has_trait_xp = {
+							trait = physical_strength
+							track = physical_strength_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_physical_strength_level_3
+			}
+			desc = trait_physical_strength_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_physical_strength_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = physical_strength }
+						has_trait_xp = {
+							trait = physical_strength
+							track = physical_strength_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_physical_strength_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = physical_strength
+					OR = {
+						has_trait_xp = {
+							trait = physical_strength
+							track = physical_strength_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_physical_strength_desc_level_3
+			}
+			desc = trait_physical_strength_desc_level_2
+		}
+	}
+
+	tracks = {
+		physical_strength_track = {
+			trait_second_level = {
+				prowess = 4
+			    health = 1
+			  	advantage  = 4
+			}
+			trait_third_level = {
+				prowess = 6
+			    health = 1.5
+			  	advantage  = 6
+			}		
+		}	
+	}	
+}
+
+natural_connection = {
+	icon = "byakugan.dds"
+
+	enemy_hostile_scheme_success_chance_add = -5
+    supply_limit_mult = 0.2
+  	hard_casualty_modifier = -0.05
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 50
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = natural_connection }
+						has_trait_xp = {
+							trait = natural_connection
+							track = natural_connection_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = natural_connection }
+					}
+				}
+				desc = trait_natural_connection
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = natural_connection
+					OR = {
+						has_trait_xp = {
+							trait = natural_connection
+							track = natural_connection_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_natural_connection_level_3
+			}
+			desc = trait_natural_connection_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_natural_connection_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = natural_connection }
+						has_trait_xp = {
+							trait = natural_connection
+							track = natural_connection_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_natural_connection_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = natural_connection
+					OR = {
+						has_trait_xp = {
+							trait = natural_connection
+							track = natural_connection_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_natural_connection_desc_level_3
+			}
+			desc = trait_natural_connection_desc_level_2
+		}
+	}
+
+	tracks = {
+		natural_connection_track = {
+			trait_second_level = {
+				enemy_hostile_scheme_success_chance_add  = -10
+			    supply_limit_mult  = 0.33
+			  	hard_casualty_modifier  = -0.1
+			}
+			trait_third_level = {
+				enemy_hostile_scheme_success_chance_add  = -15
+			    supply_limit_mult  = 0.5
+			  	hard_casualty_modifier  = -0.15
+			}		
+		}	
+	}	
+}
+
+legacy_of_asura = {
+	icon = "byakugan.dds"
+
+	prowess = 3
+    health = 1
+  	fertility = 0.1
+	life_expectancy = 5
+	monthly_prestige_gain_mult = 0.1
+	monthly_piety_gain_mult = 0.1
+	dread_gain_mult = 0.1
+	martial = 3
+    defender_advantage = 3
+    monthly_dynasty_prestige = 1
+
+	good = yes
+	physical = yes
+
+	ruler_designer_cost = 100
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = legacy_of_asura }
+						has_trait_xp = {
+							trait = legacy_of_asura
+							track = legacy_of_asura_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = legacy_of_asura }
+					}
+				}
+				desc = trait_legacy_of_asura
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = legacy_of_asura
+					OR = {
+						has_trait_xp = {
+							trait = legacy_of_asura
+							track = legacy_of_asura_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_legacy_of_asura_level_3
+			}
+			desc = trait_legacy_of_asura_level_2
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_legacy_of_asura_desc
+			}
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = legacy_of_asura }
+						has_trait_xp = {
+							trait = legacy_of_asura
+							track = legacy_of_asura_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_legacy_of_asura_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = legacy_of_asura
+					OR = {
+						has_trait_xp = {
+							trait = legacy_of_asura
+							track = legacy_of_asura_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_legacy_of_asura_desc_level_3
+			}
+			desc = trait_legacy_of_asura_desc_level_2
+		}
+	}
+
+	tracks = {
+		legacy_of_asura_track = {
+			trait_second_level = {
+				prowess = 6
+			    health = 2
+			  	fertility = 0.2
+				life_expectancy = 10
+				monthly_prestige_gain_mult = 0.2
+				monthly_piety_gain_mult = 0.2
+				dread_gain_mult = 0.2
+				martial = 6
+			    defender_advantage = 6
+			    monthly_dynasty_prestige = 1.5
+			}
+			trait_third_level = {
+				prowess = 10
+			    health = 3
+			  	fertility = 0.3
+				life_expectancy = 15
+				monthly_prestige_gain_mult = 0.3
+				monthly_piety_gain_mult = 0.3
+				dread_gain_mult = 0.3
+				martial = 10
+			    defender_advantage = 10
+			    monthly_dynasty_prestige = 2
+			}		
+		}	
+	}	
 }

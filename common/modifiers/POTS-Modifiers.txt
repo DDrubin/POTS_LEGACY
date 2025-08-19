@@ -314,6 +314,17 @@ trained_recently = {
     health = -0.25
 	stress_gain_mult = 0.2
 }
+hyuga_body_dev_mod = {
+    icon = health_negative
+    health = -0.25
+	stress_gain_mult = 1.6
+}
+senju_dev_mod = {
+    icon = health_negative
+    health = -0.25
+	stress_gain_mult = 1.6
+}
+
 trained_sharingan = {
     icon = health_negative
     health = -0.25

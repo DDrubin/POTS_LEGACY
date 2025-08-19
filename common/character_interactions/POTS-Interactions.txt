@@ -20,8 +20,8 @@
 			scope:actor = {
 				has_trait = shinobi_dynasty
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -66,8 +66,8 @@
 			scope:actor = {
 				has_trait = shinobi_dynasty
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -115,8 +115,8 @@
 			scope:actor = {
 				has_trait = shinobi_dynasty
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -165,8 +165,8 @@
 			scope:actor = {
 				has_trait = shinobi_dynasty
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -211,8 +211,8 @@
 			scope:actor = {
 				has_trait = shinobi_dynasty
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -257,8 +257,8 @@
 		is_shown = {
 			scope:actor = {
             			OR = {
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 	    			}
 				NOT = { has_character_flag = used_rasenamaterasu_target }	
@@ -269,8 +269,8 @@
 			scope:actor = {
 				has_trait = shinobi_dynasty
             			OR = {
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 	    			}
 				has_trait = windrelease
@@ -322,8 +322,8 @@
 				has_trait = shinobi_dynasty
 				has_trait = medical_nin
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -377,8 +377,8 @@
 				has_trait = shinobi_dynasty
 				has_trait = woodrelease
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -428,8 +428,8 @@
 				has_trait = shinobi_dynasty
 				has_trait = woodrelease
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -469,11 +469,11 @@
 		is_shown = {
 			scope:actor = {
 				OR = {
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 	    			}
 				NOT = { has_character_flag = used_genjutsu_target }	
 			}
@@ -556,9 +556,9 @@
 		is_shown = {
 			scope:actor = {
 				OR = {
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 				}
 				NOT = { has_character_flag = used_susanoo }
 			}
@@ -597,7 +597,7 @@
 		is_shown = {
 			scope:actor = {
             			OR = {
-				has_trait = mangekyosharingan_3
+				has_trait = sharingan_tomoe_4
 				has_trait = eternalsharingan
 	    			}
 				NOT = { has_character_flag = used_susanoo }
@@ -636,7 +636,7 @@
 
 		is_shown = {
 			scope:actor = {
-				has_trait = mangekyosharingan_1
+				has_trait = sharingan_tomoe_4
 				NOT = { has_character_flag = used_kamui_self }
 			}
 			scope:recipient = scope:actor
@@ -674,7 +674,7 @@
 
 		is_shown = {
 			scope:actor = {
-				has_trait = mangekyosharingan_1
+				has_trait = sharingan_tomoe_4
 				NOT = { has_character_flag = used_kamui_target }	
 			}
 			NOT = { scope:recipient = scope:actor }
@@ -718,8 +718,8 @@ perform_amaterasu_interaction = {
     is_shown = {
         scope:actor = {
             OR = {
-			has_trait = mangekyosharingan_3
-			has_trait = mangekyosharingan_4
+			has_trait = sharingan_tomoe_4
+			has_trait = sharingan_tomoe_4
 			has_trait = eternalsharingan
 	    }
 
@@ -752,7 +752,7 @@ perform_kotoamatsukami_interaction = {
     desc = perform_kotoamatsukami_interaction_desc
     is_shown = {
         scope:actor = {
-            has_trait = mangekyosharingan_2
+            has_trait = sharingan_tomoe_4
             NOT = { has_character_flag = recently_performed_kotoamatsukami }
         }
 	NOT = { scope:actor = scope:recipient }
@@ -776,7 +776,7 @@ perform_tsukuyomi_interaction = {
     desc = perform_tsukuyomi_interaction_desc
     is_shown = {
         scope:actor = {
-            has_trait = mangekyosharingan_4
+            has_trait = sharingan_tomoe_4
             NOT = { has_character_flag = used_tsukuyomi }
         }
         NOT = { scope:actor = scope:recipient }
@@ -811,13 +811,13 @@ obtain_mangekyo_sharingan_interaction = {
 				}
 			}
 			has_trait = shinobi_dynasty
-			has_trait = uchihagene
-            		has_trait = threetomoe
+			has_trait = uchiha
+            		has_trait = sharingan_tomoe_3
 			NOR = {
-				has_trait = mangekyosharingan_1
-				has_trait = mangekyosharingan_2
-				has_trait = mangekyosharingan_3
-				has_trait = mangekyosharingan_4
+				has_trait = sharingan_tomoe_4
+				has_trait = sharingan_tomoe_4
+				has_trait = sharingan_tomoe_4
+				has_trait = sharingan_tomoe_4
 			}
 			is_adult = yes
 			stress_level >= 1
@@ -850,9 +850,7 @@ obtain_mangekyo_sharingan_interaction = {
         ai_recipients = children
     }
     ai_frequency = 60
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     auto_accept = yes
 }
 
@@ -864,9 +862,10 @@ train_sharingan_level_one_interaction = {
     ai_maybe = yes
 	is_shown = {
 		scope:actor = {
-				NOT = { has_trait = onetomoe}
+				NOT = { has_trait = sharingan_tomoe_1
+						has_trait = blind}
 				has_trait = shinobi_dynasty
-				has_trait = uchihagene
+				has_trait = uchiha
 				has_simple_sharingan = no 
 				prowess >= 5
 				age >= 6
@@ -877,21 +876,21 @@ train_sharingan_level_one_interaction = {
 		scope:actor = {
 			AND = {
 				has_trait = shinobi_dynasty
-				has_trait = uchihagene
+				has_trait = uchiha
 				
 				NOT = {
 					has_trait = blind
-					has_trait = onetomoe
-					has_trait = twotomoe
-					has_trait = threetomoe
+					has_trait = sharingan_tomoe_1
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
 					has_trait = rinnegan
-					has_trait = rinnesharingan
+					has_trait = ririnnneshagan
 					has_character_modifier = trained_sharingan
 				
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
@@ -901,9 +900,8 @@ train_sharingan_level_one_interaction = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
+    
 
 	on_accept = {
 		scope:actor = {
@@ -918,13 +916,13 @@ train_sharingan_level_two_interaction = {
 	icon = icon_Dojutsu
 	interface_priority = 90
 	desc = train_sharingan_level_two_interaction_desc
-    ai_maybe = yes
 	is_shown = {
 		scope:actor = {
-				NOT = { has_trait = twotomoe}
+				NOT = { has_trait = sharingan_tomoe_2
+						has_trait = blind}
 				has_trait = shinobi_dynasty
-				has_trait = onetomoe
-				has_trait = uchihagene
+				has_trait = sharingan_tomoe_1
+				has_trait = uchiha
 		}
 		scope:recipient = scope:actor
 	}
@@ -932,21 +930,21 @@ train_sharingan_level_two_interaction = {
 		scope:actor = {
 			AND = {
 				has_trait = shinobi_dynasty
-				has_trait = onetomoe
-				has_trait = uchihagene
+				has_trait = sharingan_tomoe_1
+				has_trait = uchiha
 				prowess >= 15
 				
 				NOT = {
 					has_character_modifier = trained_sharingan
-					has_trait = twotomoe
-					has_trait = threetomoe
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
 					has_trait = rinnegan
 					has_trait = rinnesharingan
 					
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
@@ -955,10 +953,8 @@ train_sharingan_level_two_interaction = {
     ai_targets = {
         ai_recipients = self
     }
-    ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_frequency = 1
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -976,10 +972,11 @@ train_sharingan_level_three_interaction = {
     ai_maybe = yes
 	is_shown = {
 		scope:actor = {
-				NOT = { has_trait = threetomoe}
+				NOT = { has_trait = sharingan_tomoe_3
+						has_trait = blind}
 				has_trait = shinobi_dynasty
-				has_trait = twotomoe
-				has_trait = uchihagene
+				has_trait = sharingan_tomoe_2
+				has_trait = uchiha
 		}
 		scope:recipient = scope:actor
 	}
@@ -987,8 +984,8 @@ train_sharingan_level_three_interaction = {
 		scope:actor = {
 			AND = {
 				has_trait = shinobi_dynasty
-				has_trait = twotomoe
-				has_trait = uchihagene
+				has_trait = sharingan_tomoe_2
+				has_trait = uchiha
 				OR = {
 					martial >= 20
 					prowess >= 25
@@ -996,14 +993,14 @@ train_sharingan_level_three_interaction = {
 			
 				NOT = {
 					has_character_modifier = trained_sharingan
-					has_trait = threetomoe
+					has_trait = sharingan_tomoe_3
 					has_trait = rinnegan
 					has_trait = rinnesharingan
 				
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
@@ -1013,9 +1010,7 @@ train_sharingan_level_three_interaction = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -1036,16 +1031,17 @@ obtain_eternal_light_interaction = {
             		is_close_or_extended_family_of = scope:recipient
            		AND = {
 				has_mangekyosharingan = yes
-				has_trait = uchihagene
+				has_trait = uchiha
 				has_trait = shinobi_dynasty
 			}
-			NOT = { has_trait = eternalsharingan }
+			NOT = { has_trait = eternalsharingan 
+					has_trait = blind}
 		}
         	scope:recipient = {
             		is_close_or_extended_family_of = scope:actor
             		AND = {
 				has_mangekyosharingan = yes
-				has_trait = uchihagene
+				has_trait = uchiha
 			}
         	}
 		NOT = { scope:recipient = scope:actor }
@@ -1056,7 +1052,7 @@ obtain_eternal_light_interaction = {
 				learning >= 25
 				has_trait = medical_nin
 				has_mangekyosharingan = yes
-				has_trait = uchihagene
+				has_trait = uchiha
 				has_trait = shinobi_dynasty
             			is_adult = yes
 			}
@@ -1073,9 +1069,7 @@ obtain_eternal_light_interaction = {
         ai_recipients = dynasty
     }
     ai_frequency = 6
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     auto_accept = yes
 }
 
@@ -1212,9 +1206,7 @@ chibaku_tensei_interaction = {
         ai_recipients = self
     }
     ai_frequency = 5
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
             add_character_modifier = {
@@ -1246,9 +1238,7 @@ tengai_shinsei_interaction = {
         ai_recipients = self
     }
     ai_frequency = 4
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
             add_character_modifier = {
@@ -1373,9 +1363,9 @@ steal_sharingan_interaction = {
                 id = sharingan_theft.001
                 days = 5
             }
-	    remove_trait = onetomoe
-	    remove_trait = twotomoe
-	    remove_trait = threetomoe
+	    remove_trait = sharingan_tomoe_1
+	    remove_trait = sharingan_tomoe_2
+	    remove_trait = sharingan_tomoe_3
 	    remove_trait = blind
         }
     }
@@ -1407,9 +1397,7 @@ create_ten_tails_interaction = {
         ai_recipients = self
     }
     ai_frequency = 1
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
             trigger_event = {
@@ -1432,7 +1420,7 @@ awaken_rinnesharingan_interaction = {
 			has_trait = ten_tail
 			has_trait = shinobi_dynasty
             NOT = { has_trait = rinnesharingan }
-            has_trait = uchihagene
+            has_trait = uchiha
             is_adult = yes
         }
     }
@@ -1440,9 +1428,7 @@ awaken_rinnesharingan_interaction = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
 		remove_trait = rinnegan
@@ -1513,9 +1499,9 @@ search_the_beasts_interaction = {
 					has_trait = tenseigan
 				}
 				OR = {
-					has_trait = ninjarank_chunin
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_2
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -1566,8 +1552,8 @@ search_the_beasts_interaction = {
 					has_trait = tenseigan
 				}
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -1617,9 +1603,9 @@ search_the_beasts_interaction = {
 				has_trait = shinobi_dynasty
 				has_trait = tenseigan
 				OR = {
-					has_trait = ninjarank_chunin
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_2
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -1664,9 +1650,9 @@ search_the_beasts_interaction = {
 				has_trait = shinobi_dynasty
 				has_trait = tenseigan
 				OR = {
-					has_trait = ninjarank_chunin
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_2
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -1714,8 +1700,8 @@ search_the_beasts_interaction = {
 				has_trait = shinobi_dynasty
 				has_trait = tenseigan
 				OR = {
-					has_trait = ninjarank_jonin
-					has_trait = ninjarank_kage
+					has_trait = ninja_rank_3
+					has_trait = ninja_rank_5
 				}
 			}
 		}
@@ -1777,9 +1763,9 @@ collect_byakugan_interaction = {
 		is_hyuga = yes
 		has_trait = medical_nin
 		OR = { 
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
         }
     }
@@ -1788,9 +1774,7 @@ collect_byakugan_interaction = {
         ai_recipients = prisoners
     }
     ai_frequency = 6
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
             trigger_event = {
@@ -1827,9 +1811,7 @@ awaken_tenseigan_interaction = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
             trigger_event = {
@@ -1854,10 +1836,10 @@ train_ninja_level_one_interaction = {
 		scope:actor = {
 			has_trait = shinobi_dynasty
             		NOT = { has_character_modifier = trained_recently }
-	    		NOT = { has_trait = ninjarank_genin }
-            		NOT = { has_trait = ninjarank_chunin }
-           		NOT = { has_trait = ninjarank_jonin }
-            		NOT = { has_trait = ninjarank_kage }
+	    		NOT = { has_trait = ninja_rank_1 }
+            		NOT = { has_trait = ninja_rank_2 }
+           		NOT = { has_trait = ninja_rank_3 }
+            		NOT = { has_trait = ninja_rank_5 }
 			age >= 4
 		}
 		scope:recipient = scope:actor
@@ -1873,19 +1855,17 @@ train_ninja_level_one_interaction = {
 				learning >= 15
 			}
 			has_trait = shinobi_dynasty
-			NOT = { has_trait = ninjarank_genin }
-            		NOT = { has_trait = ninjarank_chunin }
-           		NOT = { has_trait = ninjarank_jonin }
-            		NOT = { has_trait = ninjarank_kage }
+			NOT = { has_trait = ninja_rank_1 }
+            		NOT = { has_trait = ninja_rank_2 }
+           		NOT = { has_trait = ninja_rank_3 }
+            		NOT = { has_trait = ninja_rank_5 }
 		}
 	}
     ai_targets = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 	on_accept = {
 		scope:actor = {
 			trigger_event = ninja_level.1
@@ -1902,12 +1882,12 @@ train_ninja_level_two_interaction = {
     ai_maybe = yes
 	is_shown = {
 		scope:actor = {
-			has_trait = ninjarank_genin
+			has_trait = ninja_rank_1
            		has_trait = shinobi_dynasty
            		NOT = { has_character_modifier = trained_recently }
-			NOT = { has_trait = ninjarank_chunin }
-            		NOT = { has_trait = ninjarank_jonin }
-            		NOT = { has_trait = ninjarank_kage }
+			NOT = { has_trait = ninja_rank_2 }
+            		NOT = { has_trait = ninja_rank_3 }
+            		NOT = { has_trait = ninja_rank_5 }
 		}
 		scope:recipient = scope:actor
 	}
@@ -1922,20 +1902,18 @@ train_ninja_level_two_interaction = {
 				intrigue >= 20
 				prowess >= 20
 			}
-			has_trait = ninjarank_genin
+			has_trait = ninja_rank_1
             has_trait = shinobi_dynasty
-			NOT = { has_trait = ninjarank_chunin }
-            NOT = { has_trait = ninjarank_jonin }
-            NOT = { has_trait = ninjarank_kage }
+			NOT = { has_trait = ninja_rank_2 }
+            NOT = { has_trait = ninja_rank_3 }
+            NOT = { has_trait = ninja_rank_5 }
 		}
 	}
     ai_targets = {
         ai_recipients = self
     }
     ai_frequency = 3
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -1953,12 +1931,12 @@ train_ninja_level_three_interaction = {
     ai_maybe = yes
 	is_shown = {
 		scope:actor = {
-			has_trait = ninjarank_chunin
+			has_trait = ninja_rank_2
             		has_trait = shinobi_dynasty
 			NOT = { has_character_modifier = trained_recently }
-			NOT = { has_trait = ninjarank_jonin }
-            		NOT = { has_trait = ninjarank_kage }
-            		NOT = { has_trait = ninjarank_genin }
+			NOT = { has_trait = ninja_rank_3 }
+            		NOT = { has_trait = ninja_rank_5 }
+            		NOT = { has_trait = ninja_rank_1 }
 		}
 		scope:recipient = scope:actor
 	}
@@ -1975,19 +1953,17 @@ train_ninja_level_three_interaction = {
 				learning >= 30
 				prowess >= 32
 			}
-			has_trait = ninjarank_chunin
-			NOT = { has_trait = ninjarank_jonin }
-            NOT = { has_trait = ninjarank_kage }
-            NOT = { has_trait = ninjarank_genin }
+			has_trait = ninja_rank_2
+			NOT = { has_trait = ninja_rank_3 }
+            NOT = { has_trait = ninja_rank_5 }
+            NOT = { has_trait = ninja_rank_1 }
 		}
 	}
     ai_targets = {
         ai_recipients = self
     }
     ai_frequency = 3
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -2005,12 +1981,12 @@ train_ninja_level_four_interaction = {
     ai_maybe = yes
 	is_shown = {
 		scope:actor = {
-			has_trait = ninjarank_jonin
+			has_trait = ninja_rank_3
             		has_trait = shinobi_dynasty
 			NOT = { has_character_modifier = trained_recently }
-			NOT = { has_trait = ninjarank_chunin }
-            		NOT = { has_trait = ninjarank_kage }
-            		NOT = { has_trait = ninjarank_genin }
+			NOT = { has_trait = ninja_rank_2 }
+            		NOT = { has_trait = ninja_rank_5 }
+            		NOT = { has_trait = ninja_rank_1 }
 		}
 		scope:recipient = scope:actor
 	}
@@ -2028,20 +2004,18 @@ train_ninja_level_four_interaction = {
 				learning >= 35
 				prowess >= 40
 			}
-			has_trait = ninjarank_jonin
+			has_trait = ninja_rank_3
             has_trait = shinobi_dynasty
-			NOT = { has_trait = ninjarank_chunin }
-            NOT = { has_trait = ninjarank_kage }
-            NOT = { has_trait = ninjarank_genin }
+			NOT = { has_trait = ninja_rank_2 }
+            NOT = { has_trait = ninja_rank_5 }
+            NOT = { has_trait = ninja_rank_1 }
 		}
 	}
     ai_targets = {
         ai_recipients = self
     }
     ai_frequency = 4
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -2066,13 +2040,13 @@ steal_interaction = {
         }
         scope:recipient = {
 				OR = {
-					has_trait = onetomoe
-					has_trait = twotomoe
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_1
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 					has_trait = rinnegan
 					has_trait = rinnesharingan
@@ -2094,9 +2068,9 @@ steal_interaction = {
 		prowess >= 26
 		has_trait = medical_nin
 		OR = { 
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
         }
     }
@@ -2105,9 +2079,7 @@ steal_interaction = {
         ai_recipients = prisoners
     }
     ai_frequency = 6
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
             trigger_event = {
@@ -2128,13 +2100,13 @@ preserve_eyes_interaction = {
         scope:actor = {
             AND = {
                 	OR = {
-					has_trait = onetomoe
-					has_trait = twotomoe
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_1
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 					has_trait = rinnegan
 					has_trait = rinnesharingan
@@ -2305,9 +2277,7 @@ teach_interaction = {
         }
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
     on_accept = {
         scope:actor = {
             trigger_event = {
@@ -2329,12 +2299,12 @@ ninja_academy_interaction = {
 	is_shown = {
 		scope:actor = {
 			has_trait = shinobi_dynasty
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_5
 			NOT = { has_character_modifier = trained_recently }
 		}
 		scope:recipient = {
 			has_trait = shinobi_dynasty
-			NOT = { has_trait = ninjarank_kage }
+			NOT = { has_trait = ninja_rank_5 }
 			NOT = { has_character_modifier = trained_recently }
 			age >= 4
 		}
@@ -2675,7 +2645,7 @@ train_byakugan_interaction = {
 	is_shown = {
 		scope:actor = {
 				has_trait = shinobi_dynasty
-				has_trait = hyugagene
+				has_trait = hyuga
 				has_simple_byakugan = no 
 
 				age >= 16
@@ -2686,7 +2656,7 @@ train_byakugan_interaction = {
 		scope:actor = {
 			AND = {
 				has_trait = shinobi_dynasty
-				has_trait = hyugagene
+				has_trait = hyuga
 				
 				NOT = {
 					has_character_modifier = trained_sharingan
@@ -2702,9 +2672,7 @@ train_byakugan_interaction = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -2761,9 +2729,7 @@ train_seal_interaction_novice = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -2818,9 +2784,7 @@ train_seal_interaction_basic = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -2874,9 +2838,7 @@ train_seal_interaction_specialist = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -2928,9 +2890,7 @@ train_seal_interaction_master = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {
@@ -2980,9 +2940,7 @@ train_seal_interaction_lives = {
         ai_recipients = self
     }
     ai_frequency = 2
-    ai_will_do = {
-        base = 100
-    }
+    ai_will_do = 100
 
 	on_accept = {
 		scope:actor = {

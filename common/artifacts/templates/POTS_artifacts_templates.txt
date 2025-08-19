@@ -6,8 +6,8 @@
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -25,9 +25,9 @@ test_scroll_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -45,9 +45,9 @@ test_eye_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -65,9 +65,9 @@ sun_moon_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -85,9 +85,9 @@ bashosen_fan_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -105,9 +105,9 @@ kokinjo_rope_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -125,9 +125,9 @@ shichi_sword_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -145,9 +145,9 @@ sealing_pot_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	
@@ -164,9 +164,9 @@ sealing_pot_filled_template = {
 	can_benefit = {
 		has_trait = shinobi_dynasty
 		OR = {
-			has_trait = ninjarank_chunin
-			has_trait = ninjarank_jonin
-			has_trait = ninjarank_kage
+			has_trait = ninja_rank_2
+			has_trait = ninja_rank_3
+			has_trait = ninja_rank_5
 		}
 	}
 	

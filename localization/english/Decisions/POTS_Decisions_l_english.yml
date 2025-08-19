@@ -87,3 +87,13 @@ l_english:
 train_of_eyes_desc:0 "Commence training to unlock the potential of your eyes, allowing you to develop unique visual abilities."
 train_of_eyes_tooltip:0 "Begin Eye Training"
 train_of_eyes_confirm:0 "Start Training"
+
+decision_hyuga_body_dev:0 "Undergo Jūken Conditioning"
+decision_hyuga_body_dev_desc:0 "Commit to the Hyuga clan's sacred and grueling physical conditioning regimen. This training focuses on perfecting every aspect of the body, from the flexibility of joints and density of bones to the precise control of internal chakra flow. It is the foundational path to mastering the Gentle Fist and unlocking the body's true potential, paving the way for physical perfection."
+decision_hyuga_body_dev_tooltip:0 "Begin Hyuga Physical Training"
+decision_hyuga_body_dev_confirm:0 "Begin Conditioning"
+
+decision_senju_dev:0 "Commune with Natural Energy and Body"
+decision_senju_dev_desc:0 "Embrace the legacy of the Senju by seeking harmony with the natural world. This meditative practice involves opening your chakra pathways to the energy of the earth, water, and forests. It will enhance your vitality, deepen your elemental balance, and strengthen your innate connection to all living things, awakening the profound life force that defines your lineage."
+decision_senju_dev_tooltip:0 "Begin Senju Physical-Spiritual Training"
+decision_senju_dev_confirm:0 "Commence Communion"

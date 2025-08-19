@@ -1,6 +1,6 @@
 ﻿mangekyo_1_eyes = {
 	mangekyo_1_eyes = {
-		traits = { mangekyosharingan_1 }
+		traits = { sharingan_tomoe_4 }
 		dna_modifiers = {	
 			human = {		
 				accessory = {
@@ -16,7 +16,7 @@
 
 mangekyo_2_eyes = {
 	mangekyo_2_eyes = {
-		traits = { mangekyosharingan_2 }
+		traits = { sharingan_tomoe_4 }
 		dna_modifiers = {	
 			human = {		
 				accessory = {
@@ -32,7 +32,7 @@ mangekyo_2_eyes = {
 
 mangekyo_3_eyes = {
 	mangekyo_3_eyes = {
-		traits = { mangekyosharingan_3 }
+		traits = { sharingan_tomoe_4 }
 		dna_modifiers = {	
 			human = {		
 				accessory = {
@@ -48,7 +48,7 @@ mangekyo_3_eyes = {
 
 mangekyo_4_eyes = {
 	mangekyo_4_eyes = {
-		traits = { mangekyosharingan_4 }
+		traits = { sharingan_tomoe_4 }
 		dna_modifiers = {
 			human = {			
 				accessory = {
@@ -64,7 +64,7 @@ mangekyo_4_eyes = {
 
 one_tomoe_eyes = {
 	one_tomoe_eyes = {
-		traits = { onetomoe }
+		traits = { sharingan_tomoe_1 }
 		dna_modifiers = {	
 			human = {		
 				accessory = {
@@ -80,7 +80,7 @@ one_tomoe_eyes = {
 
 two_tomoe_eyes = {
 	two_tomoe_eyes = {
-		traits = { twotomoe }
+		traits = { sharingan_tomoe_2 }
 		dna_modifiers = {	
 			human = {		
 				accessory = {
@@ -96,7 +96,7 @@ two_tomoe_eyes = {
 
 three_tomoe_eyes = {
 	three_tomoe_eyes = {
-		traits = { threetomoe }
+		traits = { sharingan_tomoe_3 }
 		dna_modifiers = {	
 			human = {		
 				accessory = {

@@ -1,0 +1,342 @@
+﻿steal_eyes = {
+	
+	skill = intrigue
+	desc = murder_desc_general
+	icon = icon_scheme_abduct
+	success_desc = "STEAL_EYES_SUCCESS_DESC"
+	discovery_desc = "STEAL_EYES_DISCOVERY_DESC"
+	illustration = "gfx/interface/illustrations/event_scenes/corridor.dds"
+	category = hostile
+	target_type = character
+	is_secret = yes
+	icon = icon_scheme_hostile
+	maximum_breaches = 5
+	cooldown = { days = 10 }
+
+	speed_per_skill_point = 3.0
+	speed_per_target_skill_point = 1.0
+	base_progress_goal = t2_base_phase_length_value
+	maximum_secrecy = 85
+	base_maximum_success = t2_base_max_success_value
+	phases_per_agent_charge = 1
+	success_chance_growth_per_skill_point = 3.0
+	
+	minimum_progress_chance = 10
+	maximum_progress_chance = 90
+	minimum_success = 5
+	maximum_secrecy = 95
+	maximum_success = 95
+	
+	allow = {
+		age >= 14
+		is_imprisoned = no
+	}
+	
+	valid = {
+		trigger_if = {
+			limit = {
+				is_parent_of = scope:target
+				NOT = {
+					has_trait_with_flag = can_murder_own_children
+				}
+			}
+			NOT = { is_parent_of = scope:target }
+		}
+		custom_description = {
+			object = scope:target
+			text = "I_have_imprisoned_target"
+			scope:target = {
+				NOT = { imprisoner = scope:owner }
+			}
+		}
+		custom_description = {
+			object = scope:target
+			text = i_have_been_caught_trying_to_murder_target
+			scope:target = {
+				NOT = {
+					has_opinion_modifier = {
+						target = prev
+						modifier = murder_personal_grudge_opinion
+					}
+				}
+			}
+		}
+		scope:target = {
+			OR = {
+				exists = location
+				in_diplomatic_range = scope:owner
+			}
+		}
+	}
+
+	agent_leave_threshold = -25
+	agent_join_chance = {
+		base = 0
+		
+		ai_agent_join_chance_basic_suite_modifier = yes
+		ai_agent_join_chance_hostile_grievous_modifier = yes
+	}
+	agent_groups_owner_perspective = { courtiers guests scripted_relations }
+	agent_groups_target_character_perspective = { courtiers vassals }
+	valid_agent = { is_valid_agent_standard_trigger = yes }
+	
+	agent_join_chance = {
+		
+	}
+
+	odds_prediction = {
+		add = hostile_scheme_base_odds_prediction_target_is_char_value
+		add = odds_skill_contribution_intrigue_value
+		add = agent_groups_owner_perspective_value
+		add = agent_groups_target_character_perspective_value
+		add = odds_abduct_scheme_misc_value 
+		min = 0
+	}
+
+	base_success_chance = {
+		base = 0
+		scheme_type_skill_success_chance_modifier = { SKILL = INTRIGUE }
+
+		hostile_scheme_base_chance_modifier = yes
+
+		# Countermeasures.
+		apply_calculated_scheme_success_chance_adjustments_modifier = yes
+
+		modifier = {
+			add = 10
+			scope:owner = { has_trait = lifestyle_herbalist }
+			desc = MURDER_HERBALIST_BONUS
+		}
+
+		modifier = {
+			add = -50
+			scope:target = {				
+				has_opinion_modifier = {
+					target = scope:owner
+					modifier = attempted_murder_me_crime
+				}
+			}
+			desc = HAS_ATTEMPTED_TO_MURDER_TARGET_BEFORE
+		}
+
+		# You found their escape tunnel
+		modifier = {
+			add = 100
+			desc = "SCHEME_DISCOVERED_ESCAPE_TUNNEL"
+			scope:owner = {
+				exists = var:discovered_escape_tunnel_of
+				var:discovered_escape_tunnel_of = scope:target
+			}
+		}
+		
+		# Spiritual Head of Faith
+		modifier = {
+			add = -50
+			desc = "SCHEME_VS_SPIRITUAL_HOF"
+			scope:target = {
+				faith = scope:owner.faith
+				faith = {
+					has_doctrine = doctrine_spiritual_head
+				}
+				faith = {
+					exists = religious_head
+					religious_head = {
+			 			this = scope:target
+			 		}
+				}
+			}
+		}
+
+		# Sponsored Inspiration
+		modifier = {
+			add = -25
+			desc = target_has_sponsored_inspiration
+			scope:target = {
+				exists = inspiration
+				inspiration = { exists = inspiration_sponsor }
+			}
+		}
+
+		# Family Feud
+		house_feud_hostile_scheme_success_modifier = yes
+
+		# Various penalties
+		first_valid = {
+			modifier = { # Foreign Rulers are very hard to kidnap
+				add = -75
+				desc = "sway_foreign_target"
+				scope:target = {
+					is_ruler = yes
+					NOT = {
+						scope:target.top_liege = scope:owner.top_liege
+					}
+				}
+			}
+			modifier = { # Foreign subjects less so
+				add = -40
+				desc = "sway_foreign_target"
+				scope:target = {
+					is_foreign_court_or_pool_guest = no
+					NOT = {
+						scope:target.top_liege = scope:owner.top_liege
+					}
+				}
+			}
+			modifier = { # Rulers are harder to kidnap
+				add = -50
+				desc = "FABRICATE_HOOK_RULER_TARGET"
+				scope:target = {
+					is_ruler = yes
+					scope:target.top_liege = scope:owner.top_liege
+				}
+			}
+		}
+
+		# At War
+		first_valid = {
+			modifier = {
+				add = -200
+				desc = "SCHEME_AT_WAR"
+				scope:target = {
+					is_at_war_with = scope:owner
+				}
+			}
+			modifier = {
+				add = -150
+				scope:target = {
+					is_playable_character = no
+					exists = liege
+					liege = {
+						is_at_war_with = scope:owner
+					}
+				}
+				desc = "SCHEME_AT_WAR_WITH_LIEGE"
+			}
+			modifier = {
+				add = -100
+				scope:target = {
+					is_playable_character = yes
+					exists = liege
+					liege = {
+						is_at_war_with = scope:owner
+					}
+				}
+				desc = "SCHEME_AT_WAR_WITH_LIEGE"
+			}
+		}
+
+		# Diarchs are better at schemes within their liege's realm
+		diarch_scheming_within_realm_bonus_modifier = yes
+		
+		# You have a secret tunnel yourself
+		modifier = {
+			add = 25
+			desc = "SCHEME_SECRET_DOMICILE_TUNNEL"
+			scope:owner = {
+				exists = var:ep3_secret_tunnels_var
+			}
+		}
+
+		# Tailor
+		modifier = {
+			add = 10
+			scope:owner = {
+				has_character_modifier = tournament_tailor_mixup_scheme_modifier
+				exists = var:tailor_mixup_house
+				exists = scope:target.house
+				var:tailor_mixup_house = scope:target.house
+			}
+			desc = "tournament_tailor_mixup_scheme_modifier_value"
+		}
+	}
+
+	on_start = {
+		set_variable = {
+			name = apply_countermeasures
+			value = flag:calculating
+		}
+		add_scheme_starting_opportunities_intrigue_effect = yes
+		# Fallback agents — a balanced config if you start the scheme from script.
+		if = {
+			limit = {
+				scheme_owner = {
+					NOT = { has_variable = agents_added }
+				}
+			}
+			add_agent_slot = agent_thug
+			add_agent_slot = agent_thug
+			add_agent_slot = agent_muscle
+			add_agent_slot = agent_footpad
+			add_agent_slot = agent_lookout
+		}
+	}
+	on_phase_completed = {
+		suppress_scheme_follow_up_event_till_input_given_effect = yes
+		abduct_scheme_prep_effect = yes
+		cap_schemes_and_fire_reminders_effect = yes
+	}
+	on_hud_click  = { abduct_scheme_prep_effect = yes }
+	on_semiyearly = {
+		if = {
+			limit = {
+				scheme_owner = { is_ai = yes }
+			}
+			abduct_scheme_prep_effect = yes
+		}
+	}
+
+	on_ready = {
+		scheme_owner = {
+			trigger_event = {
+				id = steal_eyes_outcome.0002
+				days = 1
+			}
+		}
+	}
+
+	on_monthly = {
+		hostile_scheme_discovery_chance_effect = yes
+		if = {
+			limit = {
+				NOT = { exists = scope:discovery_event_happening }
+			}			
+			scheme_owner = {
+				trigger_event = {
+					on_action = murder_ongoing
+					days = { 1 30 }
+				}
+			}
+		}
+	}
+	
+	on_invalidated = {
+		if = { #Did the character die in another way?
+			limit = {
+				scheme_target = {
+					is_alive = no
+					NOT = { killer = prev.scheme_owner }
+				}
+			}
+			scheme_owner = {
+				trigger_event = murder_outcome.2000
+			}
+		}
+
+		if = { #Did the character move outside of diplomatic range
+			limit = {
+				scheme_target = {
+					NOT = { in_diplomatic_range = prev.scheme_owner }
+				}
+			}
+			scheme_owner = {
+				trigger_event = murder_outcome.2500
+			}
+		}
+	}
+
+	
+	
+
+	
+
+}

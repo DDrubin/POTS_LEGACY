@@ -1,297 +1,196 @@
 ﻿hyuga = {
-
-	birth = 5
 	category = health
-	random_creation = 5
-	genetic = yes
-	
-	prowess = 6
-	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
-	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
-
-
-	general_opinion = 5
-	same_opinion = 15
-	
-	ruler_designer_cost = 40
-
-	name = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = "Hyuga"
-			}
-			desc = "Hyuga"
-		}
+	opposites = {
+		uchiha
+		forbiddengene
+		Kaguja_Bloodline
+		aburame
+		Guren_Bloodline
+		Yamanaka_Bloodline
+		Hozuki_Bloodline
+		Ryudoin_Bloodline
+		Terumi_Bloodline
+		
+		Kurotsuchi_Bloodline
 	}
+	index = 2011
+	fame = yes	
 
+	health = 0.10 
+    fertility = 0.05 	
+	
+	
+	inherit_chance = 1000	
+	inbreeding_chance = -1
+	opposite_opinion = -100
+	genetic = yes
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 100
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_hyuga_desc
+				desc = trait_hyuga
 			}
 			desc = trait_hyuga_desc
 		}
 	}
-
-	level = 2
-	
-	ai_energy = 20
-	
-	genetic = yes
-	#physical = yes
-	good = yes
 }
 
 uchiha = {
-
-	birth = 5
-	random_creation = 5
-	category = health
-	good = yes
-	
-	prowess = 6
-	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
-	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
-
-	genetic = yes
-
-	general_opinion = 5
-	same_opinion = 15
-	
-	ruler_designer_cost = 10
-
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_uchiha_desc
-			}
-			desc = trait_uchiha_desc
-		}
+	opposites = {
+		hyuga
+		forbiddengene
+		Kaguja_Bloodline
+		aburame
+		Guren_Bloodline
+		Yamanaka_Bloodline
+		Hozuki_Bloodline
+		Ryudoin_Bloodline
+		Terumi_Bloodline
+		
+		Kurotsuchi_Bloodline
 	}
 
-	level = 2
+	index = 2000
+	name = uchiha
 	
-	ai_energy = 20
-	
+	fame = yes
+
+	health = 0.5
+	inbreeding_chance = -1
+	positive_random_genetic_chance = 0.3
+
+	opposite_opinion = -100
+	inherit_chance = 1000
 	genetic = yes
-	#physical = yes
-	good = yes
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 100
+
 }
 
 aburame = {
-	category = health
-	birth = 15
-	random_creation = 5
-	
-	prowess = 6
-	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
-	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
-
-	genetic = yes
-
-	general_opinion = 5
-	same_opinion = 15
-	
-	ruler_designer_cost = 40
-
-	name = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = "Akimichi"
-			}
-			desc = "Akimichi"
-		}
+	icon = "aburame.dds"
+	opposites = {
+		uchiha
+		forbiddengene
+		Kaguja_Bloodline
+		Guren_Bloodline
+		Yamanaka_Bloodline
+		Hozuki_Bloodline
+		Ryudoin_Bloodline
+		Terumi_Bloodline
+		
+		Kurotsuchi_Bloodline
 	}
+	shown_in_ruler_designer = yes
 
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_hyuga_desc
-			}
-			desc = trait_hyuga_desc
-		}
-	}
+	health = 0.5 
+    fertility = 0.10 
+    positive_random_genetic_chance = 0.1
 
-	level = 2
-	
-	ai_energy = 20
-	
+	fame = yes
+
+	inherit_chance = 1000
+	inbreeding_chance = -1
 	genetic = yes
-	#physical = yes
-	good = yes
+	ruler_designer_cost = 100
 }
 
 akimichi = {
 
-	birth = 15
-	random_creation = 5
+	icon = "akimichi.dds"
 	
-	prowess = 6
-	#monthly_shinobi_lifestyle_xp_gain_mult = 0.4
-	#monthly_missing_nin_lifestyle_xp_gain_mult = 0.4
+	shown_in_ruler_designer = yes
 
+    health = 0.5
+
+	fame = yes
+	
+	inbreeding_chance = -1
+	positive_random_genetic_chance = 0.1
+	
+	inherit_chance = 1000
 	genetic = yes
-
-	general_opinion = 5
-	same_opinion = 15
-	
-	ruler_designer_cost = 40
-
-	name = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { NOT = { exists = this } }
-				desc = "Akimichi"
-			}
-			desc = "Akimichi"
-		}
-	}
-
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = "Noble blood runs through your viens."
-			}
-			desc = "Noble blood runs through your viens."
-		}
-	}
-
-	level = 2
-	
-	ai_energy = 20
-	
-	genetic = yes
-	#physical = yes
-	good = yes
+	ruler_designer_cost = 100
 }
 
 ninja_rank_1 = {
-
-	name = "Genin"
-	category = commander
-
-
-
-	diplomacy  = 2
-	stewardship = 2
-	martial = 3
-	prowess = 3
-
-	potential = {
-		has_trait = chakra_control
-	}
-
-	# Change everything past this point
-	movement_speed = 0.05
-	knight_limit = 1
-
-	prestige = 0.5
-	general_opinion = 2
-
-	shown_in_ruler_design = no
-	
-
+	index = 708
+	diplomacy = 1
+	martial = 1
+	intrigue = 1
+	learning = 1
+	prowess = 2
+	health = 1
+	monthly_dynasty_prestige = 0.1
+	ruler_designer_cost = 10
+	inherit_chance = 0
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = "Genin are the lowest rank of ninja. As a Genin, you'll do your part to make the realm function."
+				desc = trait_ninja_rank_1
 			}
-			desc = "Genin are the lowest rank of ninja. As a Genin, you'll do your part to make the realm function."
+			desc = trait_ninja_rank_1_desc
 		}
 	}
 }
 
 ninja_rank_2 = {
-
-	name = "Chunin"
-
-	potential = {
-		has_trait = chakra_control
-	}
-
-
-	diplomacy  = 4
-	stewardship = 4
-	martial = 6
-	prowess = 6
-
-	# Change everything past this point
-	movement_speed = 0.1
-	knight_limit = 3
-
-	prestige = 1
-	general_opinion = 5
-
-	shown_in_ruler_design = no
-
+	index = 709
+	diplomacy = 2
+	martial = 2
+	intrigue = 2
+	learning = 2
+	prowess = 2
+	health = 1.2
+	monthly_dynasty_prestige = 0.2
+	ruler_designer_cost = 15
+	inherit_chance = 0
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = "As a Chunin, or Middle Ninja, you have the leadership skills and tactical prowess to take on heftier missions."
+				desc = trait_ninja_rank_2
 			}
-			desc = "As a Chunin, or Middle Ninja, you have the leadership skills and tactical prowess to take on heftier missions."
+			desc = trait_ninja_rank_2_desc
 		}
 	}
 }
 
 ninja_rank_3 = {
-
-	name = "Jonin"
-
-	potential = {
-		has_trait = chakra_control
-	}
-
-
-
-	diplomacy  = 8
-	stewardship = 8
-	martial = 12
-	prowess = 12
-
-
-	# Change everything past this point
-	movement_speed = 0.15
-	knight_limit = 6
-
-	prestige = 3
-	general_opinion = 10
-
-	shown_in_ruler_design = no
-
-
+	index = 710
+	diplomacy = 3
+	martial = 4
+	intrigue = 3
+	learning = 3
+	prowess = 4
+	health = 1.4
+	ruler_designer_cost = 20
+	monthly_dynasty_prestige = 0.3
+	inherit_chance = 0
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = "You are a Jonin, or High Ninja. You are a highly experienced and highly skilled shinobi who can carry out dangerous missions solo."
+				desc = trait_ninja_rank_3
 			}
-			desc = "You are a Jonin, or High Ninja. You are a highly experienced and highly skilled shinobi who can carry out dangerous missions solo."
+			desc = trait_ninja_rank_3_desc
 		}
 	}
 }
+
+
 
 ninja_rank_4 = {
 
@@ -302,22 +201,17 @@ ninja_rank_4 = {
 	}
 
 
-	diplomacy  = 16
-	stewardship = 16
-	martial = 24
-	prowess = 24
-
-
-	ruler_designer_cost = 200
-
-	# Change everything past this point
-	movement_speed = 0.2
-	knight_limit = 10
-
-	prestige = 4
-	general_opinion = 15
-
-	shown_in_ruler_design = no
+	diplomacy = 4
+	martial = 5
+	stewardship = 2
+	intrigue = 5
+	learning = 4
+	prowess = 6
+	health = 1.6
+	ruler_designer_cost = 25
+	monthly_dynasty_prestige = 0.5
+	inherit_chance = 0
+	no_prowess_loss_from_age = yes
 
 
 	desc = {
@@ -334,79 +228,83 @@ ninja_rank_4 = {
 }
 
 ninja_rank_5 = {
-
-	name = "Kage"
-
-	random_creation = 1
-
-	potential = {
-		has_trait = chakra_control
-	}
-
-
-	diplomacy  = 30
-	stewardship = 30
-	martial = 30
-	prowess = 30
-
-	ruler_designer_cost = 350
-
-	# Change everything past this point
-	movement_speed = 0.25
-	knight_limit = 15
-
-	prestige = 5
-	general_opinion = 25
-
-
-
+	index = 711
+	diplomacy = 6
+	martial = 7
+	stewardship = 4
+	intrigue = 7
+	learning = 6
+	prowess = 8
+	health = 2
+	ruler_designer_cost = 50
+	monthly_dynasty_prestige = 1
+	inherit_chance = 0
+	no_prowess_loss_from_age = yes
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = "Kage is a title reserved for only the strongest and most capable of shinobi. You are the ultimate protector of your realm."
+				desc = trait_ninja_rank_5
 			}
-			desc = "Kage is a title reserved for only the strongest and most capable of shinobi. You are the ultimate protector of your realm."
+			desc = trait_ninja_rank_5_desc
 		}
 	}
 }
 
 sharingan_tomoe_1 = {
-	category = fame
+	icon = "onetomoe.dds"
+
+	same_opinion = 5
+	general_opinion = -4
+	prowess = 1 
 
 	good = yes
+	physical = yes
 
-	martial = 2
-	intrigue = 2
-	learning = 2
-	prowess = 3
+	ruler_designer_cost = 20
 
-	monthly_prestige = 0.5
-
-	track = {
-		0 = {}
-		50 = {
-			#name = ""
-			#desc = ""
-		}
-		100 = {
-			#name = ""
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = sharingan_tomoe_1 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_1
+							track = sharingan_tomoe_1_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = sharingan_tomoe_1 }
+					}
+				}
+				desc = trait_sharingan_tomoe_1
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_1
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_1
+							track = sharingan_tomoe_1_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_1_level_3
+			}
+			desc = trait_sharingan_tomoe_1_level_2
 		}
 	}
 
-
-	dread = 2
-
-	personal_scheme_power_add = 2
-	hostile_scheme_power_add = 2
-	hostile_scheme_resistance_add = 2
-
-	general_opinion = 5
-	
-	ruler_designer_cost = 10
-	
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -415,48 +313,106 @@ sharingan_tomoe_1 = {
 				}
 				desc = trait_sharingan_tomoe_1_desc
 			}
-			desc = trait_sharingan_tomoe_1_desc
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = sharingan_tomoe_1 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_1
+							track = sharingan_tomoe_1_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_1_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_1
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_1
+							track = sharingan_tomoe_1_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_1_desc_level_3
+			}
+			desc = trait_sharingan_tomoe_1_desc_level_2
 		}
 	}
+
+	tracks = {
+		sharingan_tomoe_1_track = {
+			trait_second_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}
+			trait_third_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}		
+		}	
+	}	
 }
 
 sharingan_tomoe_2 = {
+	icon = "twotomoe.dds"
+
+	same_opinion = 5
+	general_opinion = -2
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+
 	good = yes
+	physical = yes
 
-	category = fame
+	ruler_designer_cost = 30
 
-	martial = 6
-	intrigue = 7
-	learning = 7
-	prowess = 8
-
-	dread = 8
-
-	uchiha_opinion = 6
-
-	health = 0.2
-
-	track = {
-		0 = {}
-		50 = {
-			#name = ""
-			#desc = ""
-		}
-		100 = {
-			#name = ""
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = sharingan_tomoe_2 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_2
+							track = sharingan_tomoe_2_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = sharingan_tomoe_2 }
+					}
+				}
+				desc = trait_sharingan_tomoe_2
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_2
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_2
+							track = sharingan_tomoe_2_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_2_level_3
+			}
+			desc = trait_sharingan_tomoe_2_level_2
 		}
 	}
 
-	monthly_prestige = 1
-
-	personal_scheme_power_add = 5
-	hostile_scheme_power_add = 5
-	hostile_scheme_resistance_add = 4
-
-	general_opinion = 10
-	
-	ruler_designer_cost = 20
-	
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -465,49 +421,106 @@ sharingan_tomoe_2 = {
 				}
 				desc = trait_sharingan_tomoe_2_desc
 			}
-			desc = trait_sharingan_tomoe_2_desc
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = sharingan_tomoe_2 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_2
+							track = sharingan_tomoe_2_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_2_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_2
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_2
+							track = sharingan_tomoe_2_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_2_desc_level_3
+			}
+			desc = trait_sharingan_tomoe_2_desc_level_2
 		}
 	}
-	
+
+	tracks = {
+		sharingan_tomoe_2_track = {
+			trait_second_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}
+			trait_third_level = {
+				martial = 1
+				intrigue = 1
+				prowess = 1
+			}		
+		}	
+	}	
 }
 
 sharingan_tomoe_3 = {
+	icon = "threetomoe.dds"
+
+	same_opinion = 5
+	general_opinion = -2
+	martial = 1
+	intrigue = 1
+	prowess = 1 
+
 	good = yes
+	physical = yes
 
-	category = fame
+	ruler_designer_cost = 40
 
-	martial = 15
-	intrigue = 15
-	learning = 15
-	prowess = 20
-
-	dread_baseline_add = 15
-
-	uchiha_opinion = 12
-
-	health = 1
-
-	track = {
-		0 = {}
-		50 = {
-			#name = ""
-			#desc = ""
-		}
-		100 = {
-			#name = ""
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = sharingan_tomoe_3 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_3
+							track = sharingan_tomoe_3_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = sharingan_tomoe_3 }
+					}
+				}
+				desc = trait_sharingan_tomoe_3
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_3
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_3
+							track = sharingan_tomoe_3_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_3_level_3
+			}
+			desc = trait_sharingan_tomoe_3_level_2
 		}
 	}
 
-	general_opinion = 15
-
-	monthly_prestige = 3
-
-	personal_scheme_power_add = 15
-	hostile_scheme_power_add = 15
-	hostile_scheme_resistance_add = 10
-	
-	ruler_designer_cost = 60
-	
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -516,62 +529,105 @@ sharingan_tomoe_3 = {
 				}
 				desc = trait_sharingan_tomoe_3_desc
 			}
-			desc = trait_sharingan_tomoe_3_desc
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = sharingan_tomoe_3 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_3
+							track = sharingan_tomoe_3_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_3_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_3
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_3
+							track = sharingan_tomoe_3_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_3_desc_level_3
+			}
+			desc = trait_sharingan_tomoe_3_desc_level_2
 		}
 	}
+
+	tracks = {
+		sharingan_tomoe_3_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 1
+			}
+			trait_third_level = {
+				owned_personal_scheme_success_chance_add = 15
+				monthly_prestige = 0.2
+			}		
+		}	
+	}	
 }
 
 sharingan_tomoe_4 = {
-	name = "Heavenly Eyes"
+	icon = "mangekyosharingan_4.dds"
+
+	same_opinion = 5
+	general_opinion = -5
+	martial = 1
+	intrigue = 1
+	prowess = 2 
+	monthly_prestige = 0.2
+	dread_baseline_add = 10
+	
 
 	good = yes
+	physical = yes
 
-	category = fame
+	ruler_designer_cost = 100
 
-	martial = 30
-	intrigue = 30
-	learning = 30
-	stewardship = 20
-	prowess = 40
-
-	monthly_prestige_gain_per_knight_add = 0.5
-
-	uchiha_opinion = 20
-
-	monthly_prestige = 10
-
-	dread_baseline_add = 50
-
-	health = 3
-
-	general_opinion = 20
-
-	personal_scheme_power_add = 20
-	hostile_scheme_power_add = 20
-	hostile_scheme_resistance_add = 15
-	
-	ruler_designer_cost = 500
-
-	track = {
-		50 = {
-			martial = -10
-			intrigue = -10
-			learning = -10
-			stewardship = -10
-			prowess = -10
-		}
-		100 = {
-			martial = -20
-			intrigue = -20
-			learning = -20
-			stewardship = -20
-			prowess = -40
-
-			monthly_prestige = -10
-			dread_baseline_add = -50
-			health = -3
-			general_opinion = -20
-			hostile_scheme_power_add = -15
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = sharingan_tomoe_4 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_4
+							track = sharingan_tomoe_4_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = sharingan_tomoe_4 }
+					}
+				}
+				desc = trait_sharingan_tomoe_4
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_4
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_4
+							track = sharingan_tomoe_4_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_4_level_3
+			}
+			desc = trait_sharingan_tomoe_4_level_2
 		}
 	}
 
@@ -583,103 +639,111 @@ sharingan_tomoe_4 = {
 				}
 				desc = trait_sharingan_tomoe_4_desc
 			}
-			desc = trait_sharingan_tomoe_4_desc
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = sharingan_tomoe_4 }
+						has_trait_xp = {
+							trait = sharingan_tomoe_4
+							track = sharingan_tomoe_4_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_4_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sharingan_tomoe_4
+					OR = {
+						has_trait_xp = {
+							trait = sharingan_tomoe_4
+							track = sharingan_tomoe_4_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_sharingan_tomoe_4_desc_level_3
+			}
+			desc = trait_sharingan_tomoe_4_desc_level_2
 		}
 	}
+
+	tracks = {
+		sharingan_tomoe_4_track = {
+			trait_second_level = {
+				martial = 2
+				intrigue = 2
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 10
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}
+			trait_third_level = {
+				prowess = 2
+				monthly_prestige = 0.2
+				dread_baseline_add = 20
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 15
+			}		
+		}	
+	}	
 }
 
 byakugan = {
+	icon = "byakugan.dds"
 
-	category = fame
-
-	martial = 6
-	diplomacy = 6
-	stewardship = 6
-	intrigue = 6
-	learning = 6
-	prowess = 6
-
-	dread = 6
-
-	hyuga_opinion = 6
-
-	health = 0.2
+	same_opinion = 5
 
 	monthly_prestige = 0.5
+	enemy_hostile_scheme_success_chance_add = -10
 
-	personal_scheme_power_add = 5
-	hostile_scheme_power_add = 5
-	hostile_scheme_resistance_add = 5
+	good = yes
+	physical = yes
 
-	track = {
-		10 = {
-			martial = 2
-			diplomacy = 2
-			stewardship = 2
-			intrigue = 2
-			learning = 2
-			prowess = 2
-		
-			dread = 2
-		
-			hyuga_opinion = 6
+	ruler_designer_cost = 300
 
-			monthly_prestige = 0.25
-		
-			health = 0.2
-
-			personal_scheme_power_add = 5
-			hostile_scheme_power_add = 5
-			hostile_scheme_resistance_add = 10
-
-			trait = gentle_fist
-			flag = byakugan_wielder_novice
-		}
-		50 = {
-			martial = 8
-			diplomacy = 8
-			stewardship = 8
-			intrigue = 8
-			learning = 8
-			prowess = 8
-		
-			dread = 10
-		
-			hyuga_opinion = 16
-
-			monthly_prestige = 1
-		
-			health = 0.5
-
-			personal_scheme_power_add = 10
-			hostile_scheme_power_add = 10
-			hostile_scheme_resistance_add = 30
-
-			flag = byakugan_wielder_intermediate
-			trait = eight_trigrams_64
-		}
-		100 = {
-			martial = 16
-			diplomacy = 16
-			stewardship = 16
-			intrigue = 16
-			learning = 16
-			prowess = 16
-		
-			dread = 10
-		
-			hyuga_opinion = 16
-
-			monthly_prestige = 1
-		
-			health = 0.5
-
-			personal_scheme_power_add = 20
-			hostile_scheme_power_add = 20
-			hostile_scheme_resistance_add = 90
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = {
+							NOT = { exists = this }
+						}
+					}
+					trigger_else_if = {
+						limit = { has_trait = byakugan }
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value < 50
+						}
+					}
+					trigger_else = {
+						NOT = { has_trait = byakugan }
+					}
+				}
+				desc = trait_byakugan
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = byakugan
+					OR = {
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_byakugan_level_3
+			}
+			desc = trait_byakugan_level_2
 		}
 	}
-	
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -688,8 +752,56 @@ byakugan = {
 				}
 				desc = trait_byakugan_desc
 			}
-			desc = trait_byakugan_desc
+			triggered_desc = {
+				trigger = {
+					trigger_if = {
+						limit = { has_trait = byakugan }
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value < 50
+						}
+					}
+				}
+				desc = trait_byakugan_desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = byakugan
+					OR = {
+						has_trait_xp = {
+							trait = byakugan
+							track = byakugan_track
+							value = 100
+						}
+					}
+				}
+				desc = trait_byakugan_desc_level_3
+			}
+			desc = trait_byakugan_desc_level_2
 		}
 	}
-	
+
+	tracks = {
+		byakugan_track = {
+			trait_second_level = {
+				martial = 1
+				diplomacy = 1
+				intrigue = 5
+				prowess = 2
+				monthly_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 10
+			}
+			trait_third_level = {
+				martial = 1
+				diplomacy = 1
+				intrigue = 5
+				prowess = 2
+				monthly_prestige = 0.5
+				enemy_hostile_scheme_success_chance_add = -10
+				owned_personal_scheme_success_chance_add = 10
+			}		
+		}	
+	}	
 }
