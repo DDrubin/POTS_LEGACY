@@ -1,4 +1,4 @@
-terumi_legacy_1 = { 
+﻿terumi_legacy_1 = { 
     legacy = terumi_legacy_track 
     character_modifier = { 
          
@@ -24,7 +24,7 @@ terumi_legacy_3 = {
     } 
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 } 
 
@@ -49,7 +49,7 @@ terumi_legacy_5 = {
     } 
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 
@@ -83,7 +83,7 @@ hozuki_legacy_3 = {
     }
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 }
 
@@ -109,7 +109,7 @@ hozuki_legacy_5 = {
     }
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 
@@ -145,7 +145,7 @@ yamanaka_legacy_3 = {
     }
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 }
 
@@ -171,7 +171,7 @@ yamanaka_legacy_5 = {
     }
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 
@@ -205,7 +205,7 @@ ryudoin_legacy_3 = {
     }
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 }
 
@@ -229,7 +229,7 @@ ryudoin_legacy_5 = {
     }
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 
@@ -264,7 +264,7 @@ guren_legacy_3 = {
     }
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 }
 
@@ -291,7 +291,7 @@ guren_legacy_5 = {
     }
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 
@@ -326,7 +326,7 @@ kurotsuchi_legacy_3 = {
         
     }
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 }
 
@@ -349,7 +349,7 @@ kurotsuchi_legacy_5 = {
         vassal_opinion = 5
     }
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 kaguja_legacy_1 = { 
@@ -380,7 +380,7 @@ kaguja_legacy_3 = {
     } 
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 } 
 
@@ -406,7 +406,7 @@ kaguja_legacy_5 = {
     } 
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 
@@ -437,7 +437,7 @@ aburame_legacy_3 = {
     } 
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 } 
 
@@ -461,7 +461,7 @@ aburame_legacy_5 = {
     } 
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 }
 
@@ -493,7 +493,7 @@ hyuga_legacy_3 = {
     } 
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 } 
 
@@ -516,7 +516,7 @@ hyuga_legacy_5 = {
     } 
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 } 
 
@@ -547,7 +547,7 @@ uchiha_legacy_3 = {
     } 
 
     traits = {
-        ninjarank_genin = 100
+        ninja_rank_1 = 100
     }
 } 
 
@@ -571,7 +571,7 @@ uchiha_legacy_5 = {
     } 
 
     traits = {
-        ninjarank_chunin = 100
+        ninja_rank_2 = 100
     }
 } 
 

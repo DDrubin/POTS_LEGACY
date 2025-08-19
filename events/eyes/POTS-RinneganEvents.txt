@@ -19,7 +19,7 @@ RinneganEvents.001 = {
 			has_trait = eternalsharingan
 			NOT = { has_trait = rinnegan }
 			has_trait = senjugene
-			has_trait = uchihagene
+			has_trait = uchiha
 			has_trait = shinobi_dynasty
 			is_adult = yes
         }
@@ -37,7 +37,7 @@ RinneganEvents.001 = {
 			has_mangekyosharingan = no
 			has_trait = eternalsharingan
 			NOT = { has_trait = rinnegan }
-			has_trait = uchihagene
+			has_trait = uchiha
 			has_trait = shinobi_dynasty
 			is_adult = yes	
 		}

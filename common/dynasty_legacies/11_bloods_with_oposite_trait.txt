@@ -1,0 +1,89 @@
+﻿hyuga_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = hyuga
+		}
+	}
+}
+
+uchiha_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = uchiha
+		}
+	}
+}
+
+kaguja_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = Kaguja_Bloodline
+		}
+	}
+}
+
+aburame_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = aburame
+		}
+	}
+}
+
+kurotsuchi_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = Kurotsuchi_Bloodline
+		}
+	}
+}
+
+Guren_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = Guren_Bloodline
+		}
+	}
+}
+
+yamanaka_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = Yamanaka_Bloodline
+		}
+	}
+}
+
+hozuki_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = Hozuki_Bloodline
+		}
+	}
+}
+
+ryudoin_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = Ryudoin_Bloodline
+		}
+	}
+}
+
+terumi_legacy_track = {
+	is_shown = {
+		AND = {		
+			has_trait = shinobi_dynasty
+			has_trait = Terumi_Bloodline
+		}
+	}
+}

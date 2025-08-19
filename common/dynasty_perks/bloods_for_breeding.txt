@@ -1,4 +1,4 @@
-senju_legacy_1 = { 
+﻿senju_legacy_1 = { 
     legacy = senju_legacy_track 
     character_modifier = { 
         cultural_head_acceptance_gain_mult = 0.10 
@@ -26,7 +26,7 @@ senju_legacy_3 = {
     } 
 
     traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 } 
 
@@ -48,7 +48,7 @@ senju_legacy_5 = {
     } 
 
     traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 } 
 
@@ -77,7 +77,7 @@ uzumaki_legacy_3 = {
     } 
 
     traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
     description = "Advanced level with strategic and combat bonuses." 
 } 
@@ -100,7 +100,7 @@ uzumaki_legacy_5 = {
     description = "Ultimate level with leadership and combat advantages."
 
     traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	} 
 } 
 
@@ -145,7 +145,7 @@ spirit_magic_legacy_3 = {
         monthly_piety_gain_mult = 0.2
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -171,7 +171,7 @@ spirit_magic_legacy_5 = {
         enemy_personal_scheme_success_chance_add = -70
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -212,7 +212,7 @@ yuki_legacy_3 = {
 		advantage = 2
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -238,7 +238,7 @@ yuki_legacy_5 = {
     	travel_safety_mult = 0.5
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -278,7 +278,7 @@ nara_legacy_3 = {
 		domain_limit = 1
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -303,7 +303,7 @@ nara_legacy_5 = {
 		monthly_lifestyle_xp_gain_mult = 0.3
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -339,7 +339,7 @@ akimichi_legacy_3 = {
 		 general_opinion = -5
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -364,7 +364,7 @@ akimichi_legacy_5 = {
 		army_damage_mult = 0.2
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -403,7 +403,7 @@ inuzuka_legacy_3 = {
     	stress_loss_mult = 0.5
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -428,7 +428,7 @@ inuzuka_legacy_5 = {
 		scheme_discovery_chance_mult = 0.1
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -467,7 +467,7 @@ kurama_legacy_3 = {
     	intrigue = 4
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -492,7 +492,7 @@ kurama_legacy_5 = {
     	owned_personal_scheme_success_chance_add = 25
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -528,7 +528,7 @@ tsuchigumo_legacy_3 = {
 		prowess = 10
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -552,7 +552,7 @@ tsuchigumo_legacy_5 = {
     	travel_safety_mult = 0.5
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -588,7 +588,7 @@ kazekage_legacy_3 = {
 		prowess = 5
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -612,7 +612,7 @@ kazekage_legacy_5 = {
 		desert_mountains_advantage = 10
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -651,7 +651,7 @@ kamizuru_legacy_3 = {
     	army_siege_value_mult = 0.7
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -676,7 +676,7 @@ kamizuru_legacy_5 = {
     	enemy_personal_scheme_success_chance_add = -30
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -712,7 +712,7 @@ fuma_legacy_3 = {
 		advantage = 3
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -734,7 +734,7 @@ fuma_legacy_5 = {
 		advantage = 4
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -769,7 +769,7 @@ hoshigaki_legacy_3 = {
 		martial = 3
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -793,7 +793,7 @@ hoshigaki_legacy_5 = {
 		prowess = 4
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -830,7 +830,7 @@ yurushi_legacy_3 = {
 		defender_advantage = -2
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -854,7 +854,7 @@ yurushi_legacy_5 = {
     	owned_personal_scheme_success_chance_add = 25
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -891,7 +891,7 @@ hirameki_legacy_3 = {
 		owned_scheme_secrecy_add = 10
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -914,7 +914,7 @@ hirameki_legacy_5 = {
 		enemy_hostile_scheme_success_chance_add = -20
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -949,7 +949,7 @@ hatake_legacy_3 = {
 		advantage = 2
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -973,7 +973,7 @@ hatake_legacy_5 = {
 		learning = 3
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -1010,7 +1010,7 @@ yu_legacy_3 = {
     	intrigue = 3
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -1034,7 +1034,7 @@ yu_legacy_5 = {
 		owned_personal_scheme_success_chance_add = 5
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -1070,7 +1070,7 @@ daimon_legacy_3 = {
 		prowess = 4
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -1092,7 +1092,7 @@ daimon_legacy_5 = {
 		prowess = 4
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
 	}
 }
 
@@ -1127,7 +1127,7 @@ ichinose_legacy_3 = {
 		prowess = 5
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -1150,7 +1150,7 @@ ichinose_legacy_5 = {
 		maa_toughness_mult = 0.5
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
     }
 }
 
@@ -1186,7 +1186,7 @@ reiji_legacy_3 = {
 		learning = 3
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -1209,7 +1209,7 @@ reiji_legacy_5 = {
 		owned_personal_scheme_success_chance_add = 5
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
     }
 }
 
@@ -1244,7 +1244,7 @@ watari_legacy_3 = {
 		advantage = 8
 	}
 	traits = {
-		ninjarank_genin = 70
+		ninja_rank_1 = 70
 	}
 }
 
@@ -1267,6 +1267,6 @@ watari_legacy_5 = {
 	
 	}
 	traits = {
-        ninjarank_chunin = 50
+        ninja_rank_2 = 50
     }
 }

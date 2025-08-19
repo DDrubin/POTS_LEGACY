@@ -116,36 +116,19 @@ MangekyoEvents.004 = {
 		trigger = {
 			root = {
 				has_trait = shinobi_dynasty
-				has_trait = uchihagene
-				has_trait = threetomoe
+				has_trait = uchiha
+				has_trait = sharingan_tomoe_3
 				NOT = {
 					scope:actor.prowess < scope:recipient.prowess
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+
 					has_trait = blind
 				}
 			}
 		}
-		random_list = {
-			25 = {
-				add_trait = mangekyosharingan_1
 
-			}
-			25 = {
-				add_trait = mangekyosharingan_2
+		add_trait = sharingan_tomoe_4
 
-			}
-			25 = {
-				add_trait = mangekyosharingan_3
-
-			}
-			25 = {
-				add_trait = mangekyosharingan_4
-
-			}
-		}
 		add_character_modifier = {
 			modifier = train_recently
 			months = 6
@@ -168,13 +151,10 @@ MangekyoEvents.004 = {
 		name = MangekyoEvents.004.a
 		trigger = {
 			scope:actor = {
-				has_trait = uchihagene
-				has_trait = threetomoe
+				has_trait = uchiha
+				has_trait = sharingan_tomoe_3
 				NOT = {
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
 				}
 			}
 		}
@@ -192,13 +172,10 @@ MangekyoEvents.005 = {
 	option = {
 		name = MangekyoEvents.005.a
 		trigger = {
-			has_trait = uchihagene
+			has_trait = uchiha
 			has_trait = shinobi_dynasty
 			OR = {
-				has_trait = mangekyosharingan_1
-				has_trait = mangekyosharingan_2
-				has_trait = mangekyosharingan_3
-				has_trait = mangekyosharingan_4
+				has_trait = sharingan_tomoe_4
 			}
 			NOT = { has_trait = eternalsharingan
 					
@@ -207,13 +184,10 @@ MangekyoEvents.005 = {
 				NOT = { has_trait = rinnegan }
 				NOT = { has_trait = rinnesharingan }
 		}
-		remove_trait = onetomoe
-		remove_trait = twotomoe
-		remove_trait = threetomoe
-		remove_trait = mangekyosharingan_1
-		remove_trait = mangekyosharingan_2
-		remove_trait = mangekyosharingan_3
-		remove_trait = mangekyosharingan_4
+		remove_trait = sharingan_tomoe_1
+		remove_trait = sharingan_tomoe_2
+		remove_trait = sharingan_tomoe_3
+		remove_trait = sharingan_tomoe_4
 		remove_trait = byakugan
 		remove_trait = tenseigan
 		remove_trait = jogan
@@ -237,13 +211,10 @@ MangekyoEvents.006 = {
 	trigger = {
 		root = {
 			has_trait = shinobi_dynasty
-			has_trait = uchihagene
-			has_trait = threetomoe
+			has_trait = uchiha
+			has_trait = sharingan_tomoe_3
 			NOT = {
-				has_trait = mangekyosharingan_1
-				has_trait = mangekyosharingan_2
-				has_trait = mangekyosharingan_3
-				has_trait = mangekyosharingan_4
+				has_trait = sharingan_tomoe_4
 				has_trait = eternalsharingan
 				has_trait = blind
 			}
@@ -325,37 +296,18 @@ MangekyoEvents.006 = {
 			root = {
 				exists = scope:dear
 				has_trait = shinobi_dynasty
-				has_trait = uchihagene
-				has_trait = threetomoe
+				has_trait = uchiha
+				has_trait = sharingan_tomoe_3
 				NOT = {
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
 					has_trait = blind
 				}
 				age >= 7
 			}			
 		}
 		root = {
-			random_list = {
-				25 = {
-					add_trait = mangekyosharingan_1
+			add_trait = sharingan_tomoe_4
 
-				}
-				25 = {
-					add_trait = mangekyosharingan_2
-
-				}
-				25 = {
-					add_trait = mangekyosharingan_3
-
-				}
-				25 = {
-					add_trait = mangekyosharingan_4
-
-				}
-			}
 			trigger_event = {
 				id = MangekyoEvents.005
 				years = 16

@@ -1,10 +1,10 @@
-#custom bloodlines
+﻿#custom bloodlines
 
 Kaguja_Bloodline = {
 	opposites = {
-		uchihagene
+		uchiha
 		forbiddengene
-		Aburame_Bloodline
+		aburame
 		Guren_Bloodline
 		Yamanaka_Bloodline
 		Hozuki_Bloodline
@@ -68,10 +68,10 @@ Kurotsuchi_Bloodline = {
 	name = trait_Kurotsuchi_Bloodline
 	icon = "S_Rank_Gen1jutsu.dds"
 	opposites = {
-		uchihagene
+		uchiha
 		forbiddengene
 		Kaguja_Bloodline
-		Aburame_Bloodline
+		aburame
 		Guren_Bloodline
 		Yamanaka_Bloodline
 		Hozuki_Bloodline
@@ -111,10 +111,10 @@ Guren_Bloodline = {
 	name = trait_Guren_Bloodline
 	icon = "S_Rank_Gen1jutsu.dds"
 	opposites = {
-		uchihagene
+		uchiha
 		forbiddengene
 		Kaguja_Bloodline
-		Aburame_Bloodline
+		aburame
 		Yamanaka_Bloodline
 		Hozuki_Bloodline
 		Ryudoin_Bloodline
@@ -137,10 +137,10 @@ Yamanaka_Bloodline = {
 	name = trait_Yamanaka_Bloodline
 	icon = "yamanaka_bloodline1.dds"
 	opposites = {
-		uchihagene
+		uchiha
 		forbiddengene
 		Kaguja_Bloodline
-		Aburame_Bloodline
+		aburame
 		Guren_Bloodline
 		Hozuki_Bloodline
 		Ryudoin_Bloodline
@@ -184,10 +184,10 @@ Hozuki_Bloodline = {
 	name = trait_Hozuki_Bloodline
 	icon = "hozuki_bloodline1.dds"
 	opposites = {
-		uchihagene
+		uchiha
 		forbiddengene
 		Kaguja_Bloodline
-		Aburame_Bloodline
+		aburame
 		Guren_Bloodline
 		Yamanaka_Bloodline
 		Ryudoin_Bloodline
@@ -312,10 +312,10 @@ Ryudoin_Bloodline = {
 	name = trait_Ryudoin_Bloodline
 	icon = "S_Rank_Gen1jutsu.dds"
 	opposites = {
-		uchihagene
+		uchiha
 		forbiddengene
 		Kaguja_Bloodline
-		Aburame_Bloodline
+		aburame
 		Guren_Bloodline
 		Yamanaka_Bloodline
 		Hozuki_Bloodline
@@ -465,10 +465,10 @@ Terumi_Bloodline = {
 	name = trait_Terumi_Bloodline
 	icon = "S_Rank_Gen1jutsu.dds"
 	opposites = {
-		uchihagene
+		uchiha
 		forbiddengene
 		Kaguja_Bloodline
-		Aburame_Bloodline
+		aburame
 		Guren_Bloodline
 		Yamanaka_Bloodline
 		Hozuki_Bloodline
@@ -544,135 +544,4 @@ senjugene = {
 	}
 }
 
-hyugagene = {
-	category = health
-	opposites = {
-		uchihagene
-		forbiddengene
-		Kaguja_Bloodline
-		Aburame_Bloodline
-		Guren_Bloodline
-		Yamanaka_Bloodline
-		Hozuki_Bloodline
-		Ryudoin_Bloodline
-		Terumi_Bloodline
-		
-		Kurotsuchi_Bloodline
-	}
-	index = 2011
-	name = trait_hyugagene	
-	fame = yes	
 
-	health = 0.10 
-    fertility = 0.05 	
-	
-	
-	inherit_chance = 1000	
-	inbreeding_chance = -1
-	opposite_opinion = -100
-	genetic = yes
-	shown_in_ruler_designer = yes
-	ruler_designer_cost = 100
-	
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_hyugagene
-			}
-			desc = trait_hyugagene_desc
-		}
-	}
-}
-
-uchihagene = {
-	opposites = {
-		hyugagene
-		forbiddengene
-		Kaguja_Bloodline
-		Aburame_Bloodline
-		Guren_Bloodline
-		Yamanaka_Bloodline
-		Hozuki_Bloodline
-		Ryudoin_Bloodline
-		Terumi_Bloodline
-		
-		Kurotsuchi_Bloodline
-	}
-
-	index = 2000
-	name = trait_uchihagene
-	
-	fame = yes
-
-	health = 0.5
-	inbreeding_chance = -1
-	positive_random_genetic_chance = 0.3
-
-	opposite_opinion = -100
-	inherit_chance = 1000
-	genetic = yes
-	shown_in_ruler_designer = yes
-	ruler_designer_cost = 100
-
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_uchihagene
-			}
-			desc = trait_uchihagene_desc
-		}
-	}
-}
-
-Aburame_Bloodline = {
-	name = trait_Aburame_Bloodline
-	icon = "aburame_bloodline1.dds"
-	opposites = {
-		uchihagene
-		forbiddengene
-		Kaguja_Bloodline
-		Guren_Bloodline
-		Yamanaka_Bloodline
-		Hozuki_Bloodline
-		Ryudoin_Bloodline
-		Terumi_Bloodline
-		
-		Kurotsuchi_Bloodline
-	}
-	shown_in_ruler_designer = yes
-
-	health = 0.5 
-    fertility = 0.10 
-    positive_random_genetic_chance = 0.1
-
-	fame = yes
-
-	inherit_chance = 1000
-	inbreeding_chance = -1
-	genetic = yes
-	ruler_designer_cost = 100
-}
-
-Akimichi_Bloodline = {
-	name = trait_Akimichi_Bloodline
-	icon = "akimichi_bloodline1.dds"
-	
-	shown_in_ruler_designer = yes
-
-    health = 0.5
-
-	fame = yes
-	
-	inbreeding_chance = -1
-	positive_random_genetic_chance = 0.1
-	
-	inherit_chance = 1000
-	genetic = yes
-	ruler_designer_cost = 100
-}

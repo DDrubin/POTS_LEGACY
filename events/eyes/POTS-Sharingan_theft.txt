@@ -22,15 +22,15 @@ sharingan_theft.001 = {
                 has_mangekyosharingan = no
             }
             scope:recipient = {
-                has_trait = mangekyosharingan_1
+                has_trait = sharingan_tomoe_4
             }
         }
         hidden_effect = {
             scope:actor = {
-                add_trait = mangekyosharingan_1
+                add_trait = sharingan_tomoe_4
             }
             scope:recipient = {
-                remove_trait = mangekyosharingan_1
+                remove_trait = sharingan_tomoe_4
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier
@@ -46,15 +46,15 @@ sharingan_theft.001 = {
                 has_mangekyosharingan = no
             }
             scope:recipient = {
-                has_trait = mangekyosharingan_2
+                has_trait = sharingan_tomoe_4
             }
         }
         hidden_effect = {
             scope:actor = {
-                add_trait = mangekyosharingan_2
+                add_trait = sharingan_tomoe_4
             }
             scope:recipient = {
-                remove_trait = mangekyosharingan_2
+                remove_trait = sharingan_tomoe_4
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier
@@ -70,15 +70,15 @@ sharingan_theft.001 = {
                 has_mangekyosharingan = no
             }
             scope:recipient = {
-                has_trait = mangekyosharingan_3
+                has_trait = sharingan_tomoe_4
             }
         }
         hidden_effect = {
             scope:actor = {
-                add_trait = mangekyosharingan_3
+                add_trait = sharingan_tomoe_4
             }
             scope:recipient = {
-                remove_trait = mangekyosharingan_3
+                remove_trait = sharingan_tomoe_4
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier
@@ -94,15 +94,15 @@ sharingan_theft.001 = {
             		has_mangekyosharingan = no
         	}
         	scope:recipient = {
-            		has_trait = mangekyosharingan_4
+            		has_trait = sharingan_tomoe_4
         	}
     	}
         hidden_effect = {
             scope:actor = {
-                add_trait = mangekyosharingan_4
+                add_trait = sharingan_tomoe_4
             }
             scope:recipient = {
-                remove_trait = mangekyosharingan_4
+                remove_trait = sharingan_tomoe_4
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier
@@ -138,18 +138,18 @@ sharingan_theft.002 = {
         name = sharingan_theft.002.a
         trigger = {
             scope:recipient = {
-                has_trait = onetomoe
+                has_trait = sharingan_tomoe_1
             }
         }
         hidden_effect = {
             scope:actor = {
                 add_character_flag = {
-					flag = onetomoe
+					flag = sharingan_tomoe_1
 					years = 600
 				}
             }
             scope:recipient = {
-                remove_trait = onetomoe
+                remove_trait = sharingan_tomoe_1
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier
@@ -162,18 +162,18 @@ sharingan_theft.002 = {
         name = sharingan_theft.002.b
         trigger = {
             scope:recipient = {
-                has_trait = twotomoe
+                has_trait = sharingan_tomoe_2
             }
         }
         hidden_effect = {
             scope:actor = {
                 add_character_flag = {
-					flag = twotomoe
+					flag = sharingan_tomoe_2
 					years = 600
 				}
             }
             scope:recipient = {
-                remove_trait = twotomoe
+                remove_trait = sharingan_tomoe_2
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier
@@ -186,7 +186,7 @@ sharingan_theft.002 = {
         name = sharingan_theft.002.c
         trigger = {
             scope:recipient = {
-                has_trait = threetomoe
+                has_trait = sharingan_tomoe_3
             }
         }
         hidden_effect = {
@@ -197,7 +197,7 @@ sharingan_theft.002 = {
 				}
             }
             scope:recipient = {
-                remove_trait = threetomoe
+                remove_trait = sharingan_tomoe_3
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier
@@ -211,10 +211,10 @@ sharingan_theft.002 = {
         trigger = {
             scope:recipient = {
 				OR = {
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 				}
             }
         }
@@ -226,10 +226,10 @@ sharingan_theft.002 = {
 				}
             }
             scope:recipient = {
-                remove_trait = mangekyosharingan_1
-                remove_trait = mangekyosharingan_2
-                remove_trait = mangekyosharingan_3
-                remove_trait = mangekyosharingan_4
+                remove_trait = sharingan_tomoe_4
+                remove_trait = sharingan_tomoe_4
+                remove_trait = sharingan_tomoe_4
+                remove_trait = sharingan_tomoe_4
                 add_trait = blind
                 add_character_modifier = {
                     modifier = stolensharingan_modifier

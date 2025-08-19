@@ -1,9 +1,9 @@
 ﻿is_uchiha = {
-	has_trait = uchihagene
+	has_trait = uchiha
 }
 
 is_hyuga = {
-	has_trait = hyugagene
+	has_trait = hyuga
    	has_trait = byakugan
 }
 
@@ -21,10 +21,10 @@ is_senju = {
 
 has_mangekyosharingan = {
    OR = {
-      has_trait = mangekyosharingan_1
-      has_trait = mangekyosharingan_2
-      has_trait = mangekyosharingan_3
-      has_trait = mangekyosharingan_4
+      has_trait = sharingan_tomoe_4
+      has_trait = sharingan_tomoe_4
+      has_trait = sharingan_tomoe_4
+      has_trait = sharingan_tomoe_4
    }
 }
 
@@ -51,9 +51,9 @@ has_eternal = {
 
 has_simple_sharingan = {
    OR = {
-      has_trait = onetomoe
-      has_trait = twotomoe
-      has_trait = threetomoe
+      has_trait = sharingan_tomoe_1
+      has_trait = sharingan_tomoe_2
+      has_trait = sharingan_tomoe_3
    }
 }
 

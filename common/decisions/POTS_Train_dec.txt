@@ -1,4 +1,4 @@
-train_of_eyes = {
+﻿train_of_eyes = {
 
 	ai_check_interval = 1
 	ai_potential = {
@@ -38,20 +38,36 @@ train_of_eyes = {
 		age >= 3
 
 		OR = {
-					has_trait = onetomoe
-					has_trait = twotomoe
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_1
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+
 					has_trait = eternalsharingan
 					has_trait = rinnegan
 					has_trait = rinnesharingan
+
 					has_trait = byakugan
 					has_trait = tenseigan
 					has_trait = forbiddeneyes
-					has_trait = jogan		
+
+					#hyuga#
+					has_trait = bones_and_joints
+					has_trait = muscles_and_speed
+					has_trait = internal_organs_and_chakras
+					has_trait = reflexes_and_nervous_system
+					has_trait = final_stage_of_physical_development	
+					
+					#senju#
+					has_trait = vitality_and_regeneration	
+					has_trait = wooden_style	
+					has_trait = chakra_and_elemental_balance	
+					has_trait = physical_strength	
+					has_trait = natural_connection	
+					has_trait = legacy_of_asura
 		}
 
 		OR = {		

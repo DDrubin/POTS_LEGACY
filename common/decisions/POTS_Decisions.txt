@@ -217,6 +217,7 @@ decision_ninja_level = {
 			is_ruler = yes
 			NOT = { highest_held_title_tier <= tier_duchy }
 			NOT = { has_character_flag = mass_training }
+			NOT = { age > 6}
 		}
 	}
 	effect = {
@@ -250,6 +251,63 @@ test_single_combat = {
 				test_val_var = -2
 			}
        }
+}
+
+decision_hyuga_body_dev = {
+	ai_check_interval = 2
+	
+	desc = decision_hyuga_body_dev_desc
+	selection_tooltip = decision_hyuga_body_dev_tooltip
+	is_shown = {
+		age >= 3
+		OR = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = byakugan
+				NOT = {
+					has_trait = blind
+					has_variable = hyuga_body_dev_flag
+				}
+			}
+		}
+
+	}
+	
+	effect = { 
+        trigger_event = hyuga_body_dev.1 
+    }
+
+	ai_will_do = {
+		base = 1000
+	}
+}
+
+decision_senju_dev = {
+	ai_check_interval = 2
+	
+	desc = decision_senju_dev_desc
+	selection_tooltip = decision_senju_dev_tooltip
+	is_shown = {
+		age >= 3
+		OR = {
+			AND = {
+				has_trait = shinobi_dynasty
+				has_trait = senjugene
+				NOT = {
+					has_variable = senju_dev_flag
+				}
+			}
+		}
+
+	}
+	
+	effect = { 
+        trigger_event = senju_dev.1 
+    }
+
+	ai_will_do = {
+		base = 1000
+	}
 }
 
 

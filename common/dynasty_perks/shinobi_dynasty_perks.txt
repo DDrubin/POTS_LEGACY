@@ -1,4 +1,4 @@
-shinobi_legacy_1 = {
+﻿shinobi_legacy_1 = {
 	legacy = shinobi_legacy_track
 	character_modifier = {
 		scheme_discovery_chance_mult = 0.2
@@ -43,7 +43,7 @@ shinobi_legacy_3 = {
 	}
 
 	traits = {
-		ninjarank_genin = 50
+		ninja_rank_1 = 50
 	}
 }
 
@@ -68,6 +68,6 @@ shinobi_legacy_5 = {
 		monthly_lifestyle_xp_gain_mult = 0.1
 	}
 	traits = {
-		ninjarank_chunin = 35
+		ninja_rank_2 = 35
 	}
 }

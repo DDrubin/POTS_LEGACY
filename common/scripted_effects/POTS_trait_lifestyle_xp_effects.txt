@@ -1,9 +1,9 @@
-onetomoe_xp_effect = {
+﻿sharingan_tomoe_1_xp_effect = {
 	if = {
-		limit = { has_trait = onetomoe }
+		limit = { has_trait = sharingan_tomoe_1 }
 		add_trait_xp = {
-			trait = onetomoe
-			track = onetomoe_track
+			trait = sharingan_tomoe_1
+			track = sharingan_tomoe_1_track
 			value = {
 				integer_range = {
 					min = $MIN$
@@ -14,12 +14,12 @@ onetomoe_xp_effect = {
 	}
 }
 
-twotomoe_xp_effect = {
+sharingan_tomoe_2_xp_effect = {
 	if = {
-		limit = { has_trait = twotomoe }
+		limit = { has_trait = sharingan_tomoe_2 }
 		add_trait_xp = {
-			trait = twotomoe
-			track = twotomoe_track
+			trait = sharingan_tomoe_2
+			track = sharingan_tomoe_2_track
 			value = {
 				integer_range = {
 					min = $MIN$
@@ -30,12 +30,12 @@ twotomoe_xp_effect = {
 	}
 }
 
-threetomoe_xp_effect = {
+sharingan_tomoe_3_xp_effect = {
 	if = {
-		limit = { has_trait = threetomoe }
+		limit = { has_trait = sharingan_tomoe_3 }
 		add_trait_xp = {
-			trait = threetomoe
-			track = threetomoe_track
+			trait = sharingan_tomoe_3
+			track = sharingan_tomoe_3_track
 			value = {
 				integer_range = {
 					min = $MIN$
@@ -46,12 +46,12 @@ threetomoe_xp_effect = {
 	}
 }
 
-mangekyosharingan_1_xp_effect = {
+sharingan_tomoe_4_xp_effect = {
 	if = {
-		limit = { has_trait = mangekyosharingan_1 }
+		limit = { has_trait = sharingan_tomoe_4 }
 		add_trait_xp = {
-			trait = mangekyosharingan_1
-			track = mangekyosharingan_1_track
+			trait = sharingan_tomoe_4
+			track = sharingan_tomoe_4_track
 			value = {
 				integer_range = {
 					min = $MIN$
@@ -62,12 +62,12 @@ mangekyosharingan_1_xp_effect = {
 	}
 }
 
-mangekyosharingan_2_xp_effect = {
+sharingan_tomoe_4_xp_effect = {
 	if = {
-		limit = { has_trait = mangekyosharingan_2 }
+		limit = { has_trait = sharingan_tomoe_4 }
 		add_trait_xp = {
-			trait = mangekyosharingan_2
-			track = mangekyosharingan_2_track
+			trait = sharingan_tomoe_4
+			track = sharingan_tomoe_4_track
 			value = {
 				integer_range = {
 					min = $MIN$
@@ -78,12 +78,12 @@ mangekyosharingan_2_xp_effect = {
 	}
 }
 
-mangekyosharingan_3_xp_effect = {
+sharingan_tomoe_4_xp_effect = {
 	if = {
-		limit = { has_trait = mangekyosharingan_3 }
+		limit = { has_trait = sharingan_tomoe_4 }
 		add_trait_xp = {
-			trait = mangekyosharingan_3
-			track = mangekyosharingan_3_track
+			trait = sharingan_tomoe_4
+			track = sharingan_tomoe_4_track
 			value = {
 				integer_range = {
 					min = $MIN$
@@ -94,12 +94,12 @@ mangekyosharingan_3_xp_effect = {
 	}
 }
 
-mangekyosharingan_4_xp_effect = {
+sharingan_tomoe_4_xp_effect = {
 	if = {
-		limit = { has_trait = mangekyosharingan_4 }
+		limit = { has_trait = sharingan_tomoe_4 }
 		add_trait_xp = {
-			trait = mangekyosharingan_4
-			track = mangekyosharingan_4_track
+			trait = sharingan_tomoe_4
+			track = sharingan_tomoe_4_track
 			value = {
 				integer_range = {
 					min = $MIN$
@@ -245,6 +245,182 @@ jogan_xp_effect = {
 		add_trait_xp = {
 			trait = jogan
 			track = jogan_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+bones_and_joints_xp_effect = {
+	if = {
+		limit = { has_trait = bones_and_joints }
+		add_trait_xp = {
+			trait = bones_and_joints
+			track = bones_and_joints_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+muscles_and_speed_xp_effect = {
+	if = {
+		limit = { has_trait = muscles_and_speed }
+		add_trait_xp = {
+			trait = muscles_and_speed
+			track = muscles_and_speed_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+internal_organs_and_chakras_xp_effect = {
+	if = {
+		limit = { has_trait = internal_organs_and_chakras }
+		add_trait_xp = {
+			trait = internal_organs_and_chakras
+			track = internal_organs_and_chakras_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+reflexes_and_nervous_system_xp_effect = {
+	if = {
+		limit = { has_trait = reflexes_and_nervous_system }
+		add_trait_xp = {
+			trait = reflexes_and_nervous_system
+			track = reflexes_and_nervous_system_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+final_stage_of_physical_development_xp_effect = {
+	if = {
+		limit = { has_trait = final_stage_of_physical_development }
+		add_trait_xp = {
+			trait = final_stage_of_physical_development
+			track = final_stage_of_physical_development_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+vitality_and_regeneration_xp_effect = {
+	if = {
+		limit = { has_trait = vitality_and_regeneration }
+		add_trait_xp = {
+			trait = vitality_and_regeneration
+			track = vitality_and_regeneration_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+wooden_style_xp_effect = {
+	if = {
+		limit = { has_trait = wooden_style }
+		add_trait_xp = {
+			trait = wooden_style
+			track = wooden_style_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+chakra_and_elemental_balance_xp_effect = {
+	if = {
+		limit = { has_trait = chakra_and_elemental_balance }
+		add_trait_xp = {
+			trait = chakra_and_elemental_balance
+			track = chakra_and_elemental_balance_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+physical_strength_xp_effect = {
+	if = {
+		limit = { has_trait = physical_strength }
+		add_trait_xp = {
+			trait = physical_strength
+			track = physical_strength_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+natural_connection_xp_effect = {
+	if = {
+		limit = { has_trait = natural_connection }
+		add_trait_xp = {
+			trait = natural_connection
+			track = natural_connection_track
+			value = {
+				integer_range = {
+					min = $MIN$
+					max = $MAX$
+				}
+			}
+		}
+	}
+}
+
+legacy_of_asura_xp_effect = {
+	if = {
+		limit = { has_trait = legacy_of_asura }
+		add_trait_xp = {
+			trait = legacy_of_asura
+			track = legacy_of_asura_track
 			value = {
 				integer_range = {
 					min = $MIN$

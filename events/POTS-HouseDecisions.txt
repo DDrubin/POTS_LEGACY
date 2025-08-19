@@ -1,6 +1,7 @@
 ﻿namespace = pots_house_decision
 
 pots_house_decision.001 = {
+    type = character_event
     title = pots_house_decision.001.t
     desc = pots_house_decision.001.d
     theme = martial
@@ -29,7 +30,7 @@ pots_house_decision.001 = {
                 value = 1 
             }
             set_house = house:house_Uchiha
-            add_trait = uchihagene
+            add_trait = uchiha
 			
         }
     }
@@ -48,7 +49,7 @@ pots_house_decision.001 = {
                 value = 1 
             }
             set_house = house:house_Hygua
-            add_trait = hyugagene
+            add_trait = hyuga
 			
         }
     }
@@ -121,16 +122,16 @@ pots_house_decision.001 = {
     option = {
         name = pots_house_decision.001.h
         trigger = {
-            NOT = { has_global_variable = Aburame_Bloodline }
+            NOT = { has_global_variable = aburame }
             age <= 25
         }
 
         hidden_effect = {
             set_global_variable = { 
-                name = Aburame_Bloodline 
+                name = aburame 
                 value = 1 
             }
-            add_trait = Aburame_Bloodline
+            add_trait = aburame
 			
         }
     }
@@ -182,6 +183,7 @@ pots_house_decision.001 = {
 }
 
 pots_house_decision.002 = {
+    type = character_event
     title = pots_house_decision.002.t
     desc = pots_house_decision.002.d
     theme = martial
@@ -266,16 +268,16 @@ pots_house_decision.002 = {
     option = {
         name = pots_house_decision.002.f
         trigger = {
-            NOT = { has_global_variable = Akimichi_Bloodline }
+            NOT = { has_global_variable = akimichi }
             age <= 25
         }
 
         hidden_effect = {
             set_global_variable = { 
-                name = Akimichi_Bloodline 
+                name = akimichi 
                 value = 1 
             }
-            add_trait = Akimichi_Bloodline
+            add_trait = akimichi
             
         }
     }
@@ -359,6 +361,7 @@ pots_house_decision.002 = {
 }
 
 pots_house_decision.003 = {
+    type = character_event
     title = pots_house_decision.003.t
     desc = pots_house_decision.003.d
     theme = martial
@@ -536,6 +539,7 @@ pots_house_decision.003 = {
 }
 
 pots_house_decision.004 = {
+    type = character_event
     title = pots_house_decision.004.t
     desc = pots_house_decision.004.d
     theme = martial

@@ -12,19 +12,19 @@ sharingan_level.1 = {
 		name = sharingan_level.1.a
 		trigger = {
 			AND = {
-				has_trait = uchihagene
+				has_trait = uchiha
 				has_trait = shinobi_dynasty
 			
 				NOT = {
 					has_trait = blind
 					has_character_modifier = trained_sharingan
-					has_trait = onetomoe
-					has_trait = twotomoe
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_1
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
@@ -53,23 +53,23 @@ sharingan_level.11 = {
 		name = sharingan_level.11.a
 		trigger = {
 			AND = {
-				has_trait = uchihagene
+				has_trait = uchiha
 				has_trait = shinobi_dynasty
 				NOT = {
 					has_trait = blind
 					has_character_modifier = trained_sharingan
-					has_trait = onetomoe
-					has_trait = twotomoe
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_1
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
 		}
-		add_trait = onetomoe
+		add_trait = sharingan_tomoe_1
 		add_character_modifier = {
 			modifier = trained_sharingan
 			days = 5
@@ -89,19 +89,19 @@ sharingan_level.2 = {
 		name = sharingan_level.2.a
 		trigger = {
 			AND = {
-				has_trait = uchihagene
-				has_trait = onetomoe
+				has_trait = uchiha
+				has_trait = sharingan_tomoe_1
 				has_trait = shinobi_dynasty
 			
 				NOT = {
 					has_trait = blind
 					has_character_modifier = trained_sharingan
-					has_trait = twotomoe
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
@@ -130,24 +130,24 @@ sharingan_level.22 = {
 		name = sharingan_level.22.a
 		trigger = {
 		AND = {
-				has_trait = uchihagene
-				has_trait = onetomoe
+				has_trait = uchiha
+				has_trait = sharingan_tomoe_1
 				has_trait = shinobi_dynasty
 			
 				NOT = {
 					has_trait = blind
 					has_character_modifier = trained_sharingan
-					has_trait = twotomoe
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_2
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
 		}
-		add_trait = twotomoe
+		add_trait = sharingan_tomoe_2
 		add_character_modifier = {
 			modifier = trained_sharingan
 			days = 5
@@ -167,18 +167,18 @@ sharingan_level.3 = {
 		name = sharingan_level.3.a
 		trigger = {
 			AND = {
-				has_trait = uchihagene
-				has_trait = twotomoe
+				has_trait = uchiha
+				has_trait = sharingan_tomoe_2
 				has_trait = shinobi_dynasty
 			
 				NOT = {
 					has_trait = blind
 					has_character_modifier = trained_sharingan
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
@@ -207,23 +207,23 @@ sharingan_level.33 = {
 		name = sharingan_level.33.a
 		trigger = {
 			AND = {
-				has_trait = uchihagene
-				has_trait = twotomoe
+				has_trait = uchiha
+				has_trait = sharingan_tomoe_2
 				has_trait = shinobi_dynasty
 			
 				NOT = {
 					has_trait = blind
 					has_character_modifier = trained_sharingan
-					has_trait = threetomoe
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_3
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 					has_trait = eternalsharingan
 				}
 			}
 		}
-		add_trait = threetomoe
+		add_trait = sharingan_tomoe_3
 		add_character_modifier = {
 			modifier = trained_sharingan
 			days = 5
@@ -249,19 +249,19 @@ sharingan_level.4 = {
 			scope:actor = {
 				is_close_or_extended_family_of = scope:recipient
 				OR = {
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 				}
 			}
 			scope:recipient = {
 				is_close_or_extended_family_of = scope:actor
 				OR = {
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
+					has_trait = sharingan_tomoe_4
 				}
 			}
 		}

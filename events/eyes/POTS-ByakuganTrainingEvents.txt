@@ -1,4 +1,4 @@
-namespace = byakugan_level
+﻿namespace = byakugan_level
 
 byakugan_level.1 = {
 	title = byakugan_level.1.t
@@ -13,7 +13,7 @@ byakugan_level.1 = {
 		trigger = {
 			AND = {
 				has_trait = shinobi_dynasty
-				has_trait = hyugagene
+				has_trait = hyuga
 				
 				NOT = {
 					has_trait = blind
@@ -49,7 +49,7 @@ byakugan_level.11 = {
 		trigger = {
 			AND = {
 				has_trait = shinobi_dynasty
-				has_trait = hyugagene
+				has_trait = hyuga
 				
 				NOT = {
 					has_trait = blind

@@ -16,7 +16,7 @@ artifact_eye.001 = {
         name = artifact_eye.001.a
         trigger = {
             root = {
-                has_trait = threetomoe
+                has_trait = sharingan_tomoe_3
             }
         }
         create_artifact_sharingan_effect = {
@@ -24,17 +24,17 @@ artifact_eye.001 = {
             MAKER = root
         }
         add_trait = blind
-        remove_trait = threetomoe
+        remove_trait = sharingan_tomoe_3
     }
     option = {
         name = artifact_eye.001.b
         trigger = {
             root = {
                 OR = {
-                    has_trait = mangekyosharingan_1
-                    has_trait = mangekyosharingan_2
-                    has_trait = mangekyosharingan_3
-                    has_trait = mangekyosharingan_4
+                    has_trait = sharingan_tomoe_4
+                    has_trait = sharingan_tomoe_4
+                    has_trait = sharingan_tomoe_4
+                    has_trait = sharingan_tomoe_4
                 }
             }
         }
@@ -43,10 +43,10 @@ artifact_eye.001 = {
             MAKER = root
         }
         add_trait = blind
-        remove_trait = mangekyosharingan_1
-        remove_trait = mangekyosharingan_2
-        remove_trait = mangekyosharingan_3
-        remove_trait = mangekyosharingan_4
+        remove_trait = sharingan_tomoe_4
+        remove_trait = sharingan_tomoe_4
+        remove_trait = sharingan_tomoe_4
+        remove_trait = sharingan_tomoe_4
     }
 	option = {
         name = artifact_eye.001.c

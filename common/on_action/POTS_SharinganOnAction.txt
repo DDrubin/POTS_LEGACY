@@ -10,7 +10,7 @@ sharingan_birthday_one = {
     trigger = {
         AND = {
             age = 20
-            has_trait = uchihagene
+            has_trait = uchiha
             is_ai = yes
         }
     }
@@ -24,7 +24,7 @@ sharingan_birthday_two = {
     trigger = {
         AND = {
             age = 35
-            has_trait = onetomoe
+            has_trait = sharingan_tomoe_1
             is_ai = yes
         }
     }
@@ -38,7 +38,7 @@ sharingan_birthday_three = {
     trigger = {
         AND = {
             age = 60
-            has_trait = twotomoe
+            has_trait = sharingan_tomoe_2
             is_ai = yes
         }
     }

@@ -1,4 +1,4 @@
-dissabilities_gain_probability = {
+﻿dissabilities_gain_probability = {
 
 	random = {
 		chance = $CHANCE_OF_DISABILLITY$
@@ -174,10 +174,10 @@ check_for_eye_training = {
 training_logic_effect = {
 
 			if = {
-				limit = { has_trait = onetomoe }
+				limit = { has_trait = sharingan_tomoe_1 }
 				random = {
 					chance = 10
-					onetomoe_xp_effect = {
+					sharingan_tomoe_1_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
@@ -185,10 +185,10 @@ training_logic_effect = {
 			}
 
 			if = {
-				limit = { has_trait = twotomoe }
+				limit = { has_trait = sharingan_tomoe_2 }
 				random = {
 					chance = 10
-					twotomoe_xp_effect = {
+					sharingan_tomoe_2_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
@@ -196,10 +196,10 @@ training_logic_effect = {
 			}
 
 			if = {
-				limit = { has_trait = threetomoe }
+				limit = { has_trait = sharingan_tomoe_3 }
 				random = {
 					chance = 10
-					threetomoe_xp_effect = {
+					sharingan_tomoe_3_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
@@ -207,10 +207,10 @@ training_logic_effect = {
 			}
 
 			if = {
-				limit = { has_trait = mangekyosharingan_1 }
+				limit = { has_trait = sharingan_tomoe_4 }
 				random = {
 					chance = 10
-					mangekyosharingan_1_xp_effect = {
+					sharingan_tomoe_4_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
@@ -218,10 +218,10 @@ training_logic_effect = {
 			}
 
 			if = {
-				limit = { has_trait = mangekyosharingan_2 }
+				limit = { has_trait = sharingan_tomoe_4 }
 				random = {
 					chance = 10
-					mangekyosharingan_2_xp_effect = {
+					sharingan_tomoe_4_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
@@ -229,10 +229,10 @@ training_logic_effect = {
 			}
 
 			if = {
-				limit = { has_trait = mangekyosharingan_3 }
+				limit = { has_trait = sharingan_tomoe_4 }
 				random = {
 					chance = 10
-					mangekyosharingan_3_xp_effect = {
+					sharingan_tomoe_4_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
@@ -240,10 +240,10 @@ training_logic_effect = {
 			}
 
 			if = {
-				limit = { has_trait = mangekyosharingan_4 }
+				limit = { has_trait = sharingan_tomoe_4 }
 				random = {
 					chance = 10
-					mangekyosharingan_4_xp_effect = {
+					sharingan_tomoe_4_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
@@ -335,6 +335,127 @@ training_logic_effect = {
 				random = {
 					chance = 10
 					jogan_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = bones_and_joints }
+				random = {
+					chance = 10
+					bones_and_joints_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = muscles_and_speed }
+				random = {
+					chance = 10
+					muscles_and_speed_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = internal_organs_and_chakras }
+				random = {
+					chance = 10
+					internal_organs_and_chakras_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = reflexes_and_nervous_system }
+				random = {
+					chance = 10
+					reflexes_and_nervous_system_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = final_stage_of_physical_development }
+				random = {
+					chance = 10
+					final_stage_of_physical_development_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = vitality_and_regeneration }
+				random = {
+					chance = 10
+					vitality_and_regeneration_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = wooden_style }
+				random = {
+					chance = 10
+					wooden_style_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = chakra_and_elemental_balance }
+				random = {
+					chance = 10
+					chakra_and_elemental_balance_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = physical_strength }
+				random = {
+					chance = 10
+					physical_strength_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = natural_connection }
+				random = {
+					chance = 10
+					natural_connection_xp_effect = {
+						MIN = $MIN_VALUE$
+						MAX = $MAX_VALUE$
+					}
+				}
+			}
+
+			if = {
+				limit = { has_trait = legacy_of_asura }
+				random = {
+					chance = 10
+					legacy_of_asura_xp_effect = {
 						MIN = $MIN_VALUE$
 						MAX = $MAX_VALUE$
 					}
